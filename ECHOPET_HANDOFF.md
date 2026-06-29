@@ -31,10 +31,12 @@ closed yet.
   `analysis\echopet_reference_resources`, as proof and comparison material.
 - Two supported layout families are still part of the requirement:
   - 128x64 compact: a 32x64 left rolling menu rail with 24x24 fixed-menu
-    icons and a triangle selection arrow, plus a 96x64 main scene. It does not
-    draw a right fixed-menu rail on GAT562.
+    icons and a triangle selection arrow. Compact mode does not draw left-area
+    frame lines or a right fixed-menu rail on GAT562. The right scene is a
+    Tamagotchi Connection V3-style 32x30 logical canvas projected 2x to 64x60.
   - 176x192 hardware intent: center 128x128 main scene, 32-pixel side menu
     bands, with top/bottom utility lines kept to one line each.
+- The compact V3 LCD grid contract is recorded in `V3_LCD_GRID_SPEC.md`.
 
 ## Reference Websites And Source IDs
 
@@ -119,12 +121,35 @@ Latest verified result:
 
 | Environment | Status | RAM | Flash |
 | --- | --- | ---: | ---: |
-| `EchoPet` | PASS | 15556 / 248832, 6.3% | 215236 / 815104, 26.4% |
-| `EchoPet_LoRa` | PASS | 16528 / 248832, 6.6% | 248360 / 815104, 30.5% |
-| `EchoPet_GAT562_LoRa` | PASS | 13080 / 248832, 5.3% | 247712 / 815104, 30.4% |
+| `EchoPet` | PASS | 15556 / 248832, 6.3% | 214252 / 815104, 26.3% |
+| `EchoPet_LoRa` | PASS | 16528 / 248832, 6.6% | 247376 / 815104, 30.3% |
+| `EchoPet_GAT562_LoRa` | PASS | 13080 / 248832, 5.3% | 246712 / 815104, 30.3% |
 
 Latest GAT562 flash result:
 
+- 2026-06-30 00:03 +08:00: `EchoPet_GAT562_LoRa` was rebuilt after the user
+  clarified that Connection/V3 art should be projected as a 2x native LCD
+  frame on the 128x64 GAT562 OLED and that the left function area should not
+  draw left/right frame lines. Added `V3_LCD_GRID_SPEC.md` and
+  `analysis\v3_lcd_grid\generate_v3_lcd_grid_probe.py`: the official
+  `img_breed_03.gif` cleanup probe favors a 32x30 visible LCD grid over 64x32
+  for gameplay-frame projection. Compact rendering no longer draws a main
+  frame that creates a vertical divider beside the left rail. Home idle now
+  projects the compact 16x16 native character row at 2x inside the 64x60 V3
+  canvas instead of using the 24x24 idle thumbnail as compact gameplay truth.
+  Compact Toilet cleanup now draws the official-how-to-derived 32x30 native
+  pet-plus-poop start frame and clips that frame with the right-to-left checker
+  clear-wall over 44 logical frames, roughly 4.4 seconds at 100 ms/frame on
+  SSD1306/GAT562. Simulator proofs:
+  `analysis\screen_simulator\out\compact_home_x4.png`,
+  `analysis\screen_simulator\out\compact_toilet_x4.png`,
+  `analysis\screen_simulator\out\compact_toilet_v3_2x_phases_x4.png`, and
+  `analysis\v3_lcd_grid\breed03_grid_candidates_contact.png`. Build sizes:
+  `EchoPet` RAM 15556/248832 Flash 214252/815104; `EchoPet_LoRa` RAM
+  16528/248832 Flash 247376/815104; `EchoPet_GAT562_LoRa` RAM 13080/248832
+  Flash 246712/815104. Flash is BLOCKED: serial and USB scans still show no
+  GAT562 `VID_239A` application or bootloader port, only COM1 plus Bluetooth
+  COM3/COM4 and unrelated USB devices.
 - 2026-06-29 22:43 +08:00: `EchoPet_GAT562_LoRa` was rebuilt after the user
   clarified that Tamagotchi Connection V3 assets on a 128x64 screen should not
   be compressed and that the GAT562 menu should be a single left-side scrolling
@@ -314,12 +339,13 @@ Current summary from the latest generated reports:
   to the original Tamagotchi-style toy screen rather than becoming a help UI.
 - GAT562 fixed-menu presentation is now a single left-side rolling menu rail:
   two 24x24 fixed-menu icons are visible at a time, the current selection is
-  marked by a triangle arrow, and the right side is reserved for the expanded
-  96x64 main scene. The first five menu slots are gauge, chef-face, toilet,
+  marked by a triangle arrow, and the left rail no longer draws left/right
+  frame lines. The first five menu slots are gauge, chef-face, toilet,
   baseball/bat, and signal-heart semantics.
-- GAT562 compact home-scene catalog idle characters use the compact 24x24
-  scale. The 128x64 resource family is still responsible for selecting the
-  small layout; the draw path must not re-expand the center character to 48x48.
+- GAT562 compact right-side gameplay uses the `V3_LCD_GRID_SPEC.md` projection:
+  a 32x30 logical Connection/V3 LCD canvas projected 2x to 64x60. Compact home
+  scene characters use the 16x16 native catalog row projected at 2x inside that
+  canvas; the generated 24x24 idle thumbnail is not compact gameplay truth.
 - The toilet cleanup scene now follows `CONNECT_ANIMATION_SPEC.md`: a
   right-side vertical checker clear-wall travels right-to-left and erases pet
   plus poop from right to left. Pet and poop remain at their scene coordinates
@@ -399,8 +425,9 @@ Open GAT562 rows include:
 
 - Cold boot must show a clean 128x64 OLED frame.
 - Compact resources must be selected automatically and fit the 128x64 screen.
-- The home-scene center character should read as compact 24x24 art, not a
-  doubled 48x48 catalog idle sprite.
+- The home-scene center character should read as a V3 native row projected 2x
+  inside the 64x60 canvas, not a 24x24 thumbnail or doubled 48x48 catalog idle
+  sprite.
 - Joystick left must act as select/A exactly once per press.
 - Joystick up must act as confirm/B exactly once per press.
 - Joystick right must act as cancel/C exactly once per press.

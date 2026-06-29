@@ -416,7 +416,6 @@ void drawMenuColumn(EchoPetDisplayDevice& display, const ScreenResources& r,
       start = static_cast<uint8_t>(menuCount > visible ? menuCount - visible : 0);
     }
 
-    display.drawRect(r.leftX, r.leftY, r.leftW, r.leftH, EPD_BLACK);
     for (uint8_t i = 0; i < visible; ++i) {
       const uint8_t menuIndex = static_cast<uint8_t>(start + i);
       if (menuIndex >= menuCount) {
@@ -502,7 +501,41 @@ void drawMenuColumn(EchoPetDisplayDevice& display, const ScreenResources& r,
 }
 
 void drawMainFrame(EchoPetDisplayDevice& display, const ScreenResources& r) {
+  if (r.compactText) {
+    return;
+  }
   display.drawRect(r.mainX, r.mainY, r.mainW, r.mainH, EPD_BLACK);
+}
+
+struct V3Canvas {
+  int16_t x;
+  int16_t y;
+  uint8_t scale;
+  uint8_t nativeW;
+  uint8_t nativeH;
+  uint16_t screenW;
+  uint16_t screenH;
+};
+
+V3Canvas v3CanvasFor(const ScreenResources& r) {
+  constexpr uint8_t kNativeW = 32;
+  constexpr uint8_t kNativeH = 30;
+  constexpr uint8_t kScale = 2;
+  const uint16_t screenW = kNativeW * kScale;
+  const uint16_t screenH = kNativeH * kScale;
+  return {
+      static_cast<int16_t>(r.mainX + (static_cast<int16_t>(r.mainW) -
+                                      static_cast<int16_t>(screenW)) /
+                                         2),
+      static_cast<int16_t>(r.mainY + (static_cast<int16_t>(r.mainH) -
+                                      static_cast<int16_t>(screenH)) /
+                                         2),
+      kScale,
+      kNativeW,
+      kNativeH,
+      screenW,
+      screenH,
+  };
 }
 
 void drawCharacterTraitOverlay(EchoPetDisplayDevice& display, int16_t x, int16_t y,
@@ -721,14 +754,17 @@ void drawCharacter(EchoPetDisplayDevice& display, const ScreenResources& r,
   const bool familyVisual =
       !isEgg && idleNotice && pet.mood != Mood::kAsleep &&
       pet.mood != Mood::kSick && pet.mood != Mood::kPassed;
+  const bool compactV3Visual = familyVisual && r.compactText;
   const uint8_t familyScale =
-      familyVisual ? static_cast<uint8_t>(r.compactText ? scale : scale * 2U)
+      familyVisual ? static_cast<uint8_t>(r.compactText ? 2U : scale * 2U)
                    : scale;
+  const uint8_t familySide =
+      compactV3Visual ? kCharacterVisualSide : kCharacterIdleVisualSide;
   const int16_t width =
-      familyVisual ? kCharacterIdleVisualSide * familyScale
+      familyVisual ? familySide * familyScale
                    : info.width * scale;
   const int16_t height =
-      familyVisual ? kCharacterIdleVisualSide * familyScale
+      familyVisual ? familySide * familyScale
                    : info.height * scale;
   const bool canIdleMove = !isEgg && pet.mood != Mood::kAsleep &&
                            pet.mood != Mood::kPassed;
@@ -736,30 +772,48 @@ void drawCharacter(EchoPetDisplayDevice& display, const ScreenResources& r,
       (isEgg || canIdleMove) ? connectionIdleMotion(pet, character,
                                                     animationPhase)
                              : IdleMotion{0, 0};
-  const int16_t walkX = idle.x * scale;
-  const int16_t bobY = idle.y * scale;
+  const uint8_t motionScale = compactV3Visual ? 2 : scale;
+  const int16_t walkX = idle.x * motionScale;
+  const int16_t bobY = idle.y * motionScale;
+  const V3Canvas canvas = v3CanvasFor(r);
+  const int16_t sceneX = compactV3Visual ? canvas.x : r.mainX;
+  const int16_t sceneY = compactV3Visual ? canvas.y : r.mainY;
+  const int16_t sceneW = compactV3Visual ? canvas.screenW : r.mainW;
+  const int16_t sceneH = compactV3Visual ? canvas.screenH : r.mainH;
 
-  int16_t x = r.mainX + (r.mainW - width) / 2 + walkX;
-  const int16_t minX = r.mainX + 1;
-  const int16_t maxX = r.mainX + r.mainW - width - 1;
+  int16_t x = sceneX + (sceneW - width) / 2 + walkX;
+  const int16_t minX = compactV3Visual ? sceneX : r.mainX + 1;
+  const int16_t maxX =
+      compactV3Visual ? sceneX + sceneW - width : r.mainX + r.mainW - width - 1;
   if (maxX >= minX) {
     if (x < minX) x = minX;
     if (x > maxX) x = maxX;
   }
 
   const int16_t floorMargin =
-      (familyVisual && r.compactText) ? 13 : (r.compactText ? 11 : 16);
-  int16_t y = r.mainY + r.mainH - height - floorMargin + bobY;
+      compactV3Visual ? 6 : ((familyVisual && r.compactText)
+                                 ? 13
+                                 : (r.compactText ? 11 : 16));
+  int16_t y = sceneY + sceneH - height - floorMargin + bobY;
   const int16_t minY =
-      r.mainY + ((familyVisual && r.compactText) ? 3 : (r.compactText ? 10 : 6));
-  const int16_t maxY = r.mainY + r.mainH - height - 1;
+      compactV3Visual
+          ? sceneY
+          : r.mainY + ((familyVisual && r.compactText) ? 3
+                                                       : (r.compactText ? 10 : 6));
+  const int16_t maxY =
+      compactV3Visual ? sceneY + sceneH - height : r.mainY + r.mainH - height - 1;
   if (maxY >= minY) {
     if (y < minY) y = minY;
     if (y > maxY) y = maxY;
   }
   if (familyVisual) {
-    drawCharacterCatalogIdleBitmap(display, x, y, pet.characterCatalogId,
-                                   animationPhase, familyScale);
+    if (compactV3Visual) {
+      drawCharacterCatalogBitmap(display, x, y, pet.characterCatalogId,
+                                 animationPhase, familyScale);
+    } else {
+      drawCharacterCatalogIdleBitmap(display, x, y, pet.characterCatalogId,
+                                     animationPhase, familyScale);
+    }
   } else {
     drawSpriteFrame(display, frame, x, y, scale);
   }
@@ -2320,7 +2374,7 @@ void drawActionStateLabel(EchoPetDisplayDevice& display, const ScreenResources& 
   }
 }
 
-constexpr uint8_t kToiletCleanupFrames = 40;
+constexpr uint8_t kToiletCleanupFrames = 44;
 constexpr uint32_t kToiletPetRows[] = {
     0b0000000111111000000000, 0b0000011000000110000000,
     0b0000100000000001000000, 0b0001000000000000100000,
@@ -2337,7 +2391,23 @@ constexpr uint32_t kToiletPoopRows[] = {
     0b0000000000, 0b0000000000,
 };
 
+constexpr uint32_t kToiletCleanupNativeStartRows[30] PROGMEM = {
+    0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000,
+    0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000,
+    0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000,
+    0x00000000, 0x0003E000, 0x00041000, 0x003A2800, 0x00400400,
+    0x00380400, 0x00400400, 0x00380400, 0x00085280, 0x00085244,
+    0x00082292, 0x00040434, 0x0002E858, 0x0002A8BC, 0x000110FC,
+};
+
 bool insideMainScene(const ScreenResources& r, int16_t x, int16_t y) {
+  if (r.compactText) {
+    const V3Canvas canvas = v3CanvasFor(r);
+    return x >= canvas.x &&
+           x < canvas.x + static_cast<int16_t>(canvas.screenW) &&
+           y >= canvas.y &&
+           y < canvas.y + static_cast<int16_t>(canvas.screenH);
+  }
   return x > r.mainX && x < r.mainX + static_cast<int16_t>(r.mainW) - 1 &&
          y > r.mainY && y < r.mainY + static_cast<int16_t>(r.mainH) - 1;
 }
@@ -2387,6 +2457,24 @@ void drawMonoBitmapBefore(EchoPetDisplayDevice& display,
   }
 }
 
+void drawV3NativeRowsBefore(EchoPetDisplayDevice& display,
+                            const ScreenResources& r, const uint32_t* rows,
+                            int16_t clipRightX) {
+  const V3Canvas canvas = v3CanvasFor(r);
+  for (uint8_t row = 0; row < canvas.nativeH; row++) {
+    const uint32_t bits = pgm_read_dword(&rows[row]);
+    for (uint8_t col = 0; col < canvas.nativeW; col++) {
+      if ((bits & (1UL << (canvas.nativeW - 1 - col))) == 0) {
+        continue;
+      }
+      drawScaledPixelBefore(display, r,
+                            canvas.x + col * canvas.scale,
+                            canvas.y + row * canvas.scale, canvas.scale,
+                            clipRightX);
+    }
+  }
+}
+
 void drawToiletPetBefore(EchoPetDisplayDevice& display,
                          const ScreenResources& r, int16_t x, int16_t y,
                          uint8_t scale, int16_t clipRightX) {
@@ -2418,6 +2506,11 @@ void drawToiletCleanupObjects(EchoPetDisplayDevice& display,
                               const ScreenResources& r, const Snapshot& pet,
                               uint8_t cleanupMessCount,
                               int16_t clipRightX, uint8_t phase) {
+  if (r.compactText) {
+    drawV3NativeRowsBefore(display, r, kToiletCleanupNativeStartRows,
+                           clipRightX);
+    return;
+  }
   const uint8_t s = r.compactText ? 1 : 2;
   const int16_t petX = r.mainX + (r.compactText ? 7 : 16);
   const int16_t petY =
@@ -2440,9 +2533,11 @@ void drawToiletCleanupObjects(EchoPetDisplayDevice& display,
 void drawToiletCleanupDottedWall(EchoPetDisplayDevice& display,
                                  const ScreenResources& r, int16_t x,
                                  uint8_t phase) {
-  const uint8_t s = r.compactText ? 1 : 2;
-  const int16_t top = r.mainY + 1;
-  const int16_t bottom = r.mainY + r.mainH - 1;
+  const V3Canvas canvas = v3CanvasFor(r);
+  const uint8_t s = r.compactText ? canvas.scale : 2;
+  const int16_t top = r.compactText ? canvas.y : r.mainY + 1;
+  const int16_t bottom =
+      r.compactText ? canvas.y + canvas.screenH : r.mainY + r.mainH - 1;
   for (int16_t y = top + ((phase & 0x01) ? 2 * s : 0); y < bottom;
        y += 7 * s) {
     fillRectInMain(display, r, x, y, s, 2 * s, EPD_BLACK);
@@ -2452,9 +2547,11 @@ void drawToiletCleanupDottedWall(EchoPetDisplayDevice& display,
 void drawToiletCleanupWall(EchoPetDisplayDevice& display,
                            const ScreenResources& r, int16_t x,
                            int16_t width, uint8_t phase) {
-  const int16_t cell = r.compactText ? 2 : 4;
-  const int16_t top = r.mainY + 1;
-  const int16_t bottom = r.mainY + r.mainH - 1;
+  const V3Canvas canvas = v3CanvasFor(r);
+  const int16_t cell = r.compactText ? canvas.scale : 4;
+  const int16_t top = r.compactText ? canvas.y : r.mainY + 1;
+  const int16_t bottom =
+      r.compactText ? canvas.y + canvas.screenH : r.mainY + r.mainH - 1;
   for (int16_t yy = top; yy < bottom; yy += cell) {
     for (int16_t xx = x; xx < x + width; xx += cell) {
       const int16_t gx = static_cast<int16_t>((xx - x) / cell);
@@ -2482,15 +2579,18 @@ void drawToiletScene(EchoPetDisplayDevice& display, const ScreenResources& r,
 
   const uint8_t stage =
       phase < kToiletCleanupFrames ? phase : kToiletCleanupFrames - 1;
-  const int16_t mainRight = r.mainX + static_cast<int16_t>(r.mainW) - 1;
+  const V3Canvas canvas = v3CanvasFor(r);
+  const int16_t mainRight =
+      r.compactText ? canvas.x + static_cast<int16_t>(canvas.screenW)
+                    : r.mainX + static_cast<int16_t>(r.mainW) - 1;
   if (stage == 0) {
     drawToiletCleanupObjects(display, r, pet, cleanupMessCount, mainRight,
                              phase);
     return;
   }
 
-  const uint8_t s = r.compactText ? 1 : 2;
-  const int16_t wallW = r.compactText ? 12 : 24;
+  const uint8_t s = r.compactText ? canvas.scale : 2;
+  const int16_t wallW = r.compactText ? 8 : 24;
   if (stage == 1) {
     drawToiletCleanupObjects(display, r, pet, cleanupMessCount, mainRight,
                              phase);
@@ -2502,11 +2602,17 @@ void drawToiletScene(EchoPetDisplayDevice& display, const ScreenResources& r,
   constexpr uint8_t kWallFrames = kToiletCleanupFrames - 6;
   const uint8_t capped =
       wallStage < kWallFrames ? wallStage : kWallFrames;
-  const int16_t travel = r.mainW + wallW + 2 * s;
+  const int16_t travel =
+      (r.compactText ? static_cast<int16_t>(canvas.screenW)
+                     : static_cast<int16_t>(r.mainW)) +
+      wallW + 2 * s;
   const int16_t progress =
       static_cast<int16_t>((static_cast<uint32_t>(travel) * capped) /
                            kWallFrames);
-  const int16_t wallX = r.mainX + r.mainW - progress;
+  const int16_t wallX =
+      (r.compactText ? canvas.x + static_cast<int16_t>(canvas.screenW)
+                     : r.mainX + static_cast<int16_t>(r.mainW)) -
+      progress;
   drawToiletCleanupObjects(display, r, pet, cleanupMessCount, wallX, phase);
   drawToiletCleanupWall(display, r, wallX, wallW, phase);
 }

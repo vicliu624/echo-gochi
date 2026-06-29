@@ -1,0 +1,61 @@
+{
+  "source": "analysis\\official_reference\\raw\\howto\\images__howto__breed__img_breed_03.gif",
+  "source_size": [
+    213,
+    200
+  ],
+  "frame_count": 44,
+  "candidate_grids": {
+    "32x30": {
+      "avg_mismatch": 0.019253094323516858,
+      "max_mismatch": 0.03553990610328638,
+      "first_nonblank_bbox": [
+        9,
+        16,
+        31,
+        30
+      ]
+    },
+    "64x32": {
+      "avg_mismatch": 0.04836961160904823,
+      "max_mismatch": 0.07859154929577465,
+      "first_nonblank_bbox": [
+        18,
+        17,
+        62,
+        32
+      ]
+    },
+    "64x30": {
+      "avg_mismatch": 0.019253094323516858,
+      "max_mismatch": 0.03553990610328638,
+      "first_nonblank_bbox": [
+        18,
+        16,
+        62,
+        30
+      ]
+    },
+    "48x32": {
+      "avg_mismatch": 0.058928190354246686,
+      "max_mismatch": 0.09476525821596245,
+      "first_nonblank_bbox": [
+        14,
+        17,
+        46,
+        32
+      ]
+    },
+    "48x30": {
+      "avg_mismatch": 0.03716335894152795,
+      "max_mismatch": 0.06107981220657277,
+      "first_nonblank_bbox": [
+        13,
+        16,
+        46,
+        30
+      ]
+    }
+  },
+  "conclusion": "32x30 is the native visible LCD-grid candidate for Connection/V3-style how-to animation frames; 64x32 is treated as a controller/other-model candidate, not the compact GAT562 playfield projection."
+}
