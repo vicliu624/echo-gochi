@@ -36,6 +36,7 @@ struct Scenario {
   const char* name;
   UiMode mode;
   Action selectedAction;
+  int8_t selectedMenuIndex;
   uint8_t cursor;
   uint8_t page;
   void (*tweak)(Snapshot&);
@@ -84,6 +85,12 @@ void lightsTweak(Snapshot& pet) {
   pet.lightsOff = 1;
   pet.mood = Mood::kAsleep;
   pet.notice = Notice::kLightsOff;
+}
+
+void careTweak(Snapshot& pet) {
+  pet.attention = 1;
+  pet.attentionReason = AttentionReason::kHungry;
+  pet.notice = Notice::kNeedsCare;
 }
 
 void relationTweak(Snapshot& pet) {
@@ -231,9 +238,10 @@ int main(int argc, char** argv) {
       phaseExplicit = true;
     } else if (arg == "--list") {
       std::printf("profiles: large compact\n");
-      std::printf("scenarios: home health food_menu meal activity_menu shop "
-                  "item game_get game_flag friends family souvenirs toilet "
-                  "medicine lights sprite_proof setup catalog_items "
+      std::printf("scenarios: home health food_menu meal activity_menu "
+                  "connection_menu care discipline_menu shop item game_get "
+                  "game_flag friends family souvenirs toilet medicine lights "
+                  "sprite_proof setup catalog_items "
                   "catalog_souvenirs character_roster fixed_icons\n");
       return 0;
     }
@@ -246,23 +254,32 @@ int main(int argc, char** argv) {
       {"compact", 128, 64},
   };
   const Scenario scenarios[] = {
-      {"home", UiMode::kHome, Action::kHealth, 0, 0, noTweak},
-      {"health", UiMode::kHealth, Action::kHealth, 0, 0, noTweak},
-      {"food_menu", UiMode::kFoodMenu, Action::kMeal, 1, 0, noTweak},
-      {"meal", UiMode::kMeal, Action::kMeal, 2, 0, noTweak},
-      {"activity_menu", UiMode::kActivityMenu, Action::kGame, 2, 0, noTweak},
-      {"shop", UiMode::kShop, Action::kShop, 6, 0, noTweak},
-      {"item", UiMode::kItem, Action::kItem, 8, 0, noTweak},
-      {"game_get", UiMode::kGame, Action::kGame, 0, 0, gameGetTweak},
-      {"game_flag", UiMode::kGame, Action::kGame, 2, 0, gameFlagTweak},
-      {"friends", UiMode::kFriends, Action::kFriendList, 1, 0, relationTweak},
-      {"family", UiMode::kFamily, Action::kFamily, 0, 0, noTweak},
-      {"souvenirs", UiMode::kSouvenirs, Action::kFamily, 4, 0, noTweak},
-      {"toilet", UiMode::kToilet, Action::kToilet, 0, 0, dirtyTweak},
-      {"medicine", UiMode::kMedicine, Action::kMedicine, 0, 0, sickTweak},
-      {"lights", UiMode::kLights, Action::kLights, 0, 0, lightsTweak},
-      {"sprite_proof", UiMode::kSpriteProof, Action::kHealth, 5, 0, noTweak},
-      {"setup", UiMode::kSetup, Action::kSound, 1, 0, noTweak},
+      {"home", UiMode::kHome, Action::kHealth, -1, 0, 0, noTweak},
+      {"health", UiMode::kHealth, Action::kHealth, 0, 0, 0, noTweak},
+      {"food_menu", UiMode::kFoodMenu, Action::kMeal, 1, 1, 0, noTweak},
+      {"meal", UiMode::kMeal, Action::kMeal, 1, 2, 0, noTweak},
+      {"activity_menu", UiMode::kActivityMenu, Action::kGame, 3, 2, 0,
+       noTweak},
+      {"connection_menu", UiMode::kConnectionMenu, Action::kLinkGame, 4, 2, 0,
+       relationTweak},
+      {"care", UiMode::kHealth, Action::kHealth, 5, 0, 0, careTweak},
+      {"discipline_menu", UiMode::kDisciplineMenu, Action::kDiscipline, 6, 1,
+       0, careTweak},
+      {"shop", UiMode::kShop, Action::kGame, 3, 1, 0, noTweak},
+      {"item", UiMode::kItem, Action::kGame, 3, 8, 0, noTweak},
+      {"game_get", UiMode::kGame, Action::kGame, 3, 0, 0, gameGetTweak},
+      {"game_flag", UiMode::kGame, Action::kGame, 3, 2, 0, gameFlagTweak},
+      {"friends", UiMode::kFriends, Action::kFriendList, 9, 1, 0,
+       relationTweak},
+      {"family", UiMode::kFamily, Action::kFriendList, 9, 0, 0, noTweak},
+      {"souvenirs", UiMode::kSouvenirs, Action::kFriendList, 9, 4, 0,
+       noTweak},
+      {"toilet", UiMode::kToilet, Action::kToilet, 2, 0, 0, dirtyTweak},
+      {"medicine", UiMode::kMedicine, Action::kMedicine, 7, 0, 0, sickTweak},
+      {"lights", UiMode::kLights, Action::kLights, 8, 0, 0, lightsTweak},
+      {"sprite_proof", UiMode::kSpriteProof, Action::kHealth, -1, 5, 0,
+       noTweak},
+      {"setup", UiMode::kSetup, Action::kSound, -1, 1, 0, noTweak},
   };
 
   int failures = 0;
@@ -279,7 +296,9 @@ int main(int argc, char** argv) {
       ui.page = scenario.page;
       Adafruit_SSD1681 display(profile.width, profile.height);
       const uint8_t selectedMenu =
-          echopet::menuActionIndex(scenario.selectedAction);
+          scenario.selectedMenuIndex >= 0
+              ? static_cast<uint8_t>(scenario.selectedMenuIndex)
+              : echopet::menuActionIndex(scenario.selectedAction);
       echopet::drawEchoPet(display, pet, selectedMenu, ui,
                            static_cast<uint8_t>(phase));
       const std::string leaf = std::string(profile.name) + "_" + scenario.name +

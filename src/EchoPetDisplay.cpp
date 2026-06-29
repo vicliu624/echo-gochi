@@ -3109,6 +3109,467 @@ void drawDisciplineScene(EchoPetDisplayDevice& display, const ScreenResources& r
   drawSceneFrame(display, r, frame, r.compactText ? 9 : 15, 0);
 }
 
+int16_t v3Px(const V3Canvas& canvas, int16_t x) {
+  return canvas.x + x * canvas.scale;
+}
+
+int16_t v3Py(const V3Canvas& canvas, int16_t y) {
+  return canvas.y + y * canvas.scale;
+}
+
+void v3Fill(EchoPetDisplayDevice& display, const V3Canvas& canvas, int16_t x,
+            int16_t y, int16_t w, int16_t h) {
+  display.fillRect(v3Px(canvas, x), v3Py(canvas, y), w * canvas.scale,
+                   h * canvas.scale, EPD_BLACK);
+}
+
+void v3Rect(EchoPetDisplayDevice& display, const V3Canvas& canvas, int16_t x,
+            int16_t y, int16_t w, int16_t h) {
+  display.drawRect(v3Px(canvas, x), v3Py(canvas, y), w * canvas.scale,
+                   h * canvas.scale, EPD_BLACK);
+}
+
+void v3HLine(EchoPetDisplayDevice& display, const V3Canvas& canvas, int16_t x,
+             int16_t y, int16_t w) {
+  v3Fill(display, canvas, x, y, w, 1);
+}
+
+void v3VLine(EchoPetDisplayDevice& display, const V3Canvas& canvas, int16_t x,
+             int16_t y, int16_t h) {
+  v3Fill(display, canvas, x, y, 1, h);
+}
+
+void v3Text(EchoPetDisplayDevice& display, const V3Canvas& canvas, int16_t x,
+            int16_t y, const char* text) {
+  drawText(display, v3Px(canvas, x), v3Py(canvas, y), text, 1);
+}
+
+void v3CenteredText(EchoPetDisplayDevice& display, const V3Canvas& canvas,
+                    int16_t y, const char* text) {
+  const uint16_t w = textPixelWidth(text, 1);
+  drawText(display, canvas.x + (canvas.screenW - static_cast<int16_t>(w)) / 2,
+           v3Py(canvas, y), text, 1);
+}
+
+void drawV3Heart(EchoPetDisplayDevice& display, const V3Canvas& canvas,
+                 int16_t x, int16_t y, bool filled) {
+  if (filled) {
+    v3Fill(display, canvas, x + 1, y, 2, 1);
+    v3Fill(display, canvas, x + 4, y, 2, 1);
+    v3Fill(display, canvas, x, y + 1, 7, 2);
+    v3Fill(display, canvas, x + 1, y + 3, 5, 1);
+    v3Fill(display, canvas, x + 2, y + 4, 3, 1);
+    v3Fill(display, canvas, x + 3, y + 5, 1, 1);
+  } else {
+    v3Rect(display, canvas, x + 1, y, 2, 1);
+    v3Rect(display, canvas, x + 4, y, 2, 1);
+    v3HLine(display, canvas, x, y + 1, 7);
+    v3VLine(display, canvas, x, y + 2, 1);
+    v3VLine(display, canvas, x + 6, y + 2, 1);
+    v3HLine(display, canvas, x + 1, y + 3, 5);
+    v3Fill(display, canvas, x + 2, y + 4, 1, 1);
+    v3Fill(display, canvas, x + 4, y + 4, 1, 1);
+    v3Fill(display, canvas, x + 3, y + 5, 1, 1);
+  }
+}
+
+void drawV3MiniPet(EchoPetDisplayDevice& display, const V3Canvas& canvas,
+                   int16_t x, int16_t y, uint8_t phase, bool happy) {
+  const int16_t bob = (phase & 1) ? -1 : 0;
+  v3HLine(display, canvas, x + 3, y + bob, 8);
+  v3HLine(display, canvas, x + 1, y + 1 + bob, 12);
+  v3VLine(display, canvas, x, y + 3 + bob, 7);
+  v3VLine(display, canvas, x + 13, y + 3 + bob, 7);
+  v3HLine(display, canvas, x + 1, y + 10 + bob, 12);
+  v3Fill(display, canvas, x + 4, y + 5 + bob, 2, 2);
+  v3Fill(display, canvas, x + 9, y + 5 + bob, 2, 2);
+  if (happy) {
+    v3HLine(display, canvas, x + 5, y + 8 + bob, 4);
+    v3Fill(display, canvas, x + 4, y + 7 + bob, 1, 1);
+    v3Fill(display, canvas, x + 9, y + 7 + bob, 1, 1);
+  } else {
+    v3HLine(display, canvas, x + 5, y + 9 + bob, 5);
+  }
+  v3Fill(display, canvas, x + 2, y + 11 + bob, 2, 1);
+  v3Fill(display, canvas, x + 10, y + 11 + bob, 2, 1);
+}
+
+void drawV3CatalogPet(EchoPetDisplayDevice& display, const V3Canvas& canvas,
+                      const Snapshot& pet, int16_t x, int16_t y,
+                      uint8_t phase, uint8_t scale = 1) {
+  drawCharacterCatalogBitmap(display, v3Px(canvas, x), v3Py(canvas, y),
+                             pet.characterCatalogId, phase, scale);
+}
+
+void drawV3Poop(EchoPetDisplayDevice& display, const V3Canvas& canvas, int16_t x,
+                int16_t y, uint8_t phase) {
+  v3Fill(display, canvas, x + 4, y, 2, 1);
+  v3Fill(display, canvas, x + 3, y + 1, 4, 1);
+  v3Fill(display, canvas, x + 2, y + 2, 6, 2);
+  v3Fill(display, canvas, x + 1, y + 4, 8, 1);
+  v3Fill(display, canvas, x, y + 5, 10, 2);
+  v3Fill(display, canvas, x + 2, y + 7, 6, 1);
+  const int16_t drift = (phase & 1) ? 1 : 0;
+  v3Fill(display, canvas, x + 2 + drift, y - 3, 1, 1);
+  v3Fill(display, canvas, x + 3 + drift, y - 2, 1, 1);
+  v3Fill(display, canvas, x + 7 - drift, y - 4, 1, 1);
+  v3Fill(display, canvas, x + 6 - drift, y - 3, 1, 1);
+}
+
+void drawV3FoodProp(EchoPetDisplayDevice& display, const V3Canvas& canvas,
+                    int16_t x, int16_t y, bool snack) {
+  if (snack) {
+    v3Fill(display, canvas, x + 3, y, 4, 1);
+    v3Fill(display, canvas, x + 1, y + 1, 8, 2);
+    v3Fill(display, canvas, x, y + 3, 10, 4);
+    v3Fill(display, canvas, x + 2, y + 7, 6, 1);
+    v3Fill(display, canvas, x + 3, y + 4, 1, 1);
+    v3Fill(display, canvas, x + 6, y + 4, 1, 1);
+  } else {
+    v3Rect(display, canvas, x, y + 4, 12, 5);
+    v3HLine(display, canvas, x + 2, y + 3, 8);
+    v3Fill(display, canvas, x + 3, y + 1, 6, 2);
+  }
+}
+
+void drawV3GameProp(EchoPetDisplayDevice& display, const V3Canvas& canvas,
+                    int16_t x, int16_t y, uint8_t phase) {
+  v3Fill(display, canvas, x + ((phase & 1) ? 2 : 0), y, 4, 4);
+  v3HLine(display, canvas, x + 8, y + 7, 12);
+  v3VLine(display, canvas, x + 14, y + 2, 8);
+  v3HLine(display, canvas, x + 13, y + 2, 5);
+  v3HLine(display, canvas, x + 13, y + 10, 5);
+}
+
+void drawV3ConnectSignal(EchoPetDisplayDevice& display, const V3Canvas& canvas,
+                         int16_t x, int16_t y, uint8_t phase) {
+  drawV3Heart(display, canvas, x, y + 6, true);
+  const int16_t pulse = phase & 1;
+  v3Fill(display, canvas, x + 8, y + 4 - pulse, 1, 1);
+  v3Fill(display, canvas, x + 10, y + 2 - pulse, 1, 2);
+  v3Fill(display, canvas, x + 12, y - pulse, 1, 3);
+}
+
+void drawV3MedicineBag(EchoPetDisplayDevice& display, const V3Canvas& canvas,
+                       int16_t x, int16_t y) {
+  v3Rect(display, canvas, x + 2, y + 4, 14, 10);
+  v3Rect(display, canvas, x + 6, y + 1, 6, 4);
+  v3HLine(display, canvas, x + 6, y + 9, 6);
+  v3VLine(display, canvas, x + 9, y + 6, 6);
+}
+
+void drawV3Lamp(EchoPetDisplayDevice& display, const V3Canvas& canvas,
+                int16_t x, int16_t y) {
+  v3HLine(display, canvas, x + 3, y, 10);
+  v3VLine(display, canvas, x + 2, y + 1, 6);
+  v3VLine(display, canvas, x + 13, y + 1, 6);
+  v3HLine(display, canvas, x + 4, y + 7, 8);
+  v3VLine(display, canvas, x + 8, y + 8, 7);
+  v3HLine(display, canvas, x + 4, y + 15, 9);
+}
+
+void drawV3OpenBook(EchoPetDisplayDevice& display, const V3Canvas& canvas,
+                    int16_t x, int16_t y) {
+  v3Rect(display, canvas, x, y + 2, 11, 14);
+  v3Rect(display, canvas, x + 11, y + 2, 11, 14);
+  v3VLine(display, canvas, x + 11, y, 18);
+  v3HLine(display, canvas, x + 3, y + 6, 5);
+  v3HLine(display, canvas, x + 14, y + 6, 5);
+  v3HLine(display, canvas, x + 3, y + 10, 5);
+  v3HLine(display, canvas, x + 14, y + 10, 5);
+}
+
+void drawV3HealthScene(EchoPetDisplayDevice& display, const ScreenResources& r,
+                       const Snapshot& pet, uint8_t phase) {
+  const V3Canvas c = v3CanvasFor(r);
+  v3Text(display, c, 0, 0, "HUNGRY");
+  v3Text(display, c, 0, 15, "HAPPY");
+  for (uint8_t i = 0; i < 4; ++i) {
+    drawV3Heart(display, c, 2 + i * 7, 8, i < pipsFor(pet.hunger));
+    drawV3Heart(display, c, 2 + i * 7, 23, i < pipsFor(pet.happiness));
+  }
+  if (pet.attention && (phase & 1)) {
+    v3Fill(display, c, 29, 2, 2, 2);
+    v3VLine(display, c, 30, 5, 5);
+  }
+}
+
+void drawV3FoodScene(EchoPetDisplayDevice& display, const ScreenResources& r,
+                     const Snapshot& pet, const UiState& ui, uint8_t phase) {
+  const V3Canvas c = v3CanvasFor(r);
+  const bool snack = ui.mode == UiMode::kSnack ||
+                     (ui.mode == UiMode::kFoodMenu && (ui.cursor & 1));
+  const bool eating = ui.mode == UiMode::kMeal || ui.mode == UiMode::kSnack ||
+                      pet.notice == Notice::kMeal || pet.notice == Notice::kSnack;
+  if (!eating) {
+    v3Fill(display, c, 2, snack ? 18 : 4, 3, 3);
+    v3Text(display, c, 8, 3, "MEAL");
+    v3Text(display, c, 8, 18, "SNACK");
+    drawV3FoodProp(display, c, 23, snack ? 18 : 4, snack);
+    return;
+  }
+  drawV3CatalogPet(display, c, pet, 16, 11 + ((phase & 1) ? -1 : 0), phase, 1);
+  if ((phase & 3) < 2) {
+    drawV3FoodProp(display, c, 2 + ((phase & 1) ? 4 : 0), 16, snack);
+  } else {
+    v3Fill(display, c, 5, 22, 1, 1);
+    v3Fill(display, c, 8, 23, 1, 1);
+    v3Fill(display, c, 11, 22, 1, 1);
+    drawV3Heart(display, c, 4, 4, true);
+  }
+}
+
+void drawV3GameScene(EchoPetDisplayDevice& display, const ScreenResources& r,
+                     const Snapshot& pet, const UiState& ui, uint8_t phase) {
+  const V3Canvas c = v3CanvasFor(r);
+  const MiniGameKind game =
+      pet.miniGame == MiniGameKind::kNone
+          ? static_cast<MiniGameKind>((ui.cursor % 7) + 1)
+          : pet.miniGame;
+  switch (game) {
+    case MiniGameKind::kGet:
+      v3Text(display, c, 3, 0, "GET");
+      v3Fill(display, c, 7 + (phase & 3) * 5, 8 + (phase & 3), 2, 2);
+      v3Rect(display, c, 10 + (pet.gameCursor % 3) * 5, 23, 8, 4);
+      break;
+    case MiniGameKind::kBump:
+      v3Text(display, c, 2, 0, "PUSH");
+      drawV3MiniPet(display, c, 1, 10, phase, true);
+      drawV3MiniPet(display, c, 18, 10, phase + 1, false);
+      v3Rect(display, c, 4, 25, 24, 3);
+      v3Fill(display, c, 5, 26, 5 + (phase & 3) * 5, 1);
+      break;
+    case MiniGameKind::kFlag:
+      v3Text(display, c, 2, 0, "FLAG");
+      drawV3MiniPet(display, c, 10, 13, phase, true);
+      v3VLine(display, c, 4, 7, 14);
+      v3Rect(display, c, 5, 7, 7, 4);
+      v3VLine(display, c, 25, 7, 14);
+      v3Fill(display, c, 18, 7, 7, 4);
+      break;
+    case MiniGameKind::kHeading:
+      v3Text(display, c, 0, 0, "HEAD");
+      v3Fill(display, c, 14 + ((phase & 1) ? 4 : -4), 7 + (phase & 3) * 4, 3,
+             3);
+      drawV3MiniPet(display, c, 9, 19, phase, true);
+      break;
+    case MiniGameKind::kMemory:
+      v3Text(display, c, 0, 0, "MEMORY");
+      for (uint8_t i = 0; i < 3; ++i) {
+        v3Rect(display, c, 4 + i * 9, 12, 6, 6);
+        if (i == (phase % 3)) v3Fill(display, c, 6 + i * 9, 14, 2, 2);
+      }
+      break;
+    case MiniGameKind::kSprint:
+      v3Text(display, c, 1, 0, "SPRINT");
+      v3HLine(display, c, 1, 25, 30);
+      v3VLine(display, c, 27, 17, 9);
+      drawV3MiniPet(display, c, 2 + (phase & 3) * 5, 14, phase, true);
+      break;
+    case MiniGameKind::kHoops:
+      v3Text(display, c, 2, 0, "HOOPS");
+      v3Rect(display, c, 23, 10, 7, 6);
+      v3VLine(display, c, 29, 16, 10);
+      v3Fill(display, c, 7 + (phase & 3) * 4, 10 - (phase & 1), 3, 3);
+      drawV3MiniPet(display, c, 4, 17, phase, true);
+      break;
+    case MiniGameKind::kNone:
+      drawV3GameProp(display, c, 5, 9, phase);
+      break;
+  }
+  if (pet.notice == Notice::kGameGood || pet.notice == Notice::kGameWin) {
+    v3Text(display, c, 3, 22, "GOOD");
+  }
+}
+
+void drawV3ConnectScene(EchoPetDisplayDevice& display, const ScreenResources& r,
+                        const Snapshot& pet, const UiState& ui,
+                        uint8_t phase) {
+  const V3Canvas c = v3CanvasFor(r);
+  const bool standby = ui.mode == UiMode::kLinkStandby;
+  const bool result = ui.mode == UiMode::kLinkResult;
+  if (standby) {
+    v3CenteredText(display, c, 0, "STAND BY");
+  } else if (result && ui.entry[2] >= 3) {
+    v3CenteredText(display, c, 0, "FAILED");
+  } else {
+    v3CenteredText(display, c, 0, "CONNECT");
+  }
+  drawV3CatalogPet(display, c, pet, 2, 13 + ((phase & 1) ? -1 : 0), phase, 1);
+  drawV3MiniPet(display, c, 20, 13 + ((phase & 1) ? 0 : -1), phase + 1,
+                result ? ui.entry[2] < 3 : true);
+  if (ui.mode == UiMode::kPresent ||
+      ui.entry[0] == static_cast<uint8_t>(LinkKind::kPresent)) {
+    v3Rect(display, c, 13, 18, 6, 6);
+    v3HLine(display, c, 12, 20, 8);
+    v3VLine(display, c, 16, 17, 8);
+  } else if (ui.entry[0] == static_cast<uint8_t>(LinkKind::kLove)) {
+    drawV3Heart(display, c, 13, 16, true);
+  } else if (ui.mode == UiMode::kLinkGame ||
+             ui.entry[0] == static_cast<uint8_t>(LinkKind::kGame)) {
+    drawV3GameProp(display, c, 8, 18, phase);
+  } else {
+    drawV3ConnectSignal(display, c, 13, 12, phase);
+  }
+}
+
+void drawV3CareScene(EchoPetDisplayDevice& display, const ScreenResources& r,
+                     const Snapshot& pet, uint8_t phase) {
+  const V3Canvas c = v3CanvasFor(r);
+  drawV3CatalogPet(display, c, pet, 8, 13 + ((phase & 1) ? -1 : 0), phase, 1);
+  v3Fill(display, c, 22, 5, 2, 2);
+  v3VLine(display, c, 23, 8, 7);
+  v3Fill(display, c, 23, 18, 2, 2);
+  if (pet.attention || (phase & 1)) {
+    v3Fill(display, c, 4, 8, 5, 1);
+    v3Fill(display, c, 3, 9, 1, 2);
+    v3Fill(display, c, 9, 9, 1, 2);
+  }
+  if (pet.messCount != 0) {
+    drawV3Poop(display, c, 23, 21, phase);
+  }
+}
+
+void drawV3DisciplineScene(EchoPetDisplayDevice& display,
+                           const ScreenResources& r, const Snapshot& pet,
+                           uint8_t phase) {
+  const V3Canvas c = v3CanvasFor(r);
+  const bool praise = pet.notice == Notice::kPraise;
+  drawV3CatalogPet(display, c, pet, 15, 13 + ((phase & 1) ? -1 : 0), phase, 1);
+  if (praise) {
+    drawV3Heart(display, c, 5, 9, true);
+    drawV3Heart(display, c, 8, 15, (phase & 1) != 0);
+  } else {
+    v3Fill(display, c, 2, 10, 8, 8);
+    v3Fill(display, c, 10, 13, 5, 2);
+    v3Fill(display, c, 4, 19, 3, 1);
+    v3Fill(display, c, 24, 6, 2, 2);
+    v3Fill(display, c, 27, 4, 1, 3);
+  }
+}
+
+void drawV3MedicineScene(EchoPetDisplayDevice& display,
+                         const ScreenResources& r, const Snapshot& pet,
+                         uint8_t phase) {
+  const V3Canvas c = v3CanvasFor(r);
+  drawV3MedicineBag(display, c, 1, 12);
+  drawV3CatalogPet(display, c, pet, 16, 13 + ((phase & 1) ? -1 : 0), phase, 1);
+  if (pet.toothache) {
+    v3Rect(display, c, 20, 4, 6, 7);
+    v3HLine(display, c, 21, 10, 4);
+  } else {
+    v3Fill(display, c, 21, 5, 5, 5);
+    v3Fill(display, c, 23, 10, 1, 3);
+  }
+  if (phase & 1) {
+    v3Fill(display, c, 12, 17, 2, 1);
+    v3Fill(display, c, 14, 16, 2, 1);
+  }
+}
+
+void drawV3LightsScene(EchoPetDisplayDevice& display, const ScreenResources& r,
+                       const Snapshot& pet, uint8_t phase) {
+  const V3Canvas c = v3CanvasFor(r);
+  if (pet.lightsOff) {
+    v3Fill(display, c, 0, 0, 32, 30);
+    display.setTextColor(EPD_WHITE);
+    drawText(display, v3Px(c, 20), v3Py(c, 3), "Z", 1);
+    display.setTextColor(EPD_BLACK);
+    return;
+  }
+  drawV3Lamp(display, c, 2, 5);
+  drawV3CatalogPet(display, c, pet, 17, 13 + ((phase & 1) ? -1 : 0), phase, 1);
+  v3Rect(display, c, 22, 4, 7, 5);
+  v3Rect(display, c, 22, 11, 7, 5);
+  v3Fill(display, c, 24, (phase & 1) ? 12 : 5, 3, 3);
+}
+
+void drawV3FriendScene(EchoPetDisplayDevice& display, const ScreenResources& r,
+                       const Snapshot& pet, const UiState& ui, uint8_t phase) {
+  const V3Canvas c = v3CanvasFor(r);
+  drawV3OpenBook(display, c, 5, 5);
+  if (pet.friendCount == 0) {
+    v3CenteredText(display, c, 22, "NO FRIEND");
+    return;
+  }
+  const uint8_t i = ui.cursor % pet.friendCount;
+  drawCatalogAvatar(display, v3Px(c, 3), v3Py(c, 12), pet.characterCatalogId,
+                    phase, 1);
+  drawCatalogAvatar(display, v3Px(c, 20), v3Py(c, 12),
+                    catalogIdForFriendAvatar(pet.friends[i]), phase + 1, 1);
+  drawV3Heart(display, c, 13, 19, (phase & 1) != 0);
+}
+
+bool drawCompactV3FunctionScreen(EchoPetDisplayDevice& display,
+                                 const ScreenResources& r,
+                                 uint8_t selectedMenuIndex,
+                                 const Snapshot& pet, const UiState& ui,
+                                 uint8_t phase) {
+  if (!r.compactText ||
+      (ui.mode == UiMode::kHome && pet.miniGame == MiniGameKind::kNone)) {
+    return false;
+  }
+
+  switch (selectedMenuIndex) {
+    case 0:
+      drawV3HealthScene(display, r, pet, phase);
+      return true;
+    case 1:
+      drawV3FoodScene(display, r, pet, ui, phase);
+      return true;
+    case 2:
+      drawToiletScene(display, r, pet, ui, phase);
+      return true;
+    case 3:
+      drawV3GameScene(display, r, pet, ui, phase);
+      return true;
+    case 4:
+      drawV3ConnectScene(display, r, pet, ui, phase);
+      return true;
+    case 5:
+      drawV3CareScene(display, r, pet, phase);
+      return true;
+    case 6:
+      drawV3DisciplineScene(display, r, pet, phase);
+      return true;
+    case 7:
+      drawV3MedicineScene(display, r, pet, phase);
+      return true;
+    case 8:
+      drawV3LightsScene(display, r, pet, phase);
+      return true;
+    case 9:
+      drawV3FriendScene(display, r, pet, ui, phase);
+      return true;
+  }
+
+  switch (ui.mode) {
+    case UiMode::kConnectionMenu:
+    case UiMode::kVisitLink:
+    case UiMode::kPresent:
+    case UiMode::kLinkGame:
+    case UiMode::kLinkStandby:
+    case UiMode::kLinkResult:
+      drawV3ConnectScene(display, r, pet, ui, phase);
+      return true;
+    case UiMode::kDisciplineMenu:
+    case UiMode::kDiscipline:
+      drawV3DisciplineScene(display, r, pet, phase);
+      return true;
+    case UiMode::kMedicine:
+      drawV3MedicineScene(display, r, pet, phase);
+      return true;
+    case UiMode::kLights:
+      drawV3LightsScene(display, r, pet, phase);
+      return true;
+    case UiMode::kFriends:
+      drawV3FriendScene(display, r, pet, ui, phase);
+      return true;
+    default:
+      return false;
+  }
+}
+
 void drawPageScreen(EchoPetDisplayDevice& display, const ScreenResources& r,
                     const Snapshot& pet, const UiState& ui,
                     uint8_t animationPhase) {
@@ -3501,7 +3962,10 @@ void drawEchoPet(EchoPetDisplayDevice& display, const Snapshot& pet,
   drawMainFrame(display, r);
   drawTopInfoLine(display, r, selectedMenuIndex, ui);
 
-  if (pet.miniGame != MiniGameKind::kNone) {
+  if (drawCompactV3FunctionScreen(display, r, selectedMenuIndex, pet, ui,
+                                  animationPhase)) {
+    // Compact V3 scenes own the whole 32x30 projected playfield.
+  } else if (pet.miniGame != MiniGameKind::kNone) {
     drawGameScreen(display, r, pet);
   } else if (ui.mode != UiMode::kHome) {
     drawPageScreen(display, r, pet, ui, animationPhase);
