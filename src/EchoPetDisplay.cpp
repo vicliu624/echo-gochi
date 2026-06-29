@@ -388,10 +388,12 @@ void drawMenuIcon(EchoPetDisplayDevice& display, const ScreenResources& r,
                   uint8_t iconIndex, int16_t x, int16_t y, uint16_t color) {
   const uint8_t i = iconIndex % 10;
   if (r.compactText) {
-    drawPackedBitmap(display, kEchoPetMenuIcons64Compact[i], 12, 12, x, y,
-                     color);
+    drawPackedBitmap(display, kEchoPetMenuIcons64Compact[i],
+                     kEchoPetMenuIconCompactSide, kEchoPetMenuIconCompactSide,
+                     x, y, color);
   } else {
-    drawPackedBitmap(display, kEchoPetMenuIcons128Large[i], 30, 30, x, y,
+    drawPackedBitmap(display, kEchoPetMenuIcons128Large[i],
+                     kEchoPetMenuIconLargeSide, kEchoPetMenuIconLargeSide, x, y,
                      color);
   }
 }
@@ -399,10 +401,53 @@ void drawMenuIcon(EchoPetDisplayDevice& display, const ScreenResources& r,
 void drawMenuColumn(EchoPetDisplayDevice& display, const ScreenResources& r,
                     uint8_t selectedMenuIndex, bool right,
                     const Snapshot& pet, uint8_t animationPhase) {
+  if (r.compactText) {
+    if (right) {
+      return;
+    }
+    const uint8_t menuCount = menuActionCount();
+    const uint8_t visible = 2;
+    const uint8_t rowH = static_cast<uint8_t>(r.leftH / visible);
+    uint8_t start = 0;
+    if (selectedMenuIndex >= visible) {
+      start = static_cast<uint8_t>(selectedMenuIndex - visible + 1);
+    }
+    if (start + visible > menuCount) {
+      start = static_cast<uint8_t>(menuCount > visible ? menuCount - visible : 0);
+    }
+
+    display.drawRect(r.leftX, r.leftY, r.leftW, r.leftH, EPD_BLACK);
+    for (uint8_t i = 0; i < visible; ++i) {
+      const uint8_t menuIndex = static_cast<uint8_t>(start + i);
+      if (menuIndex >= menuCount) {
+        break;
+      }
+      const int16_t rowY = r.leftY + static_cast<int16_t>(i) * rowH;
+      const uint8_t iconIndex = menuIconAt(menuIndex);
+      const bool selected = menuIndex == selectedMenuIndex;
+      const bool attentionPulse =
+          iconIndex == 4 && pet.attention && ((animationPhase & 0x01) == 0);
+      if (selected) {
+        const int16_t cy = rowY + rowH / 2;
+        display.fillTriangle(r.leftX + 1, cy - 5, r.leftX + 1, cy + 5,
+                             r.leftX + 6, cy, EPD_BLACK);
+      }
+      const int16_t iconX = r.leftX + 8;
+      const int16_t iconY =
+          rowY + static_cast<int16_t>((rowH - kEchoPetMenuIconCompactSide) / 2);
+      drawMenuIcon(display, r, iconIndex, iconX, iconY, EPD_BLACK);
+      if (attentionPulse) {
+        display.drawRect(iconX - 1, iconY - 1, kEchoPetMenuIconCompactSide + 2,
+                         kEchoPetMenuIconCompactSide + 2, EPD_BLACK);
+      }
+    }
+    return;
+  }
+
   const int16_t x = right ? r.rightX : r.leftX;
   const int16_t y = right ? r.rightY : r.leftY;
   const uint16_t h = right ? r.rightH : r.leftH;
-  const uint8_t iconSize = r.compactText ? 12 : 30;
+  const uint8_t iconSize = kEchoPetMenuIconLargeSide;
   const uint8_t visible = 5;
   const uint8_t menuCount = menuActionCount();
   const uint8_t split = menuActionSplit();
@@ -2372,10 +2417,9 @@ void drawToiletPoopBefore(EchoPetDisplayDevice& display,
 void drawToiletCleanupObjects(EchoPetDisplayDevice& display,
                               const ScreenResources& r, const Snapshot& pet,
                               uint8_t cleanupMessCount,
-                              int16_t shiftX, int16_t clipRightX,
-                              uint8_t phase) {
+                              int16_t clipRightX, uint8_t phase) {
   const uint8_t s = r.compactText ? 1 : 2;
-  const int16_t petX = r.mainX + (r.compactText ? 7 : 16) + shiftX;
+  const int16_t petX = r.mainX + (r.compactText ? 7 : 16);
   const int16_t petY =
       r.mainY + r.mainH - 16 * s - (r.compactText ? 12 : 22);
   drawToiletPetBefore(display, r, petX, petY, s, clipRightX);
@@ -2384,7 +2428,7 @@ void drawToiletCleanupObjects(EchoPetDisplayDevice& display,
                          : pet.messCount ? pet.messCount
                                          : 1;
   const int16_t poopBaseX =
-      r.mainX + r.mainW - (r.compactText ? 24 : 48) + shiftX;
+      r.mainX + r.mainW - (r.compactText ? 24 : 48);
   const int16_t poopBaseY =
       r.mainY + r.mainH - 10 * s - (r.compactText ? 13 : 24);
   for (uint8_t i = 0; i < messes && i < 2; i++) {
@@ -2440,7 +2484,7 @@ void drawToiletScene(EchoPetDisplayDevice& display, const ScreenResources& r,
       phase < kToiletCleanupFrames ? phase : kToiletCleanupFrames - 1;
   const int16_t mainRight = r.mainX + static_cast<int16_t>(r.mainW) - 1;
   if (stage == 0) {
-    drawToiletCleanupObjects(display, r, pet, cleanupMessCount, 0, mainRight,
+    drawToiletCleanupObjects(display, r, pet, cleanupMessCount, mainRight,
                              phase);
     return;
   }
@@ -2448,7 +2492,7 @@ void drawToiletScene(EchoPetDisplayDevice& display, const ScreenResources& r,
   const uint8_t s = r.compactText ? 1 : 2;
   const int16_t wallW = r.compactText ? 12 : 24;
   if (stage == 1) {
-    drawToiletCleanupObjects(display, r, pet, cleanupMessCount, 0, mainRight,
+    drawToiletCleanupObjects(display, r, pet, cleanupMessCount, mainRight,
                              phase);
     drawToiletCleanupDottedWall(display, r, mainRight - 2 * s, phase);
     return;
@@ -2463,8 +2507,7 @@ void drawToiletScene(EchoPetDisplayDevice& display, const ScreenResources& r,
       static_cast<int16_t>((static_cast<uint32_t>(travel) * capped) /
                            kWallFrames);
   const int16_t wallX = r.mainX + r.mainW - progress;
-  drawToiletCleanupObjects(display, r, pet, cleanupMessCount, -progress, wallX,
-                           phase);
+  drawToiletCleanupObjects(display, r, pet, cleanupMessCount, wallX, phase);
   drawToiletCleanupWall(display, r, wallX, wallW, phase);
 }
 
@@ -3437,20 +3480,20 @@ void drawEchoPetCharacterRosterProof(EchoPetDisplayDevice& display) {
 void drawEchoPetMenuIconProof(EchoPetDisplayDevice& display) {
   display.fillScreen(EPD_WHITE);
   drawText(display, 4, 4, "FIXED MENU ICON RESOURCE PROOF");
-  drawText(display, 4, 24, "COMPACT 12x12");
-  drawText(display, 4, 82, "LARGE 30x30");
+  drawText(display, 4, 24, "COMPACT 24x24");
+  drawText(display, 4, 92, "LARGE 30x30");
 
   for (uint8_t i = 0; i < menuActionCount(); ++i) {
     const int16_t x = 4 + i * 63;
     const uint8_t iconIndex = menuIconAt(i);
-    display.drawRect(x, 38, 56, 36, EPD_BLACK);
+    display.drawRect(x, 38, 56, 48, EPD_BLACK);
     drawText(display, x + 2, 40, menuLabelAt(i));
-    drawMenuIcon(display, kEchoPetResources64, iconIndex, x + 22, 58,
+    drawMenuIcon(display, kEchoPetResources64, iconIndex, x + 16, 58,
                  EPD_BLACK);
 
-    display.drawRect(x, 96, 56, 58, EPD_BLACK);
-    drawText(display, x + 2, 98, menuLabelAt(i));
-    drawMenuIcon(display, kEchoPetResources128, iconIndex, x + 13, 118,
+    display.drawRect(x, 104, 56, 58, EPD_BLACK);
+    drawText(display, x + 2, 106, menuLabelAt(i));
+    drawMenuIcon(display, kEchoPetResources128, iconIndex, x + 13, 126,
                  EPD_BLACK);
   }
 }

@@ -33,8 +33,11 @@ Required behavior:
 - The scene starts with the pet on the left/middle and the poop on the right.
 - A vertical black/white checker clear-wall appears at the right side.
 - The wall travels right-to-left across the playfield.
-- The pet and poop are removed together by the wall; neither object remains as
-  a separate final success icon.
+- The pet and poop stay at their scene positions until the wall reaches them;
+  they are clipped/erased by the wall, not pushed toward each other or moved
+  independently.
+- The pet and poop are removed by the wall; neither object remains as a
+  separate final success icon.
 - The wall continues off the left side, leaving the center playfield empty.
 - Compact 128x64 mode must not add center text such as `CLEAN`, `OK`, button
   hints, or completion labels.
@@ -43,6 +46,7 @@ Forbidden substitutions:
 
 - Do not use a broom, brush, hand, sparkle-only cleanup, or generic water wave.
 - Do not clean only the poop while leaving the pet standing still.
+- Do not translate the poop toward the pet or make it look swallowed/eaten.
 - Do not end with a happy/heart completion frame as the main cleanup contract.
 - Do not make the animation a one-frame state change.
 
@@ -53,6 +57,8 @@ Firmware projection:
   low hygiene alone is not allowed to masquerade as poop cleanup.
 - The UI captures the pre-cleanup `messCount` for the scene before the model
   clears it, so poop remains visible until the clear-wall removes it.
+- The cleanup wall is the only moving cleaner; pet and poop scene coordinates
+  remain fixed while the wall clips pixels from right to left.
 - On SSD1306/GAT562, `kToiletSceneAnimationMs` is 100 ms, producing a visible
   multi-second cleanup instead of a flash.
 - On e-paper targets, scene pacing remains slower to avoid over-refreshing.

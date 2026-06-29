@@ -38,21 +38,21 @@ C/C++ bitmap arrays and composed frame tables.
 - `generated/fixed_menu_official_tiles_manifest.json`
   - Crop-coordinate manifest for regenerating the per-slot reference tiles.
 - `generated/fixed_menu_generated_source_contact_sheet.png`
-  - Preview of the 12x12 and 30x30 source bitmaps generated from the official
+  - Preview of the 24x24 and 30x30 source bitmaps generated from the official
     per-slot tile crops.
 - `generated/fixed_menu_compact_official_source_contact_sheet.png`
-  - Preview of the compact 12x12 fixed-menu rows and their analysis-only
+  - Preview of the compact 24x24 fixed-menu rows and their analysis-only
     official source route. The compact rows are derived from the same official
     device/menu tile crops as the 30x30 rows so both sizes keep one visual
     concept per slot.
 - `generated/fixed_menu_source_policy_contact_sheet.png`
-  - Per-slot proof that the compact 12x12 and large 30x30 fixed menu icons
+  - Per-slot proof that the compact 24x24 and large 30x30 fixed menu icons
     share the same official device/menu tile source.
 - `generated/fixed_menu_source_policy.json`
   - Machine-readable source-policy record for the ten fixed menu slots.
 - `generated/fixed_menu_official_alignment_proof.png`
   - Side-by-side proof comparing official fixed-menu references with the current
-    EchoPet C/C++ source icons and the unified 12x12/30x30 source policy.
+    EchoPet C/C++ source icons and the unified 24x24/30x30 source policy.
 - `generated/catalog_item_official_assets_contact_sheet.png`
   - Official item-section image/GIF samples from the Connection how-to page.
 - `generated/catalog_item_official_pc_gif_frames.png`
@@ -138,7 +138,7 @@ C/C++ bitmap arrays and composed frame tables.
     instruction-manual page crop.
 - `generate_menu_icon_source_arrays.py`
   - Converts analysis-only fixed-menu references into
-    `EchoPetMenuIconResources.cpp`. Both the compact 12x12 rows and large
+    `EchoPetMenuIconResources.cpp`. Both the compact 24x24 rows and large
     30x30 rows use the same official device/menu tile crop for each slot. The
     generated firmware source remains C/C++ byte arrays, not runtime image
     files.

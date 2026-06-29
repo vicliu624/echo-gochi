@@ -5,9 +5,9 @@
 namespace echopet {
 
 constexpr uint8_t kEchoPetMenuIconCount = 10;
-constexpr uint8_t kEchoPetMenuIconCompactSide = 12;
+constexpr uint8_t kEchoPetMenuIconCompactSide = 24;
 constexpr uint8_t kEchoPetMenuIconLargeSide = 30;
-constexpr uint8_t kEchoPetMenuIconCompactBytes = 24;
+constexpr uint8_t kEchoPetMenuIconCompactBytes = 72;
 constexpr uint8_t kEchoPetMenuIconLargeBytes = 120;
 
 struct EchoPetMenuIconSemantic {

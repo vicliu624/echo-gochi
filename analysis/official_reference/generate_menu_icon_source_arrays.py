@@ -150,7 +150,7 @@ def compact_source_contact_sheet(slots: list[dict],
     draw = ImageDraw.Draw(sheet)
     draw.text(
         (4, 4),
-        "COMPACT FIXED MENU OFFICIAL-SOURCE 12x12 ROWS",
+        "COMPACT FIXED MENU OFFICIAL-SOURCE 24x24 ROWS",
         fill="black",
     )
     for i, slot in enumerate(slots):
@@ -171,7 +171,7 @@ def source_policy_contact_sheet(slots: list[dict], compact: list[Image.Image],
     draw = ImageDraw.Draw(sheet)
     draw.text(
         (4, 4),
-        "FIXED MENU SOURCE POLICY: 12x12 AND 30x30 SHARE DEVICE-TILE SOURCE",
+        "FIXED MENU SOURCE POLICY: 24x24 AND 30x30 SHARE DEVICE-TILE SOURCE",
         fill="black",
     )
     policy_rows: list[dict[str, object]] = []
@@ -185,7 +185,7 @@ def source_policy_contact_sheet(slots: list[dict], compact: list[Image.Image],
         large_icon = large[i].resize((72, 72), Image.Resampling.NEAREST).convert("RGB")
         sheet.paste(compact_icon, (x + 8, 86))
         sheet.paste(large_icon, (x + 46, 118))
-        draw.text((x + 8, 144), "12", fill="black")
+        draw.text((x + 8, 144), "24", fill="black")
         draw.text((x + 46, 194), "30", fill="black")
         policy_rows.append(
             {
@@ -214,7 +214,7 @@ def source_policy_contact_sheet(slots: list[dict], compact: list[Image.Image],
                 ),
                 "policy": (
                     "The EchoPet side rails model the external fixed menu icon "
-                    "semantics, so compact 12x12 and large 30x30 icons are "
+                    "semantics, so compact 24x24 and large 30x30 icons are "
                     "derived from the same official device/menu tile per slot."
                 ),
                 "slots": policy_rows,
@@ -232,10 +232,10 @@ def main() -> None:
     large_images: list[Image.Image] = []
     for slot in slots:
         source = Image.open(TILE_DIR / Path(slot["bw_tile"]).name).convert("RGB")
-        compact_images.append(fit_source_to_canvas(source, 12, 11))
+        compact_images.append(fit_source_to_canvas(source, 24, 22))
         large_images.append(fit_source_to_canvas(source, 30, 24))
 
-    compact_bytes = [pack_bitmap(image, 12) for image in compact_images]
+    compact_bytes = [pack_bitmap(image, 24) for image in compact_images]
     large_bytes = [pack_bitmap(image, 30) for image in large_images]
 
     lines: list[str] = [

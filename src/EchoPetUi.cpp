@@ -10,19 +10,19 @@ namespace {
 
 constexpr Action kConnectMenuActions[] = {
     Action::kHealth,     Action::kMeal,       Action::kToilet,
-    Action::kLinkGame,   Action::kHealth,     Action::kDiscipline,
-    Action::kMedicine,   Action::kLights,     Action::kFriendList,
-    Action::kGame,
+    Action::kGame,       Action::kLinkGame,   Action::kHealth,
+    Action::kDiscipline, Action::kMedicine,   Action::kLights,
+    Action::kFriendList,
 };
 
 constexpr uint8_t kConnectMenuIcons[] = {
-    0, 1, 2, 3, 4,
-    5, 6, 7, 8, 9,
+    0, 1, 2, 9, 3,
+    4, 5, 6, 7, 8,
 };
 
 const char* const kConnectMenuLabels[] = {
-    "HEALTH", "FOOD", "TOILET", "CONNECT", "CARE",
-    "TRAIN", "MEDS", "LIGHTS", "FRIEND", "GAME",
+    "HEALTH", "FOOD", "TOILET", "GAME", "CONNECT",
+    "CARE", "TRAIN", "MEDS", "LIGHTS", "FRIEND",
 };
 
 constexpr uint8_t kConnectMenuActionCount =

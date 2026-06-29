@@ -89,11 +89,11 @@ def main() -> None:
     paste_labeled(sheet, draw, official_tiles, 8, 770, 1264, 150,
                   "official manual tile crops: one reference tile per fixed menu slot")
     paste_labeled(sheet, draw, source_policy, 8, 928, 1264, 150,
-                  "source policy: compact 12x12 and large 30x30 share the same official device-tile source")
+                  "source policy: compact 24x24 and large 30x30 share the same official device-tile source")
     paste_labeled(sheet, draw, compact_sources, 8, 1086, 1264, 150,
-                  "compact 12x12 official-source rows: derived from the same device tiles as 30x30")
+                  "compact 24x24 official-source rows: derived from the same device tiles as 30x30")
     paste_labeled(sheet, draw, current, 8, 1244, 1264, 180,
-                  "current EchoPet C/C++ source icons: compact 12x12 and large 30x30")
+                  "current EchoPet C/C++ source icons: compact 24x24 and large 30x30")
 
     out = GENERATED / "fixed_menu_official_alignment_proof.png"
     sheet.save(out)
@@ -102,7 +102,7 @@ def main() -> None:
         "verdict": (
             "Fixed menu icons are source-side aligned: the ten semantic slots "
             "are derived from analysis-only official device tile crops, both "
-            "12x12 and 30x30 rows share the same per-slot source policy, and "
+            "24x24 and 30x30 rows share the same per-slot source policy, and "
             "runtime firmware stores only C/C++ bitmap bytes."
         ),
         "source": {

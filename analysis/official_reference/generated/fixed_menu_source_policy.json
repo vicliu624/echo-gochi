@@ -1,7 +1,7 @@
 {
   "source_manifest": "generated\\fixed_menu_official_tiles_manifest.json",
   "runtime_boundary": "Official fixed-menu references are analysis-only. Runtime icons are C/C++ byte arrays in EchoPetMenuIconResources.cpp.",
-  "policy": "The EchoPet side rails model the external fixed menu icon semantics, so compact 12x12 and large 30x30 icons are derived from the same official device/menu tile per slot.",
+  "policy": "The EchoPet side rails model the external fixed menu icon semantics, so compact 24x24 and large 30x30 icons are derived from the same official device/menu tile per slot.",
   "slots": [
     {
       "index": 0,

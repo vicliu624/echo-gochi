@@ -30,7 +30,9 @@ closed yet.
 - Official/reference raster files may exist only under `analysis/`, including
   `analysis\echopet_reference_resources`, as proof and comparison material.
 - Two supported layout families are still part of the requirement:
-  - 128x64 compact: center 64x64 main scene, left/right 32x64 fixed menu bands.
+  - 128x64 compact: a 32x64 left rolling menu rail with 24x24 fixed-menu
+    icons and a triangle selection arrow, plus a 96x64 main scene. It does not
+    draw a right fixed-menu rail on GAT562.
   - 176x192 hardware intent: center 128x128 main scene, 32-pixel side menu
     bands, with top/bottom utility lines kept to one line each.
 
@@ -117,12 +119,42 @@ Latest verified result:
 
 | Environment | Status | RAM | Flash |
 | --- | --- | ---: | ---: |
-| `EchoPet` | PASS | 15556 / 248832, 6.3% | 213924 / 815104, 26.2% |
-| `EchoPet_LoRa` | PASS | 16528 / 248832, 6.6% | 247064 / 815104, 30.3% |
-| `EchoPet_GAT562_LoRa` | PASS | 13080 / 248832, 5.3% | 246400 / 815104, 30.2% |
+| `EchoPet` | PASS | 15556 / 248832, 6.3% | 215236 / 815104, 26.4% |
+| `EchoPet_LoRa` | PASS | 16528 / 248832, 6.6% | 248360 / 815104, 30.5% |
+| `EchoPet_GAT562_LoRa` | PASS | 13080 / 248832, 5.3% | 247712 / 815104, 30.4% |
 
 Latest GAT562 flash result:
 
+- 2026-06-29 22:43 +08:00: `EchoPet_GAT562_LoRa` was rebuilt after the user
+  clarified that Tamagotchi Connection V3 assets on a 128x64 screen should not
+  be compressed and that the GAT562 menu should be a single left-side scrolling
+  menu, not left/right rails. Compact fixed-menu resources are now 24x24 C++
+  bitmap rows derived from the official fixed-menu tile route, and the compact
+  layout draws only a 32-pixel left rail with two visible 24x24 icons plus a
+  triangle selector. The 128x64 main scene expands to 96x64. Menu order is now
+  HEALTH, FOOD, TOILET, GAME, CONNECT, CARE, TRAIN, MEDS, LIGHTS, FRIEND, so
+  the first five compact menu items match the official left-side semantics the
+  user supplied: gauge, chef-face, toilet, baseball/bat, signal heart. Compact
+  simulator proofs were regenerated at
+  `analysis\screen_simulator\out\compact_home_x4.png` and
+  `analysis\screen_simulator\out\fixed_menu_icons_proof_x2.png`. Build sizes:
+  `EchoPet` RAM 15556/248832 Flash 215236/815104; `EchoPet_LoRa` RAM
+  16528/248832 Flash 248360/815104; `EchoPet_GAT562_LoRa` RAM 13080/248832
+  Flash 247712/815104. Flash is BLOCKED: serial and USB scans still show no
+  GAT562 `VID_239A` application or bootloader port, only COM1 plus Bluetooth
+  COM3/COM4 and unrelated USB devices. Replug/reset GAT562, then flash
+  `.pio\build\EchoPet_GAT562_LoRa\firmware.zip`.
+- 2026-06-29 22:16 +08:00: `EchoPet_GAT562_LoRa` was rebuilt after the user
+  reported that the cleanup still looked like the poop was eaten. The fix keeps
+  pet and poop at fixed scene coordinates and lets only the right-to-left
+  checker wall move; objects are clipped/erased when the wall reaches them
+  instead of sliding toward each other. The compact proof at
+  `analysis\screen_simulator\out\compact_toilet_cleanup_wall_contact_x4.png`
+  was regenerated with the static-object wall sequence. Build size: RAM
+  13080/248832, Flash 246432/815104. Flash is BLOCKED: automatic upload chose
+  Bluetooth `COM4` and failed, and subsequent serial/USB scans showed no
+  GAT562 `VID_239A` application or bootloader port. Replug/reset GAT562, then
+  flash `.pio\build\EchoPet_GAT562_LoRa\firmware.zip`.
 - 2026-06-29 18:14 +08:00: `EchoPet_GAT562_LoRa` was rebuilt and installed
   after the user reported that poop still disappeared instantly. The fix
   captures the pre-cleanup `messCount` into the Toilet scene UI state before
@@ -280,13 +312,20 @@ Current summary from the latest generated reports:
 - GAT562 compact main scenes intentionally omit in-frame page labels, compact
   control hints, and compact action-state labels so the center area stays close
   to the original Tamagotchi-style toy screen rather than becoming a help UI.
+- GAT562 fixed-menu presentation is now a single left-side rolling menu rail:
+  two 24x24 fixed-menu icons are visible at a time, the current selection is
+  marked by a triangle arrow, and the right side is reserved for the expanded
+  96x64 main scene. The first five menu slots are gauge, chef-face, toilet,
+  baseball/bat, and signal-heart semantics.
 - GAT562 compact home-scene catalog idle characters use the compact 24x24
   scale. The 128x64 resource family is still responsible for selecting the
   small layout; the draw path must not re-expand the center character to 48x48.
 - The toilet cleanup scene now follows `CONNECT_ANIMATION_SPEC.md`: a
-  right-side vertical checker clear-wall travels right-to-left and removes pet
-  plus poop together. No broom, generic water wave, sparkle-only cleanup,
-  poop-only cleanup, happy/heart finish, or center prompt is used.
+  right-side vertical checker clear-wall travels right-to-left and erases pet
+  plus poop from right to left. Pet and poop remain at their scene coordinates
+  until clipped by the wall; no broom, generic water wave, eaten-poop motion,
+  sparkle-only cleanup, poop-only cleanup, happy/heart finish, or center prompt
+  is used.
 - GAT562 input projects the joystick into the same EchoPet A/B/C semantic
   events: left = select/A, up = confirm/B, right = cancel/C. The primary and
   secondary hardware buttons are kept as A/B fallbacks.
@@ -294,8 +333,8 @@ Current summary from the latest generated reports:
   and DIO3 TCXO voltage from `echopet_target_config.h` instead of the
   T-Echo-Lite RF switch pins.
 - The LoRa build includes `RadioLib`.
-- Fixed menu icons are now generated as C++ arrays with 12x12 and 30x30
-  routes sharing the same menu semantics.
+- Fixed menu icons are now generated as C++ arrays with compact 24x24 and large
+  30x30 routes sharing the same menu semantics.
 - Character visual rows are 50 official-derived runtime C++ rows:
   - 16x16 portrait rows for friend/family/catalog surfaces.
   - 24x24 idle rows for main-scene character rendering.

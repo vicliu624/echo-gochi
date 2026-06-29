@@ -85,7 +85,7 @@
     "source_policy_contact_sheet": "generated/fixed_menu_source_policy_contact_sheet.png",
     "source_policy": "generated/fixed_menu_source_policy.json",
     "official_tile_manifest": "generated/fixed_menu_official_tiles_manifest.json",
-    "reason": "Current EchoPet source icons are C++ bitmap rows generated from official fixed-menu references. The compact 12x12 rows and large 30x30 rows now both use the same official device/menu tile crop per slot, recorded in a source-policy proof and JSON. Final human acceptance for recognizability remains open."
+    "reason": "Current EchoPet source icons are C++ bitmap rows generated from official fixed-menu references. The compact 24x24 rows and large 30x30 rows now both use the same official device/menu tile crop per slot, recorded in a source-policy proof and JSON. Final human acceptance for recognizability remains open."
   },
   "catalog_item_alignment": {
     "status": "OPEN",

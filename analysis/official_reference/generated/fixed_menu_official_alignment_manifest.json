@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "verdict": "Fixed menu icons are source-side aligned: the ten semantic slots are derived from analysis-only official device tile crops, both 12x12 and 30x30 rows share the same per-slot source policy, and runtime firmware stores only C/C++ bitmap bytes.",
+  "verdict": "Fixed menu icons are source-side aligned: the ten semantic slots are derived from analysis-only official device tile crops, both 24x24 and 30x30 rows share the same per-slot source policy, and runtime firmware stores only C/C++ bitmap bytes.",
   "source": {
     "manual_pdf": "raw/manuals/bandai_connection_2024_instruction_manual.pdf",
     "manual_page": "generated/manual_pages/page-1.png",
