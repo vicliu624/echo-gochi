@@ -1,0 +1,797 @@
+{
+  "generated_by": "analysis/source_blocker_matrix/generate_source_blocker_matrix.py",
+  "source_files": [
+    "CONNECT_REMAINING_BACKLOG.md",
+    "CONNECT_SOURCE_LEDGER.md"
+  ],
+  "row_count": 21,
+  "status_class_counts": {
+    "CODED": 3,
+    "CODED-PARTIAL": 1,
+    "CODED-SPEC": 1,
+    "CODED-SUBSTITUTE": 16
+  },
+  "domain_counts": {
+    "care_timing": 5,
+    "death_passaway": 3,
+    "game_rewards": 2,
+    "growth_family": 2,
+    "hardware": 1,
+    "medicine_sickness": 2,
+    "shop_catalog": 2,
+    "source_data": 1,
+    "visual_art": 3
+  },
+  "blocker_type_counts": {
+    "exact_source": 9,
+    "final_art": 2,
+    "hardware_only": 1,
+    "mixed_art_hardware": 1,
+    "mixed_source_art": 1,
+    "mixed_source_hardware": 6,
+    "multi_source": 1
+  },
+  "source_ids": {
+    "OFF-HOWTO": {
+      "source": "`https://tamagotchi-official.com/gb/series/connection/howto/`",
+      "scope": "Official feature scope: care menus, 50+ characters, seven standard games, 150+ items, password, shop secret-code gesture, IR connection, Love/next generation.",
+      "level": "A",
+      "notes": "Confirms target surface and the shop 1+3 A secret-code gesture: press A at the shop, then press A quickly three more times until the owner is surprised. Does not provide exact growth math or full reward tables. The official page warns against unauthorized reproduction/distribution of website images/text/data, so firmware may use this as reference metadata only unless rights-cleared assets are supplied."
+    },
+    "OFF-CHAR": {
+      "source": "`https://tamagotchi-official.com/gb/series/connection/character/`",
+      "scope": "Official character presentation and visual references.",
+      "level": "A",
+      "notes": "Used for names, page IDs, visual targets, proof sheets, compact 16x16 portrait rows, and 24x24 idle/main-scene C/C++ character bitmap rows. Official raster files remain analysis-only references; firmware does not load PNG/JPG/GIF resources at runtime."
+    },
+    "OFF-MANUAL": {
+      "source": "`https://tamagotchi-official.com/manual/toy/connection/` and English PDF",
+      "scope": "Official controls and manual flow.",
+      "level": "A",
+      "notes": "Used for menu/control behavior."
+    },
+    "OFF-NEWS": {
+      "source": "`https://tamagotchi-official.com/gb/series/connection/news/?c=update`",
+      "scope": "Official password item announcements.",
+      "level": "A",
+      "notes": "Used for released password-item flow and item names."
+    },
+    "WIKI-2024": {
+      "source": "`https://tamagotchi.fandom.com/wiki/Tamagotchi_Connection_(2024)`",
+      "scope": "2024 feature summary, shop, games, inventory caps, standard-game top-prize table, senior game availability.",
+      "level": "B",
+      "notes": "Useful when official manual is less structured."
+    },
+    "WIKI-ITEM-2024": {
+      "source": "`https://tamagotchi.fandom.com/wiki/Tamagotchi_Connection_(2024)/Item_list`",
+      "scope": "2024 food/item names, shop resets, storage caps, prices, secret-code items, use restrictions, and item-list liked-by-all food notes.",
+      "level": "B",
+      "notes": "Used for explicit catalog overrides and Yogurt/Steak liked-by-all behavior; not official art."
+    },
+    "WIKI-CODE-2024": {
+      "source": "`https://tamagotchi.fandom.com/wiki/Tamagotchi_Connection_(2024)/Password_and_Secret_Codes_list`",
+      "scope": "2024 password and shop-secret-code values, prices, and duplicate notes.",
+      "level": "B",
+      "notes": "Used for seven shop A/B/C secret-code values."
+    },
+    "WIKI-CHAR-2024": {
+      "source": "`https://tamagotchi.fandom.com/wiki/Tamagotchi_Connection_(2024)/Character_list`",
+      "scope": "Character list, care tiers, care-mistake categories, tier-to-character mappings.",
+      "level": "B",
+      "notes": "Main structured growth-table source for now."
+    },
+    "WIKI-KING-2024": {
+      "source": "`https://tamagotchi.fandom.com/wiki/Gotchi_King` and `https://tamagotchi.fandom.com/wiki/Super_Unchikun`",
+      "scope": "2024 King donation and Super Unchikun poop-cleaning behavior.",
+      "level": "B",
+      "notes": "Used for the 1000 Gotchi Point donation threshold, one-generation cleaner duration, and automatic poop cleanup."
+    },
+    "WIKI-DEATH": {
+      "source": "`https://tamagotchi.fandom.com/wiki/Death`",
+      "scope": "General death/starvation/sickness rules across releases, including the Connection-era direction that repeated sickness within a growth stage can lead to death.",
+      "level": "B/C",
+      "notes": "Used only to constrain substitute death behavior: Connection-era deaths are tied to neglect/sickness rather than old age alone. Firmware now tracks stage-local sickness count and passes away on the fourth sickness in one stage; exact 2024 thresholds and wording still need proof."
+    },
+    "WIKI-SICKNESS": {
+      "source": "`https://tamagotchi.fandom.com/wiki/Sickness`",
+      "scope": "General sickness/toothache behavior across releases.",
+      "level": "B/C",
+      "notes": "Used to replace per-snack random toothache with the sourced fifteen-consecutive-snack trigger. Firmware now persists a 60 pet-minute substitute \"short period\" window; exact 2024 official short-period length remains unconfirmed."
+    },
+    "WIKI-CARE": {
+      "source": "`https://tamagotchi.fandom.com/wiki/Care`",
+      "scope": "Hungry/Happy care concepts, including hidden Hungry/Happy hearts on vintage/Connection-era releases.",
+      "level": "B/C",
+      "notes": "Used for the visible four-heart plus two-hidden-heart internal meter model. Exact 2024 rerelease numeric decay windows still need confirmation."
+    },
+    "WIKI-GOTCHI-POINTS": {
+      "source": "`https://tamagotchi.fandom.com/wiki/Gotchi_Points`",
+      "scope": "Gotchi Point wallet behavior by Connection generation.",
+      "level": "B",
+      "notes": "Used for the V2/V3 and 2024 rerelease wallet cap of 9,999 Gotchi Points."
+    },
+    "WIKI-FAQ-2024": {
+      "source": "`https://tamagotchi.fandom.com/wiki/User_blog:NightBladeSequel/Tamagotchi_Connection_2024_FAQ`",
+      "scope": "FAQ on care mistakes, life cycle, marriage/baby, pause.",
+      "level": "B",
+      "notes": "Cross-check source for growth/care behavior."
+    },
+    "GG-GROWTH-2024": {
+      "source": "`https://gotchi-garden.blogspot.com/p/connection-20th-anniversary-character.html`",
+      "scope": "Growth guide, care-mistake categories, tiers, lifespan.",
+      "level": "B",
+      "notes": "Cross-checks the wiki growth rules; notes sources."
+    },
+    "GG-SPECIAL-2024": {
+      "source": "`https://gotchi-garden.blogspot.com/p/tamagotchi-connection-20th-anniversary.html`",
+      "scope": "Shop A/B/C special-code entry instructions and seven code values.",
+      "level": "B",
+      "notes": "Cross-check for `WIKI-CODE-2024`."
+    },
+    "TAMA-PALACE-PAUSE-2024": {
+      "source": "`https://tamapalace.tumblr.com/post/755897449829351424/how-to-pause-a-tamagotchi-connection-20th`",
+      "scope": "2024 Connection pause behavior: no older-model pause feature; clock-set trick is the pause method; growth is paused while waiting for time set.",
+      "level": "B",
+      "notes": "Used as a provisional behavior source because the official visual manual is image-only and less extractable."
+    },
+    "CURL-V1-BASICS": {
+      "source": "`https://curlour.neocities.org/en/tmgc/plus/bases`",
+      "scope": "Legacy Plus/V1 button and clock/pause notes: B switches clock mode; A+C toggles sound in Tamagotchi mode; A+B pause applies only to American Connection, not Connexion/Plus.",
+      "level": "C",
+      "notes": "Helps keep regional/version differences explicit; not treated as the 2024 source of truth."
+    },
+    "CURL-2024-EVENTS": {
+      "source": "`https://curlour.neocities.org/en/tmgc/cone2/eventos`",
+      "scope": "Connection 2024 seasonal/date events, birthday, New Year, winter, Easter, back-to-school, Halloween, Thanksgiving, Christmas, Santaclautchi timing, and seasonal shop-food dates.",
+      "level": "B/C",
+      "notes": "Used for visible `CalendarEventRule` notices, real month/day ranges, and birthday/holiday shop substitutions. The source is community-maintained, so exact art/cutscene wording still needs official or hardware proof."
+    },
+    "CURL-ENTAMA-CARE": {
+      "source": "`https://curlour.neocities.org/en/tmgc/entama/requirements`",
+      "scope": "Cross-version Entama care timing table: Hungry, Happy, and poop periods by life stage.",
+      "level": "C",
+      "notes": "Used only as a low-confidence substitute for stage-shaped care timing while exact Connection 2024 decay/poop tables are unavailable."
+    },
+    "TAMATALK-BUMP-V3": {
+      "source": "`https://www.tamatalk.com/threads/guide-to-ver-3-bump-heading.56907/` and `https://imgur.com/a/eim3rkW`",
+      "scope": "V3 Bump/Heading guide and Bump score chart: 0-8 rounds won by 0-50, 51-75, 76-90, and 91-99 lb weight bands.",
+      "level": "B/C",
+      "notes": "Used to replace generic Bump reward scaling with an explicit weight-band score chart. The chart is community-sourced and still needs final 2024 hardware confirmation."
+    },
+    "TAMATALK-MEMORY-V3": {
+      "source": "`https://www.tamatalk.com/threads/guide-for-v3-games.53259/`",
+      "scope": "V3 Memory and Sprint play notes.",
+      "level": "C",
+      "notes": "Kept as a historical cross-check only. The 2024-specific `WIKI-2024` game notes now override it for Memory/Sprint round shape."
+    },
+    "TAMATOWN-V3-GROWTH": {
+      "source": "`https://tamatown.com/guides/tamagotchi-connection-v3-growth-chart/`",
+      "scope": "V3 growth chart provenance.",
+      "level": "C",
+      "notes": "Image-centric; useful as reference but not directly parseable yet."
+    },
+    "LOCAL-GIF": {
+      "source": "`C:\\Users\\vicliu\\Projects\\pet`",
+      "scope": "Local concept animation phases.",
+      "level": "A for user intent, not official behavior",
+      "notes": "Drives scene contracts and visual motion expectations."
+    },
+    "HW-TECHO": {
+      "source": "`T_ECHO_LITE_HARDWARE_ACCEPTANCE.md`",
+      "scope": "T-Echo-Lite observation.",
+      "level": "A",
+      "notes": "Required for refresh, controls, sprite proof, and dual-device acceptance."
+    },
+    "CODE-CURRENT": {
+      "source": "Current EchoPet code",
+      "scope": "Existing implementation facts.",
+      "level": "D",
+      "notes": "Used only to list mismatches and migration work."
+    }
+  },
+  "rows": [
+    {
+      "id": "SRC-001",
+      "backlog_id": "P1.02",
+      "section": "P1 Care Action Flow Completion",
+      "backlog_line": 66,
+      "task": "Make toilet mess timing source-backed.",
+      "gate": "SPEC/DATA",
+      "status_class": "CODED-SUBSTITUTE",
+      "domain": "care_timing",
+      "blocker_type": "exact_source",
+      "current_status": "CODED-SUBSTITUTE: general poo stacking/sickness and Super Unchikun auto-clean behavior are sourced and coded; poop interval now uses a stage-shaped cross-version table from `CURL-ENTAMA-CARE` instead of one fixed period: Baby 6, Child 80, Teen 100, Adult/Parent 140, and Elder 160 pet-minutes. Exact Connection 2024 poop interval by life stage remains missing",
+      "open_need": "Exact Connection 2024 poop interval by life stage.",
+      "evidence_class": "official table/manual, cross-checked source, or hardware sample with exact value",
+      "confidence_gate": "do not mark final until the exact external value is sourced; current substitute must remain labeled substitute",
+      "acceptance_gate": "do not mark final until the exact external value is sourced; current substitute must remain labeled substitute",
+      "implementation_hints": [
+        "kStageCareTimingRules",
+        "kStatDecayRules",
+        "checkPoop"
+      ],
+      "replacement_action": "replace stage care timing/stat decay rows",
+      "candidate_source_ids": [
+        "OFF-MANUAL",
+        "WIKI-CARE",
+        "WIKI-FAQ-2024",
+        "CURL-ENTAMA-CARE",
+        "HW-TECHO"
+      ]
+    },
+    {
+      "id": "SRC-002",
+      "backlog_id": "P1.04",
+      "section": "P1 Care Action Flow Completion",
+      "backlog_line": 68,
+      "task": "Make medicine dosage/refusal/cure probability source-backed.",
+      "gate": "SPEC/DATA",
+      "status_class": "CODED-SUBSTITUTE",
+      "domain": "medicine_sickness",
+      "blocker_type": "exact_source",
+      "current_status": "CODED-SUBSTITUTE: official/manual sources cover skull/tooth medicine use, possible multi-dose sickness, no-sickness refusal, and sickness refusal of food/games/items; firmware now refuses meal/snack/game/item/catalog-use while sick/toothache with `SICK` notice, uses one-dose toothache cure and possible multi-dose sickness cure, persists a 60 pet-minute substitute sweet-snack short-period window, persists stage-local sickness count in save v10, escalates missed toothache-only care to sickness before care-mistake counting, can pass away on the fourth sickness in one growth stage, and centralizes low-hygiene/mess/high-weight/sweet-snack sickness risk in explicit `SicknessTriggerRule` rows; exact sickness probability, official toothache short-period length, and cure/timing probabilities remain substitute",
+      "open_need": "Exact sickness probability, official toothache short-period length, and medicine cure/timing probabilities.",
+      "evidence_class": "official table/manual, cross-checked source, or hardware sample with exact value",
+      "confidence_gate": "do not mark final until the exact external value is sourced; current substitute must remain labeled substitute",
+      "acceptance_gate": "do not mark final until the exact external value is sourced; current substitute must remain labeled substitute",
+      "implementation_hints": [
+        "kSicknessTriggerRules",
+        "kSweetSnackToothacheStreak",
+        "kSweetSnackShortPeriodMinutes",
+        "stageSicknesses_"
+      ],
+      "replacement_action": "replace sickness/toothache probability or duration rows",
+      "candidate_source_ids": [
+        "OFF-MANUAL",
+        "WIKI-SICKNESS",
+        "WIKI-DEATH",
+        "WIKI-FAQ-2024",
+        "HW-TECHO"
+      ]
+    },
+    {
+      "id": "SRC-003",
+      "backlog_id": "P2.06",
+      "section": "P2 Core Pet Model",
+      "backlog_line": 84,
+      "task": "Specify death/pass-away/runaway thresholds.",
+      "gate": "SPEC",
+      "status_class": "CODED-SUBSTITUTE",
+      "domain": "death_passaway",
+      "blocker_type": "exact_source",
+      "current_status": "CODED-SUBSTITUTE: source ledger records no old-age death for Connection 2024 seniors, neglect/sickness as the death direction, and a Connection-era fourth-sickness-in-one-stage death rule; exact Grim Gotchi threshold remains missing",
+      "open_need": "Exact 2024 Grim/pass-away threshold and wording.",
+      "evidence_class": "official table/manual, cross-checked source, or hardware sample with exact value",
+      "confidence_gate": "do not mark final until the exact external value is sourced; current substitute must remain labeled substitute",
+      "acceptance_gate": "do not mark final until the exact external value is sourced; current substitute must remain labeled substitute",
+      "implementation_hints": [
+        "kPassAwayRules",
+        "stageSicknesses_"
+      ],
+      "replacement_action": "replace pass-away threshold rows and regenerate growth coverage",
+      "candidate_source_ids": [
+        "WIKI-DEATH",
+        "WIKI-FAQ-2024",
+        "GG-GROWTH-2024",
+        "HW-TECHO"
+      ]
+    },
+    {
+      "id": "SRC-004",
+      "backlog_id": "P2.07",
+      "section": "P2 Core Pet Model",
+      "backlog_line": 85,
+      "task": "Implement death/pass-away/runaway from sourced thresholds.",
+      "gate": "CODE/UI",
+      "status_class": "CODED-SUBSTITUTE",
+      "domain": "death_passaway",
+      "blocker_type": "exact_source",
+      "current_status": "CODED-SUBSTITUTE: elder pass-away no longer triggers from age/low friendship alone; it requires low friendship, accumulated care mistakes, and a currently low stat condition. Repeated sickness now uses a stage-local persisted counter and passes away at the fourth sickness in one growth stage",
+      "open_need": "Exact sourced pass-away thresholds to replace current elder, low-stat, and fourth-sickness substitute behavior.",
+      "evidence_class": "official table/manual, cross-checked source, or hardware sample with exact value",
+      "confidence_gate": "do not mark final until the exact external value is sourced; current substitute must remain labeled substitute",
+      "acceptance_gate": "do not mark final until the exact external value is sourced; current substitute must remain labeled substitute",
+      "implementation_hints": [
+        "checkDeath",
+        "kPassAwayRules",
+        "stageSicknesses_"
+      ],
+      "replacement_action": "replace pass-away threshold rows and regenerate growth coverage",
+      "candidate_source_ids": [
+        "WIKI-DEATH",
+        "WIKI-FAQ-2024",
+        "GG-GROWTH-2024",
+        "HW-TECHO"
+      ]
+    },
+    {
+      "id": "SRC-005",
+      "backlog_id": "P3.04",
+      "section": "P3 Food, Items, Shop, Password, Souvenir",
+      "backlog_line": 95,
+      "task": "Source shop stock/restock/price rules.",
+      "gate": "SPEC/DATA",
+      "status_class": "CODED-SUBSTITUTE",
+      "domain": "shop_catalog",
+      "blocker_type": "exact_source",
+      "current_status": "CODED-SUBSTITUTE: 4-slot stock mapping, explicit `ShopRestockWindow` rows for sourced 12 AM / 3 PM / 7 PM restock periods, date-source-backed birthday/holiday substitutions including Dec 23/24 Whole Cake plus Turkey in slots 0/1, explicit `ShopSaleRule` 50% sale pricing, and explicit `ShopVendorWindow` rows for Ojitchi 11 AM / 5 PM single-item cart are coded. Sale date frequency, exact seasonal collision priority, and exact cart availability duration remain substitute because current sources only say random sale dates and 11 AM / 5 PM visits.",
+      "open_need": "Exact sale date frequency, seasonal collision priority, and Ojitchi cart availability duration.",
+      "evidence_class": "official table/manual, cross-checked source, or hardware sample with exact value",
+      "confidence_gate": "do not mark final until the exact external value is sourced; current substitute must remain labeled substitute",
+      "acceptance_gate": "do not mark final until the exact external value is sourced; current substitute must remain labeled substitute",
+      "implementation_hints": [
+        "kShopRestockWindows",
+        "kShopSaleRules",
+        "kShopVendorWindows"
+      ],
+      "replacement_action": "replace shop/catalog rule rows and regenerate catalog/resource reports",
+      "candidate_source_ids": [
+        "OFF-HOWTO",
+        "OFF-NEWS",
+        "WIKI-2024",
+        "WIKI-ITEM-2024",
+        "WIKI-CODE-2024",
+        "GG-SPECIAL-2024",
+        "CURL-2024-EVENTS"
+      ]
+    },
+    {
+      "id": "SRC-006",
+      "backlog_id": "P4.02",
+      "section": "P4 Games",
+      "backlog_line": 109,
+      "task": "Source exact reward curves and stat effects.",
+      "gate": "SPEC/DATA",
+      "status_class": "CODED-SPEC",
+      "domain": "game_rewards",
+      "blocker_type": "exact_source",
+      "current_status": "CODED-SPEC: standard-game top Gotchi Point prizes are sourced from `WIKI-2024`; known-length games now use source-length round/score caps for Get/Bump/Flag/Heading/Memory/Sprint/Hoops; perfect-care reversal tests against the active per-game score cap; Flag fake-signal `WAIT` rounds are modeled as short prompts where pressing misses and waiting scores; Memory uses the sourced 20-pattern schedule with two final 8-arrow A/B/C patterns from the 2024 source pass; Bump uses the V3-style 0-8 round weight-band prize chart; game refusal and post-win weight loss now use a stage base-weight table instead of hunger/energy gates; Bump still uses heavier-weight power bias and Sprint uses lighter-weight tap/chance bias. Official low-score scaling, exact Bump/Sprint probability curves, and exact non-point stat effects still need exact tables",
+      "open_need": "Official low-score scaling, Bump/Sprint probability curves, and non-point stat effects.",
+      "evidence_class": "official table/manual, cross-checked source, or hardware sample with exact value",
+      "confidence_gate": "do not mark final until the exact external value is sourced",
+      "acceptance_gate": "do not mark final until the exact external value is sourced",
+      "implementation_hints": [
+        "kGameRewardRules",
+        "kBumpPrizeChart",
+        "kGamePacingRules"
+      ],
+      "replacement_action": "replace explicit reward/probability table rows and regenerate coverage",
+      "candidate_source_ids": [
+        "OFF-HOWTO",
+        "OFF-MANUAL",
+        "WIKI-2024",
+        "TAMATALK-BUMP-V3",
+        "TAMATALK-MEMORY-V3",
+        "HW-TECHO"
+      ]
+    },
+    {
+      "id": "SRC-007",
+      "backlog_id": "P7.02",
+      "section": "P7/P11 Visual And Resource Production",
+      "backlog_line": 152,
+      "task": "Build 150+ item manifest with source IDs and icon/use animation.",
+      "gate": "DATA",
+      "status_class": "CODED-PARTIAL",
+      "domain": "visual_art",
+      "blocker_type": "final_art",
+      "current_status": "CODED-PARTIAL: 160 catalog rows now expose kind/behavior/price/source/use-scene plus a stable low-resource `visualTraits` byte consumed by catalog previews and use scenes; 160 explicit C++ preview bitmap rows exist; 12 unambiguous non-souvenir item rows have official-source item-icon overrides (PENCIL 48/112, CAP 58/122, SHOVEL 54/118, BALL 60, BALLOON 56/63/120, TRUMPET 84/141); the catalog item official-reference proof now includes a 152-row semantic-status sheet; 64 souvenir rows have per-memory C++ source bitmaps plus an official semantic proof manifest, with TRUMPET and BALL PLAY generated from unambiguous official item-icon crops; `analysis/resource_replacement_manifest/` now exposes JSON/CSV row-local replacement contracts for all 160 catalog rows and 64 souvenir rows, leaving 148 catalog rows and 62 souvenir rows needing accepted final art",
+      "open_need": "Accepted final art for 148 catalog rows and 62 souvenir rows.",
+      "evidence_class": "rights-cleared C++ bitmap replacement row or explicit user acceptance",
+      "confidence_gate": "do not mark final until replacement art is accepted; current partial row must remain open",
+      "acceptance_gate": "do not mark final until replacement art is accepted; current partial row must remain open",
+      "implementation_hints": [
+        "kCatalogEntryBitmaps",
+        "kSouvenirMemoryBitmaps",
+        "catalog_art_drawing_spec"
+      ],
+      "replacement_action": "replace C++ bitmap rows or mark user-accepted final art in the manifest",
+      "candidate_source_ids": [
+        "OFF-HOWTO",
+        "OFF-CHAR",
+        "LOCAL-GIF",
+        "resource_drawing_spec",
+        "user-accepted replacement pack"
+      ]
+    },
+    {
+      "id": "SRC-008",
+      "backlog_id": "P7.04",
+      "section": "P7/P11 Visual And Resource Production",
+      "backlog_line": 154,
+      "task": "Add missing hatch/crack/egg frames.",
+      "gate": "DATA/CODE/UI",
+      "status_class": "CODED",
+      "domain": "visual_art",
+      "blocker_type": "mixed_art_hardware",
+      "current_status": "CODED: egg idle face, low-resource crack frames, and hatch frame are composited inside the shell; exact official-look final art and hardware proof remain open",
+      "open_need": "Accepted official-look egg/crack/hatch final art plus hardware proof.",
+      "evidence_class": "accepted final art plus T-Echo-Lite readability/refresh proof",
+      "confidence_gate": "do not mark final until both final art and hardware evidence exist",
+      "acceptance_gate": "do not mark final until both final art and hardware evidence exist",
+      "implementation_hints": [
+        "kEgg0",
+        "kEggCrack0",
+        "kEggHatch"
+      ],
+      "replacement_action": "replace C++ bitmap rows or mark user-accepted final art in the manifest",
+      "candidate_source_ids": [
+        "OFF-HOWTO",
+        "OFF-CHAR",
+        "LOCAL-GIF",
+        "resource_drawing_spec",
+        "user-accepted replacement pack"
+      ]
+    },
+    {
+      "id": "SRC-009",
+      "backlog_id": "P7.08",
+      "section": "P7/P11 Visual And Resource Production",
+      "backlog_line": 159,
+      "task": "Add character fallback policy, active frame-family routing, and manifest coverage report.",
+      "gate": "SIM",
+      "status_class": "CODED",
+      "domain": "growth_family",
+      "blocker_type": "mixed_source_hardware",
+      "current_status": "CODED: 50 catalog rows now route idle visuals through 50 official-derived C++ idle rows with 9 fallback frame families and a row-local official/source status report; source-side art acceptance is closed by zero review flags. Exact same-pool growth-route probability and hardware readability remain open.",
+      "open_need": "Exact same-pool character selection probability and hardware readability proof.",
+      "evidence_class": "exact source value plus T-Echo-Lite photo/video or timing observation",
+      "confidence_gate": "do not mark final until both exact source and hardware evidence exist",
+      "acceptance_gate": "do not mark final until both exact source and hardware evidence exist",
+      "implementation_hints": [
+        "kCharacterCatalogBitmaps",
+        "kCharacterIdleBitmaps"
+      ],
+      "replacement_action": "replace growth/family timing or probability rows",
+      "candidate_source_ids": [
+        "WIKI-CHAR-2024",
+        "WIKI-FAQ-2024",
+        "GG-GROWTH-2024",
+        "HW-TECHO"
+      ]
+    },
+    {
+      "id": "SRC-010",
+      "backlog_id": "P8.03a",
+      "section": "P8 Animation Contracts",
+      "backlog_line": 169,
+      "task": "Route discipline TIME OUT/PRAISE/invalid/attention/missed visible feedback.",
+      "gate": "CODE/UI",
+      "status_class": "CODED-SUBSTITUTE",
+      "domain": "hardware",
+      "blocker_type": "hardware_only",
+      "current_status": "CODED-SUBSTITUTE: compact scene frames are active and `kDisciplineSceneAnimationMs` now keeps the page on explicit scene pacing instead of home idle pacing; official/local GIF timing metadata is included in parity coverage, while hardware readability remains open",
+      "open_need": "Hardware readability proof for discipline scene pacing.",
+      "evidence_class": "T-Echo-Lite photo/video or two-device observation",
+      "confidence_gate": "do not mark final until real T-Echo-Lite evidence is recorded; current substitute must remain labeled substitute",
+      "acceptance_gate": "do not mark final until real T-Echo-Lite evidence is recorded; current substitute must remain labeled substitute",
+      "implementation_hints": [
+        "kDisciplineSceneAnimationMs",
+        "drawDisciplineScene"
+      ],
+      "replacement_action": "record hardware evidence in T_ECHO_LITE_HARDWARE_ACCEPTANCE.md",
+      "candidate_source_ids": [
+        "HW-TECHO"
+      ]
+    },
+    {
+      "id": "SRC-011",
+      "backlog_id": "P8.03b",
+      "section": "P8 Animation Contracts",
+      "backlog_line": 170,
+      "task": "Route medicine sick/tooth/dose/wait/recover/refuse visible feedback.",
+      "gate": "CODE/UI",
+      "status_class": "CODED-SUBSTITUTE",
+      "domain": "medicine_sickness",
+      "blocker_type": "mixed_source_hardware",
+      "current_status": "CODED-SUBSTITUTE: compact bottle, badge, dose trail, recovery, and refusal routing are active and `kMedicineSceneAnimationMs` now keeps the page on explicit scene pacing; official/local GIF timing metadata is included in parity coverage, while cure odds and hardware readability remain open",
+      "open_need": "Medicine cure odds/timing plus hardware readability proof.",
+      "evidence_class": "exact source value plus T-Echo-Lite photo/video or timing observation",
+      "confidence_gate": "do not mark final until both exact source and hardware evidence exist; current substitute must remain labeled substitute",
+      "acceptance_gate": "do not mark final until both exact source and hardware evidence exist; current substitute must remain labeled substitute",
+      "implementation_hints": [
+        "kMedicineSceneAnimationMs",
+        "drawMedicineScene"
+      ],
+      "replacement_action": "replace sickness/toothache probability or duration rows",
+      "candidate_source_ids": [
+        "OFF-MANUAL",
+        "WIKI-SICKNESS",
+        "WIKI-DEATH",
+        "WIKI-FAQ-2024",
+        "HW-TECHO"
+      ]
+    },
+    {
+      "id": "SRC-012",
+      "backlog_id": "P8.03c",
+      "section": "P8 Animation Contracts",
+      "backlog_line": 171,
+      "task": "Route food/snack select/bite/crumb/done/refuse visible feedback.",
+      "gate": "CODE/UI",
+      "status_class": "CODED-SUBSTITUTE",
+      "domain": "care_timing",
+      "blocker_type": "mixed_source_hardware",
+      "current_status": "CODED-SUBSTITUTE: compact selected food, plate, bite travel, crumbs, done/check/heart, and refusal cross routing are active; Meal/Snack pages now use `kFoodSceneAnimationMs` instead of falling through to 2200 ms home idle pacing; official/local GIF timing metadata is included in parity coverage, while bite count and hardware readability remain open",
+      "open_need": "Food bite count/timing plus hardware readability proof.",
+      "evidence_class": "exact source value plus T-Echo-Lite photo/video or timing observation",
+      "confidence_gate": "do not mark final until both exact source and hardware evidence exist; current substitute must remain labeled substitute",
+      "acceptance_gate": "do not mark final until both exact source and hardware evidence exist; current substitute must remain labeled substitute",
+      "implementation_hints": [
+        "kFoodSceneAnimationMs",
+        "drawFoodPage"
+      ],
+      "replacement_action": "replace stage care timing/stat decay rows",
+      "candidate_source_ids": [
+        "OFF-MANUAL",
+        "WIKI-CARE",
+        "WIKI-FAQ-2024",
+        "CURL-ENTAMA-CARE",
+        "HW-TECHO"
+      ]
+    },
+    {
+      "id": "SRC-013",
+      "backlog_id": "P8.03d",
+      "section": "P8 Animation Contracts",
+      "backlog_line": 172,
+      "task": "Route toilet visible-mess/sweep/progressive-removal/done/no-mess feedback.",
+      "gate": "CODE/UI",
+      "status_class": "CODED-SUBSTITUTE",
+      "domain": "care_timing",
+      "blocker_type": "mixed_source_hardware",
+      "current_status": "CODED-SUBSTITUTE: compact visible messes, sweep tool, progressive removal, clean slot, done heart/sparkle, and no-mess question branch are active and `kToiletSceneAnimationMs` now keeps the page on explicit scene pacing; official/local GIF timing metadata is included in parity coverage, while exact mess interval, sickness effects, and hardware readability remain open",
+      "open_need": "Exact mess interval, sickness effects, and hardware readability proof.",
+      "evidence_class": "exact source value plus T-Echo-Lite photo/video or timing observation",
+      "confidence_gate": "do not mark final until both exact source and hardware evidence exist; current substitute must remain labeled substitute",
+      "acceptance_gate": "do not mark final until both exact source and hardware evidence exist; current substitute must remain labeled substitute",
+      "implementation_hints": [
+        "kToiletSceneAnimationMs",
+        "drawToiletScene"
+      ],
+      "replacement_action": "replace stage care timing/stat decay rows",
+      "candidate_source_ids": [
+        "OFF-MANUAL",
+        "WIKI-CARE",
+        "WIKI-FAQ-2024",
+        "CURL-ENTAMA-CARE",
+        "HW-TECHO"
+      ]
+    },
+    {
+      "id": "SRC-014",
+      "backlog_id": "P8.03e",
+      "section": "P8 Animation Contracts",
+      "backlog_line": 173,
+      "task": "Route lights ON/OFF selector, low-ink dark-room, sleep/Z, wake, and invalid feedback.",
+      "gate": "CODE/UI",
+      "status_class": "CODED-SUBSTITUTE",
+      "domain": "care_timing",
+      "blocker_type": "mixed_source_hardware",
+      "current_status": "CODED-SUBSTITUTE: compact selector, hatch-pattern dark-room, moon/star marks, sleep/Z, wake, and invalid routing are active and `kLightsSceneAnimationMs` now keeps the page on explicit slow scene pacing; official/local GIF timing metadata is included in parity coverage, while exact sleep/nap behavior and hardware whitening/ghosting remain open",
+      "open_need": "Exact sleep/nap behavior plus hardware whitening/ghosting proof.",
+      "evidence_class": "exact source value plus T-Echo-Lite photo/video or timing observation",
+      "confidence_gate": "do not mark final until both exact source and hardware evidence exist; current substitute must remain labeled substitute",
+      "acceptance_gate": "do not mark final until both exact source and hardware evidence exist; current substitute must remain labeled substitute",
+      "implementation_hints": [
+        "kLightsSceneAnimationMs",
+        "drawLightsScene"
+      ],
+      "replacement_action": "replace stage care timing/stat decay rows",
+      "candidate_source_ids": [
+        "OFF-MANUAL",
+        "WIKI-CARE",
+        "WIKI-FAQ-2024",
+        "CURL-ENTAMA-CARE",
+        "HW-TECHO"
+      ]
+    },
+    {
+      "id": "SRC-015",
+      "backlog_id": "P9.01",
+      "section": "P9 Exact Data Tables",
+      "backlog_line": 184,
+      "task": "Complete source ledger for growth/shop/password/game/death.",
+      "gate": "SPEC",
+      "status_class": "CODED-SUBSTITUTE",
+      "domain": "source_data",
+      "blocker_type": "multi_source",
+      "current_status": "CODED-SUBSTITUTE: ledger now records official/community sources for growth, shop, password, games, death, King donation, and official visual-reference boundaries; exact death thresholds, poop timing, sale frequency, probability curves, and rights-cleared final pixel art remain open",
+      "open_need": "Ledger-level exact death, poop timing, sale frequency, probability curves, and final pixel-art evidence.",
+      "evidence_class": "multi-domain exact source evidence plus final art evidence where named",
+      "confidence_gate": "do not mark final until every named source/art evidence stream is closed; current substitute must remain labeled substitute",
+      "acceptance_gate": "do not mark final until every named source/art evidence stream is closed; current substitute must remain labeled substitute",
+      "implementation_hints": [
+        "CONNECT_SOURCE_LEDGER.md"
+      ],
+      "replacement_action": "update source ledger, code table, and generated audit together",
+      "candidate_source_ids": [
+        "OFF-HOWTO",
+        "OFF-MANUAL",
+        "OFF-CHAR",
+        "WIKI-2024",
+        "WIKI-ITEM-2024",
+        "WIKI-CHAR-2024",
+        "WIKI-FAQ-2024",
+        "GG-GROWTH-2024",
+        "HW-TECHO"
+      ]
+    },
+    {
+      "id": "SRC-016",
+      "backlog_id": "P9.02",
+      "section": "P9 Exact Data Tables",
+      "backlog_line": 185,
+      "task": "Implement table-driven growth model.",
+      "gate": "DATA/CODE/SIM",
+      "status_class": "CODED",
+      "domain": "growth_family",
+      "blocker_type": "mixed_source_hardware",
+      "current_status": "CODED: parent-pair child tier selection, child-tier teen transition, adult-tier transition from the transcribed `WIKI-CHAR-2024` Serious/Normal/Naughty/Frail/Stubborn rows, Serious-adult gate requiring both parents unhealthy, special Oyajitchi lineage, generation/tier/gender source-pool character selection, `GrowthScheduleRule` stage thresholds, `FamilyTimingRule` parent/manual-Matchmaker timing, `MatchmakerClockRule` scheduled clock rows, four-adult-day matchmaker eligibility, and FAQ-aligned about-four-adult-day senior transition are explicit code/data table paths; final per-character art, exact same-pool route probabilities, exact matchmaker/senior same-day overlap, edge-case transition ordering, and hardware proof remain open",
+      "open_need": "Exact same-pool route probabilities, matchmaker/senior overlap, transition ordering, and hardware proof.",
+      "evidence_class": "exact source value plus T-Echo-Lite photo/video or timing observation",
+      "confidence_gate": "do not mark final until both exact source and hardware evidence exist",
+      "acceptance_gate": "do not mark final until both exact source and hardware evidence exist",
+      "implementation_hints": [
+        "kGrowthScheduleRules",
+        "kAdultGrowthRules",
+        "matchmakerNoticeReady",
+        "characterTierMaskForStage"
+      ],
+      "replacement_action": "replace growth/family timing or probability rows",
+      "candidate_source_ids": [
+        "WIKI-CHAR-2024",
+        "WIKI-FAQ-2024",
+        "GG-GROWTH-2024",
+        "HW-TECHO"
+      ]
+    },
+    {
+      "id": "SRC-017",
+      "backlog_id": "P9.03",
+      "section": "P9 Exact Data Tables",
+      "backlog_line": 186,
+      "task": "Implement death/pass-away/runaway table.",
+      "gate": "DATA/CODE/SIM",
+      "status_class": "CODED-SUBSTITUTE",
+      "domain": "death_passaway",
+      "blocker_type": "exact_source",
+      "current_status": "CODED-SUBSTITUTE: severe neglect, sick+empty-state pass-away, stage-local fourth-sickness pass-away, and elder/Grim substitute rules exist; elder/Grim is constrained to neglect rather than old age alone, but exact 2024 source thresholds and wording remain open",
+      "open_need": "Exact 2024 death/pass-away thresholds and wording.",
+      "evidence_class": "official table/manual, cross-checked source, or hardware sample with exact value",
+      "confidence_gate": "do not mark final until the exact external value is sourced; current substitute must remain labeled substitute",
+      "acceptance_gate": "do not mark final until the exact external value is sourced; current substitute must remain labeled substitute",
+      "implementation_hints": [
+        "kPassAwayRules",
+        "checkDeath"
+      ],
+      "replacement_action": "replace pass-away threshold rows and regenerate growth coverage",
+      "candidate_source_ids": [
+        "WIKI-DEATH",
+        "WIKI-FAQ-2024",
+        "GG-GROWTH-2024",
+        "HW-TECHO"
+      ]
+    },
+    {
+      "id": "SRC-018",
+      "backlog_id": "P9.04",
+      "section": "P9 Exact Data Tables",
+      "backlog_line": 187,
+      "task": "Implement stat decay/event table.",
+      "gate": "DATA/CODE/SIM",
+      "status_class": "CODED-SUBSTITUTE",
+      "domain": "care_timing",
+      "blocker_type": "exact_source",
+      "current_status": "CODED-SUBSTITUTE: hunger, happiness, and poop now use `kStageCareTimingRules` with Baby 3/5/6, Child 40/45/80, Teen 50/55/100, Adult/Parent 70/75/140, and Elder 80/110/160 pet-minute Hungry/Happy/poop periods from low-confidence cross-version source `CURL-ENTAMA-CARE`; Hungry/Happy also use the sourced Connection-era two-hidden-heart reserve through `kHiddenHeartMeterMax` while the health display remains capped to four visible hearts; energy, hygiene, sickness trigger rows, attention timing rows, stage sleep-window rows, lifecycle timing rows, fifteen-consecutive-snack toothache trigger, persisted 60 pet-minute substitute toothache short-period window, toothache-to-sickness missed-call escalation, lights-left-on timing, clock-edit pause, real month-length date validation, and `CalendarEventRule` rows for birthday/New Year/winter/Easter/back-to-school/Halloween/Thanksgiving/Christmas/Santaclautchi notices are explicit constants/tables and are reported by growth coverage. Exact official Connection 2024 decay windows, official sleep windows, official lifecycle timing, official toothache short-period length, calendar cutscene art/wording, and other official probability/timing values remain source-gated",
+      "open_need": "Exact Connection 2024 decay windows, sleep windows, lifecycle timing, toothache short-period length, calendar wording/art, and probability/timing values.",
+      "evidence_class": "official table/manual, cross-checked source, or hardware sample with exact value",
+      "confidence_gate": "do not mark final until the exact external value is sourced; current substitute must remain labeled substitute",
+      "acceptance_gate": "do not mark final until the exact external value is sourced; current substitute must remain labeled substitute",
+      "implementation_hints": [
+        "kStageCareTimingRules",
+        "kSicknessTriggerRules",
+        "kAttentionTimingRules",
+        "kSleepWindowRules"
+      ],
+      "replacement_action": "replace stage care timing/stat decay rows",
+      "candidate_source_ids": [
+        "OFF-MANUAL",
+        "WIKI-CARE",
+        "WIKI-FAQ-2024",
+        "CURL-ENTAMA-CARE",
+        "HW-TECHO"
+      ]
+    },
+    {
+      "id": "SRC-019",
+      "backlog_id": "P9.05",
+      "section": "P9 Exact Data Tables",
+      "backlog_line": 188,
+      "task": "Implement shop/catalog table.",
+      "gate": "DATA/CODE/SIM",
+      "status_class": "CODED-SUBSTITUTE",
+      "domain": "shop_catalog",
+      "blocker_type": "mixed_source_art",
+      "current_status": "CODED-SUBSTITUTE: 4-slot shop stock, explicit restock/sale/vendor window tables, birthday/holiday slot substitutions including Dec 23/24 Whole Cake plus Turkey, 50% sale pricing, Ojitchi cart vendor pool, password/secret overrides, source-named/priced food catalog slots 0-47 and 85-87, source-named/priced item catalog slots 62-95, source-named extension/duplicate rows for slots 96-143, corrected source labels/prices, parseable `CharacterFoodTasteRule` liked/disliked catalog-food rows with liked food filling Happy and disliked food clearing Happy, item-list liked-by-all Yogurt/Steak rules, child+/teen+/adult-only item-use gates, reusable/single-use corrections, fixed Ticket 1-5 souvenir awards, Music Disc/Boom Box dependency and break chance, Make-Up/Mirror dependency, Shaver/Oyajitchi restriction, Tama Drink sickness guard, gendered Action Figure/Doll enjoyment, source-shaped Plant/Shovel/Chest/Lamp/Fishing Pole random reward/penalty/break behavior, explicit `CatalogRandomRule` rows for substitute branch counts/point rewards/Lamp break chance, Chest/Lamp exclusive item awards, Fishing Pole trash-retain/reward-destroy behavior, full per-catalog quantity storage with v6-sized save migration, catalog-owned cleanup when consumable stock reaches zero, catalog food/item total storage caps, Hair Gel cosmetic consumption, ITEM-page 160-row cursor routing, icon routing, use-scene routing, 160 distinct catalog `visualTraits` overlays, 160 explicit catalog C++ preview rows, 12 official-source item-icon overrides, a 152-row catalog item semantic-status proof, 64 per-memory souvenir C++ rows, an official souvenir semantic proof manifest, and two official-source souvenir overrides are coded; ambiguous food-taste source rows, sale frequency, exact cart availability duration, exact seasonal collision priority, exact random probability tables, exact reward amounts, exact item animation timing, most final per-item art, and final souvenir art remain open",
+      "open_need": "Exact shop sale frequency, cart duration, seasonal collision priority, random probability/reward tables, item animation timing, and final item/souvenir art.",
+      "evidence_class": "exact source value plus rights-cleared or user-accepted final art",
+      "confidence_gate": "do not mark final until both exact source and final art evidence exist; current substitute must remain labeled substitute",
+      "acceptance_gate": "do not mark final until both exact source and final art evidence exist; current substitute must remain labeled substitute",
+      "implementation_hints": [
+        "kCatalogOverrides",
+        "kCatalogRandomRules",
+        "kShopSaleRules",
+        "kShopVendorWindows"
+      ],
+      "replacement_action": "replace shop/catalog rule rows and regenerate catalog/resource reports",
+      "candidate_source_ids": [
+        "OFF-HOWTO",
+        "OFF-NEWS",
+        "WIKI-2024",
+        "WIKI-ITEM-2024",
+        "WIKI-CODE-2024",
+        "GG-SPECIAL-2024",
+        "CURL-2024-EVENTS"
+      ]
+    },
+    {
+      "id": "SRC-020",
+      "backlog_id": "P9.06",
+      "section": "P9 Exact Data Tables",
+      "backlog_line": 189,
+      "task": "Implement password/secret-code table.",
+      "gate": "DATA/CODE/SIM",
+      "status_class": "CODED-SUBSTITUTE",
+      "domain": "visual_art",
+      "blocker_type": "final_art",
+      "current_status": "CODED-SUBSTITUTE: 32 password values plus 7 shop secret codes, Hohotchi replacement, Honey/Love Potion next-link boost, repeatable Clock/RC Car/Hohotchi, and temporary Nyatchi/Hohotchi costume projection coded; exact per-item art open",
+      "open_need": "Accepted final per-item art for password/secret-code rewards.",
+      "evidence_class": "rights-cleared C++ bitmap replacement row or explicit user acceptance",
+      "confidence_gate": "do not mark final until replacement art is accepted; current substitute must remain labeled substitute",
+      "acceptance_gate": "do not mark final until replacement art is accepted; current substitute must remain labeled substitute",
+      "implementation_hints": [
+        "kPasswordRewards",
+        "kSecretCodeRewards"
+      ],
+      "replacement_action": "replace C++ bitmap rows or mark user-accepted final art in the manifest",
+      "candidate_source_ids": [
+        "OFF-HOWTO",
+        "OFF-CHAR",
+        "LOCAL-GIF",
+        "resource_drawing_spec",
+        "user-accepted replacement pack"
+      ]
+    },
+    {
+      "id": "SRC-021",
+      "backlog_id": "P9.07",
+      "section": "P9 Exact Data Tables",
+      "backlog_line": 190,
+      "task": "Implement game reward table.",
+      "gate": "DATA/CODE/SIM",
+      "status_class": "CODED-SUBSTITUTE",
+      "domain": "game_rewards",
+      "blocker_type": "exact_source",
+      "current_status": "CODED-SUBSTITUTE: sourced top-prize table is coded; known-length games use source-length round/score caps for Get 100, Bump 8, Flag 9, Heading 20, Memory max-pattern 8 with 20 scored pattern rounds, Sprint 8, and Hoops 30; perfect-care reversal tests against the active per-game score cap; Memory now uses the sourced 20-pattern A/B/C cadence plus a compact display window instead of single-key rounds; Bump uses an explicit V3-style 0-8 round by four-weight-band prize chart with 2400/1800/1200/600 perfect prizes and no longer boosts score directly for heavier pets; wallet gains clamp at 9,999 Gotchi Points; game entry refuses at stage base weight through `StageBaseWeightRule` rows and game wins reduce weight only down to that base; Sprint weight direction is modeled in mechanics; non-Bump low-score prizes map long scores through an explicit five-tier curve, and `GamePacingRule` rows expose each game's source goal, firmware round count, score cap, timeout, and input flags. Exact official 2024 low-score table and Bump/Sprint probability curves remain substitute",
+      "open_need": "Official 2024 low-score table and Bump/Sprint probability curves.",
+      "evidence_class": "official table/manual, cross-checked source, or hardware sample with exact value",
+      "confidence_gate": "do not mark final until the exact external value is sourced; current substitute must remain labeled substitute",
+      "acceptance_gate": "do not mark final until the exact external value is sourced; current substitute must remain labeled substitute",
+      "implementation_hints": [
+        "kGameRewardRules",
+        "kBumpPrizeChart",
+        "kGameScorePrizePercent"
+      ],
+      "replacement_action": "replace explicit reward/probability table rows and regenerate coverage",
+      "candidate_source_ids": [
+        "OFF-HOWTO",
+        "OFF-MANUAL",
+        "WIKI-2024",
+        "TAMATALK-BUMP-V3",
+        "TAMATALK-MEMORY-V3",
+        "HW-TECHO"
+      ]
+    }
+  ]
+}

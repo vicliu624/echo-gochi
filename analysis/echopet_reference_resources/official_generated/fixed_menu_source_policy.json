@@ -1,0 +1,97 @@
+{
+  "source_manifest": "generated\\fixed_menu_official_tiles_manifest.json",
+  "runtime_boundary": "Official fixed-menu references are analysis-only. Runtime icons are C/C++ byte arrays in EchoPetMenuIconResources.cpp.",
+  "policy": "The EchoPet side rails model the external fixed menu icon semantics, so compact 12x12 and large 30x30 icons are derived from the same official device/menu tile per slot.",
+  "slots": [
+    {
+      "index": 0,
+      "local_id": "HEALTH",
+      "official_label": "Health Meter",
+      "compact_source": "official_device_tile",
+      "large_source": "official_device_tile",
+      "shared_source": true,
+      "runtime_boundary": "Official raster tile is analysis-only. Firmware stores the derived icon as C/C++ bitmap bytes."
+    },
+    {
+      "index": 1,
+      "local_id": "FOOD",
+      "official_label": "Food",
+      "compact_source": "official_device_tile",
+      "large_source": "official_device_tile",
+      "shared_source": true,
+      "runtime_boundary": "Official raster tile is analysis-only. Firmware stores the derived icon as C/C++ bitmap bytes."
+    },
+    {
+      "index": 2,
+      "local_id": "TOILET",
+      "official_label": "Toilet",
+      "compact_source": "official_device_tile",
+      "large_source": "official_device_tile",
+      "shared_source": true,
+      "runtime_boundary": "Official raster tile is analysis-only. Firmware stores the derived icon as C/C++ bitmap bytes."
+    },
+    {
+      "index": 3,
+      "local_id": "CONNECT",
+      "official_label": "Connection/Communication",
+      "compact_source": "official_device_tile",
+      "large_source": "official_device_tile",
+      "shared_source": true,
+      "runtime_boundary": "Official raster tile is analysis-only. Firmware stores the derived icon as C/C++ bitmap bytes."
+    },
+    {
+      "index": 4,
+      "local_id": "CARE",
+      "official_label": "Attention",
+      "compact_source": "official_device_tile",
+      "large_source": "official_device_tile",
+      "shared_source": true,
+      "runtime_boundary": "Official raster tile is analysis-only. Firmware stores the derived icon as C/C++ bitmap bytes."
+    },
+    {
+      "index": 5,
+      "local_id": "TRAIN",
+      "official_label": "Discipline",
+      "compact_source": "official_device_tile",
+      "large_source": "official_device_tile",
+      "shared_source": true,
+      "runtime_boundary": "Official raster tile is analysis-only. Firmware stores the derived icon as C/C++ bitmap bytes."
+    },
+    {
+      "index": 6,
+      "local_id": "MEDS",
+      "official_label": "Medicine",
+      "compact_source": "official_device_tile",
+      "large_source": "official_device_tile",
+      "shared_source": true,
+      "runtime_boundary": "Official raster tile is analysis-only. Firmware stores the derived icon as C/C++ bitmap bytes."
+    },
+    {
+      "index": 7,
+      "local_id": "LIGHTS",
+      "official_label": "Lights",
+      "compact_source": "official_device_tile",
+      "large_source": "official_device_tile",
+      "shared_source": true,
+      "runtime_boundary": "Official raster tile is analysis-only. Firmware stores the derived icon as C/C++ bitmap bytes."
+    },
+    {
+      "index": 8,
+      "local_id": "FRIEND",
+      "official_label": "Friend List",
+      "compact_source": "official_device_tile",
+      "large_source": "official_device_tile",
+      "shared_source": true,
+      "runtime_boundary": "Official raster tile is analysis-only. Firmware stores the derived icon as C/C++ bitmap bytes."
+    },
+    {
+      "index": 9,
+      "local_id": "GAME",
+      "official_label": "Games/Activity",
+      "compact_source": "official_device_tile",
+      "large_source": "official_device_tile",
+      "shared_source": true,
+      "runtime_boundary": "Official raster tile is analysis-only. Firmware stores the derived icon as C/C++ bitmap bytes."
+    }
+  ]
+}

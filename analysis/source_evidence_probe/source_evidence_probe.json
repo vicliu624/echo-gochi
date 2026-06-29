@@ -1,0 +1,162 @@
+[
+  {
+    "row_id": "EVID-001",
+    "domain": "shop_secret_gesture",
+    "source_ids": "OFF-HOWTO; WIKI-2024; GG-SPECIAL-2024",
+    "claim": "Secret-code entry is one A at the shop/shopkeeper followed by three quick A presses until surprise.",
+    "code_target": "src/EchoPet.ino::handleShopSecretTap",
+    "code_evidence": "kShopSecretTapGoal=4 plus a separate first-to-second pause window and quick follow-up tap window",
+    "status": "PASS",
+    "remaining_gap": "Hardware still must prove T-Echo-Lite button repeat/hold timing does not add extra taps."
+  },
+  {
+    "row_id": "EVID-002",
+    "domain": "shop_windows",
+    "source_ids": "WIKI-2024; WIKI-ITEM-2024",
+    "claim": "Regular shop restocks at 12 AM, 3 PM, and 7 PM; Ojitchi cart appears at 11 AM and 5 PM.",
+    "code_target": "src/EchoPetCatalog.cpp::kShopRestockWindows/kShopVendorWindows",
+    "code_evidence": "shop restock rows 00:00/15:00/19:00 and Ojitchi windows 11:00-12:00/17:00-18:00 are explicit",
+    "status": "PASS",
+    "remaining_gap": "Exact Ojitchi availability duration is still substitute because sources name visit times but not a measured duration."
+  },
+  {
+    "row_id": "EVID-003",
+    "domain": "shop_sale",
+    "source_ids": "WIKI-ITEM-2024",
+    "claim": "On random sale dates, regular shop items are 50% off.",
+    "code_target": "src/EchoPetCatalog.cpp::kShopSaleRule",
+    "code_evidence": "50% discount is explicit; sale is date-hash based with modulo 13 and vendor visits suppress sale",
+    "status": "CODED-SUBSTITUTE",
+    "remaining_gap": "Exact sale frequency/date distribution remains unsourced."
+  },
+  {
+    "row_id": "EVID-004",
+    "domain": "game_rewards",
+    "source_ids": "WIKI-2024",
+    "claim": "Known 2024 top-prize table by stage and mini-game.",
+    "code_target": "src/EchoPetModel.cpp::kGameRewardRules",
+    "code_evidence": "stage/game top-prize table entries are present",
+    "status": "PASS",
+    "remaining_gap": "Low-score table and Bump/Sprint probability curves remain exact-source blockers."
+  },
+  {
+    "row_id": "EVID-005",
+    "domain": "game_pacing",
+    "source_ids": "WIKI-2024; OFF-HOWTO",
+    "claim": "Seven game goals are Get 100, Bump 8, Flag 9, Heading 20, Memory 20 patterns, Sprint 8, Hoops 30.",
+    "code_target": "src/EchoPetModel.cpp::kGamePacingRules",
+    "code_evidence": "game goal/round/score caps are explicit",
+    "status": "PASS",
+    "remaining_gap": "Real e-paper readability and exact moment-to-moment timing remain hardware-gated."
+  },
+  {
+    "row_id": "EVID-006",
+    "domain": "medicine_sickness",
+    "source_ids": "WIKI-SICKNESS; WIKI-FAQ-2024",
+    "claim": "Toothache is triggered by fifteen consecutive sweet snacks in a short period.",
+    "code_target": "src/EchoPetModel.cpp::kSweetSnackToothacheStreak/kSweetSnackShortPeriodMinutes",
+    "code_evidence": "15-snack streak is explicit; short-period duration is a 60 pet-minute substitute",
+    "status": "CODED-SUBSTITUTE",
+    "remaining_gap": "Official 2024 short-period length and cure probability remain exact-source blockers."
+  },
+  {
+    "row_id": "EVID-007",
+    "domain": "care_mistake_timing",
+    "source_ids": "WIKI-FAQ-2024",
+    "claim": "Ordinary care calls use a 15-minute care window; lights-left-on has a longer miss window.",
+    "code_target": "src/EchoPetModel.cpp::kAttentionTimingRules",
+    "code_evidence": "ordinary 15-minute miss and lights-left-on 60-minute miss rows are explicit",
+    "status": "PASS",
+    "remaining_gap": "Hardware-visible attention icon/call cadence still needs observation."
+  },
+  {
+    "row_id": "EVID-008",
+    "domain": "death_passaway",
+    "source_ids": "WIKI-DEATH; WIKI-FAQ-2024",
+    "claim": "Connection-era death is constrained to neglect/sickness direction rather than age alone.",
+    "code_target": "src/EchoPetModel.cpp::kPassAwayRules/stageSicknesses_",
+    "code_evidence": "stage-local fourth-sickness and elder low-stat substitute rules are explicit",
+    "status": "CODED-SUBSTITUTE",
+    "remaining_gap": "Exact 2024 Grim/pass-away thresholds and wording remain source blockers."
+  },
+  {
+    "row_id": "EVID-009",
+    "domain": "inventory_caps",
+    "source_ids": "WIKI-ITEM-2024",
+    "claim": "Meal and Snack storage share a 19-count cap; Items storage has a 32-count cap.",
+    "code_target": "src/EchoPetModel.cpp::kMaxFoodStock/kMaxItemStock/buyCatalogItem",
+    "code_evidence": "food catalog stock is capped at 19 total and item catalog stock at 32 total",
+    "status": "PASS",
+    "remaining_gap": "Exact UI wording for full storage still needs hardware-readable screen proof."
+  },
+  {
+    "row_id": "EVID-010",
+    "domain": "default_foods",
+    "source_ids": "WIKI-ITEM-2024; WIKI-CARE",
+    "claim": "The default meals and snacks are permanent choices and do not run out.",
+    "code_target": "src/EchoPetModel.h::FoodKind and src/EchoPetModel.cpp::useFood",
+    "code_evidence": "default meals Scone/Sushi/Bread/Cereal and snacks Cone/Pudding/Tart/Apple are fixed enum rows",
+    "status": "PASS",
+    "remaining_gap": "Exact visual bite timing remains a sprite/hardware proof item."
+  },
+  {
+    "row_id": "EVID-011",
+    "domain": "wallet_cap",
+    "source_ids": "WIKI-GOTCHI-POINTS; WIKI-2024",
+    "claim": "Connection/V2-V3 style Gotchi Point wallet caps at 9,999.",
+    "code_target": "src/EchoPetModel.cpp::kMaxGotchiPoints",
+    "code_evidence": "Gotchi Point gains and save-load clamps reference the 9999 wallet cap",
+    "status": "PASS",
+    "remaining_gap": "Exact point-gain low-score tables remain separate game-reward source gaps."
+  },
+  {
+    "row_id": "EVID-012",
+    "domain": "king_donation",
+    "source_ids": "WIKI-KING-2024",
+    "claim": "Donating 1000 Gotchi Points to the King unlocks the Super Unchikun-style no-mess cleanup projection.",
+    "code_target": "src/EchoPetModel.cpp::kSuperCleanerDonation/actionDonate/updatePoop",
+    "code_evidence": "1000-point threshold, 100-point donations, souvenir award, and auto mess cleanup are explicit",
+    "status": "CODED-SUBSTITUTE",
+    "remaining_gap": "Exact King congratulation/cutscene art remains source/visual blocker."
+  },
+  {
+    "row_id": "EVID-013",
+    "domain": "password_secret_tables",
+    "source_ids": "WIKI-CODE-2024; OFF-NEWS; GG-SPECIAL-2024",
+    "claim": "The 2024 password table has 32 10-digit entries and the shop secret-code table has seven A/B/C entries.",
+    "code_target": "src/EchoPetModel.cpp::kPasswordRewards/kSecretCodeRewards",
+    "code_evidence": "password reward rows=32, shop secret-code rows=7",
+    "status": "PASS",
+    "remaining_gap": "Older V3 password-generator compatibility remains out of scope until separately sourced."
+  },
+  {
+    "row_id": "EVID-014",
+    "domain": "link_game_requirements",
+    "source_ids": "WIKI-ITEM-2024; OFF-HOWTO",
+    "claim": "Connection games include Gotchi Point plus item-backed Ball, RC Car, Rope, Building Block, Balloon, and Trumpet rows.",
+    "code_target": "src/EchoPetModel.h::LinkGameKind and src/EchoPetModel.cpp::linkGameOwnedInBits",
+    "code_evidence": "seven Connection game rows exist; item-backed rows require matching catalog ownership",
+    "status": "PASS",
+    "remaining_gap": "Exact dual-device timing, win animation, and reward odds remain DUAL/HW/source blockers."
+  },
+  {
+    "row_id": "EVID-015",
+    "domain": "item_dependencies",
+    "source_ids": "WIKI-ITEM-2024",
+    "claim": "Special item use restrictions and side effects should follow the listed Connection item behavior.",
+    "code_target": "src/EchoPetModel.cpp::useCatalogItem",
+    "code_evidence": "Music Disc/Boom Box, Make-Up/Mirror, Shaver/Oyajitchi, Tama Drink, Honey, and gender enjoyment gates are explicit",
+    "status": "PASS",
+    "remaining_gap": "Per-item scene art and exact destruction/probability rates remain visual/source blockers."
+  },
+  {
+    "row_id": "EVID-016",
+    "domain": "random_item_effects",
+    "source_ids": "WIKI-ITEM-2024",
+    "claim": "Plant, Shovel, Chest, Fishing Pole, and Lamp use random reward/penalty branches, including exclusive item outcomes.",
+    "code_target": "src/EchoPetModel.cpp::kCatalogRandomRules/chestLampExclusiveCatalogItem/useCatalogItem",
+    "code_evidence": "source-shaped branch counts, point rewards, lamp break chance, and exclusive-item pool are explicit",
+    "status": "CODED-SUBSTITUTE",
+    "remaining_gap": "Exact original probability tables, reward amounts, and full animation pacing remain substitute."
+  }
+]

@@ -1,0 +1,764 @@
+{
+  "source_page": "https://tamagotchi-official.com/gb/series/connection/character/",
+  "runtime_boundary": "Official character images and page HTML are analysis-only references. Firmware resources remain C/C++ bitmap arrays or rights-cleared replacement art.",
+  "character_count": 50,
+  "generated": {
+    "official_contact_sheet": "generated\\character_official_reference_contact_sheet.png",
+    "alignment_proof": "generated\\character_official_alignment_proof.png",
+    "source_alignment_status_contact_sheet": "generated\\character_source_alignment_status_contact_sheet.png",
+    "source_alignment_status": "generated\\character_source_alignment_status.json"
+  },
+  "characters": [
+    {
+      "index": 0,
+      "page_id": 201,
+      "catalog_name": "Kuroteletchi",
+      "page_url": "https://tamagotchi-official.com/gb/series/connection/character/201/",
+      "official_image_url": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/05/09/Doe8IEMiIixS5BX0/21_%E3%83%86%E3%83%AC%E3%81%A3%E3%81%A1%E3%82%AA%E3%82%B9.jpeg",
+      "official_alt": "Kuroteletchi(Boy)",
+      "local_html": "raw\\character\\201_Kuroteletchi.html",
+      "local_image": "raw\\character\\201_Kuroteletchi.jpeg",
+      "image_size": [
+        500,
+        500
+      ],
+      "runtime_boundary": "analysis-only official reference; firmware runtime must use C/C++ bitmap rows or rights-cleared replacement art"
+    },
+    {
+      "index": 1,
+      "page_id": 202,
+      "catalog_name": "Shiroteletchi",
+      "page_url": "https://tamagotchi-official.com/gb/series/connection/character/202/",
+      "official_image_url": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/05/09/MolWRusJFtwqqoTo/22_%E3%83%86%E3%83%AC%E3%81%A3%E3%81%A1%E3%83%A1%E3%82%B9.jpeg",
+      "official_alt": "Shiroteletchi(Girl)",
+      "local_html": "raw\\character\\202_Shiroteletchi.html",
+      "local_image": "raw\\character\\202_Shiroteletchi.jpeg",
+      "image_size": [
+        500,
+        500
+      ],
+      "runtime_boundary": "analysis-only official reference; firmware runtime must use C/C++ bitmap rows or rights-cleared replacement art"
+    },
+    {
+      "index": 2,
+      "page_id": 203,
+      "catalog_name": "Tamatchi",
+      "page_url": "https://tamagotchi-official.com/gb/series/connection/character/203/",
+      "official_image_url": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/05/09/Z1CnRwRGpZiLH1iB/23_%E3%81%9F%E3%81%BE%E3%81%A3%E3%81%A1.jpeg",
+      "official_alt": "Tamatchi",
+      "local_html": "raw\\character\\203_Tamatchi.html",
+      "local_image": "raw\\character\\203_Tamatchi.jpeg",
+      "image_size": [
+        500,
+        500
+      ],
+      "runtime_boundary": "analysis-only official reference; firmware runtime must use C/C++ bitmap rows or rights-cleared replacement art"
+    },
+    {
+      "index": 3,
+      "page_id": 204,
+      "catalog_name": "Mizutamatchi",
+      "page_url": "https://tamagotchi-official.com/gb/series/connection/character/204/",
+      "official_image_url": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/05/09/Am9wl0ZgNYdsO0St/29_%E3%81%BF%E3%81%9A%E3%81%9F%E3%81%BE%E3%81%A3%E3%81%A1.jpeg",
+      "official_alt": "Mizutamatchi",
+      "local_html": "raw\\character\\204_Mizutamatchi.html",
+      "local_image": "raw\\character\\204_Mizutamatchi.jpeg",
+      "image_size": [
+        500,
+        500
+      ],
+      "runtime_boundary": "analysis-only official reference; firmware runtime must use C/C++ bitmap rows or rights-cleared replacement art"
+    },
+    {
+      "index": 4,
+      "page_id": 205,
+      "catalog_name": "Kuchitamatchi",
+      "page_url": "https://tamagotchi-official.com/gb/series/connection/character/205/",
+      "official_image_url": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/05/09/TmtFPNN9sTmEuJ6f/24_%E3%81%8F%E3%81%A1%E3%81%9F%E3%81%BE%E3%81%A3%E3%81%A1.jpeg",
+      "official_alt": "Kuchitamatchi",
+      "local_html": "raw\\character\\205_Kuchitamatchi.html",
+      "local_image": "raw\\character\\205_Kuchitamatchi.jpeg",
+      "image_size": [
+        500,
+        500
+      ],
+      "runtime_boundary": "analysis-only official reference; firmware runtime must use C/C++ bitmap rows or rights-cleared replacement art"
+    },
+    {
+      "index": 5,
+      "page_id": 206,
+      "catalog_name": "Mohitamatchi",
+      "page_url": "https://tamagotchi-official.com/gb/series/connection/character/206/",
+      "official_image_url": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/05/09/upc3lYn72gIo7F8n/30_%E3%82%82%E3%81%B2%E3%81%9F%E3%81%BE%E3%81%A3%E3%81%A1.jpeg",
+      "official_alt": "Mohitamatchi",
+      "local_html": "raw\\character\\206_Mohitamatchi.html",
+      "local_image": "raw\\character\\206_Mohitamatchi.jpeg",
+      "image_size": [
+        500,
+        500
+      ],
+      "runtime_boundary": "analysis-only official reference; firmware runtime must use C/C++ bitmap rows or rights-cleared replacement art"
+    },
+    {
+      "index": 6,
+      "page_id": 207,
+      "catalog_name": "Obotchi",
+      "page_url": "https://tamagotchi-official.com/gb/series/connection/character/207/",
+      "official_image_url": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/05/09/lGymx4KNBYdXo1c4/31_%E3%81%8A%E3%81%BC%E3%81%A3%E3%81%A1.jpeg",
+      "official_alt": "Obotchi",
+      "local_html": "raw\\character\\207_Obotchi.html",
+      "local_image": "raw\\character\\207_Obotchi.jpeg",
+      "image_size": [
+        500,
+        500
+      ],
+      "runtime_boundary": "analysis-only official reference; firmware runtime must use C/C++ bitmap rows or rights-cleared replacement art"
+    },
+    {
+      "index": 7,
+      "page_id": 208,
+      "catalog_name": "Youngmametchi",
+      "page_url": "https://tamagotchi-official.com/gb/series/connection/character/208/",
+      "official_image_url": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/05/09/DeRenfSEHtA5MBIU/10_%E3%82%84%E3%82%93%E3%81%90%E3%81%BE%E3%82%81%E3%81%A3%E3%81%A1.jpeg",
+      "official_alt": "Youngmametchi",
+      "local_html": "raw\\character\\208_Youngmametchi.html",
+      "local_image": "raw\\character\\208_Youngmametchi.jpeg",
+      "image_size": [
+        500,
+        500
+      ],
+      "runtime_boundary": "analysis-only official reference; firmware runtime must use C/C++ bitmap rows or rights-cleared replacement art"
+    },
+    {
+      "index": 8,
+      "page_id": 209,
+      "catalog_name": "Batabatchi",
+      "page_url": "https://tamagotchi-official.com/gb/series/connection/character/209/",
+      "official_image_url": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/05/09/DBsge8D9FR1XWiZL/32_%E3%83%90%E3%82%BF%E3%83%90%E3%81%A3%E3%81%A1.jpeg",
+      "official_alt": "Batabatchi",
+      "local_html": "raw\\character\\209_Batabatchi.html",
+      "local_image": "raw\\character\\209_Batabatchi.jpeg",
+      "image_size": [
+        500,
+        500
+      ],
+      "runtime_boundary": "analysis-only official reference; firmware runtime must use C/C++ bitmap rows or rights-cleared replacement art"
+    },
+    {
+      "index": 9,
+      "page_id": 210,
+      "catalog_name": "Ichigotchi",
+      "page_url": "https://tamagotchi-official.com/gb/series/connection/character/210/",
+      "official_image_url": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/05/09/QKrCqvowl2753oYV/07_%E3%81%84%E3%81%A1%E3%81%94%E3%81%A3%E3%81%A1.jpeg",
+      "official_alt": "Ichigotchi",
+      "local_html": "raw\\character\\210_Ichigotchi.html",
+      "local_image": "raw\\character\\210_Ichigotchi.jpeg",
+      "image_size": [
+        500,
+        500
+      ],
+      "runtime_boundary": "analysis-only official reference; firmware runtime must use C/C++ bitmap rows or rights-cleared replacement art"
+    },
+    {
+      "index": 10,
+      "page_id": 211,
+      "catalog_name": "Nikatchi",
+      "page_url": "https://tamagotchi-official.com/gb/series/connection/character/211/",
+      "official_image_url": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/05/09/2ZNZVeIK9HfRLWwf/09_%E3%81%AB%E3%81%8B%E3%81%A3%E3%81%A1.jpeg",
+      "official_alt": "Nikatchi",
+      "local_html": "raw\\character\\211_Nikatchi.html",
+      "local_image": "raw\\character\\211_Nikatchi.jpeg",
+      "image_size": [
+        500,
+        500
+      ],
+      "runtime_boundary": "analysis-only official reference; firmware runtime must use C/C++ bitmap rows or rights-cleared replacement art"
+    },
+    {
+      "index": 11,
+      "page_id": 212,
+      "catalog_name": "Pirorirotchi",
+      "page_url": "https://tamagotchi-official.com/gb/series/connection/character/212/",
+      "official_image_url": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/05/09/idHTL9rzFeU93gn4/33_%E3%83%94%E3%83%AD%E3%83%AA%E3%83%AD%E3%81%A3%E3%81%A1.jpeg",
+      "official_alt": "Pirorirotchi",
+      "local_html": "raw\\character\\212_Pirorirotchi.html",
+      "local_image": "raw\\character\\212_Pirorirotchi.jpeg",
+      "image_size": [
+        500,
+        500
+      ],
+      "runtime_boundary": "analysis-only official reference; firmware runtime must use C/C++ bitmap rows or rights-cleared replacement art"
+    },
+    {
+      "index": 12,
+      "page_id": 213,
+      "catalog_name": "Hikotchi",
+      "page_url": "https://tamagotchi-official.com/gb/series/connection/character/213/",
+      "official_image_url": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/05/09/0Ll9wLz6DgKg6XCl/34_%E3%83%92%E3%82%B3%E3%81%A3%E3%81%A1.jpeg",
+      "official_alt": "Hikotchi",
+      "local_html": "raw\\character\\213_Hikotchi.html",
+      "local_image": "raw\\character\\213_Hikotchi.jpeg",
+      "image_size": [
+        500,
+        500
+      ],
+      "runtime_boundary": "analysis-only official reference; firmware runtime must use C/C++ bitmap rows or rights-cleared replacement art"
+    },
+    {
+      "index": 13,
+      "page_id": 214,
+      "catalog_name": "Hinatchi",
+      "page_url": "https://tamagotchi-official.com/gb/series/connection/character/214/",
+      "official_image_url": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/05/09/1NBNu1Yl3kyY5G1S/35_%E3%81%B2%E3%81%AA%E3%81%A3%E3%81%A1.jpeg",
+      "official_alt": "Hinatchi",
+      "local_html": "raw\\character\\214_Hinatchi.html",
+      "local_image": "raw\\character\\214_Hinatchi.jpeg",
+      "image_size": [
+        500,
+        500
+      ],
+      "runtime_boundary": "analysis-only official reference; firmware runtime must use C/C++ bitmap rows or rights-cleared replacement art"
+    },
+    {
+      "index": 14,
+      "page_id": 215,
+      "catalog_name": "Youngmimitchi",
+      "page_url": "https://tamagotchi-official.com/gb/series/connection/character/215/",
+      "official_image_url": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/05/09/Z3ji4AtFtsDmAfgF/16_%E3%82%84%E3%82%93%E3%81%90%E3%81%BF%E3%81%BF%E3%81%A3%E3%81%A1.jpeg",
+      "official_alt": "Youngmimitchi",
+      "local_html": "raw\\character\\215_Youngmimitchi.html",
+      "local_image": "raw\\character\\215_Youngmimitchi.jpeg",
+      "image_size": [
+        500,
+        500
+      ],
+      "runtime_boundary": "analysis-only official reference; firmware runtime must use C/C++ bitmap rows or rights-cleared replacement art"
+    },
+    {
+      "index": 15,
+      "page_id": 216,
+      "catalog_name": "Ringotchi",
+      "page_url": "https://tamagotchi-official.com/gb/series/connection/character/216/",
+      "official_image_url": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/05/09/ZVWwNlIvnHXMIZf0/08_%E3%82%8A%E3%82%93%E3%81%94%E3%81%A3%E3%81%A1.jpeg",
+      "official_alt": "Ringotchi",
+      "local_html": "raw\\character\\216_Ringotchi.html",
+      "local_image": "raw\\character\\216_Ringotchi.jpeg",
+      "image_size": [
+        500,
+        500
+      ],
+      "runtime_boundary": "analysis-only official reference; firmware runtime must use C/C++ bitmap rows or rights-cleared replacement art"
+    },
+    {
+      "index": 16,
+      "page_id": 217,
+      "catalog_name": "Hinotamatchi",
+      "page_url": "https://tamagotchi-official.com/gb/series/connection/character/217/",
+      "official_image_url": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/05/09/KDVjXIU3sAAomGK4/17_%E3%81%B2%E3%81%AE%E3%81%9F%E3%81%BE%E3%81%A3%E3%81%A1.jpeg",
+      "official_alt": "Hinotamatchi",
+      "local_html": "raw\\character\\217_Hinotamatchi.html",
+      "local_image": "raw\\character\\217_Hinotamatchi.jpeg",
+      "image_size": [
+        500,
+        500
+      ],
+      "runtime_boundary": "analysis-only official reference; firmware runtime must use C/C++ bitmap rows or rights-cleared replacement art"
+    },
+    {
+      "index": 17,
+      "page_id": 218,
+      "catalog_name": "Hashitamatchi",
+      "page_url": "https://tamagotchi-official.com/gb/series/connection/character/218/",
+      "official_image_url": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/05/09/cmNI3WE1PrG4K6Ov/36_%E3%81%AF%E3%81%97%E3%81%9F%E3%81%BE%E3%81%A3%E3%81%A1.jpeg",
+      "official_alt": "Hashitamatchi",
+      "local_html": "raw\\character\\218_Hashitamatchi.html",
+      "local_image": "raw\\character\\218_Hashitamatchi.jpeg",
+      "image_size": [
+        500,
+        500
+      ],
+      "runtime_boundary": "analysis-only official reference; firmware runtime must use C/C++ bitmap rows or rights-cleared replacement art"
+    },
+    {
+      "index": 18,
+      "page_id": 219,
+      "catalog_name": "Mametchi",
+      "page_url": "https://tamagotchi-official.com/gb/series/connection/character/219/",
+      "official_image_url": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/05/09/NlLrenLN5KAPXrX6/01_%E3%81%BE%E3%82%81%E3%81%A3%E3%81%A1.jpeg",
+      "official_alt": "Mametchi",
+      "local_html": "raw\\character\\219_Mametchi.html",
+      "local_image": "raw\\character\\219_Mametchi.jpeg",
+      "image_size": [
+        500,
+        500
+      ],
+      "runtime_boundary": "analysis-only official reference; firmware runtime must use C/C++ bitmap rows or rights-cleared replacement art"
+    },
+    {
+      "index": 19,
+      "page_id": 220,
+      "catalog_name": "Furawatchi",
+      "page_url": "https://tamagotchi-official.com/gb/series/connection/character/220/",
+      "official_image_url": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/05/09/vek1R3OUQWAzn5pm/06_%E3%81%B5%E3%82%89%E3%82%8F%E3%81%A3%E3%81%A1.jpeg",
+      "official_alt": "Furawatchi",
+      "local_html": "raw\\character\\220_Furawatchi.html",
+      "local_image": "raw\\character\\220_Furawatchi.jpeg",
+      "image_size": [
+        500,
+        500
+      ],
+      "runtime_boundary": "analysis-only official reference; firmware runtime must use C/C++ bitmap rows or rights-cleared replacement art"
+    },
+    {
+      "index": 20,
+      "page_id": 221,
+      "catalog_name": "Pyonkotchi",
+      "page_url": "https://tamagotchi-official.com/gb/series/connection/character/221/",
+      "official_image_url": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/05/09/BX6JFnZx8u6gqSg6/37_%E3%81%B4%E3%82%87%E3%82%93%E3%81%93%E3%81%A3%E3%81%A1.jpeg",
+      "official_alt": "Pyonkotchi",
+      "local_html": "raw\\character\\221_Pyonkotchi.html",
+      "local_image": "raw\\character\\221_Pyonkotchi.jpeg",
+      "image_size": [
+        500,
+        500
+      ],
+      "runtime_boundary": "analysis-only official reference; firmware runtime must use C/C++ bitmap rows or rights-cleared replacement art"
+    },
+    {
+      "index": 21,
+      "page_id": 222,
+      "catalog_name": "Kuchipatchi",
+      "page_url": "https://tamagotchi-official.com/gb/series/connection/character/222/",
+      "official_image_url": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/05/09/kpx51GWxIe2bx4MM/02_%E3%81%8F%E3%81%A1%E3%81%B1%E3%81%A3%E3%81%A1.jpeg",
+      "official_alt": "Kuchipatchi",
+      "local_html": "raw\\character\\222_Kuchipatchi.html",
+      "local_image": "raw\\character\\222_Kuchipatchi.jpeg",
+      "image_size": [
+        500,
+        500
+      ],
+      "runtime_boundary": "analysis-only official reference; firmware runtime must use C/C++ bitmap rows or rights-cleared replacement art"
+    },
+    {
+      "index": 22,
+      "page_id": 223,
+      "catalog_name": "Memetchi",
+      "page_url": "https://tamagotchi-official.com/gb/series/connection/character/223/",
+      "official_image_url": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/05/09/u1wxHAIxMCWK3rOO/03_%E3%82%81%E3%82%81%E3%81%A3%E3%81%A1.jpeg",
+      "official_alt": "Memetchi",
+      "local_html": "raw\\character\\223_Memetchi.html",
+      "local_image": "raw\\character\\223_Memetchi.jpeg",
+      "image_size": [
+        500,
+        500
+      ],
+      "runtime_boundary": "analysis-only official reference; firmware runtime must use C/C++ bitmap rows or rights-cleared replacement art"
+    },
+    {
+      "index": 23,
+      "page_id": 224,
+      "catalog_name": "Billotchi",
+      "page_url": "https://tamagotchi-official.com/gb/series/connection/character/224/",
+      "official_image_url": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/05/09/ZvL1MTbpccLJLHfa/38_%E3%83%93%E3%83%AB%E3%82%AA%E3%81%A3%E3%81%A1.jpeg",
+      "official_alt": "Billotchi",
+      "local_html": "raw\\character\\224_Billotchi.html",
+      "local_image": "raw\\character\\224_Billotchi.jpeg",
+      "image_size": [
+        500,
+        500
+      ],
+      "runtime_boundary": "analysis-only official reference; firmware runtime must use C/C++ bitmap rows or rights-cleared replacement art"
+    },
+    {
+      "index": 24,
+      "page_id": 225,
+      "catalog_name": "Tarakotchi",
+      "page_url": "https://tamagotchi-official.com/gb/series/connection/character/225/",
+      "official_image_url": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/05/09/JZ1aVn2oh03F3kRP/12_%E3%81%9F%E3%82%89%E3%81%93%E3%81%A3%E3%81%A1.jpeg",
+      "official_alt": "Tarakotchi",
+      "local_html": "raw\\character\\225_Tarakotchi.html",
+      "local_image": "raw\\character\\225_Tarakotchi.jpeg",
+      "image_size": [
+        500,
+        500
+      ],
+      "runtime_boundary": "analysis-only official reference; firmware runtime must use C/C++ bitmap rows or rights-cleared replacement art"
+    },
+    {
+      "index": 25,
+      "page_id": 226,
+      "catalog_name": "Paparatchi",
+      "page_url": "https://tamagotchi-official.com/gb/series/connection/character/226/",
+      "official_image_url": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/05/09/5TM0VoqW7oxjS8L3/25_%E3%81%B1%E3%81%B1%E3%82%89%E3%81%A3%E3%81%A1.jpeg",
+      "official_alt": "Paparatchi",
+      "local_html": "raw\\character\\226_Paparatchi.html",
+      "local_image": "raw\\character\\226_Paparatchi.jpeg",
+      "image_size": [
+        500,
+        500
+      ],
+      "runtime_boundary": "analysis-only official reference; firmware runtime must use C/C++ bitmap rows or rights-cleared replacement art"
+    },
+    {
+      "index": 26,
+      "page_id": 227,
+      "catalog_name": "Mimiyoritchi",
+      "page_url": "https://tamagotchi-official.com/gb/series/connection/character/227/",
+      "official_image_url": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/05/09/EdI6RvMV7fnYIFlj/39_%E3%81%BF%E3%81%BF%E3%82%88%E3%82%8A%E3%81%A3%E3%81%A1.jpeg",
+      "official_alt": "Mimiyoritchi",
+      "local_html": "raw\\character\\227_Mimiyoritchi.html",
+      "local_image": "raw\\character\\227_Mimiyoritchi.jpeg",
+      "image_size": [
+        500,
+        500
+      ],
+      "runtime_boundary": "analysis-only official reference; firmware runtime must use C/C++ bitmap rows or rights-cleared replacement art"
+    },
+    {
+      "index": 27,
+      "page_id": 228,
+      "catalog_name": "Hanatchi",
+      "page_url": "https://tamagotchi-official.com/gb/series/connection/character/228/",
+      "official_image_url": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/05/09/iKoyel6kv8aFd6HN/26_%E3%81%AF%E3%81%AA%E3%81%A3%E3%81%A1.jpeg",
+      "official_alt": "Hanatchi",
+      "local_html": "raw\\character\\228_Hanatchi.html",
+      "local_image": "raw\\character\\228_Hanatchi.jpeg",
+      "image_size": [
+        500,
+        500
+      ],
+      "runtime_boundary": "analysis-only official reference; firmware runtime must use C/C++ bitmap rows or rights-cleared replacement art"
+    },
+    {
+      "index": 28,
+      "page_id": 229,
+      "catalog_name": "Hashizotchi",
+      "page_url": "https://tamagotchi-official.com/gb/series/connection/character/229/",
+      "official_image_url": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/05/09/vYTubbvvoiKXmibX/13_%E3%81%AF%E3%81%97%E3%81%9E%E3%83%BC%E3%81%A3%E3%81%A1.jpeg",
+      "official_alt": "Hashizotchi",
+      "local_html": "raw\\character\\229_Hashizotchi.html",
+      "local_image": "raw\\character\\229_Hashizotchi.jpeg",
+      "image_size": [
+        500,
+        500
+      ],
+      "runtime_boundary": "analysis-only official reference; firmware runtime must use C/C++ bitmap rows or rights-cleared replacement art"
+    },
+    {
+      "index": 29,
+      "page_id": 230,
+      "catalog_name": "Tsunotchi",
+      "page_url": "https://tamagotchi-official.com/gb/series/connection/character/230/",
+      "official_image_url": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/05/09/H8yzNpBb6GS2RnAC/40_%E3%81%A4%E3%81%AE%E3%81%A3%E3%81%A1.jpeg",
+      "official_alt": "Tsunotchi",
+      "local_html": "raw\\character\\230_Tsunotchi.html",
+      "local_image": "raw\\character\\230_Tsunotchi.jpeg",
+      "image_size": [
+        500,
+        500
+      ],
+      "runtime_boundary": "analysis-only official reference; firmware runtime must use C/C++ bitmap rows or rights-cleared replacement art"
+    },
+    {
+      "index": 30,
+      "page_id": 231,
+      "catalog_name": "Maskutchi",
+      "page_url": "https://tamagotchi-official.com/gb/series/connection/character/231/",
+      "official_image_url": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/05/09/WLtKVXNk1FKJzih7/14_%E3%81%BE%E3%81%99%E3%81%8F%E3%81%A3%E3%81%A1.jpeg",
+      "official_alt": "Maskutchi",
+      "local_html": "raw\\character\\231_Maskutchi.html",
+      "local_image": "raw\\character\\231_Maskutchi.jpeg",
+      "image_size": [
+        500,
+        500
+      ],
+      "runtime_boundary": "analysis-only official reference; firmware runtime must use C/C++ bitmap rows or rights-cleared replacement art"
+    },
+    {
+      "index": 31,
+      "page_id": 232,
+      "catalog_name": "Megatchi",
+      "page_url": "https://tamagotchi-official.com/gb/series/connection/character/232/",
+      "official_image_url": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/05/09/vs3YinNF7WeKxS9b/41_%E3%83%A1%E3%82%AC%E3%81%A3%E3%81%A1.jpeg",
+      "official_alt": "Megatchi",
+      "local_html": "raw\\character\\232_Megatchi.html",
+      "local_image": "raw\\character\\232_Megatchi.jpeg",
+      "image_size": [
+        500,
+        500
+      ],
+      "runtime_boundary": "analysis-only official reference; firmware runtime must use C/C++ bitmap rows or rights-cleared replacement art"
+    },
+    {
+      "index": 32,
+      "page_id": 233,
+      "catalog_name": "Mimitchi",
+      "page_url": "https://tamagotchi-official.com/gb/series/connection/character/233/",
+      "official_image_url": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/05/09/O8EcsonqHXzAHgQb/05_%E3%81%BF%E3%81%BF%E3%81%A3%E3%81%A1.jpeg",
+      "official_alt": "Mimitchi",
+      "local_html": "raw\\character\\233_Mimitchi.html",
+      "local_image": "raw\\character\\233_Mimitchi.jpeg",
+      "image_size": [
+        500,
+        500
+      ],
+      "runtime_boundary": "analysis-only official reference; firmware runtime must use C/C++ bitmap rows or rights-cleared replacement art"
+    },
+    {
+      "index": 33,
+      "page_id": 234,
+      "catalog_name": "Chomametchi",
+      "page_url": "https://tamagotchi-official.com/gb/series/connection/character/234/",
+      "official_image_url": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/05/09/ySDT3TuypFf5qNwP/42_%E3%81%A1%E3%82%87%E3%81%BE%E3%82%81%E3%81%A3%E3%81%A1.jpeg",
+      "official_alt": "Chomametchi",
+      "local_html": "raw\\character\\234_Chomametchi.html",
+      "local_image": "raw\\character\\234_Chomametchi.jpeg",
+      "image_size": [
+        500,
+        500
+      ],
+      "runtime_boundary": "analysis-only official reference; firmware runtime must use C/C++ bitmap rows or rights-cleared replacement art"
+    },
+    {
+      "index": 34,
+      "page_id": 235,
+      "catalog_name": "Dekotchi",
+      "page_url": "https://tamagotchi-official.com/gb/series/connection/character/235/",
+      "official_image_url": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/05/09/xB6YoY10sK3Cdjng/43_%E3%81%A7%E3%81%93%E3%81%A3%E3%81%A1.jpeg",
+      "official_alt": "Dekotchi",
+      "local_html": "raw\\character\\235_Dekotchi.html",
+      "local_image": "raw\\character\\235_Dekotchi.jpeg",
+      "image_size": [
+        500,
+        500
+      ],
+      "runtime_boundary": "analysis-only official reference; firmware runtime must use C/C++ bitmap rows or rights-cleared replacement art"
+    },
+    {
+      "index": 35,
+      "page_id": 236,
+      "catalog_name": "Hidatchi",
+      "page_url": "https://tamagotchi-official.com/gb/series/connection/character/236/",
+      "official_image_url": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/05/09/s4fdBd4iISCZIQ8k/44_%E3%81%B2%E3%81%A0%E3%81%A3%E3%81%A1.jpeg",
+      "official_alt": "Hidatchi",
+      "local_html": "raw\\character\\236_Hidatchi.html",
+      "local_image": "raw\\character\\236_Hidatchi.jpeg",
+      "image_size": [
+        500,
+        500
+      ],
+      "runtime_boundary": "analysis-only official reference; firmware runtime must use C/C++ bitmap rows or rights-cleared replacement art"
+    },
+    {
+      "index": 36,
+      "page_id": 237,
+      "catalog_name": "Debatchi",
+      "page_url": "https://tamagotchi-official.com/gb/series/connection/character/237/",
+      "official_image_url": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/05/09/O0qIJQZ0HwXuQrNg/18_%E3%81%A7%E3%81%B0%E3%81%A3%E3%81%A1.jpeg",
+      "official_alt": "Debatchi",
+      "local_html": "raw\\character\\237_Debatchi.html",
+      "local_image": "raw\\character\\237_Debatchi.jpeg",
+      "image_size": [
+        500,
+        500
+      ],
+      "runtime_boundary": "analysis-only official reference; firmware runtime must use C/C++ bitmap rows or rights-cleared replacement art"
+    },
+    {
+      "index": 37,
+      "page_id": 238,
+      "catalog_name": "Bunbutchi",
+      "page_url": "https://tamagotchi-official.com/gb/series/connection/character/238/",
+      "official_image_url": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/05/09/uW8jl9JCWQ4rYz8K/45_%E3%83%96%E3%83%B3%E3%83%96%E3%81%A3%E3%81%A1.jpeg",
+      "official_alt": "Bunbutchi",
+      "local_html": "raw\\character\\238_Bunbutchi.html",
+      "local_image": "raw\\character\\238_Bunbutchi.jpeg",
+      "image_size": [
+        500,
+        500
+      ],
+      "runtime_boundary": "analysis-only official reference; firmware runtime must use C/C++ bitmap rows or rights-cleared replacement art"
+    },
+    {
+      "index": 38,
+      "page_id": 239,
+      "catalog_name": "Pipotchi",
+      "page_url": "https://tamagotchi-official.com/gb/series/connection/character/239/",
+      "official_image_url": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/05/09/WCcSFQS5jfzkvTzU/46_%E3%83%94%E3%83%9D%E3%81%A3%E3%81%A1.jpeg",
+      "official_alt": "Pipotchi",
+      "local_html": "raw\\character\\239_Pipotchi.html",
+      "local_image": "raw\\character\\239_Pipotchi.jpeg",
+      "image_size": [
+        500,
+        500
+      ],
+      "runtime_boundary": "analysis-only official reference; firmware runtime must use C/C++ bitmap rows or rights-cleared replacement art"
+    },
+    {
+      "index": 39,
+      "page_id": 240,
+      "catalog_name": "Drotchi",
+      "page_url": "https://tamagotchi-official.com/gb/series/connection/character/240/",
+      "official_image_url": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/05/09/AOQhZQCjynpWIgBr/11_%E3%81%A9%E3%82%8D%E3%81%A3%E3%81%A1.jpeg",
+      "official_alt": "Drotchi",
+      "local_html": "raw\\character\\240_Drotchi.html",
+      "local_image": "raw\\character\\240_Drotchi.jpeg",
+      "image_size": [
+        500,
+        500
+      ],
+      "runtime_boundary": "analysis-only official reference; firmware runtime must use C/C++ bitmap rows or rights-cleared replacement art"
+    },
+    {
+      "index": 40,
+      "page_id": 241,
+      "catalog_name": "Bill",
+      "page_url": "https://tamagotchi-official.com/gb/series/connection/character/241/",
+      "official_image_url": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/05/09/o9bFaHaVEcbrB1Wk/50_%E3%82%B5%E3%83%A0.jpeg",
+      "official_alt": "Bill",
+      "local_html": "raw\\character\\241_Bill.html",
+      "local_image": "raw\\character\\241_Bill.jpeg",
+      "image_size": [
+        500,
+        500
+      ],
+      "runtime_boundary": "analysis-only official reference; firmware runtime must use C/C++ bitmap rows or rights-cleared replacement art"
+    },
+    {
+      "index": 41,
+      "page_id": 242,
+      "catalog_name": "Robotchi",
+      "page_url": "https://tamagotchi-official.com/gb/series/connection/character/242/",
+      "official_image_url": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/05/09/0aUQy4JiJJkWqB2w/19_%E3%82%8D%E3%81%BC%E3%81%A3%E3%81%A1.jpeg",
+      "official_alt": "Robotchi",
+      "local_html": "raw\\character\\242_Robotchi.html",
+      "local_image": "raw\\character\\242_Robotchi.jpeg",
+      "image_size": [
+        500,
+        500
+      ],
+      "runtime_boundary": "analysis-only official reference; firmware runtime must use C/C++ bitmap rows or rights-cleared replacement art"
+    },
+    {
+      "index": 42,
+      "page_id": 243,
+      "catalog_name": "Wooltchi",
+      "page_url": "https://tamagotchi-official.com/gb/series/connection/character/243/",
+      "official_image_url": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/05/09/o9Sn2AGYOrYdlNqu/20_%E3%81%86%E3%83%BC%E3%82%8B%E3%81%A3%E3%81%A1.jpeg",
+      "official_alt": "Wooltchi",
+      "local_html": "raw\\character\\243_Wooltchi.html",
+      "local_image": "raw\\character\\243_Wooltchi.jpeg",
+      "image_size": [
+        500,
+        500
+      ],
+      "runtime_boundary": "analysis-only official reference; firmware runtime must use C/C++ bitmap rows or rights-cleared replacement art"
+    },
+    {
+      "index": 43,
+      "page_id": 244,
+      "catalog_name": "Teketchi",
+      "page_url": "https://tamagotchi-official.com/gb/series/connection/character/244/",
+      "official_image_url": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/05/09/cj3teRoQpbR3wVmE/47_%E3%81%A6%E3%81%91%E3%81%A3%E3%81%A1.jpeg",
+      "official_alt": "Teketchi",
+      "local_html": "raw\\character\\244_Teketchi.html",
+      "local_image": "raw\\character\\244_Teketchi.jpeg",
+      "image_size": [
+        500,
+        500
+      ],
+      "runtime_boundary": "analysis-only official reference; firmware runtime must use C/C++ bitmap rows or rights-cleared replacement art"
+    },
+    {
+      "index": 44,
+      "page_id": 245,
+      "catalog_name": "Gozarutchi",
+      "page_url": "https://tamagotchi-official.com/gb/series/connection/character/245/",
+      "official_image_url": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/05/09/plTMV8OHGoZkkubn/04_%E3%81%94%E3%81%96%E3%82%8B%E3%81%A3%E3%81%A1.jpeg",
+      "official_alt": "Gozarutchi",
+      "local_html": "raw\\character\\245_Gozarutchi.html",
+      "local_image": "raw\\character\\245_Gozarutchi.jpeg",
+      "image_size": [
+        500,
+        500
+      ],
+      "runtime_boundary": "analysis-only official reference; firmware runtime must use C/C++ bitmap rows or rights-cleared replacement art"
+    },
+    {
+      "index": 45,
+      "page_id": 246,
+      "catalog_name": "Warusotchi",
+      "page_url": "https://tamagotchi-official.com/gb/series/connection/character/246/",
+      "official_image_url": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/05/09/02adQlfdSQHH359Y/48_%E3%82%8F%E3%82%8B%E3%81%9D%E3%81%A3%E3%81%A1.jpeg",
+      "official_alt": "Warusotchi",
+      "local_html": "raw\\character\\246_Warusotchi.html",
+      "local_image": "raw\\character\\246_Warusotchi.jpeg",
+      "image_size": [
+        500,
+        500
+      ],
+      "runtime_boundary": "analysis-only official reference; firmware runtime must use C/C++ bitmap rows or rights-cleared replacement art"
+    },
+    {
+      "index": 46,
+      "page_id": 247,
+      "catalog_name": "Sekitoritchi",
+      "page_url": "https://tamagotchi-official.com/gb/series/connection/character/247/",
+      "official_image_url": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/05/09/mkXGz4DcEu08XBoZ/49_%E3%81%9B%E3%81%8D%E3%81%A8%E3%82%8A%E3%81%A3%E3%81%A1.jpeg",
+      "official_alt": "Sekitoritchi",
+      "local_html": "raw\\character\\247_Sekitoritchi.html",
+      "local_image": "raw\\character\\247_Sekitoritchi.jpeg",
+      "image_size": [
+        500,
+        500
+      ],
+      "runtime_boundary": "analysis-only official reference; firmware runtime must use C/C++ bitmap rows or rights-cleared replacement art"
+    },
+    {
+      "index": 47,
+      "page_id": 248,
+      "catalog_name": "Oyajitchi",
+      "page_url": "https://tamagotchi-official.com/gb/series/connection/character/248/",
+      "official_image_url": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/05/09/RiV7iPYjApSXakuh/15_%E3%81%8A%E3%82%84%E3%81%98%E3%81%A3%E3%81%A1.jpeg",
+      "official_alt": "Oyajitchi",
+      "local_html": "raw\\character\\248_Oyajitchi.html",
+      "local_image": "raw\\character\\248_Oyajitchi.jpeg",
+      "image_size": [
+        500,
+        500
+      ],
+      "runtime_boundary": "analysis-only official reference; firmware runtime must use C/C++ bitmap rows or rights-cleared replacement art"
+    },
+    {
+      "index": 48,
+      "page_id": 249,
+      "catalog_name": "Ojitchi",
+      "page_url": "https://tamagotchi-official.com/gb/series/connection/character/249/",
+      "official_image_url": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/05/09/rv7DNTSNmYnyqHl0/27_%E3%81%8A%E3%81%98%E3%81%A3%E3%81%A1.jpeg",
+      "official_alt": "Ojitchi",
+      "local_html": "raw\\character\\249_Ojitchi.html",
+      "local_image": "raw\\character\\249_Ojitchi.jpeg",
+      "image_size": [
+        500,
+        500
+      ],
+      "runtime_boundary": "analysis-only official reference; firmware runtime must use C/C++ bitmap rows or rights-cleared replacement art"
+    },
+    {
+      "index": 49,
+      "page_id": 250,
+      "catalog_name": "Otokitchi",
+      "page_url": "https://tamagotchi-official.com/gb/series/connection/character/250/",
+      "official_image_url": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/05/09/Rcp3XImLl6yfAOrx/28_%E3%81%8A%E3%83%88%E3%82%AD%E3%81%A3%E3%81%A1.jpeg",
+      "official_alt": "Otokitchi",
+      "local_html": "raw\\character\\250_Otokitchi.html",
+      "local_image": "raw\\character\\250_Otokitchi.jpeg",
+      "image_size": [
+        500,
+        500
+      ],
+      "runtime_boundary": "analysis-only official reference; firmware runtime must use C/C++ bitmap rows or rights-cleared replacement art"
+    }
+  ],
+  "coverage_note": "This closes the official-reference proof surface for the 50-row character catalog. It does not close official-look runtime art; the firmware still needs human acceptance of the generated 16x16 and 24x24 C++ bitmap rows."
+}

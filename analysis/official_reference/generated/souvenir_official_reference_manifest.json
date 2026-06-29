@@ -1,0 +1,1106 @@
+{
+  "source_page": "https://tamagotchi-official.com/gb/series/connection/howto/",
+  "runtime_boundary": "Official PNG/GIF files are analysis-only references. Firmware resources remain C/C++ bitmap arrays and composed frame tables.",
+  "coverage_note": "The cached official how-to assets provide behavior and semantic scene references for souvenir-like memories, but they do not form a complete 64-row official souvenir atlas. Only unambiguous object rows are converted into official-source C++ overrides.",
+  "generated": {
+    "candidate_contact_sheet": "generated\\souvenir_official_candidate_assets_contact_sheet.png",
+    "source_semantic_status_contact_sheet": "generated\\souvenir_source_semantic_status_contact_sheet.png",
+    "official_source_override_contact_sheet": "generated\\souvenir_official_source_overrides_contact_sheet.png",
+    "alignment_proof": "generated\\souvenir_official_alignment_proof.png"
+  },
+  "official_source_override_count": 2,
+  "official_source_overrides": [
+    {
+      "label": "TRUMPET",
+      "souvenir_index": 54,
+      "souvenir_name": "TRUMPET",
+      "source_file": "images__howto__item__img_icon_02_pc.png",
+      "source_box": [
+        748,
+        3,
+        856,
+        114
+      ],
+      "coverage": "official-source C++ 16x16 override"
+    },
+    {
+      "label": "BALL",
+      "souvenir_index": 55,
+      "souvenir_name": "BALL PLAY",
+      "source_file": "images__howto__item__img_icon_02_pc.png",
+      "source_box": [
+        615,
+        27,
+        695,
+        105
+      ],
+      "coverage": "official-source C++ 16x16 override"
+    }
+  ],
+  "assets": [
+    {
+      "source_id": "growth",
+      "file": "images__howto__growth__img_growth_01.gif",
+      "size": [
+        1000,
+        580
+      ],
+      "frames": 2,
+      "souvenir_indices": [
+        0,
+        1
+      ],
+      "souvenir_names": [
+        "FIRST HATCH",
+        "BABY STEP"
+      ],
+      "coverage": "official scene/icon semantic reference, not a full per-souvenir atlas",
+      "note": "egg, baby, growth-stage presentation"
+    },
+    {
+      "source_id": "growth",
+      "file": "images__howto__growth__img_growth_02.gif",
+      "size": [
+        213,
+        200
+      ],
+      "frames": 1,
+      "souvenir_indices": [
+        0,
+        1
+      ],
+      "souvenir_names": [
+        "FIRST HATCH",
+        "BABY STEP"
+      ],
+      "coverage": "official scene/icon semantic reference, not a full per-souvenir atlas",
+      "note": "egg, baby, growth-stage presentation"
+    },
+    {
+      "source_id": "nurture_food",
+      "file": "images__howto__breed__img_breed_02.gif",
+      "size": [
+        213,
+        200
+      ],
+      "frames": 7,
+      "souvenir_indices": [
+        2,
+        3,
+        41
+      ],
+      "souvenir_names": [
+        "FIRST MEAL",
+        "FIRST SNACK",
+        "FULL FOOD"
+      ],
+      "coverage": "official scene/icon semantic reference, not a full per-souvenir atlas",
+      "note": "meal/snack feeding and food care"
+    },
+    {
+      "source_id": "nurture_toilet",
+      "file": "images__howto__breed__img_breed_03.gif",
+      "size": [
+        213,
+        200
+      ],
+      "frames": 44,
+      "souvenir_indices": [
+        4,
+        39
+      ],
+      "souvenir_names": [
+        "CLEAN ROOM",
+        "NO MESS"
+      ],
+      "coverage": "official scene/icon semantic reference, not a full per-souvenir atlas",
+      "note": "mess and toilet cleanup"
+    },
+    {
+      "source_id": "nurture_training",
+      "file": "images__main__howto__breed__img_breed_04.gif",
+      "size": [
+        213,
+        200
+      ],
+      "frames": 11,
+      "souvenir_indices": [
+        7,
+        35,
+        36,
+        42
+      ],
+      "souvenir_names": [
+        "TRAINING",
+        "CARE GOOD",
+        "CARE HARD",
+        "FULL TRAIN"
+      ],
+      "coverage": "official scene/icon semantic reference, not a full per-souvenir atlas",
+      "note": "discipline and care-quality reactions"
+    },
+    {
+      "source_id": "nurture_medicine",
+      "file": "images__howto__breed__img_breed_05.gif",
+      "size": [
+        213,
+        200
+      ],
+      "frames": 16,
+      "souvenir_indices": [
+        5,
+        37,
+        38
+      ],
+      "souvenir_names": [
+        "GOOD MEDS",
+        "SICK DAY",
+        "TOOTH FIX"
+      ],
+      "coverage": "official scene/icon semantic reference, not a full per-souvenir atlas",
+      "note": "sickness, medicine, recovery"
+    },
+    {
+      "source_id": "nurture_lights",
+      "file": "images__main__howto__breed__img_breed_06.gif",
+      "size": [
+        213,
+        200
+      ],
+      "frames": 16,
+      "souvenir_indices": [
+        6,
+        44,
+        45
+      ],
+      "souvenir_names": [
+        "LIGHTS OFF",
+        "LIGHT SLEEP",
+        "WAKE SMILE"
+      ],
+      "coverage": "official scene/icon semantic reference, not a full per-souvenir atlas",
+      "note": "lights, sleep, wake behavior"
+    },
+    {
+      "source_id": "games",
+      "file": "images__howto__game__img_game_01.gif",
+      "size": [
+        213,
+        200
+      ],
+      "frames": 11,
+      "souvenir_indices": [
+        8,
+        14,
+        15,
+        43,
+        61
+      ],
+      "souvenir_names": [
+        "FIRST GAME",
+        "SPRINT RIB",
+        "HOOP MEDAL",
+        "HEAVY WIN",
+        "MEMORY DAY"
+      ],
+      "coverage": "official scene/icon semantic reference, not a full per-souvenir atlas",
+      "note": "game play, win, memory/medal semantics"
+    },
+    {
+      "source_id": "games",
+      "file": "images__howto__game__img_game_06.gif",
+      "size": [
+        213,
+        200
+      ],
+      "frames": 33,
+      "souvenir_indices": [
+        8,
+        14,
+        15,
+        43,
+        61
+      ],
+      "souvenir_names": [
+        "FIRST GAME",
+        "SPRINT RIB",
+        "HOOP MEDAL",
+        "HEAVY WIN",
+        "MEMORY DAY"
+      ],
+      "coverage": "official scene/icon semantic reference, not a full per-souvenir atlas",
+      "note": "game play, win, memory/medal semantics"
+    },
+    {
+      "source_id": "games",
+      "file": "images__howto__game__img_game_07.gif",
+      "size": [
+        213,
+        200
+      ],
+      "frames": 29,
+      "souvenir_indices": [
+        8,
+        14,
+        15,
+        43,
+        61
+      ],
+      "souvenir_names": [
+        "FIRST GAME",
+        "SPRINT RIB",
+        "HOOP MEDAL",
+        "HEAVY WIN",
+        "MEMORY DAY"
+      ],
+      "coverage": "official scene/icon semantic reference, not a full per-souvenir atlas",
+      "note": "game play, win, memory/medal semantics"
+    },
+    {
+      "source_id": "games",
+      "file": "images__main__howto__game__img_game_05.gif",
+      "size": [
+        213,
+        200
+      ],
+      "frames": 14,
+      "souvenir_indices": [
+        8,
+        14,
+        15,
+        43,
+        61
+      ],
+      "souvenir_names": [
+        "FIRST GAME",
+        "SPRINT RIB",
+        "HOOP MEDAL",
+        "HEAVY WIN",
+        "MEMORY DAY"
+      ],
+      "coverage": "official scene/icon semantic reference, not a full per-souvenir atlas",
+      "note": "game play, win, memory/medal semantics"
+    },
+    {
+      "source_id": "shop_items",
+      "file": "images__howto__item__img_item_03_pc.gif",
+      "size": [
+        1000,
+        240
+      ],
+      "frames": 48,
+      "souvenir_indices": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        16,
+        17,
+        21,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57
+      ],
+      "souvenir_names": [
+        "SKIS",
+        "PALM TREE",
+        "SURFBOARD",
+        "PANDA BEAR",
+        "MARACAS",
+        "FIRST SHOP",
+        "BEST BUY",
+        "GIFT BOX",
+        "TOY PLAY",
+        "BOOK DAY",
+        "MUSIC DAY",
+        "TRAVEL PASS",
+        "TICKET",
+        "CHARM",
+        "BLOCK SET",
+        "ROPE SKIP",
+        "TRUMPET",
+        "BALL PLAY",
+        "SHOPPER",
+        "COLLECTOR"
+      ],
+      "coverage": "official scene/icon semantic reference, not a full per-souvenir atlas",
+      "note": "shop, item, prize, toy, ticket, ball, trumpet references"
+    },
+    {
+      "source_id": "shop_items",
+      "file": "images__howto__item__img_icon_02_pc.png",
+      "size": [
+        1000,
+        130
+      ],
+      "frames": 1,
+      "souvenir_indices": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        16,
+        17,
+        21,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57
+      ],
+      "souvenir_names": [
+        "SKIS",
+        "PALM TREE",
+        "SURFBOARD",
+        "PANDA BEAR",
+        "MARACAS",
+        "FIRST SHOP",
+        "BEST BUY",
+        "GIFT BOX",
+        "TOY PLAY",
+        "BOOK DAY",
+        "MUSIC DAY",
+        "TRAVEL PASS",
+        "TICKET",
+        "CHARM",
+        "BLOCK SET",
+        "ROPE SKIP",
+        "TRUMPET",
+        "BALL PLAY",
+        "SHOPPER",
+        "COLLECTOR"
+      ],
+      "coverage": "official scene/icon semantic reference, not a full per-souvenir atlas",
+      "note": "shop, item, prize, toy, ticket, ball, trumpet references"
+    },
+    {
+      "source_id": "password_secret",
+      "file": "images__main__howto__special__img_special_01.gif",
+      "size": [
+        213,
+        200
+      ],
+      "frames": 58,
+      "souvenir_indices": [
+        18,
+        19,
+        20,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "souvenir_names": [
+        "SECRET CODE",
+        "PASSWORD",
+        "DONATION",
+        "BIRTHDAY",
+        "ANNIV 1",
+        "ANNIV 2",
+        "ANNIV 3",
+        "ANNIV 4",
+        "ANNIV 5"
+      ],
+      "coverage": "official scene/icon semantic reference, not a full per-souvenir atlas",
+      "note": "password, secret-code, date/celebration reward context"
+    },
+    {
+      "source_id": "password_secret",
+      "file": "images__howto__special__img_special_02.gif",
+      "size": [
+        213,
+        200
+      ],
+      "frames": 2,
+      "souvenir_indices": [
+        18,
+        19,
+        20,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "souvenir_names": [
+        "SECRET CODE",
+        "PASSWORD",
+        "DONATION",
+        "BIRTHDAY",
+        "ANNIV 1",
+        "ANNIV 2",
+        "ANNIV 3",
+        "ANNIV 4",
+        "ANNIV 5"
+      ],
+      "coverage": "official scene/icon semantic reference, not a full per-souvenir atlas",
+      "note": "password, secret-code, date/celebration reward context"
+    },
+    {
+      "source_id": "connect",
+      "file": "images__howto__connect__img_connect_01.gif",
+      "size": [
+        79,
+        106
+      ],
+      "frames": 2,
+      "souvenir_indices": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        58,
+        59,
+        60,
+        62,
+        63
+      ],
+      "souvenir_names": [
+        "VISIT TAG",
+        "FRIEND BADGE",
+        "BEST FRIEND",
+        "PARTNER",
+        "BABY PHOTO",
+        "PARENT NOTE",
+        "GEN PHOTO",
+        "FAMILY TREE",
+        "OLD FRIEND",
+        "LEGACY",
+        "NEW GEN",
+        "ALBUM"
+      ],
+      "coverage": "official scene/icon semantic reference, not a full per-souvenir atlas",
+      "note": "visit, present, friendship, love, partner, baby, generation"
+    },
+    {
+      "source_id": "connect",
+      "file": "images__howto__connect__img_connect_02.gif",
+      "size": [
+        93,
+        106
+      ],
+      "frames": 2,
+      "souvenir_indices": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        58,
+        59,
+        60,
+        62,
+        63
+      ],
+      "souvenir_names": [
+        "VISIT TAG",
+        "FRIEND BADGE",
+        "BEST FRIEND",
+        "PARTNER",
+        "BABY PHOTO",
+        "PARENT NOTE",
+        "GEN PHOTO",
+        "FAMILY TREE",
+        "OLD FRIEND",
+        "LEGACY",
+        "NEW GEN",
+        "ALBUM"
+      ],
+      "coverage": "official scene/icon semantic reference, not a full per-souvenir atlas",
+      "note": "visit, present, friendship, love, partner, baby, generation"
+    },
+    {
+      "source_id": "connect",
+      "file": "images__howto__connect__img_connect_04.gif",
+      "size": [
+        213,
+        200
+      ],
+      "frames": 21,
+      "souvenir_indices": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        58,
+        59,
+        60,
+        62,
+        63
+      ],
+      "souvenir_names": [
+        "VISIT TAG",
+        "FRIEND BADGE",
+        "BEST FRIEND",
+        "PARTNER",
+        "BABY PHOTO",
+        "PARENT NOTE",
+        "GEN PHOTO",
+        "FAMILY TREE",
+        "OLD FRIEND",
+        "LEGACY",
+        "NEW GEN",
+        "ALBUM"
+      ],
+      "coverage": "official scene/icon semantic reference, not a full per-souvenir atlas",
+      "note": "visit, present, friendship, love, partner, baby, generation"
+    },
+    {
+      "source_id": "connect",
+      "file": "images__howto__connect__img_connect_05.gif",
+      "size": [
+        213,
+        200
+      ],
+      "frames": 52,
+      "souvenir_indices": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        58,
+        59,
+        60,
+        62,
+        63
+      ],
+      "souvenir_names": [
+        "VISIT TAG",
+        "FRIEND BADGE",
+        "BEST FRIEND",
+        "PARTNER",
+        "BABY PHOTO",
+        "PARENT NOTE",
+        "GEN PHOTO",
+        "FAMILY TREE",
+        "OLD FRIEND",
+        "LEGACY",
+        "NEW GEN",
+        "ALBUM"
+      ],
+      "coverage": "official scene/icon semantic reference, not a full per-souvenir atlas",
+      "note": "visit, present, friendship, love, partner, baby, generation"
+    },
+    {
+      "source_id": "connect",
+      "file": "images__howto__connect__img_connect_07.gif",
+      "size": [
+        213,
+        200
+      ],
+      "frames": 10,
+      "souvenir_indices": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        58,
+        59,
+        60,
+        62,
+        63
+      ],
+      "souvenir_names": [
+        "VISIT TAG",
+        "FRIEND BADGE",
+        "BEST FRIEND",
+        "PARTNER",
+        "BABY PHOTO",
+        "PARENT NOTE",
+        "GEN PHOTO",
+        "FAMILY TREE",
+        "OLD FRIEND",
+        "LEGACY",
+        "NEW GEN",
+        "ALBUM"
+      ],
+      "coverage": "official scene/icon semantic reference, not a full per-souvenir atlas",
+      "note": "visit, present, friendship, love, partner, baby, generation"
+    }
+  ],
+  "rows": [
+    {
+      "index": 0,
+      "name": "FIRST HATCH",
+      "semantic_source": "growth",
+      "status": "official semantic scene/icon reference exists",
+      "coverage": "official semantic reference"
+    },
+    {
+      "index": 1,
+      "name": "BABY STEP",
+      "semantic_source": "growth",
+      "status": "official semantic scene/icon reference exists",
+      "coverage": "official semantic reference"
+    },
+    {
+      "index": 2,
+      "name": "FIRST MEAL",
+      "semantic_source": "nurture_food",
+      "status": "official semantic scene/icon reference exists",
+      "coverage": "official semantic reference"
+    },
+    {
+      "index": 3,
+      "name": "FIRST SNACK",
+      "semantic_source": "nurture_food",
+      "status": "official semantic scene/icon reference exists",
+      "coverage": "official semantic reference"
+    },
+    {
+      "index": 4,
+      "name": "CLEAN ROOM",
+      "semantic_source": "nurture_toilet",
+      "status": "official semantic scene/icon reference exists",
+      "coverage": "official semantic reference"
+    },
+    {
+      "index": 5,
+      "name": "GOOD MEDS",
+      "semantic_source": "nurture_medicine",
+      "status": "official semantic scene/icon reference exists",
+      "coverage": "official semantic reference"
+    },
+    {
+      "index": 6,
+      "name": "LIGHTS OFF",
+      "semantic_source": "nurture_lights",
+      "status": "official semantic scene/icon reference exists",
+      "coverage": "official semantic reference"
+    },
+    {
+      "index": 7,
+      "name": "TRAINING",
+      "semantic_source": "nurture_training",
+      "status": "official semantic scene/icon reference exists",
+      "coverage": "official semantic reference"
+    },
+    {
+      "index": 8,
+      "name": "FIRST GAME",
+      "semantic_source": "games",
+      "status": "official semantic scene/icon reference exists",
+      "coverage": "official semantic reference"
+    },
+    {
+      "index": 9,
+      "name": "SKIS",
+      "semantic_source": "shop_items",
+      "status": "official semantic scene/icon reference exists",
+      "coverage": "official semantic reference"
+    },
+    {
+      "index": 10,
+      "name": "PALM TREE",
+      "semantic_source": "shop_items",
+      "status": "official semantic scene/icon reference exists",
+      "coverage": "official semantic reference"
+    },
+    {
+      "index": 11,
+      "name": "SURFBOARD",
+      "semantic_source": "shop_items",
+      "status": "official semantic scene/icon reference exists",
+      "coverage": "official semantic reference"
+    },
+    {
+      "index": 12,
+      "name": "PANDA BEAR",
+      "semantic_source": "shop_items",
+      "status": "official semantic scene/icon reference exists",
+      "coverage": "official semantic reference"
+    },
+    {
+      "index": 13,
+      "name": "MARACAS",
+      "semantic_source": "shop_items",
+      "status": "official semantic scene/icon reference exists",
+      "coverage": "official semantic reference"
+    },
+    {
+      "index": 14,
+      "name": "SPRINT RIB",
+      "semantic_source": "games",
+      "status": "official semantic scene/icon reference exists",
+      "coverage": "official semantic reference"
+    },
+    {
+      "index": 15,
+      "name": "HOOP MEDAL",
+      "semantic_source": "games",
+      "status": "official semantic scene/icon reference exists",
+      "coverage": "official semantic reference"
+    },
+    {
+      "index": 16,
+      "name": "FIRST SHOP",
+      "semantic_source": "shop_items",
+      "status": "official semantic scene/icon reference exists",
+      "coverage": "official semantic reference"
+    },
+    {
+      "index": 17,
+      "name": "BEST BUY",
+      "semantic_source": "shop_items",
+      "status": "official semantic scene/icon reference exists",
+      "coverage": "official semantic reference"
+    },
+    {
+      "index": 18,
+      "name": "SECRET CODE",
+      "semantic_source": "password_secret",
+      "status": "official semantic scene/icon reference exists",
+      "coverage": "official semantic reference"
+    },
+    {
+      "index": 19,
+      "name": "PASSWORD",
+      "semantic_source": "password_secret",
+      "status": "official semantic scene/icon reference exists",
+      "coverage": "official semantic reference"
+    },
+    {
+      "index": 20,
+      "name": "DONATION",
+      "semantic_source": "password_secret",
+      "status": "official semantic scene/icon reference exists",
+      "coverage": "official semantic reference"
+    },
+    {
+      "index": 21,
+      "name": "GIFT BOX",
+      "semantic_source": "shop_items",
+      "status": "official semantic scene/icon reference exists",
+      "coverage": "official semantic reference"
+    },
+    {
+      "index": 22,
+      "name": "VISIT TAG",
+      "semantic_source": "connect",
+      "status": "official semantic scene/icon reference exists",
+      "coverage": "official semantic reference"
+    },
+    {
+      "index": 23,
+      "name": "FRIEND BADGE",
+      "semantic_source": "connect",
+      "status": "official semantic scene/icon reference exists",
+      "coverage": "official semantic reference"
+    },
+    {
+      "index": 24,
+      "name": "BEST FRIEND",
+      "semantic_source": "connect",
+      "status": "official semantic scene/icon reference exists",
+      "coverage": "official semantic reference"
+    },
+    {
+      "index": 25,
+      "name": "PARTNER",
+      "semantic_source": "connect",
+      "status": "official semantic scene/icon reference exists",
+      "coverage": "official semantic reference"
+    },
+    {
+      "index": 26,
+      "name": "BABY PHOTO",
+      "semantic_source": "connect",
+      "status": "official semantic scene/icon reference exists",
+      "coverage": "official semantic reference"
+    },
+    {
+      "index": 27,
+      "name": "PARENT NOTE",
+      "semantic_source": "connect",
+      "status": "official semantic scene/icon reference exists",
+      "coverage": "official semantic reference"
+    },
+    {
+      "index": 28,
+      "name": "GEN PHOTO",
+      "semantic_source": "connect",
+      "status": "official semantic scene/icon reference exists",
+      "coverage": "official semantic reference"
+    },
+    {
+      "index": 29,
+      "name": "BIRTHDAY",
+      "semantic_source": "password_secret",
+      "status": "official semantic scene/icon reference exists",
+      "coverage": "official semantic reference"
+    },
+    {
+      "index": 30,
+      "name": "ANNIV 1",
+      "semantic_source": "password_secret",
+      "status": "official semantic scene/icon reference exists",
+      "coverage": "official semantic reference"
+    },
+    {
+      "index": 31,
+      "name": "ANNIV 2",
+      "semantic_source": "password_secret",
+      "status": "official semantic scene/icon reference exists",
+      "coverage": "official semantic reference"
+    },
+    {
+      "index": 32,
+      "name": "ANNIV 3",
+      "semantic_source": "password_secret",
+      "status": "official semantic scene/icon reference exists",
+      "coverage": "official semantic reference"
+    },
+    {
+      "index": 33,
+      "name": "ANNIV 4",
+      "semantic_source": "password_secret",
+      "status": "official semantic scene/icon reference exists",
+      "coverage": "official semantic reference"
+    },
+    {
+      "index": 34,
+      "name": "ANNIV 5",
+      "semantic_source": "password_secret",
+      "status": "official semantic scene/icon reference exists",
+      "coverage": "official semantic reference"
+    },
+    {
+      "index": 35,
+      "name": "CARE GOOD",
+      "semantic_source": "nurture_training",
+      "status": "official semantic scene/icon reference exists",
+      "coverage": "official semantic reference"
+    },
+    {
+      "index": 36,
+      "name": "CARE HARD",
+      "semantic_source": "nurture_training",
+      "status": "official semantic scene/icon reference exists",
+      "coverage": "official semantic reference"
+    },
+    {
+      "index": 37,
+      "name": "SICK DAY",
+      "semantic_source": "nurture_medicine",
+      "status": "official semantic scene/icon reference exists",
+      "coverage": "official semantic reference"
+    },
+    {
+      "index": 38,
+      "name": "TOOTH FIX",
+      "semantic_source": "nurture_medicine",
+      "status": "official semantic scene/icon reference exists",
+      "coverage": "official semantic reference"
+    },
+    {
+      "index": 39,
+      "name": "NO MESS",
+      "semantic_source": "nurture_toilet",
+      "status": "official semantic scene/icon reference exists",
+      "coverage": "official semantic reference"
+    },
+    {
+      "index": 40,
+      "name": "FULL HEART",
+      "semantic_source": "none",
+      "status": "no direct official semantic candidate in cached how-to assets",
+      "coverage": "source-backed substitute; no direct cached official row"
+    },
+    {
+      "index": 41,
+      "name": "FULL FOOD",
+      "semantic_source": "nurture_food",
+      "status": "official semantic scene/icon reference exists",
+      "coverage": "official semantic reference"
+    },
+    {
+      "index": 42,
+      "name": "FULL TRAIN",
+      "semantic_source": "nurture_training",
+      "status": "official semantic scene/icon reference exists",
+      "coverage": "official semantic reference"
+    },
+    {
+      "index": 43,
+      "name": "HEAVY WIN",
+      "semantic_source": "games",
+      "status": "official semantic scene/icon reference exists",
+      "coverage": "official semantic reference"
+    },
+    {
+      "index": 44,
+      "name": "LIGHT SLEEP",
+      "semantic_source": "nurture_lights",
+      "status": "official semantic scene/icon reference exists",
+      "coverage": "official semantic reference"
+    },
+    {
+      "index": 45,
+      "name": "WAKE SMILE",
+      "semantic_source": "nurture_lights",
+      "status": "official semantic scene/icon reference exists",
+      "coverage": "official semantic reference"
+    },
+    {
+      "index": 46,
+      "name": "TOY PLAY",
+      "semantic_source": "shop_items",
+      "status": "official semantic scene/icon reference exists",
+      "coverage": "official semantic reference"
+    },
+    {
+      "index": 47,
+      "name": "BOOK DAY",
+      "semantic_source": "shop_items",
+      "status": "official semantic scene/icon reference exists",
+      "coverage": "official semantic reference"
+    },
+    {
+      "index": 48,
+      "name": "MUSIC DAY",
+      "semantic_source": "shop_items",
+      "status": "official semantic scene/icon reference exists",
+      "coverage": "official semantic reference"
+    },
+    {
+      "index": 49,
+      "name": "TRAVEL PASS",
+      "semantic_source": "shop_items",
+      "status": "official semantic scene/icon reference exists",
+      "coverage": "official semantic reference"
+    },
+    {
+      "index": 50,
+      "name": "TICKET",
+      "semantic_source": "shop_items",
+      "status": "official semantic scene/icon reference exists",
+      "coverage": "official semantic reference"
+    },
+    {
+      "index": 51,
+      "name": "CHARM",
+      "semantic_source": "shop_items",
+      "status": "official semantic scene/icon reference exists",
+      "coverage": "official semantic reference"
+    },
+    {
+      "index": 52,
+      "name": "BLOCK SET",
+      "semantic_source": "shop_items",
+      "status": "official semantic scene/icon reference exists",
+      "coverage": "official semantic reference"
+    },
+    {
+      "index": 53,
+      "name": "ROPE SKIP",
+      "semantic_source": "shop_items",
+      "status": "official semantic scene/icon reference exists",
+      "coverage": "official semantic reference"
+    },
+    {
+      "index": 54,
+      "name": "TRUMPET",
+      "semantic_source": "shop_items",
+      "status": "official-source C++ override",
+      "coverage": "official-source C++ bitmap"
+    },
+    {
+      "index": 55,
+      "name": "BALL PLAY",
+      "semantic_source": "shop_items",
+      "status": "official-source C++ override",
+      "coverage": "official-source C++ bitmap"
+    },
+    {
+      "index": 56,
+      "name": "SHOPPER",
+      "semantic_source": "shop_items",
+      "status": "official semantic scene/icon reference exists",
+      "coverage": "official semantic reference"
+    },
+    {
+      "index": 57,
+      "name": "COLLECTOR",
+      "semantic_source": "shop_items",
+      "status": "official semantic scene/icon reference exists",
+      "coverage": "official semantic reference"
+    },
+    {
+      "index": 58,
+      "name": "FAMILY TREE",
+      "semantic_source": "connect",
+      "status": "official semantic scene/icon reference exists",
+      "coverage": "official semantic reference"
+    },
+    {
+      "index": 59,
+      "name": "OLD FRIEND",
+      "semantic_source": "connect",
+      "status": "official semantic scene/icon reference exists",
+      "coverage": "official semantic reference"
+    },
+    {
+      "index": 60,
+      "name": "LEGACY",
+      "semantic_source": "connect",
+      "status": "official semantic scene/icon reference exists",
+      "coverage": "official semantic reference"
+    },
+    {
+      "index": 61,
+      "name": "MEMORY DAY",
+      "semantic_source": "games",
+      "status": "official semantic scene/icon reference exists",
+      "coverage": "official semantic reference"
+    },
+    {
+      "index": 62,
+      "name": "NEW GEN",
+      "semantic_source": "connect",
+      "status": "official semantic scene/icon reference exists",
+      "coverage": "official semantic reference"
+    },
+    {
+      "index": 63,
+      "name": "ALBUM",
+      "semantic_source": "connect",
+      "status": "official semantic scene/icon reference exists",
+      "coverage": "official semantic reference"
+    }
+  ]
+}

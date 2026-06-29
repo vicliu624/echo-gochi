@@ -1,0 +1,984 @@
+{
+  "generated_by": "analysis/resource_replacement_manifest/generate_resource_replacement_manifest.py",
+  "runtime_boundary": "Firmware visual resources remain C/C++ bitmap arrays. Raster files are reference/proof artifacts only.",
+  "source_files": [
+    "src/EchoPetCatalog.cpp",
+    "src/EchoPetCatalogVisuals.cpp",
+    "analysis/official_reference/generated/souvenir_official_reference_manifest.json"
+  ],
+  "row_count": 64,
+  "expected_runtime_rows": 64,
+  "detected_runtime_rows": 64,
+  "runtime_row_match": true,
+  "runtime_dimensions_px": [
+    16,
+    16
+  ],
+  "art_status_counts": {
+    "official semantic scene/icon reference exists": 61,
+    "no direct official semantic candidate in cached how-to assets": 1,
+    "official_source_override": 2
+  },
+  "rows": [
+    {
+      "index": 0,
+      "label": "FIRST HATCH",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[0]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "visual_traits": 0,
+      "art_status": "official semantic scene/icon reference exists",
+      "semantic_source": "growth",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 1,
+      "label": "BABY STEP",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[1]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "visual_traits": 1,
+      "art_status": "official semantic scene/icon reference exists",
+      "semantic_source": "growth",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 2,
+      "label": "FIRST MEAL",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[2]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "visual_traits": 2,
+      "art_status": "official semantic scene/icon reference exists",
+      "semantic_source": "nurture_food",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 3,
+      "label": "FIRST SNACK",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[3]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "visual_traits": 3,
+      "art_status": "official semantic scene/icon reference exists",
+      "semantic_source": "nurture_food",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 4,
+      "label": "CLEAN ROOM",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[4]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "visual_traits": 4,
+      "art_status": "official semantic scene/icon reference exists",
+      "semantic_source": "nurture_toilet",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 5,
+      "label": "GOOD MEDS",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[5]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "visual_traits": 5,
+      "art_status": "official semantic scene/icon reference exists",
+      "semantic_source": "nurture_medicine",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 6,
+      "label": "LIGHTS OFF",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[6]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "visual_traits": 6,
+      "art_status": "official semantic scene/icon reference exists",
+      "semantic_source": "nurture_lights",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 7,
+      "label": "TRAINING",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[7]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "visual_traits": 7,
+      "art_status": "official semantic scene/icon reference exists",
+      "semantic_source": "nurture_training",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 8,
+      "label": "FIRST GAME",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[8]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "visual_traits": 8,
+      "art_status": "official semantic scene/icon reference exists",
+      "semantic_source": "games",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 9,
+      "label": "SKIS",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[9]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "visual_traits": 9,
+      "art_status": "official semantic scene/icon reference exists",
+      "semantic_source": "shop_items",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 10,
+      "label": "PALM TREE",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[10]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "visual_traits": 10,
+      "art_status": "official semantic scene/icon reference exists",
+      "semantic_source": "shop_items",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 11,
+      "label": "SURFBOARD",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[11]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "visual_traits": 11,
+      "art_status": "official semantic scene/icon reference exists",
+      "semantic_source": "shop_items",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 12,
+      "label": "PANDA BEAR",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[12]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "visual_traits": 12,
+      "art_status": "official semantic scene/icon reference exists",
+      "semantic_source": "shop_items",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 13,
+      "label": "MARACAS",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[13]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "visual_traits": 13,
+      "art_status": "official semantic scene/icon reference exists",
+      "semantic_source": "shop_items",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 14,
+      "label": "SPRINT RIB",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[14]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "visual_traits": 14,
+      "art_status": "official semantic scene/icon reference exists",
+      "semantic_source": "games",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 15,
+      "label": "HOOP MEDAL",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[15]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "visual_traits": 15,
+      "art_status": "official semantic scene/icon reference exists",
+      "semantic_source": "games",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 16,
+      "label": "FIRST SHOP",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[16]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "visual_traits": 16,
+      "art_status": "official semantic scene/icon reference exists",
+      "semantic_source": "shop_items",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 17,
+      "label": "BEST BUY",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[17]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "visual_traits": 17,
+      "art_status": "official semantic scene/icon reference exists",
+      "semantic_source": "shop_items",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 18,
+      "label": "SECRET CODE",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[18]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "visual_traits": 18,
+      "art_status": "official semantic scene/icon reference exists",
+      "semantic_source": "password_secret",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 19,
+      "label": "PASSWORD",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[19]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "visual_traits": 19,
+      "art_status": "official semantic scene/icon reference exists",
+      "semantic_source": "password_secret",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 20,
+      "label": "DONATION",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[20]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "visual_traits": 20,
+      "art_status": "official semantic scene/icon reference exists",
+      "semantic_source": "password_secret",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 21,
+      "label": "GIFT BOX",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[21]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "visual_traits": 21,
+      "art_status": "official semantic scene/icon reference exists",
+      "semantic_source": "shop_items",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 22,
+      "label": "VISIT TAG",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[22]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "visual_traits": 22,
+      "art_status": "official semantic scene/icon reference exists",
+      "semantic_source": "connect",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 23,
+      "label": "FRIEND BADGE",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[23]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "visual_traits": 23,
+      "art_status": "official semantic scene/icon reference exists",
+      "semantic_source": "connect",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 24,
+      "label": "BEST FRIEND",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[24]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "visual_traits": 24,
+      "art_status": "official semantic scene/icon reference exists",
+      "semantic_source": "connect",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 25,
+      "label": "PARTNER",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[25]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "visual_traits": 25,
+      "art_status": "official semantic scene/icon reference exists",
+      "semantic_source": "connect",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 26,
+      "label": "BABY PHOTO",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[26]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "visual_traits": 26,
+      "art_status": "official semantic scene/icon reference exists",
+      "semantic_source": "connect",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 27,
+      "label": "PARENT NOTE",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[27]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "visual_traits": 27,
+      "art_status": "official semantic scene/icon reference exists",
+      "semantic_source": "connect",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 28,
+      "label": "GEN PHOTO",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[28]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "visual_traits": 28,
+      "art_status": "official semantic scene/icon reference exists",
+      "semantic_source": "connect",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 29,
+      "label": "BIRTHDAY",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[29]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "visual_traits": 29,
+      "art_status": "official semantic scene/icon reference exists",
+      "semantic_source": "password_secret",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 30,
+      "label": "ANNIV 1",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[30]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "visual_traits": 30,
+      "art_status": "official semantic scene/icon reference exists",
+      "semantic_source": "password_secret",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 31,
+      "label": "ANNIV 2",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[31]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "visual_traits": 31,
+      "art_status": "official semantic scene/icon reference exists",
+      "semantic_source": "password_secret",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 32,
+      "label": "ANNIV 3",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[32]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "visual_traits": 32,
+      "art_status": "official semantic scene/icon reference exists",
+      "semantic_source": "password_secret",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 33,
+      "label": "ANNIV 4",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[33]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "visual_traits": 33,
+      "art_status": "official semantic scene/icon reference exists",
+      "semantic_source": "password_secret",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 34,
+      "label": "ANNIV 5",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[34]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "visual_traits": 34,
+      "art_status": "official semantic scene/icon reference exists",
+      "semantic_source": "password_secret",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 35,
+      "label": "CARE GOOD",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[35]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "visual_traits": 35,
+      "art_status": "official semantic scene/icon reference exists",
+      "semantic_source": "nurture_training",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 36,
+      "label": "CARE HARD",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[36]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "visual_traits": 36,
+      "art_status": "official semantic scene/icon reference exists",
+      "semantic_source": "nurture_training",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 37,
+      "label": "SICK DAY",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[37]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "visual_traits": 37,
+      "art_status": "official semantic scene/icon reference exists",
+      "semantic_source": "nurture_medicine",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 38,
+      "label": "TOOTH FIX",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[38]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "visual_traits": 38,
+      "art_status": "official semantic scene/icon reference exists",
+      "semantic_source": "nurture_medicine",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 39,
+      "label": "NO MESS",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[39]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "visual_traits": 39,
+      "art_status": "official semantic scene/icon reference exists",
+      "semantic_source": "nurture_toilet",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 40,
+      "label": "FULL HEART",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[40]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "visual_traits": 40,
+      "art_status": "no direct official semantic candidate in cached how-to assets",
+      "semantic_source": "none",
+      "official_coverage": "source-backed substitute; no direct cached official row",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 41,
+      "label": "FULL FOOD",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[41]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "visual_traits": 41,
+      "art_status": "official semantic scene/icon reference exists",
+      "semantic_source": "nurture_food",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 42,
+      "label": "FULL TRAIN",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[42]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "visual_traits": 42,
+      "art_status": "official semantic scene/icon reference exists",
+      "semantic_source": "nurture_training",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 43,
+      "label": "HEAVY WIN",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[43]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "visual_traits": 43,
+      "art_status": "official semantic scene/icon reference exists",
+      "semantic_source": "games",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 44,
+      "label": "LIGHT SLEEP",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[44]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "visual_traits": 44,
+      "art_status": "official semantic scene/icon reference exists",
+      "semantic_source": "nurture_lights",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 45,
+      "label": "WAKE SMILE",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[45]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "visual_traits": 45,
+      "art_status": "official semantic scene/icon reference exists",
+      "semantic_source": "nurture_lights",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 46,
+      "label": "TOY PLAY",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[46]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "visual_traits": 46,
+      "art_status": "official semantic scene/icon reference exists",
+      "semantic_source": "shop_items",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 47,
+      "label": "BOOK DAY",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[47]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "visual_traits": 47,
+      "art_status": "official semantic scene/icon reference exists",
+      "semantic_source": "shop_items",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 48,
+      "label": "MUSIC DAY",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[48]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "visual_traits": 48,
+      "art_status": "official semantic scene/icon reference exists",
+      "semantic_source": "shop_items",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 49,
+      "label": "TRAVEL PASS",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[49]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "visual_traits": 49,
+      "art_status": "official semantic scene/icon reference exists",
+      "semantic_source": "shop_items",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 50,
+      "label": "TICKET",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[50]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "visual_traits": 50,
+      "art_status": "official semantic scene/icon reference exists",
+      "semantic_source": "shop_items",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 51,
+      "label": "CHARM",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[51]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "visual_traits": 51,
+      "art_status": "official semantic scene/icon reference exists",
+      "semantic_source": "shop_items",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 52,
+      "label": "BLOCK SET",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[52]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "visual_traits": 52,
+      "art_status": "official semantic scene/icon reference exists",
+      "semantic_source": "shop_items",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 53,
+      "label": "ROPE SKIP",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[53]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "visual_traits": 53,
+      "art_status": "official semantic scene/icon reference exists",
+      "semantic_source": "shop_items",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 54,
+      "label": "TRUMPET",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[54]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "visual_traits": 54,
+      "art_status": "official_source_override",
+      "semantic_source": "shop_items",
+      "official_coverage": "official-source C++ 16x16 override",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 55,
+      "label": "BALL PLAY",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[55]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "visual_traits": 55,
+      "art_status": "official_source_override",
+      "semantic_source": "shop_items",
+      "official_coverage": "official-source C++ 16x16 override",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 56,
+      "label": "SHOPPER",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[56]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "visual_traits": 56,
+      "art_status": "official semantic scene/icon reference exists",
+      "semantic_source": "shop_items",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 57,
+      "label": "COLLECTOR",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[57]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "visual_traits": 57,
+      "art_status": "official semantic scene/icon reference exists",
+      "semantic_source": "shop_items",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 58,
+      "label": "FAMILY TREE",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[58]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "visual_traits": 58,
+      "art_status": "official semantic scene/icon reference exists",
+      "semantic_source": "connect",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 59,
+      "label": "OLD FRIEND",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[59]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "visual_traits": 59,
+      "art_status": "official semantic scene/icon reference exists",
+      "semantic_source": "connect",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 60,
+      "label": "LEGACY",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[60]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "visual_traits": 60,
+      "art_status": "official semantic scene/icon reference exists",
+      "semantic_source": "connect",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 61,
+      "label": "MEMORY DAY",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[61]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "visual_traits": 61,
+      "art_status": "official semantic scene/icon reference exists",
+      "semantic_source": "games",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 62,
+      "label": "NEW GEN",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[62]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "visual_traits": 62,
+      "art_status": "official semantic scene/icon reference exists",
+      "semantic_source": "connect",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 63,
+      "label": "ALBUM",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[63]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "visual_traits": 63,
+      "art_status": "official semantic scene/icon reference exists",
+      "semantic_source": "connect",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+index,label,runtime_bitmap_symbol,runtime_dimensions_px,visual_traits,art_status,semantic_source,official_coverage
+0,FIRST HATCH,kSouvenirMemoryBitmaps[0],16;16,0,official semantic scene/icon reference exists,growth,official semantic reference
+1,BABY STEP,kSouvenirMemoryBitmaps[1],16;16,1,official semantic scene/icon reference exists,growth,official semantic reference
+2,FIRST MEAL,kSouvenirMemoryBitmaps[2],16;16,2,official semantic scene/icon reference exists,nurture_food,official semantic reference
+3,FIRST SNACK,kSouvenirMemoryBitmaps[3],16;16,3,official semantic scene/icon reference exists,nurture_food,official semantic reference
+4,CLEAN ROOM,kSouvenirMemoryBitmaps[4],16;16,4,official semantic scene/icon reference exists,nurture_toilet,official semantic reference
+5,GOOD MEDS,kSouvenirMemoryBitmaps[5],16;16,5,official semantic scene/icon reference exists,nurture_medicine,official semantic reference
+6,LIGHTS OFF,kSouvenirMemoryBitmaps[6],16;16,6,official semantic scene/icon reference exists,nurture_lights,official semantic reference
+7,TRAINING,kSouvenirMemoryBitmaps[7],16;16,7,official semantic scene/icon reference exists,nurture_training,official semantic reference
+8,FIRST GAME,kSouvenirMemoryBitmaps[8],16;16,8,official semantic scene/icon reference exists,games,official semantic reference
+9,SKIS,kSouvenirMemoryBitmaps[9],16;16,9,official semantic scene/icon reference exists,shop_items,official semantic reference
+10,PALM TREE,kSouvenirMemoryBitmaps[10],16;16,10,official semantic scene/icon reference exists,shop_items,official semantic reference
+11,SURFBOARD,kSouvenirMemoryBitmaps[11],16;16,11,official semantic scene/icon reference exists,shop_items,official semantic reference
+12,PANDA BEAR,kSouvenirMemoryBitmaps[12],16;16,12,official semantic scene/icon reference exists,shop_items,official semantic reference
+13,MARACAS,kSouvenirMemoryBitmaps[13],16;16,13,official semantic scene/icon reference exists,shop_items,official semantic reference
+14,SPRINT RIB,kSouvenirMemoryBitmaps[14],16;16,14,official semantic scene/icon reference exists,games,official semantic reference
+15,HOOP MEDAL,kSouvenirMemoryBitmaps[15],16;16,15,official semantic scene/icon reference exists,games,official semantic reference
+16,FIRST SHOP,kSouvenirMemoryBitmaps[16],16;16,16,official semantic scene/icon reference exists,shop_items,official semantic reference
+17,BEST BUY,kSouvenirMemoryBitmaps[17],16;16,17,official semantic scene/icon reference exists,shop_items,official semantic reference
+18,SECRET CODE,kSouvenirMemoryBitmaps[18],16;16,18,official semantic scene/icon reference exists,password_secret,official semantic reference
+19,PASSWORD,kSouvenirMemoryBitmaps[19],16;16,19,official semantic scene/icon reference exists,password_secret,official semantic reference
+20,DONATION,kSouvenirMemoryBitmaps[20],16;16,20,official semantic scene/icon reference exists,password_secret,official semantic reference
+21,GIFT BOX,kSouvenirMemoryBitmaps[21],16;16,21,official semantic scene/icon reference exists,shop_items,official semantic reference
+22,VISIT TAG,kSouvenirMemoryBitmaps[22],16;16,22,official semantic scene/icon reference exists,connect,official semantic reference
+23,FRIEND BADGE,kSouvenirMemoryBitmaps[23],16;16,23,official semantic scene/icon reference exists,connect,official semantic reference
+24,BEST FRIEND,kSouvenirMemoryBitmaps[24],16;16,24,official semantic scene/icon reference exists,connect,official semantic reference
+25,PARTNER,kSouvenirMemoryBitmaps[25],16;16,25,official semantic scene/icon reference exists,connect,official semantic reference
+26,BABY PHOTO,kSouvenirMemoryBitmaps[26],16;16,26,official semantic scene/icon reference exists,connect,official semantic reference
+27,PARENT NOTE,kSouvenirMemoryBitmaps[27],16;16,27,official semantic scene/icon reference exists,connect,official semantic reference
+28,GEN PHOTO,kSouvenirMemoryBitmaps[28],16;16,28,official semantic scene/icon reference exists,connect,official semantic reference
+29,BIRTHDAY,kSouvenirMemoryBitmaps[29],16;16,29,official semantic scene/icon reference exists,password_secret,official semantic reference
+30,ANNIV 1,kSouvenirMemoryBitmaps[30],16;16,30,official semantic scene/icon reference exists,password_secret,official semantic reference
+31,ANNIV 2,kSouvenirMemoryBitmaps[31],16;16,31,official semantic scene/icon reference exists,password_secret,official semantic reference
+32,ANNIV 3,kSouvenirMemoryBitmaps[32],16;16,32,official semantic scene/icon reference exists,password_secret,official semantic reference
+33,ANNIV 4,kSouvenirMemoryBitmaps[33],16;16,33,official semantic scene/icon reference exists,password_secret,official semantic reference
+34,ANNIV 5,kSouvenirMemoryBitmaps[34],16;16,34,official semantic scene/icon reference exists,password_secret,official semantic reference
+35,CARE GOOD,kSouvenirMemoryBitmaps[35],16;16,35,official semantic scene/icon reference exists,nurture_training,official semantic reference
+36,CARE HARD,kSouvenirMemoryBitmaps[36],16;16,36,official semantic scene/icon reference exists,nurture_training,official semantic reference
+37,SICK DAY,kSouvenirMemoryBitmaps[37],16;16,37,official semantic scene/icon reference exists,nurture_medicine,official semantic reference
+38,TOOTH FIX,kSouvenirMemoryBitmaps[38],16;16,38,official semantic scene/icon reference exists,nurture_medicine,official semantic reference
+39,NO MESS,kSouvenirMemoryBitmaps[39],16;16,39,official semantic scene/icon reference exists,nurture_toilet,official semantic reference
+40,FULL HEART,kSouvenirMemoryBitmaps[40],16;16,40,no direct official semantic candidate in cached how-to assets,none,source-backed substitute; no direct cached official row
+41,FULL FOOD,kSouvenirMemoryBitmaps[41],16;16,41,official semantic scene/icon reference exists,nurture_food,official semantic reference
+42,FULL TRAIN,kSouvenirMemoryBitmaps[42],16;16,42,official semantic scene/icon reference exists,nurture_training,official semantic reference
+43,HEAVY WIN,kSouvenirMemoryBitmaps[43],16;16,43,official semantic scene/icon reference exists,games,official semantic reference
+44,LIGHT SLEEP,kSouvenirMemoryBitmaps[44],16;16,44,official semantic scene/icon reference exists,nurture_lights,official semantic reference
+45,WAKE SMILE,kSouvenirMemoryBitmaps[45],16;16,45,official semantic scene/icon reference exists,nurture_lights,official semantic reference
+46,TOY PLAY,kSouvenirMemoryBitmaps[46],16;16,46,official semantic scene/icon reference exists,shop_items,official semantic reference
+47,BOOK DAY,kSouvenirMemoryBitmaps[47],16;16,47,official semantic scene/icon reference exists,shop_items,official semantic reference
+48,MUSIC DAY,kSouvenirMemoryBitmaps[48],16;16,48,official semantic scene/icon reference exists,shop_items,official semantic reference
+49,TRAVEL PASS,kSouvenirMemoryBitmaps[49],16;16,49,official semantic scene/icon reference exists,shop_items,official semantic reference
+50,TICKET,kSouvenirMemoryBitmaps[50],16;16,50,official semantic scene/icon reference exists,shop_items,official semantic reference
+51,CHARM,kSouvenirMemoryBitmaps[51],16;16,51,official semantic scene/icon reference exists,shop_items,official semantic reference
+52,BLOCK SET,kSouvenirMemoryBitmaps[52],16;16,52,official semantic scene/icon reference exists,shop_items,official semantic reference
+53,ROPE SKIP,kSouvenirMemoryBitmaps[53],16;16,53,official semantic scene/icon reference exists,shop_items,official semantic reference
+54,TRUMPET,kSouvenirMemoryBitmaps[54],16;16,54,official_source_override,shop_items,official-source C++ 16x16 override
+55,BALL PLAY,kSouvenirMemoryBitmaps[55],16;16,55,official_source_override,shop_items,official-source C++ 16x16 override
+56,SHOPPER,kSouvenirMemoryBitmaps[56],16;16,56,official semantic scene/icon reference exists,shop_items,official semantic reference
+57,COLLECTOR,kSouvenirMemoryBitmaps[57],16;16,57,official semantic scene/icon reference exists,shop_items,official semantic reference
+58,FAMILY TREE,kSouvenirMemoryBitmaps[58],16;16,58,official semantic scene/icon reference exists,connect,official semantic reference
+59,OLD FRIEND,kSouvenirMemoryBitmaps[59],16;16,59,official semantic scene/icon reference exists,connect,official semantic reference
+60,LEGACY,kSouvenirMemoryBitmaps[60],16;16,60,official semantic scene/icon reference exists,connect,official semantic reference
+61,MEMORY DAY,kSouvenirMemoryBitmaps[61],16;16,61,official semantic scene/icon reference exists,games,official semantic reference
+62,NEW GEN,kSouvenirMemoryBitmaps[62],16;16,62,official semantic scene/icon reference exists,connect,official semantic reference
+63,ALBUM,kSouvenirMemoryBitmaps[63],16;16,63,official semantic scene/icon reference exists,connect,official semantic reference

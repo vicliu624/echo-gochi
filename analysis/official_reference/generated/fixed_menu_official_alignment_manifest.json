@@ -1,0 +1,59 @@
+{
+  "status": "PASS",
+  "verdict": "Fixed menu icons are source-side aligned: the ten semantic slots are derived from analysis-only official device tile crops, both 12x12 and 30x30 rows share the same per-slot source policy, and runtime firmware stores only C/C++ bitmap bytes.",
+  "source": {
+    "manual_pdf": "raw/manuals/bandai_connection_2024_instruction_manual.pdf",
+    "manual_page": "generated/manual_pages/page-1.png",
+    "official_device_crop": "generated/official_manual_fixed_menu_device_callouts.png",
+    "official_center_crop": "generated/official_manual_fixed_menu_center_callouts.png",
+    "official_tile_contact_sheet": "generated/fixed_menu_official_tiles_contact_sheet.png",
+    "official_tile_manifest": "generated/fixed_menu_official_tiles_manifest.json",
+    "compact_source_contact_sheet": "generated/fixed_menu_compact_official_source_contact_sheet.png",
+    "source_policy_contact_sheet": "generated/fixed_menu_source_policy_contact_sheet.png",
+    "source_policy": "generated/fixed_menu_source_policy.json",
+    "echopet_icon_proof": "../screen_simulator/out/fixed_menu_icons_proof_x2.png"
+  },
+  "slots": [
+    {
+      "local": "HEALTH",
+      "official": "Health Meter"
+    },
+    {
+      "local": "FOOD",
+      "official": "Food"
+    },
+    {
+      "local": "TOILET",
+      "official": "Toilet"
+    },
+    {
+      "local": "CONNECT",
+      "official": "Connection/Communication"
+    },
+    {
+      "local": "CARE",
+      "official": "Attention"
+    },
+    {
+      "local": "TRAIN",
+      "official": "Discipline"
+    },
+    {
+      "local": "MEDS",
+      "official": "Medicine"
+    },
+    {
+      "local": "LIGHTS",
+      "official": "Lights"
+    },
+    {
+      "local": "FRIEND",
+      "official": "Friend List"
+    },
+    {
+      "local": "GAME",
+      "official": "Games/Activity"
+    }
+  ],
+  "runtime_boundary": "Official raster assets are analysis-only references; firmware resources remain C/C++ bitmap arrays."
+}

@@ -1,0 +1,6550 @@
+[
+  {
+    "ordinal": 1,
+    "url": "https://tamagotchi-official.com/images/common/logo_tamagotchi.png",
+    "path": "/images/common/logo_tamagotchi.png",
+    "file": "logo_tamagotchi.png",
+    "group": "chrome",
+    "contract_hint": "",
+    "alt": "Official Tamagotchi Logo",
+    "format": "PNG",
+    "width": 188,
+    "height": 40,
+    "frame_count": 1,
+    "unique_frame_count": 1,
+    "duration_ms": 0,
+    "frame_durations_ms": [
+      0
+    ],
+    "content_bboxes": [
+      [
+        1,
+        0,
+        187,
+        40
+      ]
+    ],
+    "changed_bboxes": [
+      null
+    ],
+    "changed_frame_count": 0
+  },
+  {
+    "ordinal": 2,
+    "url": "https://tamagotchi-official.com/gb/series/connection/images/main/common/logo.png",
+    "path": "/gb/series/connection/images/main/common/logo.png",
+    "file": "logo.png",
+    "group": "chrome",
+    "contract_hint": "",
+    "alt": "Tamagotchi connection",
+    "format": "PNG",
+    "width": 600,
+    "height": 212,
+    "frame_count": 1,
+    "unique_frame_count": 1,
+    "duration_ms": 0,
+    "frame_durations_ms": [
+      0
+    ],
+    "content_bboxes": [
+      [
+        3,
+        0,
+        597,
+        212
+      ]
+    ],
+    "changed_bboxes": [
+      null
+    ],
+    "changed_frame_count": 0
+  },
+  {
+    "ordinal": 3,
+    "url": "https://tamagotchi-official.com/gb/series/connection/images/main/howto/tit_play.png",
+    "path": "/gb/series/connection/images/main/howto/tit_play.png",
+    "file": "tit_play.png",
+    "group": "section_title",
+    "contract_hint": "",
+    "alt": "The Original Virtual Reality Pet with Connection Play!",
+    "format": "PNG",
+    "width": 846,
+    "height": 140,
+    "frame_count": 1,
+    "unique_frame_count": 1,
+    "duration_ms": 0,
+    "frame_durations_ms": [
+      0
+    ],
+    "content_bboxes": [
+      [
+        3,
+        0,
+        843,
+        140
+      ]
+    ],
+    "changed_bboxes": [
+      null
+    ],
+    "changed_frame_count": 0
+  },
+  {
+    "ordinal": 4,
+    "url": "https://tamagotchi-official.com/gb/series/connection/images/howto/play/img_play_pc.png",
+    "path": "/gb/series/connection/images/howto/play/img_play_pc.png",
+    "file": "img_play_pc.png",
+    "group": "chrome",
+    "contract_hint": "",
+    "alt": "",
+    "format": "PNG",
+    "width": 1100,
+    "height": 188,
+    "frame_count": 1,
+    "unique_frame_count": 1,
+    "duration_ms": 0,
+    "frame_durations_ms": [
+      0
+    ],
+    "content_bboxes": [
+      [
+        10,
+        29,
+        1091,
+        188
+      ]
+    ],
+    "changed_bboxes": [
+      null
+    ],
+    "changed_frame_count": 0
+  },
+  {
+    "ordinal": 5,
+    "url": "https://tamagotchi-official.com/gb/series/connection/images/howto/img_num_01.png",
+    "path": "/gb/series/connection/images/howto/img_num_01.png",
+    "file": "img_num_01.png",
+    "group": "chrome",
+    "contract_hint": "",
+    "alt": "",
+    "format": "PNG",
+    "width": 110,
+    "height": 110,
+    "frame_count": 1,
+    "unique_frame_count": 1,
+    "duration_ms": 0,
+    "frame_durations_ms": [
+      0
+    ],
+    "content_bboxes": [
+      [
+        10,
+        16,
+        95,
+        110
+      ]
+    ],
+    "changed_bboxes": [
+      null
+    ],
+    "changed_frame_count": 0
+  },
+  {
+    "ordinal": 6,
+    "url": "https://tamagotchi-official.com/gb/series/connection/images/main/howto/breed/img_breed_01.gif",
+    "path": "/gb/series/connection/images/main/howto/breed/img_breed_01.gif",
+    "file": "img_breed_01.gif",
+    "group": "nurture",
+    "contract_hint": "status/check menu visual",
+    "alt": "",
+    "format": "GIF",
+    "width": 213,
+    "height": 200,
+    "frame_count": 1,
+    "unique_frame_count": 1,
+    "duration_ms": 0,
+    "frame_durations_ms": [
+      0
+    ],
+    "content_bboxes": [
+      [
+        0,
+        0,
+        213,
+        200
+      ]
+    ],
+    "changed_bboxes": [
+      null
+    ],
+    "changed_frame_count": 0
+  },
+  {
+    "ordinal": 7,
+    "url": "https://tamagotchi-official.com/gb/series/connection/images/howto/breed/img_icon.png",
+    "path": "/gb/series/connection/images/howto/breed/img_icon.png",
+    "file": "img_icon.png",
+    "group": "nurture",
+    "contract_hint": "nurture.menu.icon",
+    "alt": "",
+    "format": "PNG",
+    "width": 99,
+    "height": 128,
+    "frame_count": 1,
+    "unique_frame_count": 1,
+    "duration_ms": 0,
+    "frame_durations_ms": [
+      0
+    ],
+    "content_bboxes": [
+      [
+        0,
+        0,
+        99,
+        128
+      ]
+    ],
+    "changed_bboxes": [
+      null
+    ],
+    "changed_frame_count": 0
+  },
+  {
+    "ordinal": 8,
+    "url": "https://tamagotchi-official.com/gb/series/connection/images/howto/breed/img_breed_02.gif",
+    "path": "/gb/series/connection/images/howto/breed/img_breed_02.gif",
+    "file": "img_breed_02.gif",
+    "group": "nurture",
+    "contract_hint": "food.select/bite/crumbs",
+    "alt": "",
+    "format": "GIF",
+    "width": 213,
+    "height": 200,
+    "frame_count": 7,
+    "unique_frame_count": 7,
+    "duration_ms": 3500,
+    "frame_durations_ms": [
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500
+    ],
+    "content_bboxes": [
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ]
+    ],
+    "changed_bboxes": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "changed_frame_count": 0
+  },
+  {
+    "ordinal": 9,
+    "url": "https://tamagotchi-official.com/gb/series/connection/images/howto/breed/img_chara.png",
+    "path": "/gb/series/connection/images/howto/breed/img_chara.png",
+    "file": "img_chara.png",
+    "group": "nurture",
+    "contract_hint": "nurture.menu.icon",
+    "alt": "",
+    "format": "PNG",
+    "width": 226,
+    "height": 156,
+    "frame_count": 1,
+    "unique_frame_count": 1,
+    "duration_ms": 0,
+    "frame_durations_ms": [
+      0
+    ],
+    "content_bboxes": [
+      [
+        0,
+        0,
+        226,
+        156
+      ]
+    ],
+    "changed_bboxes": [
+      null
+    ],
+    "changed_frame_count": 0
+  },
+  {
+    "ordinal": 10,
+    "url": "https://tamagotchi-official.com/gb/series/connection/images/howto/breed/img_breed_03.gif",
+    "path": "/gb/series/connection/images/howto/breed/img_breed_03.gif",
+    "file": "img_breed_03.gif",
+    "group": "nurture",
+    "contract_hint": "toilet.mess/sweep/done",
+    "alt": "",
+    "format": "GIF",
+    "width": 213,
+    "height": 200,
+    "frame_count": 44,
+    "unique_frame_count": 36,
+    "duration_ms": 2640,
+    "frame_durations_ms": [
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60
+    ],
+    "content_bboxes": [
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ]
+    ],
+    "changed_bboxes": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "changed_frame_count": 0
+  },
+  {
+    "ordinal": 11,
+    "url": "https://tamagotchi-official.com/gb/series/connection/images/main/howto/breed/img_breed_04.gif",
+    "path": "/gb/series/connection/images/main/howto/breed/img_breed_04.gif",
+    "file": "img_breed_04.gif",
+    "group": "nurture",
+    "contract_hint": "discipline.prompt/react",
+    "alt": "",
+    "format": "GIF",
+    "width": 213,
+    "height": 200,
+    "frame_count": 11,
+    "unique_frame_count": 5,
+    "duration_ms": 6000,
+    "frame_durations_ms": [
+      500,
+      500,
+      500,
+      500,
+      1000,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500
+    ],
+    "content_bboxes": [
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ]
+    ],
+    "changed_bboxes": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "changed_frame_count": 0
+  },
+  {
+    "ordinal": 12,
+    "url": "https://tamagotchi-official.com/gb/series/connection/images/howto/breed/img_breed_05.gif",
+    "path": "/gb/series/connection/images/howto/breed/img_breed_05.gif",
+    "file": "img_breed_05.gif",
+    "group": "nurture",
+    "contract_hint": "medicine.sick/dose/recover",
+    "alt": "",
+    "format": "GIF",
+    "width": 213,
+    "height": 200,
+    "frame_count": 16,
+    "unique_frame_count": 6,
+    "duration_ms": 8000,
+    "frame_durations_ms": [
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500
+    ],
+    "content_bboxes": [
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ]
+    ],
+    "changed_bboxes": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "changed_frame_count": 0
+  },
+  {
+    "ordinal": 13,
+    "url": "https://tamagotchi-official.com/gb/series/connection/images/main/howto/breed/img_breed_06.gif",
+    "path": "/gb/series/connection/images/main/howto/breed/img_breed_06.gif",
+    "file": "img_breed_06.gif",
+    "group": "nurture",
+    "contract_hint": "lights.selector/sleep/dark",
+    "alt": "",
+    "format": "GIF",
+    "width": 213,
+    "height": 200,
+    "frame_count": 16,
+    "unique_frame_count": 6,
+    "duration_ms": 9000,
+    "frame_durations_ms": [
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      1000,
+      1000,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500
+    ],
+    "content_bboxes": [
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ]
+    ],
+    "changed_bboxes": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "changed_frame_count": 0
+  },
+  {
+    "ordinal": 14,
+    "url": "https://tamagotchi-official.com/gb/series/connection/images/howto/img_num_02.png",
+    "path": "/gb/series/connection/images/howto/img_num_02.png",
+    "file": "img_num_02.png",
+    "group": "chrome",
+    "contract_hint": "",
+    "alt": "",
+    "format": "PNG",
+    "width": 110,
+    "height": 110,
+    "frame_count": 1,
+    "unique_frame_count": 1,
+    "duration_ms": 0,
+    "frame_durations_ms": [
+      0
+    ],
+    "content_bboxes": [
+      [
+        6,
+        16,
+        95,
+        110
+      ]
+    ],
+    "changed_bboxes": [
+      null
+    ],
+    "changed_frame_count": 0
+  },
+  {
+    "ordinal": 15,
+    "url": "https://tamagotchi-official.com/gb/series/connection/images/main/howto/growth/img_chart.png",
+    "path": "/gb/series/connection/images/main/howto/growth/img_chart.png",
+    "file": "img_chart.png",
+    "group": "growth",
+    "contract_hint": "character.route.chart",
+    "alt": "chart",
+    "format": "PNG",
+    "width": 1000,
+    "height": 190,
+    "frame_count": 1,
+    "unique_frame_count": 1,
+    "duration_ms": 0,
+    "frame_durations_ms": [
+      0
+    ],
+    "content_bboxes": [
+      [
+        0,
+        0,
+        1000,
+        190
+      ]
+    ],
+    "changed_bboxes": [
+      null
+    ],
+    "changed_frame_count": 0
+  },
+  {
+    "ordinal": 16,
+    "url": "https://tamagotchi-official.com/gb/series/connection/images/howto/growth/img_growth_01.gif",
+    "path": "/gb/series/connection/images/howto/growth/img_growth_01.gif",
+    "file": "img_growth_01.gif",
+    "group": "growth",
+    "contract_hint": "egg/baby/child/teen/adult/passaway",
+    "alt": "",
+    "format": "GIF",
+    "width": 1000,
+    "height": 580,
+    "frame_count": 2,
+    "unique_frame_count": 2,
+    "duration_ms": 1000,
+    "frame_durations_ms": [
+      500,
+      500
+    ],
+    "content_bboxes": [
+      [
+        0,
+        0,
+        1000,
+        580
+      ],
+      [
+        0,
+        0,
+        1000,
+        580
+      ]
+    ],
+    "changed_bboxes": [
+      null,
+      null
+    ],
+    "changed_frame_count": 0
+  },
+  {
+    "ordinal": 17,
+    "url": "https://tamagotchi-official.com/gb/series/connection/images/howto/growth/img_growth_02.gif",
+    "path": "/gb/series/connection/images/howto/growth/img_growth_02.gif",
+    "file": "img_growth_02.gif",
+    "group": "growth",
+    "contract_hint": "egg/baby/child/teen/adult/passaway",
+    "alt": "",
+    "format": "GIF",
+    "width": 213,
+    "height": 200,
+    "frame_count": 1,
+    "unique_frame_count": 1,
+    "duration_ms": 0,
+    "frame_durations_ms": [
+      0
+    ],
+    "content_bboxes": [
+      [
+        0,
+        0,
+        213,
+        200
+      ]
+    ],
+    "changed_bboxes": [
+      null
+    ],
+    "changed_frame_count": 0
+  },
+  {
+    "ordinal": 18,
+    "url": "https://tamagotchi-official.com/gb/series/connection/images/howto/img_num_03.png",
+    "path": "/gb/series/connection/images/howto/img_num_03.png",
+    "file": "img_num_03.png",
+    "group": "chrome",
+    "contract_hint": "",
+    "alt": "",
+    "format": "PNG",
+    "width": 110,
+    "height": 110,
+    "frame_count": 1,
+    "unique_frame_count": 1,
+    "duration_ms": 0,
+    "frame_durations_ms": [
+      0
+    ],
+    "content_bboxes": [
+      [
+        11,
+        4,
+        95,
+        110
+      ]
+    ],
+    "changed_bboxes": [
+      null
+    ],
+    "changed_frame_count": 0
+  },
+  {
+    "ordinal": 19,
+    "url": "https://tamagotchi-official.com/gb/series/connection/images/howto/game/img_chara_01.png",
+    "path": "/gb/series/connection/images/howto/game/img_chara_01.png",
+    "file": "img_chara_01.png",
+    "group": "game",
+    "contract_hint": "game.menu/reward",
+    "alt": "",
+    "format": "PNG",
+    "width": 207,
+    "height": 169,
+    "frame_count": 1,
+    "unique_frame_count": 1,
+    "duration_ms": 0,
+    "frame_durations_ms": [
+      0
+    ],
+    "content_bboxes": [
+      [
+        0,
+        0,
+        207,
+        169
+      ]
+    ],
+    "changed_bboxes": [
+      null
+    ],
+    "changed_frame_count": 0
+  },
+  {
+    "ordinal": 20,
+    "url": "https://tamagotchi-official.com/gb/series/connection/images/howto/game/img_chara_02.png",
+    "path": "/gb/series/connection/images/howto/game/img_chara_02.png",
+    "file": "img_chara_02.png",
+    "group": "game",
+    "contract_hint": "game.menu/reward",
+    "alt": "",
+    "format": "PNG",
+    "width": 220,
+    "height": 145,
+    "frame_count": 1,
+    "unique_frame_count": 1,
+    "duration_ms": 0,
+    "frame_durations_ms": [
+      0
+    ],
+    "content_bboxes": [
+      [
+        0,
+        0,
+        220,
+        145
+      ]
+    ],
+    "changed_bboxes": [
+      null
+    ],
+    "changed_frame_count": 0
+  },
+  {
+    "ordinal": 21,
+    "url": "https://tamagotchi-official.com/gb/series/connection/images/howto/game/img_game_01.gif",
+    "path": "/gb/series/connection/images/howto/game/img_game_01.gif",
+    "file": "img_game_01.gif",
+    "group": "game",
+    "contract_hint": "game.get.*",
+    "alt": "",
+    "format": "GIF",
+    "width": 213,
+    "height": 200,
+    "frame_count": 11,
+    "unique_frame_count": 11,
+    "duration_ms": 13500,
+    "frame_durations_ms": [
+      1500,
+      1500,
+      1500,
+      1500,
+      1500,
+      1000,
+      500,
+      1000,
+      500,
+      1500,
+      1500
+    ],
+    "content_bboxes": [
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ]
+    ],
+    "changed_bboxes": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "changed_frame_count": 0
+  },
+  {
+    "ordinal": 22,
+    "url": "https://tamagotchi-official.com/gb/series/connection/images/howto/game/img_game_02.gif",
+    "path": "/gb/series/connection/images/howto/game/img_game_02.gif",
+    "file": "img_game_02.gif",
+    "group": "game",
+    "contract_hint": "game.bump.*",
+    "alt": "",
+    "format": "GIF",
+    "width": 213,
+    "height": 200,
+    "frame_count": 43,
+    "unique_frame_count": 15,
+    "duration_ms": 14780,
+    "frame_durations_ms": [
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500
+    ],
+    "content_bboxes": [
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ]
+    ],
+    "changed_bboxes": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "changed_frame_count": 0
+  },
+  {
+    "ordinal": 23,
+    "url": "https://tamagotchi-official.com/gb/series/connection/images/main/howto/game/img_game_03.gif",
+    "path": "/gb/series/connection/images/main/howto/game/img_game_03.gif",
+    "file": "img_game_03.gif",
+    "group": "game",
+    "contract_hint": "game.flag.*",
+    "alt": "",
+    "format": "GIF",
+    "width": 213,
+    "height": 200,
+    "frame_count": 13,
+    "unique_frame_count": 6,
+    "duration_ms": 13000,
+    "frame_durations_ms": [
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000
+    ],
+    "content_bboxes": [
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ]
+    ],
+    "changed_bboxes": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "changed_frame_count": 0
+  },
+  {
+    "ordinal": 24,
+    "url": "https://tamagotchi-official.com/gb/series/connection/images/howto/game/img_game_04.gif",
+    "path": "/gb/series/connection/images/howto/game/img_game_04.gif",
+    "file": "img_game_04.gif",
+    "group": "game",
+    "contract_hint": "game.heading.*",
+    "alt": "",
+    "format": "GIF",
+    "width": 213,
+    "height": 200,
+    "frame_count": 65,
+    "unique_frame_count": 30,
+    "duration_ms": 10200,
+    "frame_durations_ms": [
+      2000,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      1000,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      1000,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100
+    ],
+    "content_bboxes": [
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ]
+    ],
+    "changed_bboxes": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "changed_frame_count": 0
+  },
+  {
+    "ordinal": 25,
+    "url": "https://tamagotchi-official.com/gb/series/connection/images/main/howto/game/img_game_05.gif",
+    "path": "/gb/series/connection/images/main/howto/game/img_game_05.gif",
+    "file": "img_game_05.gif",
+    "group": "game",
+    "contract_hint": "game.memory.*",
+    "alt": "",
+    "format": "GIF",
+    "width": 213,
+    "height": 200,
+    "frame_count": 14,
+    "unique_frame_count": 6,
+    "duration_ms": 16000,
+    "frame_durations_ms": [
+      1500,
+      1000,
+      1000,
+      2000,
+      500,
+      1500,
+      500,
+      1500,
+      1000,
+      1000,
+      2000,
+      500,
+      1500,
+      500
+    ],
+    "content_bboxes": [
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ]
+    ],
+    "changed_bboxes": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "changed_frame_count": 0
+  },
+  {
+    "ordinal": 26,
+    "url": "https://tamagotchi-official.com/gb/series/connection/images/howto/game/img_game_06.gif",
+    "path": "/gb/series/connection/images/howto/game/img_game_06.gif",
+    "file": "img_game_06.gif",
+    "group": "game",
+    "contract_hint": "game.sprint.*",
+    "alt": "",
+    "format": "GIF",
+    "width": 213,
+    "height": 200,
+    "frame_count": 33,
+    "unique_frame_count": 23,
+    "duration_ms": 14100,
+    "frame_durations_ms": [
+      500,
+      1000,
+      1000,
+      1000,
+      500,
+      400,
+      400,
+      400,
+      400,
+      400,
+      400,
+      400,
+      400,
+      300,
+      300,
+      300,
+      300,
+      300,
+      300,
+      300,
+      300,
+      300,
+      300,
+      300,
+      300,
+      400,
+      400,
+      400,
+      400,
+      400,
+      400,
+      400,
+      500
+    ],
+    "content_bboxes": [
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ]
+    ],
+    "changed_bboxes": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "changed_frame_count": 0
+  },
+  {
+    "ordinal": 27,
+    "url": "https://tamagotchi-official.com/gb/series/connection/images/howto/game/img_game_07.gif",
+    "path": "/gb/series/connection/images/howto/game/img_game_07.gif",
+    "file": "img_game_07.gif",
+    "group": "game",
+    "contract_hint": "game.hoops.*",
+    "alt": "",
+    "format": "GIF",
+    "width": 213,
+    "height": 200,
+    "frame_count": 29,
+    "unique_frame_count": 29,
+    "duration_ms": 3700,
+    "frame_durations_ms": [
+      500,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      500
+    ],
+    "content_bboxes": [
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ]
+    ],
+    "changed_bboxes": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "changed_frame_count": 0
+  },
+  {
+    "ordinal": 28,
+    "url": "https://tamagotchi-official.com/gb/series/connection/images/howto/img_num_04.png",
+    "path": "/gb/series/connection/images/howto/img_num_04.png",
+    "file": "img_num_04.png",
+    "group": "chrome",
+    "contract_hint": "",
+    "alt": "",
+    "format": "PNG",
+    "width": 110,
+    "height": 110,
+    "frame_count": 1,
+    "unique_frame_count": 1,
+    "duration_ms": 0,
+    "frame_durations_ms": [
+      0
+    ],
+    "content_bboxes": [
+      [
+        0,
+        9,
+        95,
+        110
+      ]
+    ],
+    "changed_bboxes": [
+      null
+    ],
+    "changed_frame_count": 0
+  },
+  {
+    "ordinal": 29,
+    "url": "https://tamagotchi-official.com/gb/series/connection/images/howto/item/img_chara_01.png",
+    "path": "/gb/series/connection/images/howto/item/img_chara_01.png",
+    "file": "img_chara_01.png",
+    "group": "item_shop",
+    "contract_hint": "item.use/collection",
+    "alt": "",
+    "format": "PNG",
+    "width": 232,
+    "height": 165,
+    "frame_count": 1,
+    "unique_frame_count": 1,
+    "duration_ms": 0,
+    "frame_durations_ms": [
+      0
+    ],
+    "content_bboxes": [
+      [
+        0,
+        0,
+        232,
+        165
+      ]
+    ],
+    "changed_bboxes": [
+      null
+    ],
+    "changed_frame_count": 0
+  },
+  {
+    "ordinal": 30,
+    "url": "https://tamagotchi-official.com/gb/series/connection/images/howto/item/img_item_01.gif",
+    "path": "/gb/series/connection/images/howto/item/img_item_01.gif",
+    "file": "img_item_01.gif",
+    "group": "item_shop",
+    "contract_hint": "item.use/collection",
+    "alt": "",
+    "format": "GIF",
+    "width": 213,
+    "height": 200,
+    "frame_count": 5,
+    "unique_frame_count": 5,
+    "duration_ms": 6000,
+    "frame_durations_ms": [
+      2000,
+      1000,
+      1000,
+      1000,
+      1000
+    ],
+    "content_bboxes": [
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ]
+    ],
+    "changed_bboxes": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "changed_frame_count": 0
+  },
+  {
+    "ordinal": 31,
+    "url": "https://tamagotchi-official.com/gb/series/connection/images/howto/item/img_chara_02.png",
+    "path": "/gb/series/connection/images/howto/item/img_chara_02.png",
+    "file": "img_chara_02.png",
+    "group": "item_shop",
+    "contract_hint": "item.use/collection",
+    "alt": "",
+    "format": "PNG",
+    "width": 128,
+    "height": 148,
+    "frame_count": 1,
+    "unique_frame_count": 1,
+    "duration_ms": 0,
+    "frame_durations_ms": [
+      0
+    ],
+    "content_bboxes": [
+      [
+        0,
+        0,
+        128,
+        148
+      ]
+    ],
+    "changed_bboxes": [
+      null
+    ],
+    "changed_frame_count": 0
+  },
+  {
+    "ordinal": 32,
+    "url": "https://tamagotchi-official.com/gb/series/connection/images/howto/item/img_item_02.gif",
+    "path": "/gb/series/connection/images/howto/item/img_item_02.gif",
+    "file": "img_item_02.gif",
+    "group": "item_shop",
+    "contract_hint": "item.use/collection",
+    "alt": "",
+    "format": "GIF",
+    "width": 213,
+    "height": 200,
+    "frame_count": 14,
+    "unique_frame_count": 8,
+    "duration_ms": 7000,
+    "frame_durations_ms": [
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500
+    ],
+    "content_bboxes": [
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ]
+    ],
+    "changed_bboxes": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "changed_frame_count": 0
+  },
+  {
+    "ordinal": 33,
+    "url": "https://tamagotchi-official.com/gb/series/connection/images/howto/item/img_icon_01.png",
+    "path": "/gb/series/connection/images/howto/item/img_icon_01.png",
+    "file": "img_icon_01.png",
+    "group": "item_shop",
+    "contract_hint": "item.use/collection",
+    "alt": "",
+    "format": "PNG",
+    "width": 110,
+    "height": 127,
+    "frame_count": 1,
+    "unique_frame_count": 1,
+    "duration_ms": 0,
+    "frame_durations_ms": [
+      0
+    ],
+    "content_bboxes": [
+      [
+        0,
+        0,
+        110,
+        127
+      ]
+    ],
+    "changed_bboxes": [
+      null
+    ],
+    "changed_frame_count": 0
+  },
+  {
+    "ordinal": 34,
+    "url": "https://tamagotchi-official.com/gb/series/connection/images/howto/item/img_item_03_pc.gif",
+    "path": "/gb/series/connection/images/howto/item/img_item_03_pc.gif",
+    "file": "img_item_03_pc.gif",
+    "group": "item_shop",
+    "contract_hint": "shop.booth/keeper/item",
+    "alt": "",
+    "format": "GIF",
+    "width": 1000,
+    "height": 240,
+    "frame_count": 48,
+    "unique_frame_count": 24,
+    "duration_ms": 24000,
+    "frame_durations_ms": [
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500
+    ],
+    "content_bboxes": [
+      [
+        0,
+        0,
+        1000,
+        240
+      ],
+      [
+        0,
+        0,
+        1000,
+        240
+      ],
+      [
+        0,
+        0,
+        1000,
+        240
+      ],
+      [
+        0,
+        0,
+        1000,
+        240
+      ],
+      [
+        0,
+        0,
+        1000,
+        240
+      ],
+      [
+        0,
+        0,
+        1000,
+        240
+      ],
+      [
+        0,
+        0,
+        1000,
+        240
+      ],
+      [
+        0,
+        0,
+        1000,
+        240
+      ],
+      [
+        0,
+        0,
+        1000,
+        240
+      ],
+      [
+        0,
+        0,
+        1000,
+        240
+      ],
+      [
+        0,
+        0,
+        1000,
+        240
+      ],
+      [
+        0,
+        0,
+        1000,
+        240
+      ],
+      [
+        0,
+        0,
+        1000,
+        240
+      ],
+      [
+        0,
+        0,
+        1000,
+        240
+      ],
+      [
+        0,
+        0,
+        1000,
+        240
+      ],
+      [
+        0,
+        0,
+        1000,
+        240
+      ],
+      [
+        0,
+        0,
+        1000,
+        240
+      ],
+      [
+        0,
+        0,
+        1000,
+        240
+      ],
+      [
+        0,
+        0,
+        1000,
+        240
+      ],
+      [
+        0,
+        0,
+        1000,
+        240
+      ],
+      [
+        0,
+        0,
+        1000,
+        240
+      ],
+      [
+        0,
+        0,
+        1000,
+        240
+      ],
+      [
+        0,
+        0,
+        1000,
+        240
+      ],
+      [
+        0,
+        0,
+        1000,
+        240
+      ],
+      [
+        0,
+        0,
+        1000,
+        240
+      ],
+      [
+        0,
+        0,
+        1000,
+        240
+      ],
+      [
+        0,
+        0,
+        1000,
+        240
+      ],
+      [
+        0,
+        0,
+        1000,
+        240
+      ],
+      [
+        0,
+        0,
+        1000,
+        240
+      ],
+      [
+        0,
+        0,
+        1000,
+        240
+      ],
+      [
+        0,
+        0,
+        1000,
+        240
+      ],
+      [
+        0,
+        0,
+        1000,
+        240
+      ],
+      [
+        0,
+        0,
+        1000,
+        240
+      ],
+      [
+        0,
+        0,
+        1000,
+        240
+      ],
+      [
+        0,
+        0,
+        1000,
+        240
+      ],
+      [
+        0,
+        0,
+        1000,
+        240
+      ],
+      [
+        0,
+        0,
+        1000,
+        240
+      ],
+      [
+        0,
+        0,
+        1000,
+        240
+      ],
+      [
+        0,
+        0,
+        1000,
+        240
+      ],
+      [
+        0,
+        0,
+        1000,
+        240
+      ],
+      [
+        0,
+        0,
+        1000,
+        240
+      ],
+      [
+        0,
+        0,
+        1000,
+        240
+      ],
+      [
+        0,
+        0,
+        1000,
+        240
+      ],
+      [
+        0,
+        0,
+        1000,
+        240
+      ],
+      [
+        0,
+        0,
+        1000,
+        240
+      ],
+      [
+        0,
+        0,
+        1000,
+        240
+      ],
+      [
+        0,
+        0,
+        1000,
+        240
+      ],
+      [
+        0,
+        0,
+        1000,
+        240
+      ]
+    ],
+    "changed_bboxes": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "changed_frame_count": 0
+  },
+  {
+    "ordinal": 35,
+    "url": "https://tamagotchi-official.com/gb/series/connection/images/howto/item/img_icon_02_pc.png",
+    "path": "/gb/series/connection/images/howto/item/img_icon_02_pc.png",
+    "file": "img_icon_02_pc.png",
+    "group": "item_shop",
+    "contract_hint": "item.use/collection",
+    "alt": "",
+    "format": "PNG",
+    "width": 1000,
+    "height": 130,
+    "frame_count": 1,
+    "unique_frame_count": 1,
+    "duration_ms": 0,
+    "frame_durations_ms": [
+      0
+    ],
+    "content_bboxes": [
+      [
+        0,
+        3,
+        1000,
+        128
+      ]
+    ],
+    "changed_bboxes": [
+      null
+    ],
+    "changed_frame_count": 0
+  },
+  {
+    "ordinal": 36,
+    "url": "https://tamagotchi-official.com/gb/series/connection/images/howto/img_num_05.png",
+    "path": "/gb/series/connection/images/howto/img_num_05.png",
+    "file": "img_num_05.png",
+    "group": "chrome",
+    "contract_hint": "",
+    "alt": "",
+    "format": "PNG",
+    "width": 110,
+    "height": 110,
+    "frame_count": 1,
+    "unique_frame_count": 1,
+    "duration_ms": 0,
+    "frame_durations_ms": [
+      0
+    ],
+    "content_bboxes": [
+      [
+        18,
+        14,
+        95,
+        110
+      ]
+    ],
+    "changed_bboxes": [
+      null
+    ],
+    "changed_frame_count": 0
+  },
+  {
+    "ordinal": 37,
+    "url": "https://tamagotchi-official.com/gb/series/connection/images/main/howto/special/img_special_01.gif",
+    "path": "/gb/series/connection/images/main/howto/special/img_special_01.gif",
+    "file": "img_special_01.gif",
+    "group": "password_secret",
+    "contract_hint": "password.reward.entry",
+    "alt": "",
+    "format": "GIF",
+    "width": 213,
+    "height": 200,
+    "frame_count": 58,
+    "unique_frame_count": 47,
+    "duration_ms": 20200,
+    "frame_durations_ms": [
+      2000,
+      500,
+      500,
+      500,
+      100,
+      100,
+      100,
+      100,
+      500,
+      500,
+      500,
+      100,
+      100,
+      500,
+      500,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      100,
+      100,
+      500,
+      500,
+      500,
+      100,
+      100,
+      100,
+      100,
+      100,
+      500,
+      500,
+      500,
+      100,
+      100,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      100,
+      100,
+      100,
+      100,
+      500,
+      500,
+      500,
+      100,
+      1000
+    ],
+    "content_bboxes": [
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ]
+    ],
+    "changed_bboxes": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "changed_frame_count": 0
+  },
+  {
+    "ordinal": 38,
+    "url": "https://tamagotchi-official.com/gb/series/connection/images/howto/special/img_chara_01.png",
+    "path": "/gb/series/connection/images/howto/special/img_chara_01.png",
+    "file": "img_chara_01.png",
+    "group": "password_secret",
+    "contract_hint": "password.reward.entry",
+    "alt": "",
+    "format": "PNG",
+    "width": 196,
+    "height": 185,
+    "frame_count": 1,
+    "unique_frame_count": 1,
+    "duration_ms": 0,
+    "frame_durations_ms": [
+      0
+    ],
+    "content_bboxes": [
+      [
+        0,
+        0,
+        196,
+        185
+      ]
+    ],
+    "changed_bboxes": [
+      null
+    ],
+    "changed_frame_count": 0
+  },
+  {
+    "ordinal": 39,
+    "url": "https://tamagotchi-official.com/gb/series/connection/images/howto/special/img_icon_01.png",
+    "path": "/gb/series/connection/images/howto/special/img_icon_01.png",
+    "file": "img_icon_01.png",
+    "group": "password_secret",
+    "contract_hint": "password.reward.entry",
+    "alt": "",
+    "format": "PNG",
+    "width": 148,
+    "height": 150,
+    "frame_count": 1,
+    "unique_frame_count": 1,
+    "duration_ms": 0,
+    "frame_durations_ms": [
+      0
+    ],
+    "content_bboxes": [
+      [
+        0,
+        0,
+        148,
+        150
+      ]
+    ],
+    "changed_bboxes": [
+      null
+    ],
+    "changed_frame_count": 0
+  },
+  {
+    "ordinal": 40,
+    "url": "https://tamagotchi-official.com/gb/series/connection/images/howto/special/img_special_02.gif",
+    "path": "/gb/series/connection/images/howto/special/img_special_02.gif",
+    "file": "img_special_02.gif",
+    "group": "password_secret",
+    "contract_hint": "shop.secret-code.entry",
+    "alt": "",
+    "format": "GIF",
+    "width": 213,
+    "height": 200,
+    "frame_count": 2,
+    "unique_frame_count": 2,
+    "duration_ms": 3000,
+    "frame_durations_ms": [
+      2000,
+      1000
+    ],
+    "content_bboxes": [
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ]
+    ],
+    "changed_bboxes": [
+      null,
+      null
+    ],
+    "changed_frame_count": 0
+  },
+  {
+    "ordinal": 41,
+    "url": "https://tamagotchi-official.com/gb/series/connection/images/howto/special/img_chara_02.png",
+    "path": "/gb/series/connection/images/howto/special/img_chara_02.png",
+    "file": "img_chara_02.png",
+    "group": "password_secret",
+    "contract_hint": "password.reward.entry",
+    "alt": "",
+    "format": "PNG",
+    "width": 156,
+    "height": 157,
+    "frame_count": 1,
+    "unique_frame_count": 1,
+    "duration_ms": 0,
+    "frame_durations_ms": [
+      0
+    ],
+    "content_bboxes": [
+      [
+        0,
+        0,
+        156,
+        157
+      ]
+    ],
+    "changed_bboxes": [
+      null
+    ],
+    "changed_frame_count": 0
+  },
+  {
+    "ordinal": 42,
+    "url": "https://tamagotchi-official.com/gb/series/connection/images/howto/special/img_icon_02.png",
+    "path": "/gb/series/connection/images/howto/special/img_icon_02.png",
+    "file": "img_icon_02.png",
+    "group": "password_secret",
+    "contract_hint": "password.reward.entry",
+    "alt": "",
+    "format": "PNG",
+    "width": 98,
+    "height": 132,
+    "frame_count": 1,
+    "unique_frame_count": 1,
+    "duration_ms": 0,
+    "frame_durations_ms": [
+      0
+    ],
+    "content_bboxes": [
+      [
+        0,
+        0,
+        98,
+        132
+      ]
+    ],
+    "changed_bboxes": [
+      null
+    ],
+    "changed_frame_count": 0
+  },
+  {
+    "ordinal": 43,
+    "url": "https://tamagotchi-official.com/gb/series/connection/images/main/howto/tit_connect.png",
+    "path": "/gb/series/connection/images/main/howto/tit_connect.png",
+    "file": "tit_connect.png",
+    "group": "section_title",
+    "contract_hint": "",
+    "alt": "Tamagotchi Connection play with your Friends!",
+    "format": "PNG",
+    "width": 846,
+    "height": 140,
+    "frame_count": 1,
+    "unique_frame_count": 1,
+    "duration_ms": 0,
+    "frame_durations_ms": [
+      0
+    ],
+    "content_bboxes": [
+      [
+        15,
+        0,
+        828,
+        140
+      ]
+    ],
+    "changed_bboxes": [
+      null
+    ],
+    "changed_frame_count": 0
+  },
+  {
+    "ordinal": 44,
+    "url": "https://tamagotchi-official.com/gb/series/connection/images/main/howto/connect/img_infrared.png",
+    "path": "/gb/series/connection/images/main/howto/connect/img_infrared.png",
+    "file": "img_infrared.png",
+    "group": "connect",
+    "contract_hint": "connection.transport/menu",
+    "alt": "",
+    "format": "PNG",
+    "width": 576,
+    "height": 514,
+    "frame_count": 1,
+    "unique_frame_count": 1,
+    "duration_ms": 0,
+    "frame_durations_ms": [
+      0
+    ],
+    "content_bboxes": [
+      [
+        0,
+        1,
+        576,
+        511
+      ]
+    ],
+    "changed_bboxes": [
+      null
+    ],
+    "changed_frame_count": 0
+  },
+  {
+    "ordinal": 45,
+    "url": "https://tamagotchi-official.com/gb/series/connection/images/howto/connect/img_connect_01.gif",
+    "path": "/gb/series/connection/images/howto/connect/img_connect_01.gif",
+    "file": "img_connect_01.gif",
+    "group": "connect",
+    "contract_hint": "connection.visit",
+    "alt": "",
+    "format": "GIF",
+    "width": 79,
+    "height": 106,
+    "frame_count": 2,
+    "unique_frame_count": 2,
+    "duration_ms": 1000,
+    "frame_durations_ms": [
+      500,
+      500
+    ],
+    "content_bboxes": [
+      [
+        0,
+        0,
+        79,
+        106
+      ],
+      [
+        0,
+        6,
+        79,
+        106
+      ]
+    ],
+    "changed_bboxes": [
+      null,
+      [
+        0,
+        0,
+        79,
+        106
+      ]
+    ],
+    "changed_frame_count": 1
+  },
+  {
+    "ordinal": 46,
+    "url": "https://tamagotchi-official.com/gb/series/connection/images/howto/connect/img_connect_02.gif",
+    "path": "/gb/series/connection/images/howto/connect/img_connect_02.gif",
+    "file": "img_connect_02.gif",
+    "group": "connect",
+    "contract_hint": "connection.present",
+    "alt": "",
+    "format": "GIF",
+    "width": 93,
+    "height": 106,
+    "frame_count": 2,
+    "unique_frame_count": 2,
+    "duration_ms": 1000,
+    "frame_durations_ms": [
+      500,
+      500
+    ],
+    "content_bboxes": [
+      [
+        7,
+        0,
+        93,
+        100
+      ],
+      [
+        0,
+        0,
+        86,
+        106
+      ]
+    ],
+    "changed_bboxes": [
+      null,
+      [
+        0,
+        0,
+        93,
+        106
+      ]
+    ],
+    "changed_frame_count": 1
+  },
+  {
+    "ordinal": 47,
+    "url": "https://tamagotchi-official.com/gb/series/connection/images/howto/connect/img_connect_03.gif",
+    "path": "/gb/series/connection/images/howto/connect/img_connect_03.gif",
+    "file": "img_connect_03.gif",
+    "group": "connect",
+    "contract_hint": "connection.game",
+    "alt": "",
+    "format": "GIF",
+    "width": 213,
+    "height": 200,
+    "frame_count": 25,
+    "unique_frame_count": 19,
+    "duration_ms": 13500,
+    "frame_durations_ms": [
+      1000,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      1000
+    ],
+    "content_bboxes": [
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ]
+    ],
+    "changed_bboxes": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "changed_frame_count": 0
+  },
+  {
+    "ordinal": 48,
+    "url": "https://tamagotchi-official.com/gb/series/connection/images/howto/connect/img_connect_04.gif",
+    "path": "/gb/series/connection/images/howto/connect/img_connect_04.gif",
+    "file": "img_connect_04.gif",
+    "group": "connect",
+    "contract_hint": "connection.love",
+    "alt": "",
+    "format": "GIF",
+    "width": 213,
+    "height": 200,
+    "frame_count": 21,
+    "unique_frame_count": 13,
+    "duration_ms": 10500,
+    "frame_durations_ms": [
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500
+    ],
+    "content_bboxes": [
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ]
+    ],
+    "changed_bboxes": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "changed_frame_count": 0
+  },
+  {
+    "ordinal": 49,
+    "url": "https://tamagotchi-official.com/gb/series/connection/images/howto/connect/img_connect_05.gif",
+    "path": "/gb/series/connection/images/howto/connect/img_connect_05.gif",
+    "file": "img_connect_05.gif",
+    "group": "connect",
+    "contract_hint": "connection.next_generation",
+    "alt": "",
+    "format": "GIF",
+    "width": 213,
+    "height": 200,
+    "frame_count": 52,
+    "unique_frame_count": 52,
+    "duration_ms": 3200,
+    "frame_durations_ms": [
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      1000
+    ],
+    "content_bboxes": [
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ]
+    ],
+    "changed_bboxes": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "changed_frame_count": 0
+  },
+  {
+    "ordinal": 50,
+    "url": "https://tamagotchi-official.com/gb/series/connection/images/howto/connect/img_connect_06.gif",
+    "path": "/gb/series/connection/images/howto/connect/img_connect_06.gif",
+    "file": "img_connect_06.gif",
+    "group": "connect",
+    "contract_hint": "connection.result",
+    "alt": "",
+    "format": "GIF",
+    "width": 213,
+    "height": 200,
+    "frame_count": 63,
+    "unique_frame_count": 35,
+    "duration_ms": 33000,
+    "frame_durations_ms": [
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      2000,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500
+    ],
+    "content_bboxes": [
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ]
+    ],
+    "changed_bboxes": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "changed_frame_count": 0
+  },
+  {
+    "ordinal": 51,
+    "url": "https://tamagotchi-official.com/gb/series/connection/images/howto/connect/img_connect_07.gif",
+    "path": "/gb/series/connection/images/howto/connect/img_connect_07.gif",
+    "file": "img_connect_07.gif",
+    "group": "connect",
+    "contract_hint": "connection.friendship",
+    "alt": "",
+    "format": "GIF",
+    "width": 213,
+    "height": 200,
+    "frame_count": 10,
+    "unique_frame_count": 9,
+    "duration_ms": 5000,
+    "frame_durations_ms": [
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500
+    ],
+    "content_bboxes": [
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ],
+      [
+        0,
+        0,
+        213,
+        200
+      ]
+    ],
+    "changed_bboxes": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "changed_frame_count": 0
+  },
+  {
+    "ordinal": 52,
+    "url": "https://tamagotchi-official.com/gb/series/connection/images/howto/connect/img_chara.png",
+    "path": "/gb/series/connection/images/howto/connect/img_chara.png",
+    "file": "img_chara.png",
+    "group": "connect",
+    "contract_hint": "connection.transport/menu",
+    "alt": "",
+    "format": "PNG",
+    "width": 334,
+    "height": 208,
+    "frame_count": 1,
+    "unique_frame_count": 1,
+    "duration_ms": 0,
+    "frame_durations_ms": [
+      0
+    ],
+    "content_bboxes": [
+      [
+        0,
+        0,
+        334,
+        208
+      ]
+    ],
+    "changed_bboxes": [
+      null
+    ],
+    "changed_frame_count": 0
+  },
+  {
+    "ordinal": 53,
+    "url": "https://tamagotchi-official.com/images/select/logo_portal.png",
+    "path": "/images/select/logo_portal.png",
+    "file": "logo_portal.png",
+    "group": "chrome",
+    "contract_hint": "",
+    "alt": "Official Tamagotchi site link",
+    "format": "PNG",
+    "width": 372,
+    "height": 80,
+    "frame_count": 1,
+    "unique_frame_count": 1,
+    "duration_ms": 0,
+    "frame_durations_ms": [
+      0
+    ],
+    "content_bboxes": [
+      [
+        1,
+        0,
+        372,
+        80
+      ]
+    ],
+    "changed_bboxes": [
+      null
+    ],
+    "changed_frame_count": 0
+  },
+  {
+    "ordinal": 54,
+    "url": "https://tamagotchi-official.com/images/select/logo_paradise.png",
+    "path": "/images/select/logo_paradise.png",
+    "file": "logo_paradise.png",
+    "group": "chrome",
+    "contract_hint": "",
+    "alt": "Tamagotchi Paradise site link",
+    "format": "PNG",
+    "width": 470,
+    "height": 209,
+    "frame_count": 1,
+    "unique_frame_count": 1,
+    "duration_ms": 0,
+    "frame_durations_ms": [
+      0
+    ],
+    "content_bboxes": [
+      [
+        0,
+        0,
+        470,
+        209
+      ]
+    ],
+    "changed_bboxes": [
+      null
+    ],
+    "changed_frame_count": 0
+  },
+  {
+    "ordinal": 55,
+    "url": "https://tamagotchi-official.com/images/select/img_item_paradise.png",
+    "path": "/images/select/img_item_paradise.png",
+    "file": "img_item_paradise.png",
+    "group": "chrome",
+    "contract_hint": "",
+    "alt": "Tamagochi paradise",
+    "format": "PNG",
+    "width": 168,
+    "height": 160,
+    "frame_count": 1,
+    "unique_frame_count": 1,
+    "duration_ms": 0,
+    "frame_durations_ms": [
+      0
+    ],
+    "content_bboxes": [
+      [
+        0,
+        1,
+        144,
+        153
+      ]
+    ],
+    "changed_bboxes": [
+      null
+    ],
+    "changed_frame_count": 0
+  },
+  {
+    "ordinal": 56,
+    "url": "https://tamagotchi-official.com/images/select/logo_original.png",
+    "path": "/images/select/logo_original.png",
+    "file": "logo_original.png",
+    "group": "chrome",
+    "contract_hint": "",
+    "alt": "Original Tamagotchi site link",
+    "format": "PNG",
+    "width": 287,
+    "height": 61,
+    "frame_count": 1,
+    "unique_frame_count": 1,
+    "duration_ms": 0,
+    "frame_durations_ms": [
+      0
+    ],
+    "content_bboxes": [
+      [
+        0,
+        0,
+        287,
+        61
+      ]
+    ],
+    "changed_bboxes": [
+      null
+    ],
+    "changed_frame_count": 0
+  },
+  {
+    "ordinal": 57,
+    "url": "https://tamagotchi-official.com/images/select/img_item_original.png",
+    "path": "/images/select/img_item_original.png",
+    "file": "img_item_original.png",
+    "group": "chrome",
+    "contract_hint": "",
+    "alt": "Tamagochi original",
+    "format": "PNG",
+    "width": 168,
+    "height": 160,
+    "frame_count": 1,
+    "unique_frame_count": 1,
+    "duration_ms": 0,
+    "frame_durations_ms": [
+      0
+    ],
+    "content_bboxes": [
+      [
+        20,
+        5,
+        141,
+        154
+      ]
+    ],
+    "changed_bboxes": [
+      null
+    ],
+    "changed_frame_count": 0
+  },
+  {
+    "ordinal": 58,
+    "url": "https://tamagotchi-official.com/images/select/logo_connection.png",
+    "path": "/images/select/logo_connection.png",
+    "file": "logo_connection.png",
+    "group": "chrome",
+    "contract_hint": "",
+    "alt": "Tamagotchi Connection site link",
+    "format": "PNG",
+    "width": 260,
+    "height": 92,
+    "frame_count": 1,
+    "unique_frame_count": 1,
+    "duration_ms": 0,
+    "frame_durations_ms": [
+      0
+    ],
+    "content_bboxes": [
+      [
+        1,
+        0,
+        259,
+        92
+      ]
+    ],
+    "changed_bboxes": [
+      null
+    ],
+    "changed_frame_count": 0
+  },
+  {
+    "ordinal": 59,
+    "url": "https://tamagotchi-official.com/images/select/img_item_connection.png",
+    "path": "/images/select/img_item_connection.png",
+    "file": "img_item_connection.png",
+    "group": "chrome",
+    "contract_hint": "",
+    "alt": "Tamagochi connection",
+    "format": "PNG",
+    "width": 168,
+    "height": 160,
+    "frame_count": 1,
+    "unique_frame_count": 1,
+    "duration_ms": 0,
+    "frame_durations_ms": [
+      0
+    ],
+    "content_bboxes": [
+      [
+        19,
+        2,
+        147,
+        153
+      ]
+    ],
+    "changed_bboxes": [
+      null
+    ],
+    "changed_frame_count": 0
+  },
+  {
+    "ordinal": 60,
+    "url": "https://tamagotchi-official.com/images/select/logo_uni.png",
+    "path": "/images/select/logo_uni.png",
+    "file": "logo_uni.png",
+    "group": "chrome",
+    "contract_hint": "",
+    "alt": "Tamagotchi Uni site link",
+    "format": "PNG",
+    "width": 480,
+    "height": 82,
+    "frame_count": 1,
+    "unique_frame_count": 1,
+    "duration_ms": 0,
+    "frame_durations_ms": [
+      0
+    ],
+    "content_bboxes": [
+      [
+        0,
+        0,
+        480,
+        82
+      ]
+    ],
+    "changed_bboxes": [
+      null
+    ],
+    "changed_frame_count": 0
+  },
+  {
+    "ordinal": 61,
+    "url": "https://tamagotchi-official.com/images/select/img_item_uni.png",
+    "path": "/images/select/img_item_uni.png",
+    "file": "img_item_uni.png",
+    "group": "chrome",
+    "contract_hint": "",
+    "alt": "Tamagochi uni",
+    "format": "PNG",
+    "width": 168,
+    "height": 160,
+    "frame_count": 1,
+    "unique_frame_count": 1,
+    "duration_ms": 0,
+    "frame_durations_ms": [
+      0
+    ],
+    "content_bboxes": [
+      [
+        12,
+        3,
+        157,
+        149
+      ]
+    ],
+    "changed_bboxes": [
+      null
+    ],
+    "changed_frame_count": 0
+  },
+  {
+    "ordinal": 62,
+    "url": "https://tamagotchi-official.com/images/select/logo_nano.png",
+    "path": "/images/select/logo_nano.png",
+    "file": "logo_nano.png",
+    "group": "chrome",
+    "contract_hint": "",
+    "alt": "Tamagotchi nano site link",
+    "format": "PNG",
+    "width": 756,
+    "height": 113,
+    "frame_count": 1,
+    "unique_frame_count": 1,
+    "duration_ms": 0,
+    "frame_durations_ms": [
+      0
+    ],
+    "content_bboxes": [
+      [
+        0,
+        0,
+        756,
+        113
+      ]
+    ],
+    "changed_bboxes": [
+      null
+    ],
+    "changed_frame_count": 0
+  },
+  {
+    "ordinal": 63,
+    "url": "https://tamagotchi-official.com/images/select/img_item_nano.png",
+    "path": "/images/select/img_item_nano.png",
+    "file": "img_item_nano.png",
+    "group": "chrome",
+    "contract_hint": "",
+    "alt": "Tamagochi nano",
+    "format": "PNG",
+    "width": 140,
+    "height": 160,
+    "frame_count": 1,
+    "unique_frame_count": 1,
+    "duration_ms": 0,
+    "frame_durations_ms": [
+      0
+    ],
+    "content_bboxes": [
+      [
+        10,
+        8,
+        120,
+        152
+      ]
+    ],
+    "changed_bboxes": [
+      null
+    ],
+    "changed_frame_count": 0
+  }
+]

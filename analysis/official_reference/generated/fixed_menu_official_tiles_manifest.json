@@ -1,0 +1,117 @@
+{
+  "source": "generated\\official_manual_fixed_menu_device_callouts.png",
+  "tile_size": 24,
+  "runtime_boundary": "These PNG tiles are analysis-only reference crops; firmware still uses C/C++ bitmap arrays.",
+  "slots": [
+    {
+      "index": 0,
+      "local_id": "HEALTH",
+      "official_label": "Health Meter",
+      "center": [
+        324,
+        142
+      ],
+      "raw_tile": "fixed_menu_reference_tiles/00_health_official_raw.png",
+      "bw_tile": "fixed_menu_reference_tiles/00_health_official_bw.png"
+    },
+    {
+      "index": 1,
+      "local_id": "FOOD",
+      "official_label": "Food",
+      "center": [
+        359,
+        142
+      ],
+      "raw_tile": "fixed_menu_reference_tiles/01_food_official_raw.png",
+      "bw_tile": "fixed_menu_reference_tiles/01_food_official_bw.png"
+    },
+    {
+      "index": 2,
+      "local_id": "TOILET",
+      "official_label": "Toilet",
+      "center": [
+        394,
+        142
+      ],
+      "raw_tile": "fixed_menu_reference_tiles/02_toilet_official_raw.png",
+      "bw_tile": "fixed_menu_reference_tiles/02_toilet_official_bw.png"
+    },
+    {
+      "index": 3,
+      "local_id": "CONNECT",
+      "official_label": "Connection/Communication",
+      "center": [
+        462,
+        142
+      ],
+      "raw_tile": "fixed_menu_reference_tiles/03_connect_official_raw.png",
+      "bw_tile": "fixed_menu_reference_tiles/03_connect_official_bw.png"
+    },
+    {
+      "index": 4,
+      "local_id": "CARE",
+      "official_label": "Attention",
+      "center": [
+        465,
+        286
+      ],
+      "raw_tile": "fixed_menu_reference_tiles/04_care_official_raw.png",
+      "bw_tile": "fixed_menu_reference_tiles/04_care_official_bw.png"
+    },
+    {
+      "index": 5,
+      "local_id": "TRAIN",
+      "official_label": "Discipline",
+      "center": [
+        322,
+        286
+      ],
+      "raw_tile": "fixed_menu_reference_tiles/05_train_official_raw.png",
+      "bw_tile": "fixed_menu_reference_tiles/05_train_official_bw.png"
+    },
+    {
+      "index": 6,
+      "local_id": "MEDS",
+      "official_label": "Medicine",
+      "center": [
+        359,
+        286
+      ],
+      "raw_tile": "fixed_menu_reference_tiles/06_meds_official_raw.png",
+      "bw_tile": "fixed_menu_reference_tiles/06_meds_official_bw.png"
+    },
+    {
+      "index": 7,
+      "local_id": "LIGHTS",
+      "official_label": "Lights",
+      "center": [
+        397,
+        286
+      ],
+      "raw_tile": "fixed_menu_reference_tiles/07_lights_official_raw.png",
+      "bw_tile": "fixed_menu_reference_tiles/07_lights_official_bw.png"
+    },
+    {
+      "index": 8,
+      "local_id": "FRIEND",
+      "official_label": "Friend List",
+      "center": [
+        431,
+        286
+      ],
+      "raw_tile": "fixed_menu_reference_tiles/08_friend_official_raw.png",
+      "bw_tile": "fixed_menu_reference_tiles/08_friend_official_bw.png"
+    },
+    {
+      "index": 9,
+      "local_id": "GAME",
+      "official_label": "Games/Activity",
+      "center": [
+        429,
+        142
+      ],
+      "raw_tile": "fixed_menu_reference_tiles/09_game_official_raw.png",
+      "bw_tile": "fixed_menu_reference_tiles/09_game_official_bw.png"
+    }
+  ]
+}

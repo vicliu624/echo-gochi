@@ -1,0 +1,2222 @@
+{
+  "generated_by": "analysis/resource_replacement_manifest/generate_resource_replacement_manifest.py",
+  "runtime_boundary": "Firmware visual resources remain C/C++ bitmap arrays. Raster files are reference/proof artifacts only.",
+  "source_files": [
+    "src/EchoPetCharacterCatalog.cpp",
+    "src/EchoPetCharacterCatalog.h",
+    "src/EchoPetCharacterVisuals.cpp",
+    "analysis/official_reference/generated/character_source_alignment_status.json"
+  ],
+  "row_count": 50,
+  "expected_runtime_rows": 50,
+  "detected_portrait_rows": 50,
+  "detected_idle_rows": 50,
+  "runtime_row_match": true,
+  "portrait_dimensions_px": [
+    16,
+    16
+  ],
+  "idle_dimensions_px": [
+    24,
+    24
+  ],
+  "art_status_counts": {
+    "official-derived": 50
+  },
+  "review_flag_count": 0,
+  "rows": [
+    {
+      "index": 0,
+      "label": "Kuroteletchi",
+      "stage": "baby",
+      "route": "balanced",
+      "archetype": "baby",
+      "care_band": 0,
+      "generation_mask": 7,
+      "generation_tags": [
+        "first",
+        "odd",
+        "even"
+      ],
+      "tier_mask": 31,
+      "tier_tags": [
+        "one",
+        "two",
+        "three",
+        "four",
+        "special"
+      ],
+      "gender_mask": 1,
+      "gender_tags": [
+        "boy"
+      ],
+      "source_page": 1,
+      "source_slot": 1,
+      "frame_family": 0,
+      "visual_traits": 164,
+      "entry_source": "character_row",
+      "page_id": 201,
+      "official_image": "raw\\character\\201_Kuroteletchi.jpeg",
+      "art_status": "official-derived",
+      "review_flags": [],
+      "portrait_bitmap_symbol": "kCharacterCatalogBitmaps[0]",
+      "portrait_dimensions_px": [
+        16,
+        16
+      ],
+      "portrait_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "idle_bitmap_symbol": "kCharacterIdleBitmaps[0]",
+      "idle_dimensions_px": [
+        24,
+        24
+      ],
+      "idle_encoding": "24 uint32_t rows, high bit is leftmost pixel",
+      "replacement_contract": "Replace the paired 16x16 portrait and 24x24 idle C++ rows with the catalog row id preserved. Keep gameplay catalog metadata stable; do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 1,
+      "label": "Shiroteletchi",
+      "stage": "baby",
+      "route": "balanced",
+      "archetype": "baby",
+      "care_band": 0,
+      "generation_mask": 7,
+      "generation_tags": [
+        "first",
+        "odd",
+        "even"
+      ],
+      "tier_mask": 31,
+      "tier_tags": [
+        "one",
+        "two",
+        "three",
+        "four",
+        "special"
+      ],
+      "gender_mask": 2,
+      "gender_tags": [
+        "girl"
+      ],
+      "source_page": 1,
+      "source_slot": 2,
+      "frame_family": 0,
+      "visual_traits": 168,
+      "entry_source": "character_row",
+      "page_id": 202,
+      "official_image": "raw\\character\\202_Shiroteletchi.jpeg",
+      "art_status": "official-derived",
+      "review_flags": [],
+      "portrait_bitmap_symbol": "kCharacterCatalogBitmaps[1]",
+      "portrait_dimensions_px": [
+        16,
+        16
+      ],
+      "portrait_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "idle_bitmap_symbol": "kCharacterIdleBitmaps[1]",
+      "idle_dimensions_px": [
+        24,
+        24
+      ],
+      "idle_encoding": "24 uint32_t rows, high bit is leftmost pixel",
+      "replacement_contract": "Replace the paired 16x16 portrait and 24x24 idle C++ rows with the catalog row id preserved. Keep gameplay catalog metadata stable; do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 2,
+      "label": "Tamatchi",
+      "stage": "child",
+      "route": "balanced",
+      "archetype": "sprout",
+      "care_band": 0,
+      "generation_mask": 7,
+      "generation_tags": [
+        "first",
+        "odd",
+        "even"
+      ],
+      "tier_mask": 12,
+      "tier_tags": [
+        "three",
+        "four"
+      ],
+      "gender_mask": 3,
+      "gender_tags": [
+        "boy",
+        "girl"
+      ],
+      "source_page": 1,
+      "source_slot": 3,
+      "frame_family": 1,
+      "visual_traits": 172,
+      "entry_source": "character_row",
+      "page_id": 203,
+      "official_image": "raw\\character\\203_Tamatchi.jpeg",
+      "art_status": "official-derived",
+      "review_flags": [],
+      "portrait_bitmap_symbol": "kCharacterCatalogBitmaps[2]",
+      "portrait_dimensions_px": [
+        16,
+        16
+      ],
+      "portrait_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "idle_bitmap_symbol": "kCharacterIdleBitmaps[2]",
+      "idle_dimensions_px": [
+        24,
+        24
+      ],
+      "idle_encoding": "24 uint32_t rows, high bit is leftmost pixel",
+      "replacement_contract": "Replace the paired 16x16 portrait and 24x24 idle C++ rows with the catalog row id preserved. Keep gameplay catalog metadata stable; do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 3,
+      "label": "Mizutamatchi",
+      "stage": "child",
+      "route": "athlete",
+      "archetype": "sprout",
+      "care_band": 1,
+      "generation_mask": 6,
+      "generation_tags": [
+        "odd",
+        "even"
+      ],
+      "tier_mask": 3,
+      "tier_tags": [
+        "one",
+        "two"
+      ],
+      "gender_mask": 3,
+      "gender_tags": [
+        "boy",
+        "girl"
+      ],
+      "source_page": 1,
+      "source_slot": 4,
+      "frame_family": 1,
+      "visual_traits": 177,
+      "entry_source": "character_row",
+      "page_id": 204,
+      "official_image": "raw\\character\\204_Mizutamatchi.jpeg",
+      "art_status": "official-derived",
+      "review_flags": [],
+      "portrait_bitmap_symbol": "kCharacterCatalogBitmaps[3]",
+      "portrait_dimensions_px": [
+        16,
+        16
+      ],
+      "portrait_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "idle_bitmap_symbol": "kCharacterIdleBitmaps[3]",
+      "idle_dimensions_px": [
+        24,
+        24
+      ],
+      "idle_encoding": "24 uint32_t rows, high bit is leftmost pixel",
+      "replacement_contract": "Replace the paired 16x16 portrait and 24x24 idle C++ rows with the catalog row id preserved. Keep gameplay catalog metadata stable; do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 4,
+      "label": "Kuchitamatchi",
+      "stage": "child",
+      "route": "dreamer",
+      "archetype": "sprout",
+      "care_band": 2,
+      "generation_mask": 6,
+      "generation_tags": [
+        "odd",
+        "even"
+      ],
+      "tier_mask": 3,
+      "tier_tags": [
+        "one",
+        "two"
+      ],
+      "gender_mask": 3,
+      "gender_tags": [
+        "boy",
+        "girl"
+      ],
+      "source_page": 1,
+      "source_slot": 5,
+      "frame_family": 1,
+      "visual_traits": 182,
+      "entry_source": "character_row",
+      "page_id": 205,
+      "official_image": "raw\\character\\205_Kuchitamatchi.jpeg",
+      "art_status": "official-derived",
+      "review_flags": [],
+      "portrait_bitmap_symbol": "kCharacterCatalogBitmaps[4]",
+      "portrait_dimensions_px": [
+        16,
+        16
+      ],
+      "portrait_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "idle_bitmap_symbol": "kCharacterIdleBitmaps[4]",
+      "idle_dimensions_px": [
+        24,
+        24
+      ],
+      "idle_encoding": "24 uint32_t rows, high bit is leftmost pixel",
+      "replacement_contract": "Replace the paired 16x16 portrait and 24x24 idle C++ rows with the catalog row id preserved. Keep gameplay catalog metadata stable; do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 5,
+      "label": "Mohitamatchi",
+      "stage": "child",
+      "route": "rascal",
+      "archetype": "rascal",
+      "care_band": 3,
+      "generation_mask": 7,
+      "generation_tags": [
+        "first",
+        "odd",
+        "even"
+      ],
+      "tier_mask": 12,
+      "tier_tags": [
+        "three",
+        "four"
+      ],
+      "gender_mask": 3,
+      "gender_tags": [
+        "boy",
+        "girl"
+      ],
+      "source_page": 1,
+      "source_slot": 6,
+      "frame_family": 6,
+      "visual_traits": 187,
+      "entry_source": "character_row",
+      "page_id": 206,
+      "official_image": "raw\\character\\206_Mohitamatchi.jpeg",
+      "art_status": "official-derived",
+      "review_flags": [],
+      "portrait_bitmap_symbol": "kCharacterCatalogBitmaps[5]",
+      "portrait_dimensions_px": [
+        16,
+        16
+      ],
+      "portrait_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "idle_bitmap_symbol": "kCharacterIdleBitmaps[5]",
+      "idle_dimensions_px": [
+        24,
+        24
+      ],
+      "idle_encoding": "24 uint32_t rows, high bit is leftmost pixel",
+      "replacement_contract": "Replace the paired 16x16 portrait and 24x24 idle C++ rows with the catalog row id preserved. Keep gameplay catalog metadata stable; do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 6,
+      "label": "Obotchi",
+      "stage": "teen",
+      "route": "balanced",
+      "archetype": "buddy",
+      "care_band": 0,
+      "generation_mask": 2,
+      "generation_tags": [
+        "odd"
+      ],
+      "tier_mask": 3,
+      "tier_tags": [
+        "one",
+        "two"
+      ],
+      "gender_mask": 3,
+      "gender_tags": [
+        "boy",
+        "girl"
+      ],
+      "source_page": 1,
+      "source_slot": 7,
+      "frame_family": 2,
+      "visual_traits": 188,
+      "entry_source": "character_row",
+      "page_id": 207,
+      "official_image": "raw\\character\\207_Obotchi.jpeg",
+      "art_status": "official-derived",
+      "review_flags": [],
+      "portrait_bitmap_symbol": "kCharacterCatalogBitmaps[6]",
+      "portrait_dimensions_px": [
+        16,
+        16
+      ],
+      "portrait_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "idle_bitmap_symbol": "kCharacterIdleBitmaps[6]",
+      "idle_dimensions_px": [
+        24,
+        24
+      ],
+      "idle_encoding": "24 uint32_t rows, high bit is leftmost pixel",
+      "replacement_contract": "Replace the paired 16x16 portrait and 24x24 idle C++ rows with the catalog row id preserved. Keep gameplay catalog metadata stable; do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 7,
+      "label": "Youngmametchi",
+      "stage": "teen",
+      "route": "scholar",
+      "archetype": "quill",
+      "care_band": 1,
+      "generation_mask": 2,
+      "generation_tags": [
+        "odd"
+      ],
+      "tier_mask": 3,
+      "tier_tags": [
+        "one",
+        "two"
+      ],
+      "gender_mask": 3,
+      "gender_tags": [
+        "boy",
+        "girl"
+      ],
+      "source_page": 1,
+      "source_slot": 8,
+      "frame_family": 7,
+      "visual_traits": 161,
+      "entry_source": "character_row",
+      "page_id": 208,
+      "official_image": "raw\\character\\208_Youngmametchi.jpeg",
+      "art_status": "official-derived",
+      "review_flags": [],
+      "portrait_bitmap_symbol": "kCharacterCatalogBitmaps[7]",
+      "portrait_dimensions_px": [
+        16,
+        16
+      ],
+      "portrait_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "idle_bitmap_symbol": "kCharacterIdleBitmaps[7]",
+      "idle_dimensions_px": [
+        24,
+        24
+      ],
+      "idle_encoding": "24 uint32_t rows, high bit is leftmost pixel",
+      "replacement_contract": "Replace the paired 16x16 portrait and 24x24 idle C++ rows with the catalog row id preserved. Keep gameplay catalog metadata stable; do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 8,
+      "label": "Batabatchi",
+      "stage": "teen",
+      "route": "athlete",
+      "archetype": "bolt",
+      "care_band": 1,
+      "generation_mask": 2,
+      "generation_tags": [
+        "odd"
+      ],
+      "tier_mask": 3,
+      "tier_tags": [
+        "one",
+        "two"
+      ],
+      "gender_mask": 3,
+      "gender_tags": [
+        "boy",
+        "girl"
+      ],
+      "source_page": 2,
+      "source_slot": 1,
+      "frame_family": 5,
+      "visual_traits": 197,
+      "entry_source": "character_row",
+      "page_id": 209,
+      "official_image": "raw\\character\\209_Batabatchi.jpeg",
+      "art_status": "official-derived",
+      "review_flags": [],
+      "portrait_bitmap_symbol": "kCharacterCatalogBitmaps[8]",
+      "portrait_dimensions_px": [
+        16,
+        16
+      ],
+      "portrait_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "idle_bitmap_symbol": "kCharacterIdleBitmaps[8]",
+      "idle_dimensions_px": [
+        24,
+        24
+      ],
+      "idle_encoding": "24 uint32_t rows, high bit is leftmost pixel",
+      "replacement_contract": "Replace the paired 16x16 portrait and 24x24 idle C++ rows with the catalog row id preserved. Keep gameplay catalog metadata stable; do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 9,
+      "label": "Ichigotchi",
+      "stage": "teen",
+      "route": "social",
+      "archetype": "dream",
+      "care_band": 1,
+      "generation_mask": 2,
+      "generation_tags": [
+        "odd"
+      ],
+      "tier_mask": 3,
+      "tier_tags": [
+        "one",
+        "two"
+      ],
+      "gender_mask": 3,
+      "gender_tags": [
+        "boy",
+        "girl"
+      ],
+      "source_page": 2,
+      "source_slot": 2,
+      "frame_family": 4,
+      "visual_traits": 201,
+      "entry_source": "character_row",
+      "page_id": 210,
+      "official_image": "raw\\character\\210_Ichigotchi.jpeg",
+      "art_status": "official-derived",
+      "review_flags": [],
+      "portrait_bitmap_symbol": "kCharacterCatalogBitmaps[9]",
+      "portrait_dimensions_px": [
+        16,
+        16
+      ],
+      "portrait_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "idle_bitmap_symbol": "kCharacterIdleBitmaps[9]",
+      "idle_dimensions_px": [
+        24,
+        24
+      ],
+      "idle_encoding": "24 uint32_t rows, high bit is leftmost pixel",
+      "replacement_contract": "Replace the paired 16x16 portrait and 24x24 idle C++ rows with the catalog row id preserved. Keep gameplay catalog metadata stable; do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 10,
+      "label": "Nikatchi",
+      "stage": "teen",
+      "route": "rascal",
+      "archetype": "rascal",
+      "care_band": 3,
+      "generation_mask": 2,
+      "generation_tags": [
+        "odd"
+      ],
+      "tier_mask": 12,
+      "tier_tags": [
+        "three",
+        "four"
+      ],
+      "gender_mask": 3,
+      "gender_tags": [
+        "boy",
+        "girl"
+      ],
+      "source_page": 2,
+      "source_slot": 3,
+      "frame_family": 6,
+      "visual_traits": 207,
+      "entry_source": "character_row",
+      "page_id": 211,
+      "official_image": "raw\\character\\211_Nikatchi.jpeg",
+      "art_status": "official-derived",
+      "review_flags": [],
+      "portrait_bitmap_symbol": "kCharacterCatalogBitmaps[10]",
+      "portrait_dimensions_px": [
+        16,
+        16
+      ],
+      "portrait_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "idle_bitmap_symbol": "kCharacterIdleBitmaps[10]",
+      "idle_dimensions_px": [
+        24,
+        24
+      ],
+      "idle_encoding": "24 uint32_t rows, high bit is leftmost pixel",
+      "replacement_contract": "Replace the paired 16x16 portrait and 24x24 idle C++ rows with the catalog row id preserved. Keep gameplay catalog metadata stable; do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 11,
+      "label": "Pirorirotchi",
+      "stage": "teen",
+      "route": "dreamer",
+      "archetype": "dream",
+      "care_band": 2,
+      "generation_mask": 2,
+      "generation_tags": [
+        "odd"
+      ],
+      "tier_mask": 12,
+      "tier_tags": [
+        "three",
+        "four"
+      ],
+      "gender_mask": 3,
+      "gender_tags": [
+        "boy",
+        "girl"
+      ],
+      "source_page": 2,
+      "source_slot": 4,
+      "frame_family": 4,
+      "visual_traits": 210,
+      "entry_source": "character_row",
+      "page_id": 212,
+      "official_image": "raw\\character\\212_Pirorirotchi.jpeg",
+      "art_status": "official-derived",
+      "review_flags": [],
+      "portrait_bitmap_symbol": "kCharacterCatalogBitmaps[11]",
+      "portrait_dimensions_px": [
+        16,
+        16
+      ],
+      "portrait_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "idle_bitmap_symbol": "kCharacterIdleBitmaps[11]",
+      "idle_dimensions_px": [
+        24,
+        24
+      ],
+      "idle_encoding": "24 uint32_t rows, high bit is leftmost pixel",
+      "replacement_contract": "Replace the paired 16x16 portrait and 24x24 idle C++ rows with the catalog row id preserved. Keep gameplay catalog metadata stable; do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 12,
+      "label": "Hikotchi",
+      "stage": "teen",
+      "route": "scholar",
+      "archetype": "quill",
+      "care_band": 2,
+      "generation_mask": 4,
+      "generation_tags": [
+        "even"
+      ],
+      "tier_mask": 3,
+      "tier_tags": [
+        "one",
+        "two"
+      ],
+      "gender_mask": 3,
+      "gender_tags": [
+        "boy",
+        "girl"
+      ],
+      "source_page": 2,
+      "source_slot": 5,
+      "frame_family": 7,
+      "visual_traits": 214,
+      "entry_source": "character_row",
+      "page_id": 213,
+      "official_image": "raw\\character\\213_Hikotchi.jpeg",
+      "art_status": "official-derived",
+      "review_flags": [],
+      "portrait_bitmap_symbol": "kCharacterCatalogBitmaps[12]",
+      "portrait_dimensions_px": [
+        16,
+        16
+      ],
+      "portrait_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "idle_bitmap_symbol": "kCharacterIdleBitmaps[12]",
+      "idle_dimensions_px": [
+        24,
+        24
+      ],
+      "idle_encoding": "24 uint32_t rows, high bit is leftmost pixel",
+      "replacement_contract": "Replace the paired 16x16 portrait and 24x24 idle C++ rows with the catalog row id preserved. Keep gameplay catalog metadata stable; do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 13,
+      "label": "Hinatchi",
+      "stage": "teen",
+      "route": "social",
+      "archetype": "buddy",
+      "care_band": 2,
+      "generation_mask": 4,
+      "generation_tags": [
+        "even"
+      ],
+      "tier_mask": 3,
+      "tier_tags": [
+        "one",
+        "two"
+      ],
+      "gender_mask": 3,
+      "gender_tags": [
+        "boy",
+        "girl"
+      ],
+      "source_page": 2,
+      "source_slot": 6,
+      "frame_family": 2,
+      "visual_traits": 218,
+      "entry_source": "character_row",
+      "page_id": 214,
+      "official_image": "raw\\character\\214_Hinatchi.jpeg",
+      "art_status": "official-derived",
+      "review_flags": [],
+      "portrait_bitmap_symbol": "kCharacterCatalogBitmaps[13]",
+      "portrait_dimensions_px": [
+        16,
+        16
+      ],
+      "portrait_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "idle_bitmap_symbol": "kCharacterIdleBitmaps[13]",
+      "idle_dimensions_px": [
+        24,
+        24
+      ],
+      "idle_encoding": "24 uint32_t rows, high bit is leftmost pixel",
+      "replacement_contract": "Replace the paired 16x16 portrait and 24x24 idle C++ rows with the catalog row id preserved. Keep gameplay catalog metadata stable; do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 14,
+      "label": "Youngmimitchi",
+      "stage": "teen",
+      "route": "balanced",
+      "archetype": "buddy",
+      "care_band": 1,
+      "generation_mask": 4,
+      "generation_tags": [
+        "even"
+      ],
+      "tier_mask": 3,
+      "tier_tags": [
+        "one",
+        "two"
+      ],
+      "gender_mask": 3,
+      "gender_tags": [
+        "boy",
+        "girl"
+      ],
+      "source_page": 2,
+      "source_slot": 7,
+      "frame_family": 2,
+      "visual_traits": 221,
+      "entry_source": "character_row",
+      "page_id": 215,
+      "official_image": "raw\\character\\215_Youngmimitchi.jpeg",
+      "art_status": "official-derived",
+      "review_flags": [],
+      "portrait_bitmap_symbol": "kCharacterCatalogBitmaps[14]",
+      "portrait_dimensions_px": [
+        16,
+        16
+      ],
+      "portrait_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "idle_bitmap_symbol": "kCharacterIdleBitmaps[14]",
+      "idle_dimensions_px": [
+        24,
+        24
+      ],
+      "idle_encoding": "24 uint32_t rows, high bit is leftmost pixel",
+      "replacement_contract": "Replace the paired 16x16 portrait and 24x24 idle C++ rows with the catalog row id preserved. Keep gameplay catalog metadata stable; do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 15,
+      "label": "Ringotchi",
+      "stage": "teen",
+      "route": "social",
+      "archetype": "dream",
+      "care_band": 0,
+      "generation_mask": 4,
+      "generation_tags": [
+        "even"
+      ],
+      "tier_mask": 3,
+      "tier_tags": [
+        "one",
+        "two"
+      ],
+      "gender_mask": 3,
+      "gender_tags": [
+        "boy",
+        "girl"
+      ],
+      "source_page": 2,
+      "source_slot": 8,
+      "frame_family": 4,
+      "visual_traits": 192,
+      "entry_source": "character_row",
+      "page_id": 216,
+      "official_image": "raw\\character\\216_Ringotchi.jpeg",
+      "art_status": "official-derived",
+      "review_flags": [],
+      "portrait_bitmap_symbol": "kCharacterCatalogBitmaps[15]",
+      "portrait_dimensions_px": [
+        16,
+        16
+      ],
+      "portrait_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "idle_bitmap_symbol": "kCharacterIdleBitmaps[15]",
+      "idle_dimensions_px": [
+        24,
+        24
+      ],
+      "idle_encoding": "24 uint32_t rows, high bit is leftmost pixel",
+      "replacement_contract": "Replace the paired 16x16 portrait and 24x24 idle C++ rows with the catalog row id preserved. Keep gameplay catalog metadata stable; do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 16,
+      "label": "Hinotamatchi",
+      "stage": "teen",
+      "route": "athlete",
+      "archetype": "bolt",
+      "care_band": 2,
+      "generation_mask": 4,
+      "generation_tags": [
+        "even"
+      ],
+      "tier_mask": 12,
+      "tier_tags": [
+        "three",
+        "four"
+      ],
+      "gender_mask": 3,
+      "gender_tags": [
+        "boy",
+        "girl"
+      ],
+      "source_page": 3,
+      "source_slot": 1,
+      "frame_family": 5,
+      "visual_traits": 230,
+      "entry_source": "character_row",
+      "page_id": 217,
+      "official_image": "raw\\character\\217_Hinotamatchi.jpeg",
+      "art_status": "official-derived",
+      "review_flags": [],
+      "portrait_bitmap_symbol": "kCharacterCatalogBitmaps[16]",
+      "portrait_dimensions_px": [
+        16,
+        16
+      ],
+      "portrait_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "idle_bitmap_symbol": "kCharacterIdleBitmaps[16]",
+      "idle_dimensions_px": [
+        24,
+        24
+      ],
+      "idle_encoding": "24 uint32_t rows, high bit is leftmost pixel",
+      "replacement_contract": "Replace the paired 16x16 portrait and 24x24 idle C++ rows with the catalog row id preserved. Keep gameplay catalog metadata stable; do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 17,
+      "label": "Hashitamatchi",
+      "stage": "teen",
+      "route": "dreamer",
+      "archetype": "dream",
+      "care_band": 3,
+      "generation_mask": 4,
+      "generation_tags": [
+        "even"
+      ],
+      "tier_mask": 12,
+      "tier_tags": [
+        "three",
+        "four"
+      ],
+      "gender_mask": 3,
+      "gender_tags": [
+        "boy",
+        "girl"
+      ],
+      "source_page": 3,
+      "source_slot": 2,
+      "frame_family": 4,
+      "visual_traits": 235,
+      "entry_source": "character_row",
+      "page_id": 218,
+      "official_image": "raw\\character\\218_Hashitamatchi.jpeg",
+      "art_status": "official-derived",
+      "review_flags": [],
+      "portrait_bitmap_symbol": "kCharacterCatalogBitmaps[17]",
+      "portrait_dimensions_px": [
+        16,
+        16
+      ],
+      "portrait_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "idle_bitmap_symbol": "kCharacterIdleBitmaps[17]",
+      "idle_dimensions_px": [
+        24,
+        24
+      ],
+      "idle_encoding": "24 uint32_t rows, high bit is leftmost pixel",
+      "replacement_contract": "Replace the paired 16x16 portrait and 24x24 idle C++ rows with the catalog row id preserved. Keep gameplay catalog metadata stable; do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 18,
+      "label": "Mametchi",
+      "stage": "adult",
+      "route": "balanced",
+      "archetype": "buddy",
+      "care_band": 0,
+      "generation_mask": 2,
+      "generation_tags": [
+        "odd"
+      ],
+      "tier_mask": 1,
+      "tier_tags": [
+        "one"
+      ],
+      "gender_mask": 3,
+      "gender_tags": [
+        "boy",
+        "girl"
+      ],
+      "source_page": 3,
+      "source_slot": 3,
+      "frame_family": 3,
+      "visual_traits": 128,
+      "entry_source": "character_row_traits",
+      "page_id": 219,
+      "official_image": "raw\\character\\219_Mametchi.jpeg",
+      "art_status": "official-derived",
+      "review_flags": [],
+      "portrait_bitmap_symbol": "kCharacterCatalogBitmaps[18]",
+      "portrait_dimensions_px": [
+        16,
+        16
+      ],
+      "portrait_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "idle_bitmap_symbol": "kCharacterIdleBitmaps[18]",
+      "idle_dimensions_px": [
+        24,
+        24
+      ],
+      "idle_encoding": "24 uint32_t rows, high bit is leftmost pixel",
+      "replacement_contract": "Replace the paired 16x16 portrait and 24x24 idle C++ rows with the catalog row id preserved. Keep gameplay catalog metadata stable; do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 19,
+      "label": "Furawatchi",
+      "stage": "adult",
+      "route": "social",
+      "archetype": "dream",
+      "care_band": 0,
+      "generation_mask": 2,
+      "generation_tags": [
+        "odd"
+      ],
+      "tier_mask": 1,
+      "tier_tags": [
+        "one"
+      ],
+      "gender_mask": 3,
+      "gender_tags": [
+        "boy",
+        "girl"
+      ],
+      "source_page": 3,
+      "source_slot": 4,
+      "frame_family": 4,
+      "visual_traits": 240,
+      "entry_source": "character_row",
+      "page_id": 220,
+      "official_image": "raw\\character\\220_Furawatchi.jpeg",
+      "art_status": "official-derived",
+      "review_flags": [],
+      "portrait_bitmap_symbol": "kCharacterCatalogBitmaps[19]",
+      "portrait_dimensions_px": [
+        16,
+        16
+      ],
+      "portrait_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "idle_bitmap_symbol": "kCharacterIdleBitmaps[19]",
+      "idle_dimensions_px": [
+        24,
+        24
+      ],
+      "idle_encoding": "24 uint32_t rows, high bit is leftmost pixel",
+      "replacement_contract": "Replace the paired 16x16 portrait and 24x24 idle C++ rows with the catalog row id preserved. Keep gameplay catalog metadata stable; do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 20,
+      "label": "Pyonkotchi",
+      "stage": "adult",
+      "route": "athlete",
+      "archetype": "bolt",
+      "care_band": 1,
+      "generation_mask": 2,
+      "generation_tags": [
+        "odd"
+      ],
+      "tier_mask": 1,
+      "tier_tags": [
+        "one"
+      ],
+      "gender_mask": 3,
+      "gender_tags": [
+        "boy",
+        "girl"
+      ],
+      "source_page": 3,
+      "source_slot": 5,
+      "frame_family": 5,
+      "visual_traits": 245,
+      "entry_source": "character_row",
+      "page_id": 221,
+      "official_image": "raw\\character\\221_Pyonkotchi.jpeg",
+      "art_status": "official-derived",
+      "review_flags": [],
+      "portrait_bitmap_symbol": "kCharacterCatalogBitmaps[20]",
+      "portrait_dimensions_px": [
+        16,
+        16
+      ],
+      "portrait_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "idle_bitmap_symbol": "kCharacterIdleBitmaps[20]",
+      "idle_dimensions_px": [
+        24,
+        24
+      ],
+      "idle_encoding": "24 uint32_t rows, high bit is leftmost pixel",
+      "replacement_contract": "Replace the paired 16x16 portrait and 24x24 idle C++ rows with the catalog row id preserved. Keep gameplay catalog metadata stable; do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 21,
+      "label": "Kuchipatchi",
+      "stage": "adult",
+      "route": "dreamer",
+      "archetype": "dream",
+      "care_band": 1,
+      "generation_mask": 2,
+      "generation_tags": [
+        "odd"
+      ],
+      "tier_mask": 2,
+      "tier_tags": [
+        "two"
+      ],
+      "gender_mask": 3,
+      "gender_tags": [
+        "boy",
+        "girl"
+      ],
+      "source_page": 3,
+      "source_slot": 6,
+      "frame_family": 4,
+      "visual_traits": 249,
+      "entry_source": "character_row",
+      "page_id": 222,
+      "official_image": "raw\\character\\222_Kuchipatchi.jpeg",
+      "art_status": "official-derived",
+      "review_flags": [],
+      "portrait_bitmap_symbol": "kCharacterCatalogBitmaps[21]",
+      "portrait_dimensions_px": [
+        16,
+        16
+      ],
+      "portrait_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "idle_bitmap_symbol": "kCharacterIdleBitmaps[21]",
+      "idle_dimensions_px": [
+        24,
+        24
+      ],
+      "idle_encoding": "24 uint32_t rows, high bit is leftmost pixel",
+      "replacement_contract": "Replace the paired 16x16 portrait and 24x24 idle C++ rows with the catalog row id preserved. Keep gameplay catalog metadata stable; do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 22,
+      "label": "Memetchi",
+      "stage": "adult",
+      "route": "social",
+      "archetype": "dream",
+      "care_band": 1,
+      "generation_mask": 2,
+      "generation_tags": [
+        "odd"
+      ],
+      "tier_mask": 2,
+      "tier_tags": [
+        "two"
+      ],
+      "gender_mask": 3,
+      "gender_tags": [
+        "boy",
+        "girl"
+      ],
+      "source_page": 3,
+      "source_slot": 7,
+      "frame_family": 4,
+      "visual_traits": 253,
+      "entry_source": "character_row",
+      "page_id": 223,
+      "official_image": "raw\\character\\223_Memetchi.jpeg",
+      "art_status": "official-derived",
+      "review_flags": [],
+      "portrait_bitmap_symbol": "kCharacterCatalogBitmaps[22]",
+      "portrait_dimensions_px": [
+        16,
+        16
+      ],
+      "portrait_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "idle_bitmap_symbol": "kCharacterIdleBitmaps[22]",
+      "idle_dimensions_px": [
+        24,
+        24
+      ],
+      "idle_encoding": "24 uint32_t rows, high bit is leftmost pixel",
+      "replacement_contract": "Replace the paired 16x16 portrait and 24x24 idle C++ rows with the catalog row id preserved. Keep gameplay catalog metadata stable; do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 23,
+      "label": "Billotchi",
+      "stage": "adult",
+      "route": "scholar",
+      "archetype": "quill",
+      "care_band": 0,
+      "generation_mask": 2,
+      "generation_tags": [
+        "odd"
+      ],
+      "tier_mask": 2,
+      "tier_tags": [
+        "two"
+      ],
+      "gender_mask": 3,
+      "gender_tags": [
+        "boy",
+        "girl"
+      ],
+      "source_page": 3,
+      "source_slot": 8,
+      "frame_family": 7,
+      "visual_traits": 224,
+      "entry_source": "character_row",
+      "page_id": 224,
+      "official_image": "raw\\character\\224_Billotchi.jpeg",
+      "art_status": "official-derived",
+      "review_flags": [],
+      "portrait_bitmap_symbol": "kCharacterCatalogBitmaps[23]",
+      "portrait_dimensions_px": [
+        16,
+        16
+      ],
+      "portrait_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "idle_bitmap_symbol": "kCharacterIdleBitmaps[23]",
+      "idle_dimensions_px": [
+        24,
+        24
+      ],
+      "idle_encoding": "24 uint32_t rows, high bit is leftmost pixel",
+      "replacement_contract": "Replace the paired 16x16 portrait and 24x24 idle C++ rows with the catalog row id preserved. Keep gameplay catalog metadata stable; do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 24,
+      "label": "Tarakotchi",
+      "stage": "adult",
+      "route": "rascal",
+      "archetype": "rascal",
+      "care_band": 2,
+      "generation_mask": 2,
+      "generation_tags": [
+        "odd"
+      ],
+      "tier_mask": 4,
+      "tier_tags": [
+        "three"
+      ],
+      "gender_mask": 3,
+      "gender_tags": [
+        "boy",
+        "girl"
+      ],
+      "source_page": 4,
+      "source_slot": 1,
+      "frame_family": 6,
+      "visual_traits": 134,
+      "entry_source": "character_row",
+      "page_id": 225,
+      "official_image": "raw\\character\\225_Tarakotchi.jpeg",
+      "art_status": "official-derived",
+      "review_flags": [],
+      "portrait_bitmap_symbol": "kCharacterCatalogBitmaps[24]",
+      "portrait_dimensions_px": [
+        16,
+        16
+      ],
+      "portrait_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "idle_bitmap_symbol": "kCharacterIdleBitmaps[24]",
+      "idle_dimensions_px": [
+        24,
+        24
+      ],
+      "idle_encoding": "24 uint32_t rows, high bit is leftmost pixel",
+      "replacement_contract": "Replace the paired 16x16 portrait and 24x24 idle C++ rows with the catalog row id preserved. Keep gameplay catalog metadata stable; do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 25,
+      "label": "Paparatchi",
+      "stage": "adult",
+      "route": "social",
+      "archetype": "buddy",
+      "care_band": 3,
+      "generation_mask": 2,
+      "generation_tags": [
+        "odd"
+      ],
+      "tier_mask": 4,
+      "tier_tags": [
+        "three"
+      ],
+      "gender_mask": 3,
+      "gender_tags": [
+        "boy",
+        "girl"
+      ],
+      "source_page": 4,
+      "source_slot": 2,
+      "frame_family": 3,
+      "visual_traits": 139,
+      "entry_source": "character_row",
+      "page_id": 226,
+      "official_image": "raw\\character\\226_Paparatchi.jpeg",
+      "art_status": "official-derived",
+      "review_flags": [],
+      "portrait_bitmap_symbol": "kCharacterCatalogBitmaps[25]",
+      "portrait_dimensions_px": [
+        16,
+        16
+      ],
+      "portrait_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "idle_bitmap_symbol": "kCharacterIdleBitmaps[25]",
+      "idle_dimensions_px": [
+        24,
+        24
+      ],
+      "idle_encoding": "24 uint32_t rows, high bit is leftmost pixel",
+      "replacement_contract": "Replace the paired 16x16 portrait and 24x24 idle C++ rows with the catalog row id preserved. Keep gameplay catalog metadata stable; do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 26,
+      "label": "Mimiyoritchi",
+      "stage": "adult",
+      "route": "balanced",
+      "archetype": "buddy",
+      "care_band": 2,
+      "generation_mask": 2,
+      "generation_tags": [
+        "odd"
+      ],
+      "tier_mask": 4,
+      "tier_tags": [
+        "three"
+      ],
+      "gender_mask": 3,
+      "gender_tags": [
+        "boy",
+        "girl"
+      ],
+      "source_page": 4,
+      "source_slot": 3,
+      "frame_family": 3,
+      "visual_traits": 142,
+      "entry_source": "character_row",
+      "page_id": 227,
+      "official_image": "raw\\character\\227_Mimiyoritchi.jpeg",
+      "art_status": "official-derived",
+      "review_flags": [],
+      "portrait_bitmap_symbol": "kCharacterCatalogBitmaps[26]",
+      "portrait_dimensions_px": [
+        16,
+        16
+      ],
+      "portrait_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "idle_bitmap_symbol": "kCharacterIdleBitmaps[26]",
+      "idle_dimensions_px": [
+        24,
+        24
+      ],
+      "idle_encoding": "24 uint32_t rows, high bit is leftmost pixel",
+      "replacement_contract": "Replace the paired 16x16 portrait and 24x24 idle C++ rows with the catalog row id preserved. Keep gameplay catalog metadata stable; do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 27,
+      "label": "Hanatchi",
+      "stage": "adult",
+      "route": "dreamer",
+      "archetype": "dream",
+      "care_band": 3,
+      "generation_mask": 2,
+      "generation_tags": [
+        "odd"
+      ],
+      "tier_mask": 8,
+      "tier_tags": [
+        "four"
+      ],
+      "gender_mask": 3,
+      "gender_tags": [
+        "boy",
+        "girl"
+      ],
+      "source_page": 4,
+      "source_slot": 4,
+      "frame_family": 4,
+      "visual_traits": 147,
+      "entry_source": "character_row",
+      "page_id": 228,
+      "official_image": "raw\\character\\228_Hanatchi.jpeg",
+      "art_status": "official-derived",
+      "review_flags": [],
+      "portrait_bitmap_symbol": "kCharacterCatalogBitmaps[27]",
+      "portrait_dimensions_px": [
+        16,
+        16
+      ],
+      "portrait_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "idle_bitmap_symbol": "kCharacterIdleBitmaps[27]",
+      "idle_dimensions_px": [
+        24,
+        24
+      ],
+      "idle_encoding": "24 uint32_t rows, high bit is leftmost pixel",
+      "replacement_contract": "Replace the paired 16x16 portrait and 24x24 idle C++ rows with the catalog row id preserved. Keep gameplay catalog metadata stable; do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 28,
+      "label": "Hashizotchi",
+      "stage": "adult",
+      "route": "dreamer",
+      "archetype": "dream",
+      "care_band": 2,
+      "generation_mask": 2,
+      "generation_tags": [
+        "odd"
+      ],
+      "tier_mask": 8,
+      "tier_tags": [
+        "four"
+      ],
+      "gender_mask": 3,
+      "gender_tags": [
+        "boy",
+        "girl"
+      ],
+      "source_page": 4,
+      "source_slot": 5,
+      "frame_family": 4,
+      "visual_traits": 150,
+      "entry_source": "character_row",
+      "page_id": 229,
+      "official_image": "raw\\character\\229_Hashizotchi.jpeg",
+      "art_status": "official-derived",
+      "review_flags": [],
+      "portrait_bitmap_symbol": "kCharacterCatalogBitmaps[28]",
+      "portrait_dimensions_px": [
+        16,
+        16
+      ],
+      "portrait_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "idle_bitmap_symbol": "kCharacterIdleBitmaps[28]",
+      "idle_dimensions_px": [
+        24,
+        24
+      ],
+      "idle_encoding": "24 uint32_t rows, high bit is leftmost pixel",
+      "replacement_contract": "Replace the paired 16x16 portrait and 24x24 idle C++ rows with the catalog row id preserved. Keep gameplay catalog metadata stable; do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 29,
+      "label": "Tsunotchi",
+      "stage": "adult",
+      "route": "athlete",
+      "archetype": "bolt",
+      "care_band": 3,
+      "generation_mask": 2,
+      "generation_tags": [
+        "odd"
+      ],
+      "tier_mask": 8,
+      "tier_tags": [
+        "four"
+      ],
+      "gender_mask": 3,
+      "gender_tags": [
+        "boy",
+        "girl"
+      ],
+      "source_page": 4,
+      "source_slot": 6,
+      "frame_family": 5,
+      "visual_traits": 155,
+      "entry_source": "character_row",
+      "page_id": 230,
+      "official_image": "raw\\character\\230_Tsunotchi.jpeg",
+      "art_status": "official-derived",
+      "review_flags": [],
+      "portrait_bitmap_symbol": "kCharacterCatalogBitmaps[29]",
+      "portrait_dimensions_px": [
+        16,
+        16
+      ],
+      "portrait_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "idle_bitmap_symbol": "kCharacterIdleBitmaps[29]",
+      "idle_dimensions_px": [
+        24,
+        24
+      ],
+      "idle_encoding": "24 uint32_t rows, high bit is leftmost pixel",
+      "replacement_contract": "Replace the paired 16x16 portrait and 24x24 idle C++ rows with the catalog row id preserved. Keep gameplay catalog metadata stable; do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 30,
+      "label": "Maskutchi",
+      "stage": "adult",
+      "route": "rascal",
+      "archetype": "rascal",
+      "care_band": 3,
+      "generation_mask": 2,
+      "generation_tags": [
+        "odd"
+      ],
+      "tier_mask": 16,
+      "tier_tags": [
+        "special"
+      ],
+      "gender_mask": 3,
+      "gender_tags": [
+        "boy",
+        "girl"
+      ],
+      "source_page": 4,
+      "source_slot": 7,
+      "frame_family": 6,
+      "visual_traits": 159,
+      "entry_source": "character_row",
+      "page_id": 231,
+      "official_image": "raw\\character\\231_Maskutchi.jpeg",
+      "art_status": "official-derived",
+      "review_flags": [],
+      "portrait_bitmap_symbol": "kCharacterCatalogBitmaps[30]",
+      "portrait_dimensions_px": [
+        16,
+        16
+      ],
+      "portrait_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "idle_bitmap_symbol": "kCharacterIdleBitmaps[30]",
+      "idle_dimensions_px": [
+        24,
+        24
+      ],
+      "idle_encoding": "24 uint32_t rows, high bit is leftmost pixel",
+      "replacement_contract": "Replace the paired 16x16 portrait and 24x24 idle C++ rows with the catalog row id preserved. Keep gameplay catalog metadata stable; do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 31,
+      "label": "Megatchi",
+      "stage": "adult",
+      "route": "athlete",
+      "archetype": "bolt",
+      "care_band": 2,
+      "generation_mask": 2,
+      "generation_tags": [
+        "odd"
+      ],
+      "tier_mask": 16,
+      "tier_tags": [
+        "special"
+      ],
+      "gender_mask": 3,
+      "gender_tags": [
+        "boy",
+        "girl"
+      ],
+      "source_page": 4,
+      "source_slot": 8,
+      "frame_family": 5,
+      "visual_traits": 130,
+      "entry_source": "character_row",
+      "page_id": 232,
+      "official_image": "raw\\character\\232_Megatchi.jpeg",
+      "art_status": "official-derived",
+      "review_flags": [],
+      "portrait_bitmap_symbol": "kCharacterCatalogBitmaps[31]",
+      "portrait_dimensions_px": [
+        16,
+        16
+      ],
+      "portrait_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "idle_bitmap_symbol": "kCharacterIdleBitmaps[31]",
+      "idle_dimensions_px": [
+        24,
+        24
+      ],
+      "idle_encoding": "24 uint32_t rows, high bit is leftmost pixel",
+      "replacement_contract": "Replace the paired 16x16 portrait and 24x24 idle C++ rows with the catalog row id preserved. Keep gameplay catalog metadata stable; do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 32,
+      "label": "Mimitchi",
+      "stage": "adult",
+      "route": "balanced",
+      "archetype": "buddy",
+      "care_band": 1,
+      "generation_mask": 4,
+      "generation_tags": [
+        "even"
+      ],
+      "tier_mask": 1,
+      "tier_tags": [
+        "one"
+      ],
+      "gender_mask": 3,
+      "gender_tags": [
+        "boy",
+        "girl"
+      ],
+      "source_page": 5,
+      "source_slot": 1,
+      "frame_family": 3,
+      "visual_traits": 165,
+      "entry_source": "character_row",
+      "page_id": 233,
+      "official_image": "raw\\character\\233_Mimitchi.jpeg",
+      "art_status": "official-derived",
+      "review_flags": [],
+      "portrait_bitmap_symbol": "kCharacterCatalogBitmaps[32]",
+      "portrait_dimensions_px": [
+        16,
+        16
+      ],
+      "portrait_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "idle_bitmap_symbol": "kCharacterIdleBitmaps[32]",
+      "idle_dimensions_px": [
+        24,
+        24
+      ],
+      "idle_encoding": "24 uint32_t rows, high bit is leftmost pixel",
+      "replacement_contract": "Replace the paired 16x16 portrait and 24x24 idle C++ rows with the catalog row id preserved. Keep gameplay catalog metadata stable; do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 33,
+      "label": "Chomametchi",
+      "stage": "adult",
+      "route": "scholar",
+      "archetype": "quill",
+      "care_band": 1,
+      "generation_mask": 4,
+      "generation_tags": [
+        "even"
+      ],
+      "tier_mask": 1,
+      "tier_tags": [
+        "one"
+      ],
+      "gender_mask": 3,
+      "gender_tags": [
+        "boy",
+        "girl"
+      ],
+      "source_page": 5,
+      "source_slot": 2,
+      "frame_family": 7,
+      "visual_traits": 169,
+      "entry_source": "character_row",
+      "page_id": 234,
+      "official_image": "raw\\character\\234_Chomametchi.jpeg",
+      "art_status": "official-derived",
+      "review_flags": [],
+      "portrait_bitmap_symbol": "kCharacterCatalogBitmaps[33]",
+      "portrait_dimensions_px": [
+        16,
+        16
+      ],
+      "portrait_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "idle_bitmap_symbol": "kCharacterIdleBitmaps[33]",
+      "idle_dimensions_px": [
+        24,
+        24
+      ],
+      "idle_encoding": "24 uint32_t rows, high bit is leftmost pixel",
+      "replacement_contract": "Replace the paired 16x16 portrait and 24x24 idle C++ rows with the catalog row id preserved. Keep gameplay catalog metadata stable; do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 34,
+      "label": "Dekotchi",
+      "stage": "adult",
+      "route": "rascal",
+      "archetype": "rascal",
+      "care_band": 1,
+      "generation_mask": 4,
+      "generation_tags": [
+        "even"
+      ],
+      "tier_mask": 1,
+      "tier_tags": [
+        "one"
+      ],
+      "gender_mask": 3,
+      "gender_tags": [
+        "boy",
+        "girl"
+      ],
+      "source_page": 5,
+      "source_slot": 3,
+      "frame_family": 6,
+      "visual_traits": 173,
+      "entry_source": "character_row",
+      "page_id": 235,
+      "official_image": "raw\\character\\235_Dekotchi.jpeg",
+      "art_status": "official-derived",
+      "review_flags": [],
+      "portrait_bitmap_symbol": "kCharacterCatalogBitmaps[34]",
+      "portrait_dimensions_px": [
+        16,
+        16
+      ],
+      "portrait_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "idle_bitmap_symbol": "kCharacterIdleBitmaps[34]",
+      "idle_dimensions_px": [
+        24,
+        24
+      ],
+      "idle_encoding": "24 uint32_t rows, high bit is leftmost pixel",
+      "replacement_contract": "Replace the paired 16x16 portrait and 24x24 idle C++ rows with the catalog row id preserved. Keep gameplay catalog metadata stable; do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 35,
+      "label": "Hidatchi",
+      "stage": "adult",
+      "route": "athlete",
+      "archetype": "bolt",
+      "care_band": 0,
+      "generation_mask": 4,
+      "generation_tags": [
+        "even"
+      ],
+      "tier_mask": 2,
+      "tier_tags": [
+        "two"
+      ],
+      "gender_mask": 3,
+      "gender_tags": [
+        "boy",
+        "girl"
+      ],
+      "source_page": 5,
+      "source_slot": 4,
+      "frame_family": 5,
+      "visual_traits": 176,
+      "entry_source": "character_row",
+      "page_id": 236,
+      "official_image": "raw\\character\\236_Hidatchi.jpeg",
+      "art_status": "official-derived",
+      "review_flags": [],
+      "portrait_bitmap_symbol": "kCharacterCatalogBitmaps[35]",
+      "portrait_dimensions_px": [
+        16,
+        16
+      ],
+      "portrait_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "idle_bitmap_symbol": "kCharacterIdleBitmaps[35]",
+      "idle_dimensions_px": [
+        24,
+        24
+      ],
+      "idle_encoding": "24 uint32_t rows, high bit is leftmost pixel",
+      "replacement_contract": "Replace the paired 16x16 portrait and 24x24 idle C++ rows with the catalog row id preserved. Keep gameplay catalog metadata stable; do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 36,
+      "label": "Debatchi",
+      "stage": "adult",
+      "route": "athlete",
+      "archetype": "bolt",
+      "care_band": 3,
+      "generation_mask": 4,
+      "generation_tags": [
+        "even"
+      ],
+      "tier_mask": 2,
+      "tier_tags": [
+        "two"
+      ],
+      "gender_mask": 3,
+      "gender_tags": [
+        "boy",
+        "girl"
+      ],
+      "source_page": 5,
+      "source_slot": 5,
+      "frame_family": 5,
+      "visual_traits": 183,
+      "entry_source": "character_row",
+      "page_id": 237,
+      "official_image": "raw\\character\\237_Debatchi.jpeg",
+      "art_status": "official-derived",
+      "review_flags": [],
+      "portrait_bitmap_symbol": "kCharacterCatalogBitmaps[36]",
+      "portrait_dimensions_px": [
+        16,
+        16
+      ],
+      "portrait_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "idle_bitmap_symbol": "kCharacterIdleBitmaps[36]",
+      "idle_dimensions_px": [
+        24,
+        24
+      ],
+      "idle_encoding": "24 uint32_t rows, high bit is leftmost pixel",
+      "replacement_contract": "Replace the paired 16x16 portrait and 24x24 idle C++ rows with the catalog row id preserved. Keep gameplay catalog metadata stable; do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 37,
+      "label": "Bunbutchi",
+      "stage": "adult",
+      "route": "social",
+      "archetype": "dream",
+      "care_band": 2,
+      "generation_mask": 4,
+      "generation_tags": [
+        "even"
+      ],
+      "tier_mask": 2,
+      "tier_tags": [
+        "two"
+      ],
+      "gender_mask": 3,
+      "gender_tags": [
+        "boy",
+        "girl"
+      ],
+      "source_page": 5,
+      "source_slot": 6,
+      "frame_family": 4,
+      "visual_traits": 186,
+      "entry_source": "character_row",
+      "page_id": 238,
+      "official_image": "raw\\character\\238_Bunbutchi.jpeg",
+      "art_status": "official-derived",
+      "review_flags": [],
+      "portrait_bitmap_symbol": "kCharacterCatalogBitmaps[37]",
+      "portrait_dimensions_px": [
+        16,
+        16
+      ],
+      "portrait_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "idle_bitmap_symbol": "kCharacterIdleBitmaps[37]",
+      "idle_dimensions_px": [
+        24,
+        24
+      ],
+      "idle_encoding": "24 uint32_t rows, high bit is leftmost pixel",
+      "replacement_contract": "Replace the paired 16x16 portrait and 24x24 idle C++ rows with the catalog row id preserved. Keep gameplay catalog metadata stable; do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 38,
+      "label": "Pipotchi",
+      "stage": "adult",
+      "route": "social",
+      "archetype": "buddy",
+      "care_band": 2,
+      "generation_mask": 4,
+      "generation_tags": [
+        "even"
+      ],
+      "tier_mask": 4,
+      "tier_tags": [
+        "three"
+      ],
+      "gender_mask": 3,
+      "gender_tags": [
+        "boy",
+        "girl"
+      ],
+      "source_page": 5,
+      "source_slot": 7,
+      "frame_family": 3,
+      "visual_traits": 190,
+      "entry_source": "character_row",
+      "page_id": 239,
+      "official_image": "raw\\character\\239_Pipotchi.jpeg",
+      "art_status": "official-derived",
+      "review_flags": [],
+      "portrait_bitmap_symbol": "kCharacterCatalogBitmaps[38]",
+      "portrait_dimensions_px": [
+        16,
+        16
+      ],
+      "portrait_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "idle_bitmap_symbol": "kCharacterIdleBitmaps[38]",
+      "idle_dimensions_px": [
+        24,
+        24
+      ],
+      "idle_encoding": "24 uint32_t rows, high bit is leftmost pixel",
+      "replacement_contract": "Replace the paired 16x16 portrait and 24x24 idle C++ rows with the catalog row id preserved. Keep gameplay catalog metadata stable; do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 39,
+      "label": "Drotchi",
+      "stage": "adult",
+      "route": "rascal",
+      "archetype": "rascal",
+      "care_band": 1,
+      "generation_mask": 4,
+      "generation_tags": [
+        "even"
+      ],
+      "tier_mask": 4,
+      "tier_tags": [
+        "three"
+      ],
+      "gender_mask": 3,
+      "gender_tags": [
+        "boy",
+        "girl"
+      ],
+      "source_page": 5,
+      "source_slot": 8,
+      "frame_family": 6,
+      "visual_traits": 161,
+      "entry_source": "character_row",
+      "page_id": 240,
+      "official_image": "raw\\character\\240_Drotchi.jpeg",
+      "art_status": "official-derived",
+      "review_flags": [],
+      "portrait_bitmap_symbol": "kCharacterCatalogBitmaps[39]",
+      "portrait_dimensions_px": [
+        16,
+        16
+      ],
+      "portrait_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "idle_bitmap_symbol": "kCharacterIdleBitmaps[39]",
+      "idle_dimensions_px": [
+        24,
+        24
+      ],
+      "idle_encoding": "24 uint32_t rows, high bit is leftmost pixel",
+      "replacement_contract": "Replace the paired 16x16 portrait and 24x24 idle C++ rows with the catalog row id preserved. Keep gameplay catalog metadata stable; do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 40,
+      "label": "Bill",
+      "stage": "adult",
+      "route": "scholar",
+      "archetype": "quill",
+      "care_band": 0,
+      "generation_mask": 4,
+      "generation_tags": [
+        "even"
+      ],
+      "tier_mask": 4,
+      "tier_tags": [
+        "three"
+      ],
+      "gender_mask": 3,
+      "gender_tags": [
+        "boy",
+        "girl"
+      ],
+      "source_page": 6,
+      "source_slot": 1,
+      "frame_family": 7,
+      "visual_traits": 196,
+      "entry_source": "character_row",
+      "page_id": 241,
+      "official_image": "raw\\character\\241_Bill.jpeg",
+      "art_status": "official-derived",
+      "review_flags": [],
+      "portrait_bitmap_symbol": "kCharacterCatalogBitmaps[40]",
+      "portrait_dimensions_px": [
+        16,
+        16
+      ],
+      "portrait_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "idle_bitmap_symbol": "kCharacterIdleBitmaps[40]",
+      "idle_dimensions_px": [
+        24,
+        24
+      ],
+      "idle_encoding": "24 uint32_t rows, high bit is leftmost pixel",
+      "replacement_contract": "Replace the paired 16x16 portrait and 24x24 idle C++ rows with the catalog row id preserved. Keep gameplay catalog metadata stable; do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 41,
+      "label": "Robotchi",
+      "stage": "adult",
+      "route": "scholar",
+      "archetype": "quill",
+      "care_band": 2,
+      "generation_mask": 4,
+      "generation_tags": [
+        "even"
+      ],
+      "tier_mask": 8,
+      "tier_tags": [
+        "four"
+      ],
+      "gender_mask": 3,
+      "gender_tags": [
+        "boy",
+        "girl"
+      ],
+      "source_page": 6,
+      "source_slot": 2,
+      "frame_family": 7,
+      "visual_traits": 202,
+      "entry_source": "character_row",
+      "page_id": 242,
+      "official_image": "raw\\character\\242_Robotchi.jpeg",
+      "art_status": "official-derived",
+      "review_flags": [],
+      "portrait_bitmap_symbol": "kCharacterCatalogBitmaps[41]",
+      "portrait_dimensions_px": [
+        16,
+        16
+      ],
+      "portrait_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "idle_bitmap_symbol": "kCharacterIdleBitmaps[41]",
+      "idle_dimensions_px": [
+        24,
+        24
+      ],
+      "idle_encoding": "24 uint32_t rows, high bit is leftmost pixel",
+      "replacement_contract": "Replace the paired 16x16 portrait and 24x24 idle C++ rows with the catalog row id preserved. Keep gameplay catalog metadata stable; do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 42,
+      "label": "Wooltchi",
+      "stage": "adult",
+      "route": "dreamer",
+      "archetype": "dream",
+      "care_band": 0,
+      "generation_mask": 4,
+      "generation_tags": [
+        "even"
+      ],
+      "tier_mask": 8,
+      "tier_tags": [
+        "four"
+      ],
+      "gender_mask": 3,
+      "gender_tags": [
+        "boy",
+        "girl"
+      ],
+      "source_page": 6,
+      "source_slot": 3,
+      "frame_family": 4,
+      "visual_traits": 204,
+      "entry_source": "character_row",
+      "page_id": 243,
+      "official_image": "raw\\character\\243_Wooltchi.jpeg",
+      "art_status": "official-derived",
+      "review_flags": [],
+      "portrait_bitmap_symbol": "kCharacterCatalogBitmaps[42]",
+      "portrait_dimensions_px": [
+        16,
+        16
+      ],
+      "portrait_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "idle_bitmap_symbol": "kCharacterIdleBitmaps[42]",
+      "idle_dimensions_px": [
+        24,
+        24
+      ],
+      "idle_encoding": "24 uint32_t rows, high bit is leftmost pixel",
+      "replacement_contract": "Replace the paired 16x16 portrait and 24x24 idle C++ rows with the catalog row id preserved. Keep gameplay catalog metadata stable; do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 43,
+      "label": "Teketchi",
+      "stage": "adult",
+      "route": "dreamer",
+      "archetype": "dream",
+      "care_band": 2,
+      "generation_mask": 4,
+      "generation_tags": [
+        "even"
+      ],
+      "tier_mask": 8,
+      "tier_tags": [
+        "four"
+      ],
+      "gender_mask": 3,
+      "gender_tags": [
+        "boy",
+        "girl"
+      ],
+      "source_page": 6,
+      "source_slot": 4,
+      "frame_family": 4,
+      "visual_traits": 210,
+      "entry_source": "character_row",
+      "page_id": 244,
+      "official_image": "raw\\character\\244_Teketchi.jpeg",
+      "art_status": "official-derived",
+      "review_flags": [],
+      "portrait_bitmap_symbol": "kCharacterCatalogBitmaps[43]",
+      "portrait_dimensions_px": [
+        16,
+        16
+      ],
+      "portrait_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "idle_bitmap_symbol": "kCharacterIdleBitmaps[43]",
+      "idle_dimensions_px": [
+        24,
+        24
+      ],
+      "idle_encoding": "24 uint32_t rows, high bit is leftmost pixel",
+      "replacement_contract": "Replace the paired 16x16 portrait and 24x24 idle C++ rows with the catalog row id preserved. Keep gameplay catalog metadata stable; do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 44,
+      "label": "Gozarutchi",
+      "stage": "adult",
+      "route": "athlete",
+      "archetype": "bolt",
+      "care_band": 2,
+      "generation_mask": 4,
+      "generation_tags": [
+        "even"
+      ],
+      "tier_mask": 16,
+      "tier_tags": [
+        "special"
+      ],
+      "gender_mask": 3,
+      "gender_tags": [
+        "boy",
+        "girl"
+      ],
+      "source_page": 6,
+      "source_slot": 5,
+      "frame_family": 5,
+      "visual_traits": 214,
+      "entry_source": "character_row",
+      "page_id": 245,
+      "official_image": "raw\\character\\245_Gozarutchi.jpeg",
+      "art_status": "official-derived",
+      "review_flags": [],
+      "portrait_bitmap_symbol": "kCharacterCatalogBitmaps[44]",
+      "portrait_dimensions_px": [
+        16,
+        16
+      ],
+      "portrait_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "idle_bitmap_symbol": "kCharacterIdleBitmaps[44]",
+      "idle_dimensions_px": [
+        24,
+        24
+      ],
+      "idle_encoding": "24 uint32_t rows, high bit is leftmost pixel",
+      "replacement_contract": "Replace the paired 16x16 portrait and 24x24 idle C++ rows with the catalog row id preserved. Keep gameplay catalog metadata stable; do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 45,
+      "label": "Warusotchi",
+      "stage": "adult",
+      "route": "rascal",
+      "archetype": "rascal",
+      "care_band": 3,
+      "generation_mask": 4,
+      "generation_tags": [
+        "even"
+      ],
+      "tier_mask": 16,
+      "tier_tags": [
+        "special"
+      ],
+      "gender_mask": 3,
+      "gender_tags": [
+        "boy",
+        "girl"
+      ],
+      "source_page": 6,
+      "source_slot": 6,
+      "frame_family": 6,
+      "visual_traits": 219,
+      "entry_source": "character_row",
+      "page_id": 246,
+      "official_image": "raw\\character\\246_Warusotchi.jpeg",
+      "art_status": "official-derived",
+      "review_flags": [],
+      "portrait_bitmap_symbol": "kCharacterCatalogBitmaps[45]",
+      "portrait_dimensions_px": [
+        16,
+        16
+      ],
+      "portrait_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "idle_bitmap_symbol": "kCharacterIdleBitmaps[45]",
+      "idle_dimensions_px": [
+        24,
+        24
+      ],
+      "idle_encoding": "24 uint32_t rows, high bit is leftmost pixel",
+      "replacement_contract": "Replace the paired 16x16 portrait and 24x24 idle C++ rows with the catalog row id preserved. Keep gameplay catalog metadata stable; do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 46,
+      "label": "Sekitoritchi",
+      "stage": "adult",
+      "route": "athlete",
+      "archetype": "bolt",
+      "care_band": 2,
+      "generation_mask": 4,
+      "generation_tags": [
+        "even"
+      ],
+      "tier_mask": 16,
+      "tier_tags": [
+        "special"
+      ],
+      "gender_mask": 3,
+      "gender_tags": [
+        "boy",
+        "girl"
+      ],
+      "source_page": 6,
+      "source_slot": 7,
+      "frame_family": 5,
+      "visual_traits": 222,
+      "entry_source": "character_row",
+      "page_id": 247,
+      "official_image": "raw\\character\\247_Sekitoritchi.jpeg",
+      "art_status": "official-derived",
+      "review_flags": [],
+      "portrait_bitmap_symbol": "kCharacterCatalogBitmaps[46]",
+      "portrait_dimensions_px": [
+        16,
+        16
+      ],
+      "portrait_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "idle_bitmap_symbol": "kCharacterIdleBitmaps[46]",
+      "idle_dimensions_px": [
+        24,
+        24
+      ],
+      "idle_encoding": "24 uint32_t rows, high bit is leftmost pixel",
+      "replacement_contract": "Replace the paired 16x16 portrait and 24x24 idle C++ rows with the catalog row id preserved. Keep gameplay catalog metadata stable; do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 47,
+      "label": "Oyajitchi",
+      "stage": "adult",
+      "route": "rascal",
+      "archetype": "sage",
+      "care_band": 2,
+      "generation_mask": 7,
+      "generation_tags": [
+        "first",
+        "odd",
+        "even"
+      ],
+      "tier_mask": 16,
+      "tier_tags": [
+        "special"
+      ],
+      "gender_mask": 1,
+      "gender_tags": [
+        "boy"
+      ],
+      "source_page": 6,
+      "source_slot": 8,
+      "frame_family": 8,
+      "visual_traits": 194,
+      "entry_source": "character_row",
+      "page_id": 248,
+      "official_image": "raw\\character\\248_Oyajitchi.jpeg",
+      "art_status": "official-derived",
+      "review_flags": [],
+      "portrait_bitmap_symbol": "kCharacterCatalogBitmaps[47]",
+      "portrait_dimensions_px": [
+        16,
+        16
+      ],
+      "portrait_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "idle_bitmap_symbol": "kCharacterIdleBitmaps[47]",
+      "idle_dimensions_px": [
+        24,
+        24
+      ],
+      "idle_encoding": "24 uint32_t rows, high bit is leftmost pixel",
+      "replacement_contract": "Replace the paired 16x16 portrait and 24x24 idle C++ rows with the catalog row id preserved. Keep gameplay catalog metadata stable; do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 48,
+      "label": "Ojitchi",
+      "stage": "elder",
+      "route": "balanced",
+      "archetype": "sage",
+      "care_band": 0,
+      "generation_mask": 7,
+      "generation_tags": [
+        "first",
+        "odd",
+        "even"
+      ],
+      "tier_mask": 31,
+      "tier_tags": [
+        "one",
+        "two",
+        "three",
+        "four",
+        "special"
+      ],
+      "gender_mask": 1,
+      "gender_tags": [
+        "boy"
+      ],
+      "source_page": 7,
+      "source_slot": 1,
+      "frame_family": 8,
+      "visual_traits": 228,
+      "entry_source": "character_row",
+      "page_id": 249,
+      "official_image": "raw\\character\\249_Ojitchi.jpeg",
+      "art_status": "official-derived",
+      "review_flags": [],
+      "portrait_bitmap_symbol": "kCharacterCatalogBitmaps[48]",
+      "portrait_dimensions_px": [
+        16,
+        16
+      ],
+      "portrait_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "idle_bitmap_symbol": "kCharacterIdleBitmaps[48]",
+      "idle_dimensions_px": [
+        24,
+        24
+      ],
+      "idle_encoding": "24 uint32_t rows, high bit is leftmost pixel",
+      "replacement_contract": "Replace the paired 16x16 portrait and 24x24 idle C++ rows with the catalog row id preserved. Keep gameplay catalog metadata stable; do not add runtime PNG/JPG/GIF loading."
+    },
+    {
+      "index": 49,
+      "label": "Otokitchi",
+      "stage": "elder",
+      "route": "scholar",
+      "archetype": "sage",
+      "care_band": 1,
+      "generation_mask": 7,
+      "generation_tags": [
+        "first",
+        "odd",
+        "even"
+      ],
+      "tier_mask": 31,
+      "tier_tags": [
+        "one",
+        "two",
+        "three",
+        "four",
+        "special"
+      ],
+      "gender_mask": 2,
+      "gender_tags": [
+        "girl"
+      ],
+      "source_page": 7,
+      "source_slot": 2,
+      "frame_family": 8,
+      "visual_traits": 233,
+      "entry_source": "character_row",
+      "page_id": 250,
+      "official_image": "raw\\character\\250_Otokitchi.jpeg",
+      "art_status": "official-derived",
+      "review_flags": [],
+      "portrait_bitmap_symbol": "kCharacterCatalogBitmaps[49]",
+      "portrait_dimensions_px": [
+        16,
+        16
+      ],
+      "portrait_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "idle_bitmap_symbol": "kCharacterIdleBitmaps[49]",
+      "idle_dimensions_px": [
+        24,
+        24
+      ],
+      "idle_encoding": "24 uint32_t rows, high bit is leftmost pixel",
+      "replacement_contract": "Replace the paired 16x16 portrait and 24x24 idle C++ rows with the catalog row id preserved. Keep gameplay catalog metadata stable; do not add runtime PNG/JPG/GIF loading."
+    }
+  ]
+}

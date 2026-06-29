@@ -1,0 +1,121 @@
+{
+  "runtime_boundary": "Official raster assets are analysis-only references. Firmware graphics must remain C/C++ bitmap arrays and composed frame tables.",
+  "sources": [
+    {
+      "id": "BANDAI_CONNECTION_2024_MANUAL",
+      "kind": "pdf",
+      "url": "https://www.bandai.com/amfile/file/download/file/242/product/1297931/",
+      "local_path": "raw/manuals/bandai_connection_2024_instruction_manual.pdf",
+      "generated_pages": [
+        "generated/manual_pages/page-1.png",
+        "generated/manual_pages/page-2.png"
+      ],
+      "uses": [
+        "fixed menu semantic order",
+        "fixed menu icon callouts",
+        "button mapping",
+        "official wording for behavior checks"
+      ]
+    },
+    {
+      "id": "TAMAGOTCHI_CONNECTION_HOWTO",
+      "kind": "webpage_images",
+      "url": "https://tamagotchi-official.com/gb/series/connection/howto/",
+      "local_path": "raw/howto",
+      "generated_pages": [
+        "generated/official_howto_gif_contact_sheet.png",
+        "generated/catalog_item_official_assets_contact_sheet.png",
+        "generated/catalog_item_official_pc_gif_frames.png",
+        "generated/catalog_item_official_detected_tiles_contact_sheet.png",
+        "generated/catalog_item_official_source_overrides_contact_sheet.png",
+        "generated/catalog_item_source_semantic_status_contact_sheet.png",
+        "generated/catalog_item_official_alignment_proof.png",
+        "generated/souvenir_official_candidate_assets_contact_sheet.png",
+        "generated/souvenir_source_semantic_status_contact_sheet.png",
+        "generated/souvenir_official_source_overrides_contact_sheet.png",
+        "generated/souvenir_official_alignment_proof.png",
+        "generated/souvenir_official_reference_manifest.json"
+      ],
+      "uses": [
+        "behavior animation reference",
+        "game visual reference",
+        "growth chart reference",
+        "shop/item visual reference",
+        "connection visual reference"
+      ]
+    },
+    {
+      "id": "TAMAGOTCHI_CONNECTION_CHARACTER",
+      "kind": "webpage_images",
+      "url": "https://tamagotchi-official.com/gb/series/connection/character/",
+      "local_path": "raw/character",
+      "generated_pages": [
+        "generated/character_official_reference_contact_sheet.png",
+        "generated/character_official_alignment_proof.png",
+        "generated/character_generated_source_contact_sheet.png",
+        "generated/character_idle_generated_source_contact_sheet.png",
+        "generated/character_source_alignment_status_contact_sheet.png",
+        "generated/character_source_alignment_status.json",
+        "generated/character_official_reference_manifest.json"
+      ],
+      "uses": [
+        "50-row character catalog visual reference",
+        "per-character source page URL and alt text",
+        "official-look character acceptance proof"
+      ]
+    }
+  ],
+  "fixed_menu_slots": [
+    {"index": 0, "local_id": "HEALTH", "official_label": "Health Meter"},
+    {"index": 1, "local_id": "FOOD", "official_label": "Food"},
+    {"index": 2, "local_id": "TOILET", "official_label": "Toilet"},
+    {"index": 3, "local_id": "CONNECT", "official_label": "Connection/Communication"},
+    {"index": 4, "local_id": "CARE", "official_label": "Attention"},
+    {"index": 5, "local_id": "TRAIN", "official_label": "Discipline"},
+    {"index": 6, "local_id": "MEDS", "official_label": "Medicine"},
+    {"index": 7, "local_id": "LIGHTS", "official_label": "Lights"},
+    {"index": 8, "local_id": "FRIEND", "official_label": "Friend List"},
+    {"index": 9, "local_id": "GAME", "official_label": "Games/Activity"}
+  ],
+  "fixed_menu_alignment": {
+    "status": "OPEN",
+    "proof": "generated/fixed_menu_official_alignment_proof.png",
+    "official_tile_contact_sheet": "generated/fixed_menu_official_tiles_contact_sheet.png",
+    "compact_source_contact_sheet": "generated/fixed_menu_compact_official_source_contact_sheet.png",
+    "source_policy_contact_sheet": "generated/fixed_menu_source_policy_contact_sheet.png",
+    "source_policy": "generated/fixed_menu_source_policy.json",
+    "official_tile_manifest": "generated/fixed_menu_official_tiles_manifest.json",
+    "reason": "Current EchoPet source icons are C++ bitmap rows generated from official fixed-menu references. The compact 12x12 rows and large 30x30 rows now both use the same official device/menu tile crop per slot, recorded in a source-policy proof and JSON. Final human acceptance for recognizability remains open."
+  },
+  "catalog_item_alignment": {
+    "status": "OPEN",
+    "proof": "generated/catalog_item_official_alignment_proof.png",
+    "official_asset_contact_sheet": "generated/catalog_item_official_assets_contact_sheet.png",
+    "official_pc_gif_frames": "generated/catalog_item_official_pc_gif_frames.png",
+    "official_detected_tiles": "generated/catalog_item_official_detected_tiles_contact_sheet.png",
+    "official_source_overrides": "generated/catalog_item_official_source_overrides_contact_sheet.png",
+    "source_semantic_status": "generated/catalog_item_source_semantic_status_contact_sheet.png",
+    "reference_manifest": "generated/catalog_item_official_reference_manifest.json",
+    "reason": "Official item references now exist as analysis-only proof material. The firmware has 160 explicit C/C++ catalog-entry rows, with 12 unambiguous non-souvenir item rows generated as official-source overrides and a 152-row semantic-status sheet for row-local replacement. The remaining rows still need accepted per-row official-look source bitmaps."
+  },
+  "souvenir_alignment": {
+    "status": "OPEN",
+    "proof": "generated/souvenir_official_alignment_proof.png",
+    "official_candidate_contact_sheet": "generated/souvenir_official_candidate_assets_contact_sheet.png",
+    "source_semantic_status_contact_sheet": "generated/souvenir_source_semantic_status_contact_sheet.png",
+    "official_source_overrides": "generated/souvenir_official_source_overrides_contact_sheet.png",
+    "reference_manifest": "generated/souvenir_official_reference_manifest.json",
+    "reason": "Official how-to assets now define the semantic reference surface for the 64 MEMORY/souvenir rows, and TRUMPET/BALL PLAY have unambiguous official-source C++ bitmap overrides. The official site material is not a complete 64-row souvenir atlas, so the remaining rows stay source-backed substitutes until accepted row art is drawn or supplied."
+  },
+  "character_alignment": {
+    "status": "OPEN",
+    "proof": "generated/character_official_alignment_proof.png",
+    "official_contact_sheet": "generated/character_official_reference_contact_sheet.png",
+    "generated_source_contact_sheet": "generated/character_generated_source_contact_sheet.png",
+    "generated_idle_source_contact_sheet": "generated/character_idle_generated_source_contact_sheet.png",
+    "source_alignment_status_contact_sheet": "generated/character_source_alignment_status_contact_sheet.png",
+    "source_alignment_status": "generated/character_source_alignment_status.json",
+    "reference_manifest": "generated/character_official_reference_manifest.json",
+    "reason": "Official character references now exist as analysis-only proof material, and the firmware character rows are generated as compact 16x16 portrait and 24x24 idle C/C++ bitmap arrays from those references. A row-local official/16x16/24x24 status sheet and JSON expose each generated row for replacement and review. Final acceptance remains open for compact portrait detail loss, larger idle recognizability, and hardware readability."
+  }
+}

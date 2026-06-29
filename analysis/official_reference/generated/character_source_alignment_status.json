@@ -1,0 +1,1410 @@
+{
+  "source_manifest": "generated\\character_official_reference_manifest.json",
+  "runtime_boundary": "Official raster files are analysis-only references. The firmware character visuals are generated C/C++ bitmap rows.",
+  "character_count": 50,
+  "generated": {
+    "source_alignment_status_contact_sheet": "generated\\character_source_alignment_status_contact_sheet.png"
+  },
+  "characters": [
+    {
+      "index": 0,
+      "page_id": 201,
+      "catalog_name": "Kuroteletchi",
+      "official_image": "raw\\character\\201_Kuroteletchi.jpeg",
+      "status": "official-derived",
+      "flags": [],
+      "bitmap16": {
+        "ink_pixels": 104,
+        "ink_ratio": 0.4062,
+        "bbox": [
+          1,
+          1,
+          13,
+          13
+        ]
+      },
+      "bitmap24": {
+        "ink_pixels": 247,
+        "ink_ratio": 0.4288,
+        "bbox": [
+          2,
+          2,
+          19,
+          19
+        ]
+      }
+    },
+    {
+      "index": 1,
+      "page_id": 202,
+      "catalog_name": "Shiroteletchi",
+      "official_image": "raw\\character\\202_Shiroteletchi.jpeg",
+      "status": "official-derived",
+      "flags": [],
+      "bitmap16": {
+        "ink_pixels": 96,
+        "ink_ratio": 0.375,
+        "bbox": [
+          1,
+          1,
+          13,
+          13
+        ]
+      },
+      "bitmap24": {
+        "ink_pixels": 213,
+        "ink_ratio": 0.3698,
+        "bbox": [
+          2,
+          2,
+          19,
+          19
+        ]
+      }
+    },
+    {
+      "index": 2,
+      "page_id": 203,
+      "catalog_name": "Tamatchi",
+      "official_image": "raw\\character\\203_Tamatchi.jpeg",
+      "status": "official-derived",
+      "flags": [],
+      "bitmap16": {
+        "ink_pixels": 45,
+        "ink_ratio": 0.1758,
+        "bbox": [
+          1,
+          2,
+          13,
+          12
+        ]
+      },
+      "bitmap24": {
+        "ink_pixels": 104,
+        "ink_ratio": 0.1806,
+        "bbox": [
+          1,
+          3,
+          21,
+          19
+        ]
+      }
+    },
+    {
+      "index": 3,
+      "page_id": 204,
+      "catalog_name": "Mizutamatchi",
+      "official_image": "raw\\character\\204_Mizutamatchi.jpeg",
+      "status": "official-derived",
+      "flags": [],
+      "bitmap16": {
+        "ink_pixels": 43,
+        "ink_ratio": 0.168,
+        "bbox": [
+          2,
+          1,
+          11,
+          13
+        ]
+      },
+      "bitmap24": {
+        "ink_pixels": 111,
+        "ink_ratio": 0.1927,
+        "bbox": [
+          3,
+          1,
+          18,
+          21
+        ]
+      }
+    },
+    {
+      "index": 4,
+      "page_id": 205,
+      "catalog_name": "Kuchitamatchi",
+      "official_image": "raw\\character\\205_Kuchitamatchi.jpeg",
+      "status": "official-derived",
+      "flags": [],
+      "bitmap16": {
+        "ink_pixels": 41,
+        "ink_ratio": 0.1602,
+        "bbox": [
+          1,
+          3,
+          13,
+          11
+        ]
+      },
+      "bitmap24": {
+        "ink_pixels": 103,
+        "ink_ratio": 0.1788,
+        "bbox": [
+          1,
+          4,
+          21,
+          18
+        ]
+      }
+    },
+    {
+      "index": 5,
+      "page_id": 206,
+      "catalog_name": "Mohitamatchi",
+      "official_image": "raw\\character\\206_Mohitamatchi.jpeg",
+      "status": "official-derived",
+      "flags": [],
+      "bitmap16": {
+        "ink_pixels": 71,
+        "ink_ratio": 0.2773,
+        "bbox": [
+          1,
+          1,
+          13,
+          13
+        ]
+      },
+      "bitmap24": {
+        "ink_pixels": 174,
+        "ink_ratio": 0.3021,
+        "bbox": [
+          1,
+          1,
+          21,
+          21
+        ]
+      }
+    },
+    {
+      "index": 6,
+      "page_id": 207,
+      "catalog_name": "Obotchi",
+      "official_image": "raw\\character\\207_Obotchi.jpeg",
+      "status": "official-derived",
+      "flags": [],
+      "bitmap16": {
+        "ink_pixels": 43,
+        "ink_ratio": 0.168,
+        "bbox": [
+          2,
+          1,
+          11,
+          13
+        ]
+      },
+      "bitmap24": {
+        "ink_pixels": 117,
+        "ink_ratio": 0.2031,
+        "bbox": [
+          3,
+          1,
+          18,
+          21
+        ]
+      }
+    },
+    {
+      "index": 7,
+      "page_id": 208,
+      "catalog_name": "Youngmametchi",
+      "official_image": "raw\\character\\208_Youngmametchi.jpeg",
+      "status": "official-derived",
+      "flags": [],
+      "bitmap16": {
+        "ink_pixels": 56,
+        "ink_ratio": 0.2188,
+        "bbox": [
+          3,
+          1,
+          10,
+          13
+        ]
+      },
+      "bitmap24": {
+        "ink_pixels": 156,
+        "ink_ratio": 0.2708,
+        "bbox": [
+          4,
+          1,
+          16,
+          21
+        ]
+      }
+    },
+    {
+      "index": 8,
+      "page_id": 209,
+      "catalog_name": "Batabatchi",
+      "official_image": "raw\\character\\209_Batabatchi.jpeg",
+      "status": "official-derived",
+      "flags": [],
+      "bitmap16": {
+        "ink_pixels": 53,
+        "ink_ratio": 0.207,
+        "bbox": [
+          1,
+          1,
+          13,
+          13
+        ]
+      },
+      "bitmap24": {
+        "ink_pixels": 128,
+        "ink_ratio": 0.2222,
+        "bbox": [
+          1,
+          1,
+          21,
+          21
+        ]
+      }
+    },
+    {
+      "index": 9,
+      "page_id": 210,
+      "catalog_name": "Ichigotchi",
+      "official_image": "raw\\character\\210_Ichigotchi.jpeg",
+      "status": "official-derived",
+      "flags": [],
+      "bitmap16": {
+        "ink_pixels": 80,
+        "ink_ratio": 0.3125,
+        "bbox": [
+          2,
+          1,
+          12,
+          13
+        ]
+      },
+      "bitmap24": {
+        "ink_pixels": 211,
+        "ink_ratio": 0.3663,
+        "bbox": [
+          2,
+          1,
+          19,
+          21
+        ]
+      }
+    },
+    {
+      "index": 10,
+      "page_id": 211,
+      "catalog_name": "Nikatchi",
+      "official_image": "raw\\character\\211_Nikatchi.jpeg",
+      "status": "official-derived",
+      "flags": [],
+      "bitmap16": {
+        "ink_pixels": 66,
+        "ink_ratio": 0.2578,
+        "bbox": [
+          2,
+          1,
+          12,
+          13
+        ]
+      },
+      "bitmap24": {
+        "ink_pixels": 180,
+        "ink_ratio": 0.3125,
+        "bbox": [
+          2,
+          1,
+          19,
+          21
+        ]
+      }
+    },
+    {
+      "index": 11,
+      "page_id": 212,
+      "catalog_name": "Pirorirotchi",
+      "official_image": "raw\\character\\212_Pirorirotchi.jpeg",
+      "status": "official-derived",
+      "flags": [],
+      "bitmap16": {
+        "ink_pixels": 76,
+        "ink_ratio": 0.2969,
+        "bbox": [
+          2,
+          1,
+          12,
+          13
+        ]
+      },
+      "bitmap24": {
+        "ink_pixels": 168,
+        "ink_ratio": 0.2917,
+        "bbox": [
+          2,
+          1,
+          20,
+          21
+        ]
+      }
+    },
+    {
+      "index": 12,
+      "page_id": 213,
+      "catalog_name": "Hikotchi",
+      "official_image": "raw\\character\\213_Hikotchi.jpeg",
+      "status": "official-derived",
+      "flags": [],
+      "bitmap16": {
+        "ink_pixels": 37,
+        "ink_ratio": 0.1445,
+        "bbox": [
+          3,
+          1,
+          10,
+          13
+        ]
+      },
+      "bitmap24": {
+        "ink_pixels": 116,
+        "ink_ratio": 0.2014,
+        "bbox": [
+          3,
+          1,
+          17,
+          21
+        ]
+      }
+    },
+    {
+      "index": 13,
+      "page_id": 214,
+      "catalog_name": "Hinatchi",
+      "official_image": "raw\\character\\214_Hinatchi.jpeg",
+      "status": "official-derived",
+      "flags": [],
+      "bitmap16": {
+        "ink_pixels": 51,
+        "ink_ratio": 0.1992,
+        "bbox": [
+          1,
+          1,
+          13,
+          13
+        ]
+      },
+      "bitmap24": {
+        "ink_pixels": 147,
+        "ink_ratio": 0.2552,
+        "bbox": [
+          1,
+          1,
+          21,
+          21
+        ]
+      }
+    },
+    {
+      "index": 14,
+      "page_id": 215,
+      "catalog_name": "Youngmimitchi",
+      "official_image": "raw\\character\\215_Youngmimitchi.jpeg",
+      "status": "official-derived",
+      "flags": [],
+      "bitmap16": {
+        "ink_pixels": 60,
+        "ink_ratio": 0.2344,
+        "bbox": [
+          1,
+          1,
+          13,
+          13
+        ]
+      },
+      "bitmap24": {
+        "ink_pixels": 168,
+        "ink_ratio": 0.2917,
+        "bbox": [
+          1,
+          1,
+          21,
+          21
+        ]
+      }
+    },
+    {
+      "index": 15,
+      "page_id": 216,
+      "catalog_name": "Ringotchi",
+      "official_image": "raw\\character\\216_Ringotchi.jpeg",
+      "status": "official-derived",
+      "flags": [],
+      "bitmap16": {
+        "ink_pixels": 81,
+        "ink_ratio": 0.3164,
+        "bbox": [
+          1,
+          1,
+          13,
+          13
+        ]
+      },
+      "bitmap24": {
+        "ink_pixels": 226,
+        "ink_ratio": 0.3924,
+        "bbox": [
+          1,
+          1,
+          21,
+          21
+        ]
+      }
+    },
+    {
+      "index": 16,
+      "page_id": 217,
+      "catalog_name": "Hinotamatchi",
+      "official_image": "raw\\character\\217_Hinotamatchi.jpeg",
+      "status": "official-derived",
+      "flags": [],
+      "bitmap16": {
+        "ink_pixels": 46,
+        "ink_ratio": 0.1797,
+        "bbox": [
+          1,
+          1,
+          13,
+          13
+        ]
+      },
+      "bitmap24": {
+        "ink_pixels": 119,
+        "ink_ratio": 0.2066,
+        "bbox": [
+          1,
+          1,
+          21,
+          21
+        ]
+      }
+    },
+    {
+      "index": 17,
+      "page_id": 218,
+      "catalog_name": "Hashitamatchi",
+      "official_image": "raw\\character\\218_Hashitamatchi.jpeg",
+      "status": "official-derived",
+      "flags": [],
+      "bitmap16": {
+        "ink_pixels": 55,
+        "ink_ratio": 0.2148,
+        "bbox": [
+          1,
+          1,
+          13,
+          13
+        ]
+      },
+      "bitmap24": {
+        "ink_pixels": 158,
+        "ink_ratio": 0.2743,
+        "bbox": [
+          1,
+          1,
+          21,
+          21
+        ]
+      }
+    },
+    {
+      "index": 18,
+      "page_id": 219,
+      "catalog_name": "Mametchi",
+      "official_image": "raw\\character\\219_Mametchi.jpeg",
+      "status": "official-derived",
+      "flags": [],
+      "bitmap16": {
+        "ink_pixels": 79,
+        "ink_ratio": 0.3086,
+        "bbox": [
+          2,
+          1,
+          11,
+          13
+        ]
+      },
+      "bitmap24": {
+        "ink_pixels": 203,
+        "ink_ratio": 0.3524,
+        "bbox": [
+          3,
+          1,
+          18,
+          21
+        ]
+      }
+    },
+    {
+      "index": 19,
+      "page_id": 220,
+      "catalog_name": "Furawatchi",
+      "official_image": "raw\\character\\220_Furawatchi.jpeg",
+      "status": "official-derived",
+      "flags": [],
+      "bitmap16": {
+        "ink_pixels": 64,
+        "ink_ratio": 0.25,
+        "bbox": [
+          2,
+          1,
+          12,
+          13
+        ]
+      },
+      "bitmap24": {
+        "ink_pixels": 152,
+        "ink_ratio": 0.2639,
+        "bbox": [
+          2,
+          1,
+          20,
+          21
+        ]
+      }
+    },
+    {
+      "index": 20,
+      "page_id": 221,
+      "catalog_name": "Pyonkotchi",
+      "official_image": "raw\\character\\221_Pyonkotchi.jpeg",
+      "status": "official-derived",
+      "flags": [],
+      "bitmap16": {
+        "ink_pixels": 62,
+        "ink_ratio": 0.2422,
+        "bbox": [
+          3,
+          1,
+          10,
+          13
+        ]
+      },
+      "bitmap24": {
+        "ink_pixels": 112,
+        "ink_ratio": 0.1944,
+        "bbox": [
+          4,
+          1,
+          16,
+          21
+        ]
+      }
+    },
+    {
+      "index": 21,
+      "page_id": 222,
+      "catalog_name": "Kuchipatchi",
+      "official_image": "raw\\character\\222_Kuchipatchi.jpeg",
+      "status": "official-derived",
+      "flags": [],
+      "bitmap16": {
+        "ink_pixels": 51,
+        "ink_ratio": 0.1992,
+        "bbox": [
+          1,
+          1,
+          13,
+          13
+        ]
+      },
+      "bitmap24": {
+        "ink_pixels": 129,
+        "ink_ratio": 0.224,
+        "bbox": [
+          1,
+          1,
+          21,
+          21
+        ]
+      }
+    },
+    {
+      "index": 22,
+      "page_id": 223,
+      "catalog_name": "Memetchi",
+      "official_image": "raw\\character\\223_Memetchi.jpeg",
+      "status": "official-derived",
+      "flags": [],
+      "bitmap16": {
+        "ink_pixels": 40,
+        "ink_ratio": 0.1562,
+        "bbox": [
+          2,
+          1,
+          11,
+          13
+        ]
+      },
+      "bitmap24": {
+        "ink_pixels": 113,
+        "ink_ratio": 0.1962,
+        "bbox": [
+          3,
+          1,
+          18,
+          21
+        ]
+      }
+    },
+    {
+      "index": 23,
+      "page_id": 224,
+      "catalog_name": "Billotchi",
+      "official_image": "raw\\character\\224_Billotchi.jpeg",
+      "status": "official-derived",
+      "flags": [],
+      "bitmap16": {
+        "ink_pixels": 85,
+        "ink_ratio": 0.332,
+        "bbox": [
+          3,
+          1,
+          9,
+          13
+        ]
+      },
+      "bitmap24": {
+        "ink_pixels": 213,
+        "ink_ratio": 0.3698,
+        "bbox": [
+          4,
+          1,
+          15,
+          21
+        ]
+      }
+    },
+    {
+      "index": 24,
+      "page_id": 225,
+      "catalog_name": "Tarakotchi",
+      "official_image": "raw\\character\\225_Tarakotchi.jpeg",
+      "status": "official-derived",
+      "flags": [],
+      "bitmap16": {
+        "ink_pixels": 62,
+        "ink_ratio": 0.2422,
+        "bbox": [
+          1,
+          1,
+          13,
+          13
+        ]
+      },
+      "bitmap24": {
+        "ink_pixels": 140,
+        "ink_ratio": 0.2431,
+        "bbox": [
+          1,
+          1,
+          21,
+          21
+        ]
+      }
+    },
+    {
+      "index": 25,
+      "page_id": 226,
+      "catalog_name": "Paparatchi",
+      "official_image": "raw\\character\\226_Paparatchi.jpeg",
+      "status": "official-derived",
+      "flags": [],
+      "bitmap16": {
+        "ink_pixels": 78,
+        "ink_ratio": 0.3047,
+        "bbox": [
+          1,
+          1,
+          13,
+          13
+        ]
+      },
+      "bitmap24": {
+        "ink_pixels": 203,
+        "ink_ratio": 0.3524,
+        "bbox": [
+          1,
+          1,
+          21,
+          21
+        ]
+      }
+    },
+    {
+      "index": 26,
+      "page_id": 227,
+      "catalog_name": "Mimiyoritchi",
+      "official_image": "raw\\character\\227_Mimiyoritchi.jpeg",
+      "status": "official-derived",
+      "flags": [],
+      "bitmap16": {
+        "ink_pixels": 80,
+        "ink_ratio": 0.3125,
+        "bbox": [
+          2,
+          1,
+          12,
+          13
+        ]
+      },
+      "bitmap24": {
+        "ink_pixels": 227,
+        "ink_ratio": 0.3941,
+        "bbox": [
+          2,
+          1,
+          20,
+          21
+        ]
+      }
+    },
+    {
+      "index": 27,
+      "page_id": 228,
+      "catalog_name": "Hanatchi",
+      "official_image": "raw\\character\\228_Hanatchi.jpeg",
+      "status": "official-derived",
+      "flags": [],
+      "bitmap16": {
+        "ink_pixels": 24,
+        "ink_ratio": 0.0938,
+        "bbox": [
+          1,
+          6,
+          13,
+          8
+        ]
+      },
+      "bitmap24": {
+        "ink_pixels": 76,
+        "ink_ratio": 0.1319,
+        "bbox": [
+          1,
+          9,
+          21,
+          13
+        ]
+      }
+    },
+    {
+      "index": 28,
+      "page_id": 229,
+      "catalog_name": "Hashizotchi",
+      "official_image": "raw\\character\\229_Hashizotchi.jpeg",
+      "status": "official-derived",
+      "flags": [],
+      "bitmap16": {
+        "ink_pixels": 58,
+        "ink_ratio": 0.2266,
+        "bbox": [
+          1,
+          1,
+          13,
+          13
+        ]
+      },
+      "bitmap24": {
+        "ink_pixels": 128,
+        "ink_ratio": 0.2222,
+        "bbox": [
+          1,
+          1,
+          21,
+          21
+        ]
+      }
+    },
+    {
+      "index": 29,
+      "page_id": 230,
+      "catalog_name": "Tsunotchi",
+      "official_image": "raw\\character\\230_Tsunotchi.jpeg",
+      "status": "official-derived",
+      "flags": [],
+      "bitmap16": {
+        "ink_pixels": 53,
+        "ink_ratio": 0.207,
+        "bbox": [
+          4,
+          1,
+          8,
+          13
+        ]
+      },
+      "bitmap24": {
+        "ink_pixels": 124,
+        "ink_ratio": 0.2153,
+        "bbox": [
+          5,
+          1,
+          13,
+          21
+        ]
+      }
+    },
+    {
+      "index": 30,
+      "page_id": 231,
+      "catalog_name": "Maskutchi",
+      "official_image": "raw\\character\\231_Maskutchi.jpeg",
+      "status": "official-derived",
+      "flags": [],
+      "bitmap16": {
+        "ink_pixels": 105,
+        "ink_ratio": 0.4102,
+        "bbox": [
+          2,
+          1,
+          12,
+          13
+        ]
+      },
+      "bitmap24": {
+        "ink_pixels": 245,
+        "ink_ratio": 0.4253,
+        "bbox": [
+          2,
+          1,
+          20,
+          21
+        ]
+      }
+    },
+    {
+      "index": 31,
+      "page_id": 232,
+      "catalog_name": "Megatchi",
+      "official_image": "raw\\character\\232_Megatchi.jpeg",
+      "status": "official-derived",
+      "flags": [],
+      "bitmap16": {
+        "ink_pixels": 103,
+        "ink_ratio": 0.4023,
+        "bbox": [
+          2,
+          1,
+          12,
+          13
+        ]
+      },
+      "bitmap24": {
+        "ink_pixels": 270,
+        "ink_ratio": 0.4688,
+        "bbox": [
+          2,
+          1,
+          19,
+          21
+        ]
+      }
+    },
+    {
+      "index": 32,
+      "page_id": 233,
+      "catalog_name": "Mimitchi",
+      "official_image": "raw\\character\\233_Mimitchi.jpeg",
+      "status": "official-derived",
+      "flags": [],
+      "bitmap16": {
+        "ink_pixels": 73,
+        "ink_ratio": 0.2852,
+        "bbox": [
+          2,
+          1,
+          12,
+          13
+        ]
+      },
+      "bitmap24": {
+        "ink_pixels": 186,
+        "ink_ratio": 0.3229,
+        "bbox": [
+          2,
+          1,
+          19,
+          21
+        ]
+      }
+    },
+    {
+      "index": 33,
+      "page_id": 234,
+      "catalog_name": "Chomametchi",
+      "official_image": "raw\\character\\234_Chomametchi.jpeg",
+      "status": "official-derived",
+      "flags": [],
+      "bitmap16": {
+        "ink_pixels": 66,
+        "ink_ratio": 0.2578,
+        "bbox": [
+          3,
+          1,
+          10,
+          13
+        ]
+      },
+      "bitmap24": {
+        "ink_pixels": 134,
+        "ink_ratio": 0.2326,
+        "bbox": [
+          4,
+          1,
+          16,
+          21
+        ]
+      }
+    },
+    {
+      "index": 34,
+      "page_id": 235,
+      "catalog_name": "Dekotchi",
+      "official_image": "raw\\character\\235_Dekotchi.jpeg",
+      "status": "official-derived",
+      "flags": [],
+      "bitmap16": {
+        "ink_pixels": 46,
+        "ink_ratio": 0.1797,
+        "bbox": [
+          2,
+          1,
+          12,
+          13
+        ]
+      },
+      "bitmap24": {
+        "ink_pixels": 138,
+        "ink_ratio": 0.2396,
+        "bbox": [
+          2,
+          1,
+          20,
+          21
+        ]
+      }
+    },
+    {
+      "index": 35,
+      "page_id": 236,
+      "catalog_name": "Hidatchi",
+      "official_image": "raw\\character\\236_Hidatchi.jpeg",
+      "status": "official-derived",
+      "flags": [],
+      "bitmap16": {
+        "ink_pixels": 68,
+        "ink_ratio": 0.2656,
+        "bbox": [
+          1,
+          2,
+          13,
+          12
+        ]
+      },
+      "bitmap24": {
+        "ink_pixels": 190,
+        "ink_ratio": 0.3299,
+        "bbox": [
+          1,
+          2,
+          21,
+          20
+        ]
+      }
+    },
+    {
+      "index": 36,
+      "page_id": 237,
+      "catalog_name": "Debatchi",
+      "official_image": "raw\\character\\237_Debatchi.jpeg",
+      "status": "official-derived",
+      "flags": [],
+      "bitmap16": {
+        "ink_pixels": 48,
+        "ink_ratio": 0.1875,
+        "bbox": [
+          3,
+          1,
+          10,
+          13
+        ]
+      },
+      "bitmap24": {
+        "ink_pixels": 144,
+        "ink_ratio": 0.25,
+        "bbox": [
+          3,
+          1,
+          17,
+          21
+        ]
+      }
+    },
+    {
+      "index": 37,
+      "page_id": 238,
+      "catalog_name": "Bunbutchi",
+      "official_image": "raw\\character\\238_Bunbutchi.jpeg",
+      "status": "official-derived",
+      "flags": [],
+      "bitmap16": {
+        "ink_pixels": 71,
+        "ink_ratio": 0.2773,
+        "bbox": [
+          1,
+          1,
+          13,
+          13
+        ]
+      },
+      "bitmap24": {
+        "ink_pixels": 179,
+        "ink_ratio": 0.3108,
+        "bbox": [
+          1,
+          1,
+          21,
+          21
+        ]
+      }
+    },
+    {
+      "index": 38,
+      "page_id": 239,
+      "catalog_name": "Pipotchi",
+      "official_image": "raw\\character\\239_Pipotchi.jpeg",
+      "status": "official-derived",
+      "flags": [],
+      "bitmap16": {
+        "ink_pixels": 64,
+        "ink_ratio": 0.25,
+        "bbox": [
+          1,
+          2,
+          13,
+          12
+        ]
+      },
+      "bitmap24": {
+        "ink_pixels": 138,
+        "ink_ratio": 0.2396,
+        "bbox": [
+          1,
+          3,
+          21,
+          19
+        ]
+      }
+    },
+    {
+      "index": 39,
+      "page_id": 240,
+      "catalog_name": "Drotchi",
+      "official_image": "raw\\character\\240_Drotchi.jpeg",
+      "status": "official-derived",
+      "flags": [],
+      "bitmap16": {
+        "ink_pixels": 42,
+        "ink_ratio": 0.1641,
+        "bbox": [
+          1,
+          3,
+          13,
+          11
+        ]
+      },
+      "bitmap24": {
+        "ink_pixels": 135,
+        "ink_ratio": 0.2344,
+        "bbox": [
+          1,
+          4,
+          21,
+          18
+        ]
+      }
+    },
+    {
+      "index": 40,
+      "page_id": 241,
+      "catalog_name": "Bill",
+      "official_image": "raw\\character\\241_Bill.jpeg",
+      "status": "official-derived",
+      "flags": [],
+      "bitmap16": {
+        "ink_pixels": 67,
+        "ink_ratio": 0.2617,
+        "bbox": [
+          2,
+          1,
+          12,
+          13
+        ]
+      },
+      "bitmap24": {
+        "ink_pixels": 147,
+        "ink_ratio": 0.2552,
+        "bbox": [
+          2,
+          1,
+          20,
+          21
+        ]
+      }
+    },
+    {
+      "index": 41,
+      "page_id": 242,
+      "catalog_name": "Robotchi",
+      "official_image": "raw\\character\\242_Robotchi.jpeg",
+      "status": "official-derived",
+      "flags": [],
+      "bitmap16": {
+        "ink_pixels": 57,
+        "ink_ratio": 0.2227,
+        "bbox": [
+          2,
+          1,
+          12,
+          13
+        ]
+      },
+      "bitmap24": {
+        "ink_pixels": 142,
+        "ink_ratio": 0.2465,
+        "bbox": [
+          2,
+          1,
+          20,
+          21
+        ]
+      }
+    },
+    {
+      "index": 42,
+      "page_id": 243,
+      "catalog_name": "Wooltchi",
+      "official_image": "raw\\character\\243_Wooltchi.jpeg",
+      "status": "official-derived",
+      "flags": [],
+      "bitmap16": {
+        "ink_pixels": 66,
+        "ink_ratio": 0.2578,
+        "bbox": [
+          1,
+          2,
+          13,
+          12
+        ]
+      },
+      "bitmap24": {
+        "ink_pixels": 208,
+        "ink_ratio": 0.3611,
+        "bbox": [
+          1,
+          2,
+          21,
+          20
+        ]
+      }
+    },
+    {
+      "index": 43,
+      "page_id": 244,
+      "catalog_name": "Teketchi",
+      "official_image": "raw\\character\\244_Teketchi.jpeg",
+      "status": "official-derived",
+      "flags": [],
+      "bitmap16": {
+        "ink_pixels": 36,
+        "ink_ratio": 0.1406,
+        "bbox": [
+          3,
+          1,
+          10,
+          13
+        ]
+      },
+      "bitmap24": {
+        "ink_pixels": 118,
+        "ink_ratio": 0.2049,
+        "bbox": [
+          3,
+          1,
+          17,
+          21
+        ]
+      }
+    },
+    {
+      "index": 44,
+      "page_id": 245,
+      "catalog_name": "Gozarutchi",
+      "official_image": "raw\\character\\245_Gozarutchi.jpeg",
+      "status": "official-derived",
+      "flags": [],
+      "bitmap16": {
+        "ink_pixels": 94,
+        "ink_ratio": 0.3672,
+        "bbox": [
+          2,
+          1,
+          11,
+          13
+        ]
+      },
+      "bitmap24": {
+        "ink_pixels": 224,
+        "ink_ratio": 0.3889,
+        "bbox": [
+          3,
+          1,
+          18,
+          21
+        ]
+      }
+    },
+    {
+      "index": 45,
+      "page_id": 246,
+      "catalog_name": "Warusotchi",
+      "official_image": "raw\\character\\246_Warusotchi.jpeg",
+      "status": "official-derived",
+      "flags": [],
+      "bitmap16": {
+        "ink_pixels": 53,
+        "ink_ratio": 0.207,
+        "bbox": [
+          2,
+          1,
+          11,
+          13
+        ]
+      },
+      "bitmap24": {
+        "ink_pixels": 155,
+        "ink_ratio": 0.2691,
+        "bbox": [
+          3,
+          1,
+          18,
+          21
+        ]
+      }
+    },
+    {
+      "index": 46,
+      "page_id": 247,
+      "catalog_name": "Sekitoritchi",
+      "official_image": "raw\\character\\247_Sekitoritchi.jpeg",
+      "status": "official-derived",
+      "flags": [],
+      "bitmap16": {
+        "ink_pixels": 73,
+        "ink_ratio": 0.2852,
+        "bbox": [
+          2,
+          1,
+          11,
+          13
+        ]
+      },
+      "bitmap24": {
+        "ink_pixels": 194,
+        "ink_ratio": 0.3368,
+        "bbox": [
+          3,
+          1,
+          18,
+          21
+        ]
+      }
+    },
+    {
+      "index": 47,
+      "page_id": 248,
+      "catalog_name": "Oyajitchi",
+      "official_image": "raw\\character\\248_Oyajitchi.jpeg",
+      "status": "official-derived",
+      "flags": [],
+      "bitmap16": {
+        "ink_pixels": 58,
+        "ink_ratio": 0.2266,
+        "bbox": [
+          2,
+          1,
+          12,
+          13
+        ]
+      },
+      "bitmap24": {
+        "ink_pixels": 133,
+        "ink_ratio": 0.2309,
+        "bbox": [
+          2,
+          1,
+          20,
+          21
+        ]
+      }
+    },
+    {
+      "index": 48,
+      "page_id": 249,
+      "catalog_name": "Ojitchi",
+      "official_image": "raw\\character\\249_Ojitchi.jpeg",
+      "status": "official-derived",
+      "flags": [],
+      "bitmap16": {
+        "ink_pixels": 60,
+        "ink_ratio": 0.2344,
+        "bbox": [
+          2,
+          1,
+          12,
+          13
+        ]
+      },
+      "bitmap24": {
+        "ink_pixels": 157,
+        "ink_ratio": 0.2726,
+        "bbox": [
+          2,
+          1,
+          20,
+          21
+        ]
+      }
+    },
+    {
+      "index": 49,
+      "page_id": 250,
+      "catalog_name": "Otokitchi",
+      "official_image": "raw\\character\\250_Otokitchi.jpeg",
+      "status": "official-derived",
+      "flags": [],
+      "bitmap16": {
+        "ink_pixels": 78,
+        "ink_ratio": 0.3047,
+        "bbox": [
+          1,
+          2,
+          13,
+          12
+        ]
+      },
+      "bitmap24": {
+        "ink_pixels": 190,
+        "ink_ratio": 0.3299,
+        "bbox": [
+          1,
+          2,
+          21,
+          20
+        ]
+      }
+    }
+  ]
+}

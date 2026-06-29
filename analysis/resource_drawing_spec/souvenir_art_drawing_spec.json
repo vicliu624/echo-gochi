@@ -1,0 +1,1683 @@
+{
+  "generated_by": "analysis/resource_drawing_spec/generate_resource_drawing_spec.py",
+  "surface": "souvenir",
+  "runtime_boundary": "Official/reference raster assets are analysis-only. Replacement runtime art must be committed as C/C++ bitmap rows.",
+  "source_manifest": "analysis/resource_replacement_manifest/generate_resource_replacement_manifest.py",
+  "row_count": 64,
+  "runtime_row_match": true,
+  "replacement_state_counts": {
+    "accepted_reference": 2,
+    "needs_final_art": 62
+  },
+  "art_status_counts": {
+    "no direct official semantic candidate in cached how-to assets": 1,
+    "official semantic scene/icon reference exists": 61,
+    "official_source_override": 2
+  },
+  "rows": [
+    {
+      "id": "SOU-000",
+      "index": 0,
+      "label": "FIRST HATCH",
+      "semantic_source": "growth",
+      "visual_family": "hatch/baby growth memory",
+      "drawing_brief": "Draw `FIRST HATCH` as a 16x16 hatch/baby growth memory tied to the named memory.",
+      "art_status": "official semantic scene/icon reference exists",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading.",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[0]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "replacement_state": "needs_final_art",
+      "must_preserve": [
+        "numeric row index",
+        "16x16 bitmap dimensions",
+        "PROGMEM C/C++ array route",
+        "high-bit-left row encoding",
+        "no runtime PNG/JPG/GIF/BMP loading"
+      ],
+      "acceptance_rule": "souvenir row must remain recognizable at native 16x16, at x2 proof scale, and when placed in the compact 64x64 main scene; it must not depend on text labels, anti-aliased grayscale, or runtime image files."
+    },
+    {
+      "id": "SOU-001",
+      "index": 1,
+      "label": "BABY STEP",
+      "semantic_source": "growth",
+      "visual_family": "hatch/baby growth memory",
+      "drawing_brief": "Draw `BABY STEP` as a 16x16 hatch/baby growth memory tied to the named memory.",
+      "art_status": "official semantic scene/icon reference exists",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading.",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[1]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "replacement_state": "needs_final_art",
+      "must_preserve": [
+        "numeric row index",
+        "16x16 bitmap dimensions",
+        "PROGMEM C/C++ array route",
+        "high-bit-left row encoding",
+        "no runtime PNG/JPG/GIF/BMP loading"
+      ],
+      "acceptance_rule": "souvenir row must remain recognizable at native 16x16, at x2 proof scale, and when placed in the compact 64x64 main scene; it must not depend on text labels, anti-aliased grayscale, or runtime image files."
+    },
+    {
+      "id": "SOU-002",
+      "index": 2,
+      "label": "FIRST MEAL",
+      "semantic_source": "nurture_food",
+      "visual_family": "food or feeding memory",
+      "drawing_brief": "Draw `FIRST MEAL` as a 16x16 food or feeding memory tied to the named memory.",
+      "art_status": "official semantic scene/icon reference exists",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading.",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[2]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "replacement_state": "needs_final_art",
+      "must_preserve": [
+        "numeric row index",
+        "16x16 bitmap dimensions",
+        "PROGMEM C/C++ array route",
+        "high-bit-left row encoding",
+        "no runtime PNG/JPG/GIF/BMP loading"
+      ],
+      "acceptance_rule": "souvenir row must remain recognizable at native 16x16, at x2 proof scale, and when placed in the compact 64x64 main scene; it must not depend on text labels, anti-aliased grayscale, or runtime image files."
+    },
+    {
+      "id": "SOU-003",
+      "index": 3,
+      "label": "FIRST SNACK",
+      "semantic_source": "nurture_food",
+      "visual_family": "food or feeding memory",
+      "drawing_brief": "Draw `FIRST SNACK` as a 16x16 food or feeding memory tied to the named memory.",
+      "art_status": "official semantic scene/icon reference exists",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading.",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[3]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "replacement_state": "needs_final_art",
+      "must_preserve": [
+        "numeric row index",
+        "16x16 bitmap dimensions",
+        "PROGMEM C/C++ array route",
+        "high-bit-left row encoding",
+        "no runtime PNG/JPG/GIF/BMP loading"
+      ],
+      "acceptance_rule": "souvenir row must remain recognizable at native 16x16, at x2 proof scale, and when placed in the compact 64x64 main scene; it must not depend on text labels, anti-aliased grayscale, or runtime image files."
+    },
+    {
+      "id": "SOU-004",
+      "index": 4,
+      "label": "CLEAN ROOM",
+      "semantic_source": "nurture_toilet",
+      "visual_family": "cleaning/toilet memory",
+      "drawing_brief": "Draw `CLEAN ROOM` as a 16x16 cleaning/toilet memory tied to the named memory.",
+      "art_status": "official semantic scene/icon reference exists",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading.",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[4]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "replacement_state": "needs_final_art",
+      "must_preserve": [
+        "numeric row index",
+        "16x16 bitmap dimensions",
+        "PROGMEM C/C++ array route",
+        "high-bit-left row encoding",
+        "no runtime PNG/JPG/GIF/BMP loading"
+      ],
+      "acceptance_rule": "souvenir row must remain recognizable at native 16x16, at x2 proof scale, and when placed in the compact 64x64 main scene; it must not depend on text labels, anti-aliased grayscale, or runtime image files."
+    },
+    {
+      "id": "SOU-005",
+      "index": 5,
+      "label": "GOOD MEDS",
+      "semantic_source": "nurture_medicine",
+      "visual_family": "medicine/recovery memory",
+      "drawing_brief": "Draw `GOOD MEDS` as a 16x16 medicine/recovery memory tied to the named memory.",
+      "art_status": "official semantic scene/icon reference exists",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading.",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[5]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "replacement_state": "needs_final_art",
+      "must_preserve": [
+        "numeric row index",
+        "16x16 bitmap dimensions",
+        "PROGMEM C/C++ array route",
+        "high-bit-left row encoding",
+        "no runtime PNG/JPG/GIF/BMP loading"
+      ],
+      "acceptance_rule": "souvenir row must remain recognizable at native 16x16, at x2 proof scale, and when placed in the compact 64x64 main scene; it must not depend on text labels, anti-aliased grayscale, or runtime image files."
+    },
+    {
+      "id": "SOU-006",
+      "index": 6,
+      "label": "LIGHTS OFF",
+      "semantic_source": "nurture_lights",
+      "visual_family": "lights/sleep memory",
+      "drawing_brief": "Draw `LIGHTS OFF` as a 16x16 lights/sleep memory tied to the named memory.",
+      "art_status": "official semantic scene/icon reference exists",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading.",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[6]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "replacement_state": "needs_final_art",
+      "must_preserve": [
+        "numeric row index",
+        "16x16 bitmap dimensions",
+        "PROGMEM C/C++ array route",
+        "high-bit-left row encoding",
+        "no runtime PNG/JPG/GIF/BMP loading"
+      ],
+      "acceptance_rule": "souvenir row must remain recognizable at native 16x16, at x2 proof scale, and when placed in the compact 64x64 main scene; it must not depend on text labels, anti-aliased grayscale, or runtime image files."
+    },
+    {
+      "id": "SOU-007",
+      "index": 7,
+      "label": "TRAINING",
+      "semantic_source": "nurture_training",
+      "visual_family": "discipline/training memory",
+      "drawing_brief": "Draw `TRAINING` as a 16x16 discipline/training memory tied to the named memory.",
+      "art_status": "official semantic scene/icon reference exists",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading.",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[7]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "replacement_state": "needs_final_art",
+      "must_preserve": [
+        "numeric row index",
+        "16x16 bitmap dimensions",
+        "PROGMEM C/C++ array route",
+        "high-bit-left row encoding",
+        "no runtime PNG/JPG/GIF/BMP loading"
+      ],
+      "acceptance_rule": "souvenir row must remain recognizable at native 16x16, at x2 proof scale, and when placed in the compact 64x64 main scene; it must not depend on text labels, anti-aliased grayscale, or runtime image files."
+    },
+    {
+      "id": "SOU-008",
+      "index": 8,
+      "label": "FIRST GAME",
+      "semantic_source": "games",
+      "visual_family": "game prize or medal memory",
+      "drawing_brief": "Draw `FIRST GAME` as a 16x16 game prize or medal memory tied to the named memory.",
+      "art_status": "official semantic scene/icon reference exists",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading.",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[8]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "replacement_state": "needs_final_art",
+      "must_preserve": [
+        "numeric row index",
+        "16x16 bitmap dimensions",
+        "PROGMEM C/C++ array route",
+        "high-bit-left row encoding",
+        "no runtime PNG/JPG/GIF/BMP loading"
+      ],
+      "acceptance_rule": "souvenir row must remain recognizable at native 16x16, at x2 proof scale, and when placed in the compact 64x64 main scene; it must not depend on text labels, anti-aliased grayscale, or runtime image files."
+    },
+    {
+      "id": "SOU-009",
+      "index": 9,
+      "label": "SKIS",
+      "semantic_source": "shop_items",
+      "visual_family": "shop item memory",
+      "drawing_brief": "Draw `SKIS` as a 16x16 shop item memory; key cue: paired skis cue.",
+      "art_status": "official semantic scene/icon reference exists",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading.",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[9]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "replacement_state": "needs_final_art",
+      "must_preserve": [
+        "numeric row index",
+        "16x16 bitmap dimensions",
+        "PROGMEM C/C++ array route",
+        "high-bit-left row encoding",
+        "no runtime PNG/JPG/GIF/BMP loading"
+      ],
+      "acceptance_rule": "souvenir row must remain recognizable at native 16x16, at x2 proof scale, and when placed in the compact 64x64 main scene; it must not depend on text labels, anti-aliased grayscale, or runtime image files."
+    },
+    {
+      "id": "SOU-010",
+      "index": 10,
+      "label": "PALM TREE",
+      "semantic_source": "shop_items",
+      "visual_family": "shop item memory",
+      "drawing_brief": "Draw `PALM TREE` as a 16x16 shop item memory tied to the named memory.",
+      "art_status": "official semantic scene/icon reference exists",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading.",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[10]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "replacement_state": "needs_final_art",
+      "must_preserve": [
+        "numeric row index",
+        "16x16 bitmap dimensions",
+        "PROGMEM C/C++ array route",
+        "high-bit-left row encoding",
+        "no runtime PNG/JPG/GIF/BMP loading"
+      ],
+      "acceptance_rule": "souvenir row must remain recognizable at native 16x16, at x2 proof scale, and when placed in the compact 64x64 main scene; it must not depend on text labels, anti-aliased grayscale, or runtime image files."
+    },
+    {
+      "id": "SOU-011",
+      "index": 11,
+      "label": "SURFBOARD",
+      "semantic_source": "shop_items",
+      "visual_family": "shop item memory",
+      "drawing_brief": "Draw `SURFBOARD` as a 16x16 shop item memory; key cue: long board cue.",
+      "art_status": "official semantic scene/icon reference exists",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading.",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[11]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "replacement_state": "needs_final_art",
+      "must_preserve": [
+        "numeric row index",
+        "16x16 bitmap dimensions",
+        "PROGMEM C/C++ array route",
+        "high-bit-left row encoding",
+        "no runtime PNG/JPG/GIF/BMP loading"
+      ],
+      "acceptance_rule": "souvenir row must remain recognizable at native 16x16, at x2 proof scale, and when placed in the compact 64x64 main scene; it must not depend on text labels, anti-aliased grayscale, or runtime image files."
+    },
+    {
+      "id": "SOU-012",
+      "index": 12,
+      "label": "PANDA BEAR",
+      "semantic_source": "shop_items",
+      "visual_family": "shop item memory",
+      "drawing_brief": "Draw `PANDA BEAR` as a 16x16 shop item memory; key cue: bear/plush face cue.",
+      "art_status": "official semantic scene/icon reference exists",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading.",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[12]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "replacement_state": "needs_final_art",
+      "must_preserve": [
+        "numeric row index",
+        "16x16 bitmap dimensions",
+        "PROGMEM C/C++ array route",
+        "high-bit-left row encoding",
+        "no runtime PNG/JPG/GIF/BMP loading"
+      ],
+      "acceptance_rule": "souvenir row must remain recognizable at native 16x16, at x2 proof scale, and when placed in the compact 64x64 main scene; it must not depend on text labels, anti-aliased grayscale, or runtime image files."
+    },
+    {
+      "id": "SOU-013",
+      "index": 13,
+      "label": "MARACAS",
+      "semantic_source": "shop_items",
+      "visual_family": "shop item memory",
+      "drawing_brief": "Draw `MARACAS` as a 16x16 shop item memory tied to the named memory.",
+      "art_status": "official semantic scene/icon reference exists",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading.",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[13]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "replacement_state": "needs_final_art",
+      "must_preserve": [
+        "numeric row index",
+        "16x16 bitmap dimensions",
+        "PROGMEM C/C++ array route",
+        "high-bit-left row encoding",
+        "no runtime PNG/JPG/GIF/BMP loading"
+      ],
+      "acceptance_rule": "souvenir row must remain recognizable at native 16x16, at x2 proof scale, and when placed in the compact 64x64 main scene; it must not depend on text labels, anti-aliased grayscale, or runtime image files."
+    },
+    {
+      "id": "SOU-014",
+      "index": 14,
+      "label": "SPRINT RIB",
+      "semantic_source": "games",
+      "visual_family": "game prize or medal memory",
+      "drawing_brief": "Draw `SPRINT RIB` as a 16x16 game prize or medal memory tied to the named memory.",
+      "art_status": "official semantic scene/icon reference exists",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading.",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[14]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "replacement_state": "needs_final_art",
+      "must_preserve": [
+        "numeric row index",
+        "16x16 bitmap dimensions",
+        "PROGMEM C/C++ array route",
+        "high-bit-left row encoding",
+        "no runtime PNG/JPG/GIF/BMP loading"
+      ],
+      "acceptance_rule": "souvenir row must remain recognizable at native 16x16, at x2 proof scale, and when placed in the compact 64x64 main scene; it must not depend on text labels, anti-aliased grayscale, or runtime image files."
+    },
+    {
+      "id": "SOU-015",
+      "index": 15,
+      "label": "HOOP MEDAL",
+      "semantic_source": "games",
+      "visual_family": "game prize or medal memory",
+      "drawing_brief": "Draw `HOOP MEDAL` as a 16x16 game prize or medal memory tied to the named memory.",
+      "art_status": "official semantic scene/icon reference exists",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading.",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[15]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "replacement_state": "needs_final_art",
+      "must_preserve": [
+        "numeric row index",
+        "16x16 bitmap dimensions",
+        "PROGMEM C/C++ array route",
+        "high-bit-left row encoding",
+        "no runtime PNG/JPG/GIF/BMP loading"
+      ],
+      "acceptance_rule": "souvenir row must remain recognizable at native 16x16, at x2 proof scale, and when placed in the compact 64x64 main scene; it must not depend on text labels, anti-aliased grayscale, or runtime image files."
+    },
+    {
+      "id": "SOU-016",
+      "index": 16,
+      "label": "FIRST SHOP",
+      "semantic_source": "shop_items",
+      "visual_family": "shop item memory",
+      "drawing_brief": "Draw `FIRST SHOP` as a 16x16 shop item memory tied to the named memory.",
+      "art_status": "official semantic scene/icon reference exists",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading.",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[16]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "replacement_state": "needs_final_art",
+      "must_preserve": [
+        "numeric row index",
+        "16x16 bitmap dimensions",
+        "PROGMEM C/C++ array route",
+        "high-bit-left row encoding",
+        "no runtime PNG/JPG/GIF/BMP loading"
+      ],
+      "acceptance_rule": "souvenir row must remain recognizable at native 16x16, at x2 proof scale, and when placed in the compact 64x64 main scene; it must not depend on text labels, anti-aliased grayscale, or runtime image files."
+    },
+    {
+      "id": "SOU-017",
+      "index": 17,
+      "label": "BEST BUY",
+      "semantic_source": "shop_items",
+      "visual_family": "shop item memory",
+      "drawing_brief": "Draw `BEST BUY` as a 16x16 shop item memory tied to the named memory.",
+      "art_status": "official semantic scene/icon reference exists",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading.",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[17]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "replacement_state": "needs_final_art",
+      "must_preserve": [
+        "numeric row index",
+        "16x16 bitmap dimensions",
+        "PROGMEM C/C++ array route",
+        "high-bit-left row encoding",
+        "no runtime PNG/JPG/GIF/BMP loading"
+      ],
+      "acceptance_rule": "souvenir row must remain recognizable at native 16x16, at x2 proof scale, and when placed in the compact 64x64 main scene; it must not depend on text labels, anti-aliased grayscale, or runtime image files."
+    },
+    {
+      "id": "SOU-018",
+      "index": 18,
+      "label": "SECRET CODE",
+      "semantic_source": "password_secret",
+      "visual_family": "password/secret code memory",
+      "drawing_brief": "Draw `SECRET CODE` as a 16x16 password/secret code memory tied to the named memory.",
+      "art_status": "official semantic scene/icon reference exists",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading.",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[18]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "replacement_state": "needs_final_art",
+      "must_preserve": [
+        "numeric row index",
+        "16x16 bitmap dimensions",
+        "PROGMEM C/C++ array route",
+        "high-bit-left row encoding",
+        "no runtime PNG/JPG/GIF/BMP loading"
+      ],
+      "acceptance_rule": "souvenir row must remain recognizable at native 16x16, at x2 proof scale, and when placed in the compact 64x64 main scene; it must not depend on text labels, anti-aliased grayscale, or runtime image files."
+    },
+    {
+      "id": "SOU-019",
+      "index": 19,
+      "label": "PASSWORD",
+      "semantic_source": "password_secret",
+      "visual_family": "password/secret code memory",
+      "drawing_brief": "Draw `PASSWORD` as a 16x16 password/secret code memory tied to the named memory.",
+      "art_status": "official semantic scene/icon reference exists",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading.",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[19]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "replacement_state": "needs_final_art",
+      "must_preserve": [
+        "numeric row index",
+        "16x16 bitmap dimensions",
+        "PROGMEM C/C++ array route",
+        "high-bit-left row encoding",
+        "no runtime PNG/JPG/GIF/BMP loading"
+      ],
+      "acceptance_rule": "souvenir row must remain recognizable at native 16x16, at x2 proof scale, and when placed in the compact 64x64 main scene; it must not depend on text labels, anti-aliased grayscale, or runtime image files."
+    },
+    {
+      "id": "SOU-020",
+      "index": 20,
+      "label": "DONATION",
+      "semantic_source": "password_secret",
+      "visual_family": "password/secret code memory",
+      "drawing_brief": "Draw `DONATION` as a 16x16 password/secret code memory tied to the named memory.",
+      "art_status": "official semantic scene/icon reference exists",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading.",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[20]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "replacement_state": "needs_final_art",
+      "must_preserve": [
+        "numeric row index",
+        "16x16 bitmap dimensions",
+        "PROGMEM C/C++ array route",
+        "high-bit-left row encoding",
+        "no runtime PNG/JPG/GIF/BMP loading"
+      ],
+      "acceptance_rule": "souvenir row must remain recognizable at native 16x16, at x2 proof scale, and when placed in the compact 64x64 main scene; it must not depend on text labels, anti-aliased grayscale, or runtime image files."
+    },
+    {
+      "id": "SOU-021",
+      "index": 21,
+      "label": "GIFT BOX",
+      "semantic_source": "shop_items",
+      "visual_family": "shop item memory",
+      "drawing_brief": "Draw `GIFT BOX` as a 16x16 shop item memory; key cue: box/gift cue.",
+      "art_status": "official semantic scene/icon reference exists",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading.",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[21]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "replacement_state": "needs_final_art",
+      "must_preserve": [
+        "numeric row index",
+        "16x16 bitmap dimensions",
+        "PROGMEM C/C++ array route",
+        "high-bit-left row encoding",
+        "no runtime PNG/JPG/GIF/BMP loading"
+      ],
+      "acceptance_rule": "souvenir row must remain recognizable at native 16x16, at x2 proof scale, and when placed in the compact 64x64 main scene; it must not depend on text labels, anti-aliased grayscale, or runtime image files."
+    },
+    {
+      "id": "SOU-022",
+      "index": 22,
+      "label": "VISIT TAG",
+      "semantic_source": "connect",
+      "visual_family": "friend/connection memory",
+      "drawing_brief": "Draw `VISIT TAG` as a 16x16 friend/connection memory tied to the named memory.",
+      "art_status": "official semantic scene/icon reference exists",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading.",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[22]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "replacement_state": "needs_final_art",
+      "must_preserve": [
+        "numeric row index",
+        "16x16 bitmap dimensions",
+        "PROGMEM C/C++ array route",
+        "high-bit-left row encoding",
+        "no runtime PNG/JPG/GIF/BMP loading"
+      ],
+      "acceptance_rule": "souvenir row must remain recognizable at native 16x16, at x2 proof scale, and when placed in the compact 64x64 main scene; it must not depend on text labels, anti-aliased grayscale, or runtime image files."
+    },
+    {
+      "id": "SOU-023",
+      "index": 23,
+      "label": "FRIEND BADGE",
+      "semantic_source": "connect",
+      "visual_family": "friend/connection memory",
+      "drawing_brief": "Draw `FRIEND BADGE` as a 16x16 friend/connection memory tied to the named memory.",
+      "art_status": "official semantic scene/icon reference exists",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading.",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[23]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "replacement_state": "needs_final_art",
+      "must_preserve": [
+        "numeric row index",
+        "16x16 bitmap dimensions",
+        "PROGMEM C/C++ array route",
+        "high-bit-left row encoding",
+        "no runtime PNG/JPG/GIF/BMP loading"
+      ],
+      "acceptance_rule": "souvenir row must remain recognizable at native 16x16, at x2 proof scale, and when placed in the compact 64x64 main scene; it must not depend on text labels, anti-aliased grayscale, or runtime image files."
+    },
+    {
+      "id": "SOU-024",
+      "index": 24,
+      "label": "BEST FRIEND",
+      "semantic_source": "connect",
+      "visual_family": "friend/connection memory",
+      "drawing_brief": "Draw `BEST FRIEND` as a 16x16 friend/connection memory tied to the named memory.",
+      "art_status": "official semantic scene/icon reference exists",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading.",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[24]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "replacement_state": "needs_final_art",
+      "must_preserve": [
+        "numeric row index",
+        "16x16 bitmap dimensions",
+        "PROGMEM C/C++ array route",
+        "high-bit-left row encoding",
+        "no runtime PNG/JPG/GIF/BMP loading"
+      ],
+      "acceptance_rule": "souvenir row must remain recognizable at native 16x16, at x2 proof scale, and when placed in the compact 64x64 main scene; it must not depend on text labels, anti-aliased grayscale, or runtime image files."
+    },
+    {
+      "id": "SOU-025",
+      "index": 25,
+      "label": "PARTNER",
+      "semantic_source": "connect",
+      "visual_family": "friend/connection memory",
+      "drawing_brief": "Draw `PARTNER` as a 16x16 friend/connection memory tied to the named memory.",
+      "art_status": "official semantic scene/icon reference exists",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading.",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[25]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "replacement_state": "needs_final_art",
+      "must_preserve": [
+        "numeric row index",
+        "16x16 bitmap dimensions",
+        "PROGMEM C/C++ array route",
+        "high-bit-left row encoding",
+        "no runtime PNG/JPG/GIF/BMP loading"
+      ],
+      "acceptance_rule": "souvenir row must remain recognizable at native 16x16, at x2 proof scale, and when placed in the compact 64x64 main scene; it must not depend on text labels, anti-aliased grayscale, or runtime image files."
+    },
+    {
+      "id": "SOU-026",
+      "index": 26,
+      "label": "BABY PHOTO",
+      "semantic_source": "connect",
+      "visual_family": "friend/connection memory",
+      "drawing_brief": "Draw `BABY PHOTO` as a 16x16 friend/connection memory tied to the named memory.",
+      "art_status": "official semantic scene/icon reference exists",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading.",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[26]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "replacement_state": "needs_final_art",
+      "must_preserve": [
+        "numeric row index",
+        "16x16 bitmap dimensions",
+        "PROGMEM C/C++ array route",
+        "high-bit-left row encoding",
+        "no runtime PNG/JPG/GIF/BMP loading"
+      ],
+      "acceptance_rule": "souvenir row must remain recognizable at native 16x16, at x2 proof scale, and when placed in the compact 64x64 main scene; it must not depend on text labels, anti-aliased grayscale, or runtime image files."
+    },
+    {
+      "id": "SOU-027",
+      "index": 27,
+      "label": "PARENT NOTE",
+      "semantic_source": "connect",
+      "visual_family": "friend/connection memory",
+      "drawing_brief": "Draw `PARENT NOTE` as a 16x16 friend/connection memory tied to the named memory.",
+      "art_status": "official semantic scene/icon reference exists",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading.",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[27]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "replacement_state": "needs_final_art",
+      "must_preserve": [
+        "numeric row index",
+        "16x16 bitmap dimensions",
+        "PROGMEM C/C++ array route",
+        "high-bit-left row encoding",
+        "no runtime PNG/JPG/GIF/BMP loading"
+      ],
+      "acceptance_rule": "souvenir row must remain recognizable at native 16x16, at x2 proof scale, and when placed in the compact 64x64 main scene; it must not depend on text labels, anti-aliased grayscale, or runtime image files."
+    },
+    {
+      "id": "SOU-028",
+      "index": 28,
+      "label": "GEN PHOTO",
+      "semantic_source": "connect",
+      "visual_family": "friend/connection memory",
+      "drawing_brief": "Draw `GEN PHOTO` as a 16x16 friend/connection memory tied to the named memory.",
+      "art_status": "official semantic scene/icon reference exists",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading.",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[28]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "replacement_state": "needs_final_art",
+      "must_preserve": [
+        "numeric row index",
+        "16x16 bitmap dimensions",
+        "PROGMEM C/C++ array route",
+        "high-bit-left row encoding",
+        "no runtime PNG/JPG/GIF/BMP loading"
+      ],
+      "acceptance_rule": "souvenir row must remain recognizable at native 16x16, at x2 proof scale, and when placed in the compact 64x64 main scene; it must not depend on text labels, anti-aliased grayscale, or runtime image files."
+    },
+    {
+      "id": "SOU-029",
+      "index": 29,
+      "label": "BIRTHDAY",
+      "semantic_source": "password_secret",
+      "visual_family": "password/secret code memory",
+      "drawing_brief": "Draw `BIRTHDAY` as a 16x16 password/secret code memory tied to the named memory.",
+      "art_status": "official semantic scene/icon reference exists",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading.",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[29]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "replacement_state": "needs_final_art",
+      "must_preserve": [
+        "numeric row index",
+        "16x16 bitmap dimensions",
+        "PROGMEM C/C++ array route",
+        "high-bit-left row encoding",
+        "no runtime PNG/JPG/GIF/BMP loading"
+      ],
+      "acceptance_rule": "souvenir row must remain recognizable at native 16x16, at x2 proof scale, and when placed in the compact 64x64 main scene; it must not depend on text labels, anti-aliased grayscale, or runtime image files."
+    },
+    {
+      "id": "SOU-030",
+      "index": 30,
+      "label": "ANNIV 1",
+      "semantic_source": "password_secret",
+      "visual_family": "password/secret code memory",
+      "drawing_brief": "Draw `ANNIV 1` as a 16x16 password/secret code memory tied to the named memory.",
+      "art_status": "official semantic scene/icon reference exists",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading.",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[30]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "replacement_state": "needs_final_art",
+      "must_preserve": [
+        "numeric row index",
+        "16x16 bitmap dimensions",
+        "PROGMEM C/C++ array route",
+        "high-bit-left row encoding",
+        "no runtime PNG/JPG/GIF/BMP loading"
+      ],
+      "acceptance_rule": "souvenir row must remain recognizable at native 16x16, at x2 proof scale, and when placed in the compact 64x64 main scene; it must not depend on text labels, anti-aliased grayscale, or runtime image files."
+    },
+    {
+      "id": "SOU-031",
+      "index": 31,
+      "label": "ANNIV 2",
+      "semantic_source": "password_secret",
+      "visual_family": "password/secret code memory",
+      "drawing_brief": "Draw `ANNIV 2` as a 16x16 password/secret code memory tied to the named memory.",
+      "art_status": "official semantic scene/icon reference exists",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading.",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[31]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "replacement_state": "needs_final_art",
+      "must_preserve": [
+        "numeric row index",
+        "16x16 bitmap dimensions",
+        "PROGMEM C/C++ array route",
+        "high-bit-left row encoding",
+        "no runtime PNG/JPG/GIF/BMP loading"
+      ],
+      "acceptance_rule": "souvenir row must remain recognizable at native 16x16, at x2 proof scale, and when placed in the compact 64x64 main scene; it must not depend on text labels, anti-aliased grayscale, or runtime image files."
+    },
+    {
+      "id": "SOU-032",
+      "index": 32,
+      "label": "ANNIV 3",
+      "semantic_source": "password_secret",
+      "visual_family": "password/secret code memory",
+      "drawing_brief": "Draw `ANNIV 3` as a 16x16 password/secret code memory tied to the named memory.",
+      "art_status": "official semantic scene/icon reference exists",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading.",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[32]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "replacement_state": "needs_final_art",
+      "must_preserve": [
+        "numeric row index",
+        "16x16 bitmap dimensions",
+        "PROGMEM C/C++ array route",
+        "high-bit-left row encoding",
+        "no runtime PNG/JPG/GIF/BMP loading"
+      ],
+      "acceptance_rule": "souvenir row must remain recognizable at native 16x16, at x2 proof scale, and when placed in the compact 64x64 main scene; it must not depend on text labels, anti-aliased grayscale, or runtime image files."
+    },
+    {
+      "id": "SOU-033",
+      "index": 33,
+      "label": "ANNIV 4",
+      "semantic_source": "password_secret",
+      "visual_family": "password/secret code memory",
+      "drawing_brief": "Draw `ANNIV 4` as a 16x16 password/secret code memory tied to the named memory.",
+      "art_status": "official semantic scene/icon reference exists",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading.",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[33]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "replacement_state": "needs_final_art",
+      "must_preserve": [
+        "numeric row index",
+        "16x16 bitmap dimensions",
+        "PROGMEM C/C++ array route",
+        "high-bit-left row encoding",
+        "no runtime PNG/JPG/GIF/BMP loading"
+      ],
+      "acceptance_rule": "souvenir row must remain recognizable at native 16x16, at x2 proof scale, and when placed in the compact 64x64 main scene; it must not depend on text labels, anti-aliased grayscale, or runtime image files."
+    },
+    {
+      "id": "SOU-034",
+      "index": 34,
+      "label": "ANNIV 5",
+      "semantic_source": "password_secret",
+      "visual_family": "password/secret code memory",
+      "drawing_brief": "Draw `ANNIV 5` as a 16x16 password/secret code memory tied to the named memory.",
+      "art_status": "official semantic scene/icon reference exists",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading.",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[34]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "replacement_state": "needs_final_art",
+      "must_preserve": [
+        "numeric row index",
+        "16x16 bitmap dimensions",
+        "PROGMEM C/C++ array route",
+        "high-bit-left row encoding",
+        "no runtime PNG/JPG/GIF/BMP loading"
+      ],
+      "acceptance_rule": "souvenir row must remain recognizable at native 16x16, at x2 proof scale, and when placed in the compact 64x64 main scene; it must not depend on text labels, anti-aliased grayscale, or runtime image files."
+    },
+    {
+      "id": "SOU-035",
+      "index": 35,
+      "label": "CARE GOOD",
+      "semantic_source": "nurture_training",
+      "visual_family": "discipline/training memory",
+      "drawing_brief": "Draw `CARE GOOD` as a 16x16 discipline/training memory tied to the named memory.",
+      "art_status": "official semantic scene/icon reference exists",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading.",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[35]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "replacement_state": "needs_final_art",
+      "must_preserve": [
+        "numeric row index",
+        "16x16 bitmap dimensions",
+        "PROGMEM C/C++ array route",
+        "high-bit-left row encoding",
+        "no runtime PNG/JPG/GIF/BMP loading"
+      ],
+      "acceptance_rule": "souvenir row must remain recognizable at native 16x16, at x2 proof scale, and when placed in the compact 64x64 main scene; it must not depend on text labels, anti-aliased grayscale, or runtime image files."
+    },
+    {
+      "id": "SOU-036",
+      "index": 36,
+      "label": "CARE HARD",
+      "semantic_source": "nurture_training",
+      "visual_family": "discipline/training memory",
+      "drawing_brief": "Draw `CARE HARD` as a 16x16 discipline/training memory tied to the named memory.",
+      "art_status": "official semantic scene/icon reference exists",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading.",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[36]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "replacement_state": "needs_final_art",
+      "must_preserve": [
+        "numeric row index",
+        "16x16 bitmap dimensions",
+        "PROGMEM C/C++ array route",
+        "high-bit-left row encoding",
+        "no runtime PNG/JPG/GIF/BMP loading"
+      ],
+      "acceptance_rule": "souvenir row must remain recognizable at native 16x16, at x2 proof scale, and when placed in the compact 64x64 main scene; it must not depend on text labels, anti-aliased grayscale, or runtime image files."
+    },
+    {
+      "id": "SOU-037",
+      "index": 37,
+      "label": "SICK DAY",
+      "semantic_source": "nurture_medicine",
+      "visual_family": "medicine/recovery memory",
+      "drawing_brief": "Draw `SICK DAY` as a 16x16 medicine/recovery memory tied to the named memory.",
+      "art_status": "official semantic scene/icon reference exists",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading.",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[37]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "replacement_state": "needs_final_art",
+      "must_preserve": [
+        "numeric row index",
+        "16x16 bitmap dimensions",
+        "PROGMEM C/C++ array route",
+        "high-bit-left row encoding",
+        "no runtime PNG/JPG/GIF/BMP loading"
+      ],
+      "acceptance_rule": "souvenir row must remain recognizable at native 16x16, at x2 proof scale, and when placed in the compact 64x64 main scene; it must not depend on text labels, anti-aliased grayscale, or runtime image files."
+    },
+    {
+      "id": "SOU-038",
+      "index": 38,
+      "label": "TOOTH FIX",
+      "semantic_source": "nurture_medicine",
+      "visual_family": "medicine/recovery memory",
+      "drawing_brief": "Draw `TOOTH FIX` as a 16x16 medicine/recovery memory tied to the named memory.",
+      "art_status": "official semantic scene/icon reference exists",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading.",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[38]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "replacement_state": "needs_final_art",
+      "must_preserve": [
+        "numeric row index",
+        "16x16 bitmap dimensions",
+        "PROGMEM C/C++ array route",
+        "high-bit-left row encoding",
+        "no runtime PNG/JPG/GIF/BMP loading"
+      ],
+      "acceptance_rule": "souvenir row must remain recognizable at native 16x16, at x2 proof scale, and when placed in the compact 64x64 main scene; it must not depend on text labels, anti-aliased grayscale, or runtime image files."
+    },
+    {
+      "id": "SOU-039",
+      "index": 39,
+      "label": "NO MESS",
+      "semantic_source": "nurture_toilet",
+      "visual_family": "cleaning/toilet memory",
+      "drawing_brief": "Draw `NO MESS` as a 16x16 cleaning/toilet memory tied to the named memory.",
+      "art_status": "official semantic scene/icon reference exists",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading.",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[39]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "replacement_state": "needs_final_art",
+      "must_preserve": [
+        "numeric row index",
+        "16x16 bitmap dimensions",
+        "PROGMEM C/C++ array route",
+        "high-bit-left row encoding",
+        "no runtime PNG/JPG/GIF/BMP loading"
+      ],
+      "acceptance_rule": "souvenir row must remain recognizable at native 16x16, at x2 proof scale, and when placed in the compact 64x64 main scene; it must not depend on text labels, anti-aliased grayscale, or runtime image files."
+    },
+    {
+      "id": "SOU-040",
+      "index": 40,
+      "label": "FULL HEART",
+      "semantic_source": "none",
+      "visual_family": "memory/souvenir object",
+      "drawing_brief": "Draw `FULL HEART` as a 16x16 memory/souvenir object tied to the named memory.",
+      "art_status": "no direct official semantic candidate in cached how-to assets",
+      "official_coverage": "source-backed substitute; no direct cached official row",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading.",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[40]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "replacement_state": "needs_final_art",
+      "must_preserve": [
+        "numeric row index",
+        "16x16 bitmap dimensions",
+        "PROGMEM C/C++ array route",
+        "high-bit-left row encoding",
+        "no runtime PNG/JPG/GIF/BMP loading"
+      ],
+      "acceptance_rule": "souvenir row must remain recognizable at native 16x16, at x2 proof scale, and when placed in the compact 64x64 main scene; it must not depend on text labels, anti-aliased grayscale, or runtime image files."
+    },
+    {
+      "id": "SOU-041",
+      "index": 41,
+      "label": "FULL FOOD",
+      "semantic_source": "nurture_food",
+      "visual_family": "food or feeding memory",
+      "drawing_brief": "Draw `FULL FOOD` as a 16x16 food or feeding memory tied to the named memory.",
+      "art_status": "official semantic scene/icon reference exists",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading.",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[41]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "replacement_state": "needs_final_art",
+      "must_preserve": [
+        "numeric row index",
+        "16x16 bitmap dimensions",
+        "PROGMEM C/C++ array route",
+        "high-bit-left row encoding",
+        "no runtime PNG/JPG/GIF/BMP loading"
+      ],
+      "acceptance_rule": "souvenir row must remain recognizable at native 16x16, at x2 proof scale, and when placed in the compact 64x64 main scene; it must not depend on text labels, anti-aliased grayscale, or runtime image files."
+    },
+    {
+      "id": "SOU-042",
+      "index": 42,
+      "label": "FULL TRAIN",
+      "semantic_source": "nurture_training",
+      "visual_family": "discipline/training memory",
+      "drawing_brief": "Draw `FULL TRAIN` as a 16x16 discipline/training memory tied to the named memory.",
+      "art_status": "official semantic scene/icon reference exists",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading.",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[42]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "replacement_state": "needs_final_art",
+      "must_preserve": [
+        "numeric row index",
+        "16x16 bitmap dimensions",
+        "PROGMEM C/C++ array route",
+        "high-bit-left row encoding",
+        "no runtime PNG/JPG/GIF/BMP loading"
+      ],
+      "acceptance_rule": "souvenir row must remain recognizable at native 16x16, at x2 proof scale, and when placed in the compact 64x64 main scene; it must not depend on text labels, anti-aliased grayscale, or runtime image files."
+    },
+    {
+      "id": "SOU-043",
+      "index": 43,
+      "label": "HEAVY WIN",
+      "semantic_source": "games",
+      "visual_family": "game prize or medal memory",
+      "drawing_brief": "Draw `HEAVY WIN` as a 16x16 game prize or medal memory tied to the named memory.",
+      "art_status": "official semantic scene/icon reference exists",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading.",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[43]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "replacement_state": "needs_final_art",
+      "must_preserve": [
+        "numeric row index",
+        "16x16 bitmap dimensions",
+        "PROGMEM C/C++ array route",
+        "high-bit-left row encoding",
+        "no runtime PNG/JPG/GIF/BMP loading"
+      ],
+      "acceptance_rule": "souvenir row must remain recognizable at native 16x16, at x2 proof scale, and when placed in the compact 64x64 main scene; it must not depend on text labels, anti-aliased grayscale, or runtime image files."
+    },
+    {
+      "id": "SOU-044",
+      "index": 44,
+      "label": "LIGHT SLEEP",
+      "semantic_source": "nurture_lights",
+      "visual_family": "lights/sleep memory",
+      "drawing_brief": "Draw `LIGHT SLEEP` as a 16x16 lights/sleep memory tied to the named memory.",
+      "art_status": "official semantic scene/icon reference exists",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading.",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[44]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "replacement_state": "needs_final_art",
+      "must_preserve": [
+        "numeric row index",
+        "16x16 bitmap dimensions",
+        "PROGMEM C/C++ array route",
+        "high-bit-left row encoding",
+        "no runtime PNG/JPG/GIF/BMP loading"
+      ],
+      "acceptance_rule": "souvenir row must remain recognizable at native 16x16, at x2 proof scale, and when placed in the compact 64x64 main scene; it must not depend on text labels, anti-aliased grayscale, or runtime image files."
+    },
+    {
+      "id": "SOU-045",
+      "index": 45,
+      "label": "WAKE SMILE",
+      "semantic_source": "nurture_lights",
+      "visual_family": "lights/sleep memory",
+      "drawing_brief": "Draw `WAKE SMILE` as a 16x16 lights/sleep memory tied to the named memory.",
+      "art_status": "official semantic scene/icon reference exists",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading.",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[45]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "replacement_state": "needs_final_art",
+      "must_preserve": [
+        "numeric row index",
+        "16x16 bitmap dimensions",
+        "PROGMEM C/C++ array route",
+        "high-bit-left row encoding",
+        "no runtime PNG/JPG/GIF/BMP loading"
+      ],
+      "acceptance_rule": "souvenir row must remain recognizable at native 16x16, at x2 proof scale, and when placed in the compact 64x64 main scene; it must not depend on text labels, anti-aliased grayscale, or runtime image files."
+    },
+    {
+      "id": "SOU-046",
+      "index": 46,
+      "label": "TOY PLAY",
+      "semantic_source": "shop_items",
+      "visual_family": "shop item memory",
+      "drawing_brief": "Draw `TOY PLAY` as a 16x16 shop item memory tied to the named memory.",
+      "art_status": "official semantic scene/icon reference exists",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading.",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[46]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "replacement_state": "needs_final_art",
+      "must_preserve": [
+        "numeric row index",
+        "16x16 bitmap dimensions",
+        "PROGMEM C/C++ array route",
+        "high-bit-left row encoding",
+        "no runtime PNG/JPG/GIF/BMP loading"
+      ],
+      "acceptance_rule": "souvenir row must remain recognizable at native 16x16, at x2 proof scale, and when placed in the compact 64x64 main scene; it must not depend on text labels, anti-aliased grayscale, or runtime image files."
+    },
+    {
+      "id": "SOU-047",
+      "index": 47,
+      "label": "BOOK DAY",
+      "semantic_source": "shop_items",
+      "visual_family": "shop item memory",
+      "drawing_brief": "Draw `BOOK DAY` as a 16x16 shop item memory tied to the named memory.",
+      "art_status": "official semantic scene/icon reference exists",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading.",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[47]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "replacement_state": "needs_final_art",
+      "must_preserve": [
+        "numeric row index",
+        "16x16 bitmap dimensions",
+        "PROGMEM C/C++ array route",
+        "high-bit-left row encoding",
+        "no runtime PNG/JPG/GIF/BMP loading"
+      ],
+      "acceptance_rule": "souvenir row must remain recognizable at native 16x16, at x2 proof scale, and when placed in the compact 64x64 main scene; it must not depend on text labels, anti-aliased grayscale, or runtime image files."
+    },
+    {
+      "id": "SOU-048",
+      "index": 48,
+      "label": "MUSIC DAY",
+      "semantic_source": "shop_items",
+      "visual_family": "shop item memory",
+      "drawing_brief": "Draw `MUSIC DAY` as a 16x16 shop item memory tied to the named memory.",
+      "art_status": "official semantic scene/icon reference exists",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading.",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[48]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "replacement_state": "needs_final_art",
+      "must_preserve": [
+        "numeric row index",
+        "16x16 bitmap dimensions",
+        "PROGMEM C/C++ array route",
+        "high-bit-left row encoding",
+        "no runtime PNG/JPG/GIF/BMP loading"
+      ],
+      "acceptance_rule": "souvenir row must remain recognizable at native 16x16, at x2 proof scale, and when placed in the compact 64x64 main scene; it must not depend on text labels, anti-aliased grayscale, or runtime image files."
+    },
+    {
+      "id": "SOU-049",
+      "index": 49,
+      "label": "TRAVEL PASS",
+      "semantic_source": "shop_items",
+      "visual_family": "shop item memory",
+      "drawing_brief": "Draw `TRAVEL PASS` as a 16x16 shop item memory tied to the named memory.",
+      "art_status": "official semantic scene/icon reference exists",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading.",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[49]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "replacement_state": "needs_final_art",
+      "must_preserve": [
+        "numeric row index",
+        "16x16 bitmap dimensions",
+        "PROGMEM C/C++ array route",
+        "high-bit-left row encoding",
+        "no runtime PNG/JPG/GIF/BMP loading"
+      ],
+      "acceptance_rule": "souvenir row must remain recognizable at native 16x16, at x2 proof scale, and when placed in the compact 64x64 main scene; it must not depend on text labels, anti-aliased grayscale, or runtime image files."
+    },
+    {
+      "id": "SOU-050",
+      "index": 50,
+      "label": "TICKET",
+      "semantic_source": "shop_items",
+      "visual_family": "shop item memory",
+      "drawing_brief": "Draw `TICKET` as a 16x16 shop item memory; key cue: ticket rectangle cue.",
+      "art_status": "official semantic scene/icon reference exists",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading.",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[50]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "replacement_state": "needs_final_art",
+      "must_preserve": [
+        "numeric row index",
+        "16x16 bitmap dimensions",
+        "PROGMEM C/C++ array route",
+        "high-bit-left row encoding",
+        "no runtime PNG/JPG/GIF/BMP loading"
+      ],
+      "acceptance_rule": "souvenir row must remain recognizable at native 16x16, at x2 proof scale, and when placed in the compact 64x64 main scene; it must not depend on text labels, anti-aliased grayscale, or runtime image files."
+    },
+    {
+      "id": "SOU-051",
+      "index": 51,
+      "label": "CHARM",
+      "semantic_source": "shop_items",
+      "visual_family": "shop item memory",
+      "drawing_brief": "Draw `CHARM` as a 16x16 shop item memory tied to the named memory.",
+      "art_status": "official semantic scene/icon reference exists",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading.",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[51]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "replacement_state": "needs_final_art",
+      "must_preserve": [
+        "numeric row index",
+        "16x16 bitmap dimensions",
+        "PROGMEM C/C++ array route",
+        "high-bit-left row encoding",
+        "no runtime PNG/JPG/GIF/BMP loading"
+      ],
+      "acceptance_rule": "souvenir row must remain recognizable at native 16x16, at x2 proof scale, and when placed in the compact 64x64 main scene; it must not depend on text labels, anti-aliased grayscale, or runtime image files."
+    },
+    {
+      "id": "SOU-052",
+      "index": 52,
+      "label": "BLOCK SET",
+      "semantic_source": "shop_items",
+      "visual_family": "shop item memory",
+      "drawing_brief": "Draw `BLOCK SET` as a 16x16 shop item memory; key cue: stacked block cue.",
+      "art_status": "official semantic scene/icon reference exists",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading.",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[52]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "replacement_state": "needs_final_art",
+      "must_preserve": [
+        "numeric row index",
+        "16x16 bitmap dimensions",
+        "PROGMEM C/C++ array route",
+        "high-bit-left row encoding",
+        "no runtime PNG/JPG/GIF/BMP loading"
+      ],
+      "acceptance_rule": "souvenir row must remain recognizable at native 16x16, at x2 proof scale, and when placed in the compact 64x64 main scene; it must not depend on text labels, anti-aliased grayscale, or runtime image files."
+    },
+    {
+      "id": "SOU-053",
+      "index": 53,
+      "label": "ROPE SKIP",
+      "semantic_source": "shop_items",
+      "visual_family": "shop item memory",
+      "drawing_brief": "Draw `ROPE SKIP` as a 16x16 shop item memory; key cue: looped rope cue.",
+      "art_status": "official semantic scene/icon reference exists",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading.",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[53]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "replacement_state": "needs_final_art",
+      "must_preserve": [
+        "numeric row index",
+        "16x16 bitmap dimensions",
+        "PROGMEM C/C++ array route",
+        "high-bit-left row encoding",
+        "no runtime PNG/JPG/GIF/BMP loading"
+      ],
+      "acceptance_rule": "souvenir row must remain recognizable at native 16x16, at x2 proof scale, and when placed in the compact 64x64 main scene; it must not depend on text labels, anti-aliased grayscale, or runtime image files."
+    },
+    {
+      "id": "SOU-054",
+      "index": 54,
+      "label": "TRUMPET",
+      "semantic_source": "shop_items",
+      "visual_family": "shop item memory",
+      "drawing_brief": "Draw `TRUMPET` as a 16x16 shop item memory; key cue: trumpet/horn cue.",
+      "art_status": "official_source_override",
+      "official_coverage": "official-source C++ 16x16 override",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading.",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[54]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "replacement_state": "accepted_reference",
+      "must_preserve": [
+        "numeric row index",
+        "16x16 bitmap dimensions",
+        "PROGMEM C/C++ array route",
+        "high-bit-left row encoding",
+        "no runtime PNG/JPG/GIF/BMP loading"
+      ],
+      "acceptance_rule": "souvenir row must remain recognizable at native 16x16, at x2 proof scale, and when placed in the compact 64x64 main scene; it must not depend on text labels, anti-aliased grayscale, or runtime image files."
+    },
+    {
+      "id": "SOU-055",
+      "index": 55,
+      "label": "BALL PLAY",
+      "semantic_source": "shop_items",
+      "visual_family": "shop item memory",
+      "drawing_brief": "Draw `BALL PLAY` as a 16x16 shop item memory; key cue: round ball cue.",
+      "art_status": "official_source_override",
+      "official_coverage": "official-source C++ 16x16 override",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading.",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[55]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "replacement_state": "accepted_reference",
+      "must_preserve": [
+        "numeric row index",
+        "16x16 bitmap dimensions",
+        "PROGMEM C/C++ array route",
+        "high-bit-left row encoding",
+        "no runtime PNG/JPG/GIF/BMP loading"
+      ],
+      "acceptance_rule": "souvenir row must remain recognizable at native 16x16, at x2 proof scale, and when placed in the compact 64x64 main scene; it must not depend on text labels, anti-aliased grayscale, or runtime image files."
+    },
+    {
+      "id": "SOU-056",
+      "index": 56,
+      "label": "SHOPPER",
+      "semantic_source": "shop_items",
+      "visual_family": "shop item memory",
+      "drawing_brief": "Draw `SHOPPER` as a 16x16 shop item memory tied to the named memory.",
+      "art_status": "official semantic scene/icon reference exists",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading.",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[56]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "replacement_state": "needs_final_art",
+      "must_preserve": [
+        "numeric row index",
+        "16x16 bitmap dimensions",
+        "PROGMEM C/C++ array route",
+        "high-bit-left row encoding",
+        "no runtime PNG/JPG/GIF/BMP loading"
+      ],
+      "acceptance_rule": "souvenir row must remain recognizable at native 16x16, at x2 proof scale, and when placed in the compact 64x64 main scene; it must not depend on text labels, anti-aliased grayscale, or runtime image files."
+    },
+    {
+      "id": "SOU-057",
+      "index": 57,
+      "label": "COLLECTOR",
+      "semantic_source": "shop_items",
+      "visual_family": "shop item memory",
+      "drawing_brief": "Draw `COLLECTOR` as a 16x16 shop item memory tied to the named memory.",
+      "art_status": "official semantic scene/icon reference exists",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading.",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[57]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "replacement_state": "needs_final_art",
+      "must_preserve": [
+        "numeric row index",
+        "16x16 bitmap dimensions",
+        "PROGMEM C/C++ array route",
+        "high-bit-left row encoding",
+        "no runtime PNG/JPG/GIF/BMP loading"
+      ],
+      "acceptance_rule": "souvenir row must remain recognizable at native 16x16, at x2 proof scale, and when placed in the compact 64x64 main scene; it must not depend on text labels, anti-aliased grayscale, or runtime image files."
+    },
+    {
+      "id": "SOU-058",
+      "index": 58,
+      "label": "FAMILY TREE",
+      "semantic_source": "connect",
+      "visual_family": "friend/connection memory",
+      "drawing_brief": "Draw `FAMILY TREE` as a 16x16 friend/connection memory tied to the named memory.",
+      "art_status": "official semantic scene/icon reference exists",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading.",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[58]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "replacement_state": "needs_final_art",
+      "must_preserve": [
+        "numeric row index",
+        "16x16 bitmap dimensions",
+        "PROGMEM C/C++ array route",
+        "high-bit-left row encoding",
+        "no runtime PNG/JPG/GIF/BMP loading"
+      ],
+      "acceptance_rule": "souvenir row must remain recognizable at native 16x16, at x2 proof scale, and when placed in the compact 64x64 main scene; it must not depend on text labels, anti-aliased grayscale, or runtime image files."
+    },
+    {
+      "id": "SOU-059",
+      "index": 59,
+      "label": "OLD FRIEND",
+      "semantic_source": "connect",
+      "visual_family": "friend/connection memory",
+      "drawing_brief": "Draw `OLD FRIEND` as a 16x16 friend/connection memory tied to the named memory.",
+      "art_status": "official semantic scene/icon reference exists",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading.",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[59]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "replacement_state": "needs_final_art",
+      "must_preserve": [
+        "numeric row index",
+        "16x16 bitmap dimensions",
+        "PROGMEM C/C++ array route",
+        "high-bit-left row encoding",
+        "no runtime PNG/JPG/GIF/BMP loading"
+      ],
+      "acceptance_rule": "souvenir row must remain recognizable at native 16x16, at x2 proof scale, and when placed in the compact 64x64 main scene; it must not depend on text labels, anti-aliased grayscale, or runtime image files."
+    },
+    {
+      "id": "SOU-060",
+      "index": 60,
+      "label": "LEGACY",
+      "semantic_source": "connect",
+      "visual_family": "friend/connection memory",
+      "drawing_brief": "Draw `LEGACY` as a 16x16 friend/connection memory tied to the named memory.",
+      "art_status": "official semantic scene/icon reference exists",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading.",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[60]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "replacement_state": "needs_final_art",
+      "must_preserve": [
+        "numeric row index",
+        "16x16 bitmap dimensions",
+        "PROGMEM C/C++ array route",
+        "high-bit-left row encoding",
+        "no runtime PNG/JPG/GIF/BMP loading"
+      ],
+      "acceptance_rule": "souvenir row must remain recognizable at native 16x16, at x2 proof scale, and when placed in the compact 64x64 main scene; it must not depend on text labels, anti-aliased grayscale, or runtime image files."
+    },
+    {
+      "id": "SOU-061",
+      "index": 61,
+      "label": "MEMORY DAY",
+      "semantic_source": "games",
+      "visual_family": "game prize or medal memory",
+      "drawing_brief": "Draw `MEMORY DAY` as a 16x16 game prize or medal memory tied to the named memory.",
+      "art_status": "official semantic scene/icon reference exists",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading.",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[61]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "replacement_state": "needs_final_art",
+      "must_preserve": [
+        "numeric row index",
+        "16x16 bitmap dimensions",
+        "PROGMEM C/C++ array route",
+        "high-bit-left row encoding",
+        "no runtime PNG/JPG/GIF/BMP loading"
+      ],
+      "acceptance_rule": "souvenir row must remain recognizable at native 16x16, at x2 proof scale, and when placed in the compact 64x64 main scene; it must not depend on text labels, anti-aliased grayscale, or runtime image files."
+    },
+    {
+      "id": "SOU-062",
+      "index": 62,
+      "label": "NEW GEN",
+      "semantic_source": "connect",
+      "visual_family": "friend/connection memory",
+      "drawing_brief": "Draw `NEW GEN` as a 16x16 friend/connection memory tied to the named memory.",
+      "art_status": "official semantic scene/icon reference exists",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading.",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[62]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "replacement_state": "needs_final_art",
+      "must_preserve": [
+        "numeric row index",
+        "16x16 bitmap dimensions",
+        "PROGMEM C/C++ array route",
+        "high-bit-left row encoding",
+        "no runtime PNG/JPG/GIF/BMP loading"
+      ],
+      "acceptance_rule": "souvenir row must remain recognizable at native 16x16, at x2 proof scale, and when placed in the compact 64x64 main scene; it must not depend on text labels, anti-aliased grayscale, or runtime image files."
+    },
+    {
+      "id": "SOU-063",
+      "index": 63,
+      "label": "ALBUM",
+      "semantic_source": "connect",
+      "visual_family": "friend/connection memory",
+      "drawing_brief": "Draw `ALBUM` as a 16x16 friend/connection memory tied to the named memory.",
+      "art_status": "official semantic scene/icon reference exists",
+      "official_coverage": "official semantic reference",
+      "replacement_contract": "Replace only this 16x16 C++ memory row in EchoPetCatalogVisuals.cpp or regenerate it with the manifest row id preserved. Do not add runtime PNG/JPG/GIF loading.",
+      "runtime_bitmap_symbol": "kSouvenirMemoryBitmaps[63]",
+      "runtime_dimensions_px": [
+        16,
+        16
+      ],
+      "runtime_encoding": "16 uint16_t rows, high bit is leftmost pixel",
+      "replacement_state": "needs_final_art",
+      "must_preserve": [
+        "numeric row index",
+        "16x16 bitmap dimensions",
+        "PROGMEM C/C++ array route",
+        "high-bit-left row encoding",
+        "no runtime PNG/JPG/GIF/BMP loading"
+      ],
+      "acceptance_rule": "souvenir row must remain recognizable at native 16x16, at x2 proof scale, and when placed in the compact 64x64 main scene; it must not depend on text labels, anti-aliased grayscale, or runtime image files."
+    }
+  ]
+}
