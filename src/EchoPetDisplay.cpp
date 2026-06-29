@@ -408,6 +408,7 @@ void drawMenuColumn(EchoPetDisplayDevice& display, const ScreenResources& r,
     const uint8_t menuCount = menuActionCount();
     const uint8_t visible = 2;
     const uint8_t rowH = static_cast<uint8_t>(r.leftH / visible);
+    display.drawRect(r.leftX, r.leftY, 32, r.leftH, EPD_BLACK);
     uint8_t start = 0;
     if (selectedMenuIndex >= visible) {
       start = static_cast<uint8_t>(selectedMenuIndex - visible + 1);
@@ -428,10 +429,10 @@ void drawMenuColumn(EchoPetDisplayDevice& display, const ScreenResources& r,
           iconIndex == 4 && pet.attention && ((animationPhase & 0x01) == 0);
       if (selected) {
         const int16_t cy = rowY + rowH / 2;
-        display.fillTriangle(r.leftX + 1, cy - 5, r.leftX + 1, cy + 5,
-                             r.leftX + 6, cy, EPD_BLACK);
+        display.fillTriangle(r.leftX + 3, cy - 5, r.leftX + 3, cy + 5,
+                             r.leftX + 8, cy, EPD_BLACK);
       }
-      const int16_t iconX = r.leftX + 8;
+      const int16_t iconX = r.leftX + 9;
       const int16_t iconY =
           rowY + static_cast<int16_t>((rowH - kEchoPetMenuIconCompactSide) / 2);
       drawMenuIcon(display, r, iconIndex, iconX, iconY, EPD_BLACK);
