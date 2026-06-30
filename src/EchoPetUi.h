@@ -39,6 +39,19 @@ enum class UiMode : uint8_t {
   kSetup,
 };
 
+enum class MenuSlotRole : uint8_t {
+  kHealth,
+  kFood,
+  kToilet,
+  kGame,
+  kConnect,
+  kCareCall,
+  kDiscipline,
+  kMedicine,
+  kLights,
+  kFriend,
+};
+
 struct UiState {
   UiMode mode = UiMode::kHome;
   uint8_t cursor = 0;
@@ -53,6 +66,7 @@ uint8_t menuActionCount();
 uint8_t menuActionSplit();
 Action menuActionAt(uint8_t index);
 uint8_t menuActionIndex(Action action);
+MenuSlotRole menuRoleAt(uint8_t index);
 uint8_t menuIconAt(uint8_t index);
 const char* menuLabelAt(uint8_t index);
 void uiEnter(UiState& ui, Action action);

@@ -20,6 +20,14 @@ constexpr uint8_t kConnectMenuIcons[] = {
     4, 5, 6, 7, 8,
 };
 
+constexpr MenuSlotRole kConnectMenuRoles[] = {
+    MenuSlotRole::kHealth,     MenuSlotRole::kFood,
+    MenuSlotRole::kToilet,     MenuSlotRole::kGame,
+    MenuSlotRole::kConnect,    MenuSlotRole::kCareCall,
+    MenuSlotRole::kDiscipline, MenuSlotRole::kMedicine,
+    MenuSlotRole::kLights,     MenuSlotRole::kFriend,
+};
+
 const char* const kConnectMenuLabels[] = {
     "HEALTH", "FOOD", "TOILET", "GAME", "CONNECT",
     "CARE", "TRAIN", "MEDS", "LIGHTS", "FRIEND",
@@ -91,6 +99,13 @@ Action menuActionAt(uint8_t index) {
     index = 0;
   }
   return kConnectMenuActions[index];
+}
+
+MenuSlotRole menuRoleAt(uint8_t index) {
+  if (index >= kConnectMenuActionCount) {
+    index = 0;
+  }
+  return kConnectMenuRoles[index];
 }
 
 uint8_t menuActionIndex(Action action) {

@@ -242,7 +242,8 @@ int main(int argc, char** argv) {
                   "connection_menu care discipline_menu shop item game_get "
                   "game_flag friends family souvenirs toilet medicine lights "
                   "sprite_proof setup catalog_items "
-                  "catalog_souvenirs character_roster fixed_icons\n");
+                  "catalog_souvenirs character_roster fixed_icons "
+                  "care_toilet\n");
       return 0;
     }
   }
@@ -275,6 +276,8 @@ int main(int argc, char** argv) {
       {"souvenirs", UiMode::kSouvenirs, Action::kFriendList, 9, 4, 0,
        noTweak},
       {"toilet", UiMode::kToilet, Action::kToilet, 2, 0, 0, dirtyTweak},
+      {"care_toilet", UiMode::kToilet, Action::kHealth, 5, 0, 0,
+       dirtyTweak},
       {"medicine", UiMode::kMedicine, Action::kMedicine, 7, 0, 0, sickTweak},
       {"lights", UiMode::kLights, Action::kLights, 8, 0, 0, lightsTweak},
       {"sprite_proof", UiMode::kSpriteProof, Action::kHealth, -1, 5, 0,

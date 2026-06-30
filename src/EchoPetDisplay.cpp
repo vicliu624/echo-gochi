@@ -399,30 +399,29 @@ void drawMenuIcon(EchoPetDisplayDevice& display, const ScreenResources& r,
 }
 
 const char* compactMenuAbbrevAt(uint8_t menuIndex) {
-  switch (menuIndex) {
-    case 0:
+  switch (menuRoleAt(menuIndex)) {
+    case MenuSlotRole::kHealth:
       return "STAT";
-    case 1:
+    case MenuSlotRole::kFood:
       return "FOOD";
-    case 2:
+    case MenuSlotRole::kToilet:
       return "TOIL";
-    case 3:
+    case MenuSlotRole::kGame:
       return "GAME";
-    case 4:
+    case MenuSlotRole::kConnect:
       return "CONN";
-    case 5:
+    case MenuSlotRole::kCareCall:
       return "CARE";
-    case 6:
+    case MenuSlotRole::kDiscipline:
       return "DISC";
-    case 7:
+    case MenuSlotRole::kMedicine:
       return "MEDS";
-    case 8:
+    case MenuSlotRole::kLights:
       return "LITE";
-    case 9:
+    case MenuSlotRole::kFriend:
       return "FRND";
-    default:
-      return "----";
   }
+  return "----";
 }
 
 void drawMenuColumn(EchoPetDisplayDevice& display, const ScreenResources& r,
@@ -3230,6 +3229,18 @@ void v3VLine(EchoPetDisplayDevice& display, const V3Canvas& canvas, int16_t x,
   v3Fill(display, canvas, x, y, 1, h);
 }
 
+void v3Rows(EchoPetDisplayDevice& display, const V3Canvas& canvas, int16_t x,
+            int16_t y, const uint16_t* rows, uint8_t width, uint8_t height) {
+  for (uint8_t row = 0; row < height; ++row) {
+    const uint16_t bits = rows[row];
+    for (uint8_t col = 0; col < width; ++col) {
+      if ((bits & (1U << (width - 1 - col))) != 0) {
+        v3Fill(display, canvas, x + col, y + row, 1, 1);
+      }
+    }
+  }
+}
+
 void v3Text(EchoPetDisplayDevice& display, const V3Canvas& canvas, int16_t x,
             int16_t y, const char* text) {
   drawText(display, v3Px(canvas, x), v3Py(canvas, y), text, 1);
@@ -3317,9 +3328,17 @@ void drawV3FoodProp(EchoPetDisplayDevice& display, const V3Canvas& canvas,
     v3Fill(display, canvas, x + 3, y + 4, 1, 1);
     v3Fill(display, canvas, x + 6, y + 4, 1, 1);
   } else {
-    v3Rect(display, canvas, x, y + 4, 12, 5);
-    v3HLine(display, canvas, x + 2, y + 3, 8);
-    v3Fill(display, canvas, x + 3, y + 1, 6, 2);
+    static const uint16_t kBurgerRows[] = {
+        0b000111100000,
+        0b001000010000,
+        0b010100101000,
+        0b011111111000,
+        0b000000000000,
+        0b011111111000,
+        0b001111110000,
+        0b000111100000,
+    };
+    v3Rows(display, canvas, x, y, kBurgerRows, 12, 8);
   }
 }
 
@@ -3392,6 +3411,7 @@ void drawV3FoodScene(EchoPetDisplayDevice& display, const ScreenResources& r,
                      (ui.mode == UiMode::kFoodMenu && (ui.cursor & 1));
   const bool eating = ui.mode == UiMode::kMeal || ui.mode == UiMode::kSnack ||
                       pet.notice == Notice::kMeal || pet.notice == Notice::kSnack;
+  const uint8_t eatStage = phase % 6;
   if (!eating) {
     v3Fill(display, c, 2, snack ? 18 : 4, 3, 3);
     v3Text(display, c, 8, 3, "MEAL");
@@ -3400,12 +3420,13 @@ void drawV3FoodScene(EchoPetDisplayDevice& display, const ScreenResources& r,
     return;
   }
   drawV3CatalogPet(display, c, pet, 16, 11 + ((phase & 1) ? -1 : 0), phase, 1);
-  if ((phase & 3) < 2) {
-    drawV3FoodProp(display, c, 2 + ((phase & 1) ? 4 : 0), 16, snack);
-  } else {
+  if (eatStage < 4) {
+    drawV3FoodProp(display, c, 2 + (eatStage & 1 ? 4 : 0), 16, snack);
+  } else if (eatStage == 4) {
     v3Fill(display, c, 5, 22, 1, 1);
     v3Fill(display, c, 8, 23, 1, 1);
     v3Fill(display, c, 11, 22, 1, 1);
+  } else {
     drawV3Heart(display, c, 4, 4, true);
   }
 }
@@ -3596,45 +3617,40 @@ bool drawCompactV3FunctionScreen(EchoPetDisplayDevice& display,
                                  uint8_t selectedMenuIndex,
                                  const Snapshot& pet, const UiState& ui,
                                  uint8_t phase) {
-  if (!r.compactText ||
-      (ui.mode == UiMode::kHome && pet.miniGame == MiniGameKind::kNone)) {
+  if (!r.compactText) {
+    return false;
+  }
+  if (pet.miniGame != MiniGameKind::kNone) {
+    drawV3GameScene(display, r, pet, ui, phase);
+    return true;
+  }
+  if (ui.mode == UiMode::kHome) {
     return false;
   }
 
-  switch (selectedMenuIndex) {
-    case 0:
-      drawV3HealthScene(display, r, pet, phase);
+  switch (ui.mode) {
+    case UiMode::kHealth:
+      if (menuRoleAt(selectedMenuIndex) == MenuSlotRole::kCareCall) {
+        drawV3CareScene(display, r, pet, phase);
+      } else {
+        drawV3HealthScene(display, r, pet, phase);
+      }
       return true;
-    case 1:
+    case UiMode::kFoodMenu:
+    case UiMode::kMeal:
+    case UiMode::kSnack:
       drawV3FoodScene(display, r, pet, ui, phase);
       return true;
-    case 2:
+    case UiMode::kToilet:
       drawToiletScene(display, r, pet, ui, phase);
       return true;
-    case 3:
+    case UiMode::kActivityMenu:
+    case UiMode::kGame:
+    case UiMode::kShop:
+    case UiMode::kItem:
+    case UiMode::kPoint:
       drawV3GameScene(display, r, pet, ui, phase);
       return true;
-    case 4:
-      drawV3ConnectScene(display, r, pet, ui, phase);
-      return true;
-    case 5:
-      drawV3CareScene(display, r, pet, phase);
-      return true;
-    case 6:
-      drawV3DisciplineScene(display, r, pet, phase);
-      return true;
-    case 7:
-      drawV3MedicineScene(display, r, pet, phase);
-      return true;
-    case 8:
-      drawV3LightsScene(display, r, pet, phase);
-      return true;
-    case 9:
-      drawV3FriendScene(display, r, pet, ui, phase);
-      return true;
-  }
-
-  switch (ui.mode) {
     case UiMode::kConnectionMenu:
     case UiMode::kVisitLink:
     case UiMode::kPresent:
@@ -3654,6 +3670,9 @@ bool drawCompactV3FunctionScreen(EchoPetDisplayDevice& display,
       drawV3LightsScene(display, r, pet, phase);
       return true;
     case UiMode::kFriends:
+    case UiMode::kFamily:
+    case UiMode::kSouvenirs:
+    case UiMode::kFriendDeleteConfirm:
       drawV3FriendScene(display, r, pet, ui, phase);
       return true;
     default:

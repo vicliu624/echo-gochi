@@ -31,6 +31,7 @@ using echopet::GiftKind;
 using echopet::ItemKind;
 using echopet::LinkKind;
 using echopet::LinkGameKind;
+using echopet::MenuSlotRole;
 using echopet::MiniGameKind;
 using echopet::PetSave;
 using echopet::UiMode;
@@ -854,7 +855,7 @@ static void selectNextAction() {
 }
 
 static Action selectedMenuAction() {
-  if (echopet::menuIconAt(selectedMenuIndex) == 4) {
+  if (echopet::menuRoleAt(selectedMenuIndex) == MenuSlotRole::kCareCall) {
     const echopet::Snapshot snapshot = pet.snapshot();
     switch (snapshot.attentionReason) {
       case echopet::AttentionReason::kDirty:
@@ -876,21 +877,6 @@ static Action selectedMenuAction() {
 static bool isImmediateSceneAction(Action action) {
   return action == Action::kToilet || action == Action::kMedicine ||
          action == Action::kLights;
-}
-
-static Action actionForSceneMode(UiMode mode) {
-  switch (mode) {
-    case UiMode::kToilet:
-      return Action::kToilet;
-    case UiMode::kMedicine:
-      return Action::kMedicine;
-    case UiMode::kLights:
-      return Action::kLights;
-    case UiMode::kDiscipline:
-      return Action::kDiscipline;
-    default:
-      return Action::kCount;
-  }
 }
 
 static void enterUiMode(UiMode mode) {
@@ -1038,6 +1024,9 @@ static bool sendLinkSessionPacket() {
 
 static void activateSelectedAction() {
   const Action selectedAction = selectedMenuAction();
+  if (echopet::menuRoleAt(selectedMenuIndex) == MenuSlotRole::kCareCall) {
+    selectedMenuIndex = echopet::menuActionIndex(selectedAction);
+  }
   if (isImmediateSceneAction(selectedAction)) {
     const uint8_t toiletMessCountBefore =
         selectedAction == Action::kToilet ? pet.snapshot().messCount : 0;
@@ -1195,10 +1184,7 @@ static void activateUiSelection() {
     case UiMode::kMedicine:
     case UiMode::kLights:
     case UiMode::kDiscipline: {
-      const Action action = actionForSceneMode(ui.mode);
-      if (action != Action::kCount) {
-        changed = pet.apply(action);
-      }
+      changed = false;
       break;
     }
     case UiMode::kResetConfirm:
