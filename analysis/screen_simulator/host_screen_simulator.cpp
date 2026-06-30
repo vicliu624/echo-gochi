@@ -74,6 +74,34 @@ void dirtyTweak(Snapshot& pet) {
   pet.notice = Notice::kClean;
 }
 
+void altPetTweak(Snapshot& pet) {
+  pet.characterCatalogId = 31;
+}
+
+void altDirtyTweak(Snapshot& pet) {
+  altPetTweak(pet);
+  dirtyTweak(pet);
+}
+
+void cleanNoticeTweak(Snapshot& pet) {
+  pet.messCount = 0;
+  pet.hygiene = 100;
+  pet.notice = Notice::kClean;
+}
+
+void altCleanNoticeTweak(Snapshot& pet) {
+  altPetTweak(pet);
+  cleanNoticeTweak(pet);
+}
+
+void eggTweak(Snapshot& pet) {
+  pet.stage = Stage::kEgg;
+  pet.character = CharacterKind::kShell;
+  pet.characterCatalogId = 0;
+  pet.notice = Notice::kNone;
+  pet.messCount = 0;
+}
+
 void sickTweak(Snapshot& pet) {
   pet.sickness = 1;
   pet.toothache = 1;
@@ -259,6 +287,7 @@ int main(int argc, char** argv) {
       {"health", UiMode::kHealth, Action::kHealth, 0, 0, 0, noTweak},
       {"food_menu", UiMode::kFoodMenu, Action::kMeal, 1, 1, 0, noTweak},
       {"meal", UiMode::kMeal, Action::kMeal, 1, 2, 0, noTweak},
+      {"meal_alt_pet", UiMode::kMeal, Action::kMeal, 1, 2, 0, altPetTweak},
       {"activity_menu", UiMode::kActivityMenu, Action::kGame, 3, 2, 0,
        noTweak},
       {"connection_menu", UiMode::kConnectionMenu, Action::kLinkGame, 4, 2, 0,
@@ -276,8 +305,17 @@ int main(int argc, char** argv) {
       {"souvenirs", UiMode::kSouvenirs, Action::kFriendList, 9, 4, 0,
        noTweak},
       {"toilet", UiMode::kToilet, Action::kToilet, 2, 0, 0, dirtyTweak},
+      {"toilet_alt_pet", UiMode::kToilet, Action::kToilet, 2, 0, 0,
+       altDirtyTweak},
       {"care_toilet", UiMode::kToilet, Action::kHealth, 5, 0, 0,
        dirtyTweak},
+      {"toilet_after_apply", UiMode::kToilet, Action::kToilet, 2, 0, 0,
+       cleanNoticeTweak},
+      {"home_clean_notice", UiMode::kHome, Action::kToilet, 2, 0, 0,
+       cleanNoticeTweak},
+      {"home_clean_notice_alt_pet", UiMode::kHome, Action::kToilet, 2, 0, 0,
+       altCleanNoticeTweak},
+      {"egg_home", UiMode::kHome, Action::kHealth, -1, 0, 0, eggTweak},
       {"medicine", UiMode::kMedicine, Action::kMedicine, 7, 0, 0, sickTweak},
       {"lights", UiMode::kLights, Action::kLights, 8, 0, 0, lightsTweak},
       {"sprite_proof", UiMode::kSpriteProof, Action::kHealth, -1, 5, 0,

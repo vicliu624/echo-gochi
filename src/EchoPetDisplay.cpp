@@ -11,6 +11,7 @@
 #include "EchoPetCharacterCatalog.h"
 #include "EchoPetCharacterVisuals.h"
 #include "EchoPetSprites.h"
+#include "EchoPetV3OfficialFrames.h"
 
 namespace echopet {
 
@@ -564,6 +565,15 @@ V3Canvas v3CanvasFor(const ScreenResources& r) {
       screenH,
   };
 }
+
+void drawV3OfficialFrameRegion(EchoPetDisplayDevice& display,
+                               const V3Canvas& canvas, const uint32_t* rows,
+                               uint8_t x0, uint8_t y0, uint8_t x1,
+                               uint8_t y1);
+uint8_t v3OfficialToiletWallLeft(const uint32_t* rows, uint8_t phase);
+void drawV3OfficialToiletWall(EchoPetDisplayDevice& display,
+                              const V3Canvas& canvas, const uint32_t* rows,
+                              uint8_t phase);
 
 void drawCharacterTraitOverlay(EchoPetDisplayDevice& display, int16_t x, int16_t y,
                                int16_t width, int16_t height, uint8_t scale,
@@ -2591,63 +2601,30 @@ void drawToiletCleanupWall(EchoPetDisplayDevice& display,
   }
 }
 
-void drawCompactToiletCleanupWall(EchoPetDisplayDevice& display,
-                                  const V3Canvas& canvas, int16_t wallNativeX,
-                                  uint8_t phase) {
-  constexpr int16_t kWallNativeW = 4;
-  for (int16_t wx = 0; wx < kWallNativeW; ++wx) {
-    const int16_t nativeX = wallNativeX + wx;
-    if (nativeX < 0 || nativeX >= static_cast<int16_t>(canvas.nativeW)) {
-      continue;
-    }
-    for (int16_t nativeY = 0; nativeY < static_cast<int16_t>(canvas.nativeH);
-         ++nativeY) {
-      const bool edge = wx == 0 || wx == kWallNativeW - 1;
-      const bool checker = ((wx + nativeY + phase) & 0x01) == 0;
-      if (edge || checker) {
-        display.fillRect(canvas.x + nativeX * canvas.scale,
-                         canvas.y + nativeY * canvas.scale, canvas.scale,
-                         canvas.scale, EPD_BLACK);
-      }
-    }
-  }
-}
-
 void drawCompactToiletScene(EchoPetDisplayDevice& display,
                             const ScreenResources& r, const Snapshot& pet,
                             uint8_t cleanupMessCount, uint8_t phase) {
+  (void)cleanupMessCount;
   const V3Canvas canvas = v3CanvasFor(r);
-  const uint8_t stage =
-      phase < kToiletCleanupFrames ? phase : kToiletCleanupFrames - 1;
-  const int16_t canvasRight = canvas.x + static_cast<int16_t>(canvas.screenW);
-  if (stage == 0) {
-    drawToiletCleanupObjects(display, r, pet, cleanupMessCount, canvasRight,
-                             phase);
-    return;
-  }
-  if (stage == 1) {
-    drawToiletCleanupObjects(display, r, pet, cleanupMessCount, canvasRight,
-                             phase);
-    drawToiletCleanupDottedWall(display, r, canvasRight - canvas.scale, phase);
-    return;
-  }
+  const uint8_t index =
+      phase < v3official::kBreed03FrameCount
+          ? phase
+          : static_cast<uint8_t>(v3official::kBreed03FrameCount - 1);
+  const uint32_t* rows = &v3official::kBreed03Frames[index][0];
+  const uint8_t wallLeft = v3OfficialToiletWallLeft(rows, index);
 
-  constexpr int16_t kWallNativeW = 4;
-  constexpr uint8_t kWallFrames = kToiletCleanupFrames - 3;
-  const uint8_t wallStage = static_cast<uint8_t>(stage - 2);
-  const uint8_t capped =
-      wallStage < kWallFrames ? wallStage : static_cast<uint8_t>(kWallFrames - 1);
-  const int16_t startNativeX = static_cast<int16_t>(canvas.nativeW);
-  const int16_t endNativeX = -kWallNativeW;
-  const int16_t travel = startNativeX - endNativeX;
-  const int16_t wallNativeX =
-      startNativeX -
-      static_cast<int16_t>((static_cast<int32_t>(travel) * capped) /
-                           (kWallFrames - 1));
-  const int16_t clipRightX = canvas.x + wallNativeX * canvas.scale;
-  drawToiletCleanupObjects(display, r, pet, cleanupMessCount, clipRightX,
-                           phase);
-  drawCompactToiletCleanupWall(display, canvas, wallNativeX, phase);
+  drawCharacterCatalogBitmap(display, canvas.x + 7 * canvas.scale,
+                             canvas.y + 14 * canvas.scale,
+                             pet.characterCatalogId, phase, canvas.scale);
+  drawV3OfficialFrameRegion(display, canvas,
+                            &v3official::kBreed03Frames[0][0], 23, 18, 32,
+                            30);
+  if (wallLeft < v3official::kFrameWidth) {
+    display.fillRect(canvas.x + wallLeft * canvas.scale, canvas.y,
+                     (v3official::kFrameWidth - wallLeft) * canvas.scale,
+                     canvas.screenH, EPD_WHITE);
+  }
+  drawV3OfficialToiletWall(display, canvas, rows, index);
 }
 
 void drawToiletScene(EchoPetDisplayDevice& display, const ScreenResources& r,
@@ -3241,6 +3218,70 @@ void v3Rows(EchoPetDisplayDevice& display, const V3Canvas& canvas, int16_t x,
   }
 }
 
+uint8_t v3OfficialFrameIndex(uint8_t phase, uint8_t frameCount) {
+  return frameCount == 0 ? 0 : static_cast<uint8_t>(phase % frameCount);
+}
+
+void drawV3OfficialFrameRegion(EchoPetDisplayDevice& display,
+                               const V3Canvas& canvas, const uint32_t* rows,
+                               uint8_t x0, uint8_t y0, uint8_t x1,
+                               uint8_t y1) {
+  if (x1 > v3official::kFrameWidth) x1 = v3official::kFrameWidth;
+  if (y1 > v3official::kFrameHeight) y1 = v3official::kFrameHeight;
+  for (uint8_t row = y0; row < y1; ++row) {
+    const uint32_t bits = pgm_read_dword(rows + row);
+    for (uint8_t col = x0; col < x1; ++col) {
+      if ((bits & (1UL << (v3official::kFrameWidth - 1 - col))) != 0) {
+        v3Fill(display, canvas, col, row, 1, 1);
+      }
+    }
+  }
+}
+
+uint8_t v3OfficialColumnInk(const uint32_t* rows, uint8_t col) {
+  uint8_t ink = 0;
+  const uint32_t mask = 1UL << (v3official::kFrameWidth - 1 - col);
+  for (uint8_t row = 0; row < v3official::kFrameHeight; ++row) {
+    if ((pgm_read_dword(rows + row) & mask) != 0) {
+      ++ink;
+    }
+  }
+  return ink;
+}
+
+uint8_t v3OfficialToiletWallLeft(const uint32_t* rows, uint8_t phase) {
+  if (phase == 0) {
+    return v3official::kFrameWidth;
+  }
+  uint8_t left = v3official::kFrameWidth;
+  for (uint8_t col = 0; col < v3official::kFrameWidth; ++col) {
+    const uint8_t ink = v3OfficialColumnInk(rows, col);
+    const bool wallColumn = ink >= 10 || (phase == 1 && col >= 28 && ink >= 2);
+    if (wallColumn && col < left) {
+      left = col;
+    }
+  }
+  return left;
+}
+
+void drawV3OfficialToiletWall(EchoPetDisplayDevice& display,
+                              const V3Canvas& canvas, const uint32_t* rows,
+                              uint8_t phase) {
+  for (uint8_t col = 0; col < v3official::kFrameWidth; ++col) {
+    const uint8_t ink = v3OfficialColumnInk(rows, col);
+    const bool wallColumn = ink >= 10 || (phase == 1 && col >= 28 && ink >= 2);
+    if (!wallColumn) {
+      continue;
+    }
+    for (uint8_t row = 0; row < v3official::kFrameHeight; ++row) {
+      const uint32_t bits = pgm_read_dword(rows + row);
+      if ((bits & (1UL << (v3official::kFrameWidth - 1 - col))) != 0) {
+        v3Fill(display, canvas, col, row, 1, 1);
+      }
+    }
+  }
+}
+
 void v3Text(EchoPetDisplayDevice& display, const V3Canvas& canvas, int16_t x,
             int16_t y, const char* text) {
   drawText(display, v3Px(canvas, x), v3Py(canvas, y), text, 1);
@@ -3299,8 +3340,10 @@ void drawV3MiniPet(EchoPetDisplayDevice& display, const V3Canvas& canvas,
 void drawV3CatalogPet(EchoPetDisplayDevice& display, const V3Canvas& canvas,
                       const Snapshot& pet, int16_t x, int16_t y,
                       uint8_t phase, uint8_t scale = 1) {
+  const uint8_t displayScale =
+      static_cast<uint8_t>(canvas.scale * (scale == 0 ? 1 : scale));
   drawCharacterCatalogBitmap(display, v3Px(canvas, x), v3Py(canvas, y),
-                             pet.characterCatalogId, phase, scale);
+                             pet.characterCatalogId, phase, displayScale);
 }
 
 void drawV3Poop(EchoPetDisplayDevice& display, const V3Canvas& canvas, int16_t x,
@@ -3316,30 +3359,6 @@ void drawV3Poop(EchoPetDisplayDevice& display, const V3Canvas& canvas, int16_t x
   v3Fill(display, canvas, x + 3 + drift, y - 2, 1, 1);
   v3Fill(display, canvas, x + 7 - drift, y - 4, 1, 1);
   v3Fill(display, canvas, x + 6 - drift, y - 3, 1, 1);
-}
-
-void drawV3FoodProp(EchoPetDisplayDevice& display, const V3Canvas& canvas,
-                    int16_t x, int16_t y, bool snack) {
-  if (snack) {
-    v3Fill(display, canvas, x + 3, y, 4, 1);
-    v3Fill(display, canvas, x + 1, y + 1, 8, 2);
-    v3Fill(display, canvas, x, y + 3, 10, 4);
-    v3Fill(display, canvas, x + 2, y + 7, 6, 1);
-    v3Fill(display, canvas, x + 3, y + 4, 1, 1);
-    v3Fill(display, canvas, x + 6, y + 4, 1, 1);
-  } else {
-    static const uint16_t kBurgerRows[] = {
-        0b000111100000,
-        0b001000010000,
-        0b010100101000,
-        0b011111111000,
-        0b000000000000,
-        0b011111111000,
-        0b001111110000,
-        0b000111100000,
-    };
-    v3Rows(display, canvas, x, y, kBurgerRows, 12, 8);
-  }
 }
 
 void drawV3GameProp(EchoPetDisplayDevice& display, const V3Canvas& canvas,
@@ -3360,24 +3379,6 @@ void drawV3ConnectSignal(EchoPetDisplayDevice& display, const V3Canvas& canvas,
   v3Fill(display, canvas, x + 12, y - pulse, 1, 3);
 }
 
-void drawV3MedicineBag(EchoPetDisplayDevice& display, const V3Canvas& canvas,
-                       int16_t x, int16_t y) {
-  v3Rect(display, canvas, x + 2, y + 4, 14, 10);
-  v3Rect(display, canvas, x + 6, y + 1, 6, 4);
-  v3HLine(display, canvas, x + 6, y + 9, 6);
-  v3VLine(display, canvas, x + 9, y + 6, 6);
-}
-
-void drawV3Lamp(EchoPetDisplayDevice& display, const V3Canvas& canvas,
-                int16_t x, int16_t y) {
-  v3HLine(display, canvas, x + 3, y, 10);
-  v3VLine(display, canvas, x + 2, y + 1, 6);
-  v3VLine(display, canvas, x + 13, y + 1, 6);
-  v3HLine(display, canvas, x + 4, y + 7, 8);
-  v3VLine(display, canvas, x + 8, y + 8, 7);
-  v3HLine(display, canvas, x + 4, y + 15, 9);
-}
-
 void drawV3OpenBook(EchoPetDisplayDevice& display, const V3Canvas& canvas,
                     int16_t x, int16_t y) {
   v3Rect(display, canvas, x, y + 2, 11, 14);
@@ -3391,43 +3392,61 @@ void drawV3OpenBook(EchoPetDisplayDevice& display, const V3Canvas& canvas,
 
 void drawV3HealthScene(EchoPetDisplayDevice& display, const ScreenResources& r,
                        const Snapshot& pet, uint8_t phase) {
+  (void)phase;
   const V3Canvas c = v3CanvasFor(r);
   v3Text(display, c, 0, 0, "HUNGRY");
   v3Text(display, c, 0, 15, "HAPPY");
   for (uint8_t i = 0; i < 4; ++i) {
-    drawV3Heart(display, c, 2 + i * 7, 8, i < pipsFor(pet.hunger));
-    drawV3Heart(display, c, 2 + i * 7, 23, i < pipsFor(pet.happiness));
-  }
-  if (pet.attention && (phase & 1)) {
-    v3Fill(display, c, 29, 2, 2, 2);
-    v3VLine(display, c, 30, 5, 5);
+    drawV3Heart(display, c, i * 7, 7, i < pipsFor(pet.hunger));
+    drawV3Heart(display, c, i * 7, 22, i < pipsFor(pet.happiness));
   }
 }
 
 void drawV3FoodScene(EchoPetDisplayDevice& display, const ScreenResources& r,
                      const Snapshot& pet, const UiState& ui, uint8_t phase) {
+  (void)ui;
   const V3Canvas c = v3CanvasFor(r);
-  const bool snack = ui.mode == UiMode::kSnack ||
-                     (ui.mode == UiMode::kFoodMenu && (ui.cursor & 1));
-  const bool eating = ui.mode == UiMode::kMeal || ui.mode == UiMode::kSnack ||
-                      pet.notice == Notice::kMeal || pet.notice == Notice::kSnack;
-  const uint8_t eatStage = phase % 6;
-  if (!eating) {
-    v3Fill(display, c, 2, snack ? 18 : 4, 3, 3);
-    v3Text(display, c, 8, 3, "MEAL");
-    v3Text(display, c, 8, 18, "SNACK");
-    drawV3FoodProp(display, c, 23, snack ? 18 : 4, snack);
-    return;
-  }
-  drawV3CatalogPet(display, c, pet, 16, 11 + ((phase & 1) ? -1 : 0), phase, 1);
-  if (eatStage < 4) {
-    drawV3FoodProp(display, c, 2 + (eatStage & 1 ? 4 : 0), 16, snack);
-  } else if (eatStage == 4) {
-    v3Fill(display, c, 5, 22, 1, 1);
-    v3Fill(display, c, 8, 23, 1, 1);
-    v3Fill(display, c, 11, 22, 1, 1);
-  } else {
-    drawV3Heart(display, c, 4, 4, true);
+  const uint8_t index =
+      v3OfficialFrameIndex(phase, v3official::kBreed02FrameCount);
+  drawV3OfficialFrameRegion(display, c, &v3official::kBreed02Frames[index][0],
+                            0, 0, 18, 30);
+  drawV3CatalogPet(display, c, pet, 16, 14, phase, 1);
+}
+
+void drawV3EggHomeScene(EchoPetDisplayDevice& display,
+                        const ScreenResources& r, const Snapshot& pet,
+                        uint8_t phase) {
+  const V3Canvas c = v3CanvasFor(r);
+  const int16_t wobble = (phase & 0x02) ? 1 : -1;
+  const int16_t bob = (phase & 0x01) ? -1 : 0;
+  constexpr uint16_t kEggRows[18] = {
+      0b0000011111100000,
+      0b0001100000011000,
+      0b0010000000000100,
+      0b0100000000000010,
+      0b0100000000000010,
+      0b1000000000000001,
+      0b1000000000000001,
+      0b1000000000000001,
+      0b1000000000000001,
+      0b1000000000000001,
+      0b1000000000000001,
+      0b1000000000000001,
+      0b0100000000000010,
+      0b0100000000000010,
+      0b0010000000000100,
+      0b0001100000011000,
+      0b0000011111100000,
+      0b0000000000000000,
+  };
+  const int16_t eggX = 8 + wobble;
+  const int16_t eggY = 7 + bob;
+  v3Rows(display, c, eggX, eggY, kEggRows, 16, 18);
+  if (pet.notice == Notice::kBorn || pet.notice == Notice::kGrew) {
+    v3Fill(display, c, eggX + 7, eggY + 4, 1, 1);
+    v3Fill(display, c, eggX + 8, eggY + 5, 1, 1);
+    v3Fill(display, c, eggX + 7, eggY + 6, 1, 1);
+    v3Fill(display, c, eggX + 6, eggY + 7, 1, 1);
   }
 }
 
@@ -3545,55 +3564,33 @@ void drawV3CareScene(EchoPetDisplayDevice& display, const ScreenResources& r,
 void drawV3DisciplineScene(EchoPetDisplayDevice& display,
                            const ScreenResources& r, const Snapshot& pet,
                            uint8_t phase) {
+  (void)pet;
   const V3Canvas c = v3CanvasFor(r);
-  const bool praise = pet.notice == Notice::kPraise;
-  drawV3CatalogPet(display, c, pet, 15, 13 + ((phase & 1) ? -1 : 0), phase, 1);
-  if (praise) {
-    drawV3Heart(display, c, 5, 9, true);
-    drawV3Heart(display, c, 8, 15, (phase & 1) != 0);
-  } else {
-    v3Fill(display, c, 2, 10, 8, 8);
-    v3Fill(display, c, 10, 13, 5, 2);
-    v3Fill(display, c, 4, 19, 3, 1);
-    v3Fill(display, c, 24, 6, 2, 2);
-    v3Fill(display, c, 27, 4, 1, 3);
-  }
+  const uint8_t index =
+      v3OfficialFrameIndex(phase, v3official::kBreed04FrameCount);
+  drawV3OfficialFrameRegion(display, c, &v3official::kBreed04Frames[index][0],
+                            0, 0, 32, 30);
 }
 
 void drawV3MedicineScene(EchoPetDisplayDevice& display,
                          const ScreenResources& r, const Snapshot& pet,
                          uint8_t phase) {
   const V3Canvas c = v3CanvasFor(r);
-  drawV3MedicineBag(display, c, 1, 12);
-  drawV3CatalogPet(display, c, pet, 16, 13 + ((phase & 1) ? -1 : 0), phase, 1);
-  if (pet.toothache) {
-    v3Rect(display, c, 20, 4, 6, 7);
-    v3HLine(display, c, 21, 10, 4);
-  } else {
-    v3Fill(display, c, 21, 5, 5, 5);
-    v3Fill(display, c, 23, 10, 1, 3);
-  }
-  if (phase & 1) {
-    v3Fill(display, c, 12, 17, 2, 1);
-    v3Fill(display, c, 14, 16, 2, 1);
-  }
+  const uint8_t index =
+      v3OfficialFrameIndex(phase, v3official::kBreed05FrameCount);
+  drawV3CatalogPet(display, c, pet, 7, 14, phase, 1);
+  drawV3OfficialFrameRegion(display, c, &v3official::kBreed05Frames[index][0],
+                            20, 0, 32, 15);
 }
 
 void drawV3LightsScene(EchoPetDisplayDevice& display, const ScreenResources& r,
                        const Snapshot& pet, uint8_t phase) {
+  (void)pet;
   const V3Canvas c = v3CanvasFor(r);
-  if (pet.lightsOff) {
-    v3Fill(display, c, 0, 0, 32, 30);
-    display.setTextColor(EPD_WHITE);
-    drawText(display, v3Px(c, 20), v3Py(c, 3), "Z", 1);
-    display.setTextColor(EPD_BLACK);
-    return;
-  }
-  drawV3Lamp(display, c, 2, 5);
-  drawV3CatalogPet(display, c, pet, 17, 13 + ((phase & 1) ? -1 : 0), phase, 1);
-  v3Rect(display, c, 22, 4, 7, 5);
-  v3Rect(display, c, 22, 11, 7, 5);
-  v3Fill(display, c, 24, (phase & 1) ? 12 : 5, 3, 3);
+  const uint8_t index =
+      v3OfficialFrameIndex(phase, v3official::kBreed06FrameCount);
+  drawV3OfficialFrameRegion(display, c, &v3official::kBreed06Frames[index][0],
+                            0, 0, 32, 30);
 }
 
 void drawV3FriendScene(EchoPetDisplayDevice& display, const ScreenResources& r,
@@ -3674,6 +3671,35 @@ bool drawCompactV3FunctionScreen(EchoPetDisplayDevice& display,
     case UiMode::kSouvenirs:
     case UiMode::kFriendDeleteConfirm:
       drawV3FriendScene(display, r, pet, ui, phase);
+      return true;
+    default:
+      return false;
+  }
+}
+
+bool drawCompactV3NoticeScene(EchoPetDisplayDevice& display,
+                              const ScreenResources& r, const Snapshot& pet,
+                              const UiState& ui, uint8_t phase) {
+  if (!r.compactText) {
+    return false;
+  }
+
+  UiState sceneUi = ui;
+  switch (pet.notice) {
+    case Notice::kClean:
+      sceneUi.mode = UiMode::kToilet;
+      if (sceneUi.entry[0] == 0) {
+        sceneUi.entry[0] = pet.messCount ? pet.messCount : 1;
+      }
+      drawToiletScene(display, r, pet, sceneUi, phase);
+      return true;
+    case Notice::kMeal:
+      sceneUi.mode = UiMode::kMeal;
+      drawV3FoodScene(display, r, pet, sceneUi, phase);
+      return true;
+    case Notice::kSnack:
+      sceneUi.mode = UiMode::kSnack;
+      drawV3FoodScene(display, r, pet, sceneUi, phase);
       return true;
     default:
       return false;
@@ -4072,13 +4098,17 @@ void drawEchoPet(EchoPetDisplayDevice& display, const Snapshot& pet,
   drawMainFrame(display, r);
   drawTopInfoLine(display, r, selectedMenuIndex, ui);
 
-  if (drawCompactV3FunctionScreen(display, r, selectedMenuIndex, pet, ui,
-                                  animationPhase)) {
+  if (drawCompactV3NoticeScene(display, r, pet, ui, animationPhase)) {
+    // Compact V3 notice scenes are action events, not character sprite states.
+  } else if (drawCompactV3FunctionScreen(display, r, selectedMenuIndex, pet, ui,
+                                         animationPhase)) {
     // Compact V3 scenes own the whole 32x30 projected playfield.
   } else if (pet.miniGame != MiniGameKind::kNone) {
     drawGameScreen(display, r, pet);
   } else if (ui.mode != UiMode::kHome) {
     drawPageScreen(display, r, pet, ui, animationPhase);
+  } else if (r.compactText && pet.stage == Stage::kEgg) {
+    drawV3EggHomeScene(display, r, pet, animationPhase);
   } else {
     drawCharacter(display, r, pet, animationPhase);
     drawMess(display, r, pet, animationPhase);

@@ -48,14 +48,13 @@ constexpr uint32_t kToiletSceneAnimationMs = 420;
 constexpr uint32_t kToiletCleanNoticeMinVisibleMs = 4200;
 #endif
 constexpr uint32_t kSceneAnimationMs = 360;
-constexpr uint32_t kFoodSceneAnimationMs = 360;
+constexpr uint32_t kFoodSceneAnimationMs = 500;
 constexpr uint32_t kMedicineSceneAnimationMs = 500;
-constexpr uint32_t kDisciplineSceneAnimationMs = 520;
-constexpr uint32_t kLightsSceneAnimationMs = 720;
+constexpr uint32_t kDisciplineSceneAnimationMs = 500;
+constexpr uint32_t kLightsSceneAnimationMs = 500;
 constexpr uint32_t kFamilySceneAnimationMs = 520;
 constexpr uint32_t kLinkSceneAnimationMs = 360;
 constexpr uint32_t kCatalogSceneAnimationMs = 420;
-constexpr uint32_t kHomeIdleAnimationWindowMs = 45000;
 constexpr uint32_t kDisplaySubmitGuardMs = 50;
 constexpr uint32_t kNoticeMinVisibleMs = 2600;
 constexpr uint32_t kLinkStandbyTimeoutMs = 30000;
@@ -648,6 +647,7 @@ static void performFullRefresh(const uint8_t* frame) {
 }
 
 static bool shouldRunIdleAnimation(uint32_t nowMs) {
+  (void)nowMs;
   if (pet.isGameActive()) {
     return true;
   }
@@ -655,9 +655,7 @@ static bool shouldRunIdleAnimation(uint32_t nowMs) {
     return true;
   }
 
-  const echopet::Snapshot snapshot = pet.snapshot();
-  return snapshot.notice != echopet::Notice::kNone || snapshot.attention ||
-         (nowMs - lastInputMs) < kHomeIdleAnimationWindowMs;
+  return true;
 }
 
 static uint32_t gameAnimationIntervalMs(MiniGameKind game) {
@@ -683,7 +681,26 @@ static uint32_t animationIntervalMs() {
   if (snapshot.miniGame != MiniGameKind::kNone) {
     return gameAnimationIntervalMs(snapshot.miniGame);
   }
+  switch (snapshot.notice) {
+    case echopet::Notice::kMeal:
+    case echopet::Notice::kSnack:
+      return kFoodSceneAnimationMs;
+    case echopet::Notice::kClean:
+      return kToiletSceneAnimationMs;
+    case echopet::Notice::kMedicine:
+    case echopet::Notice::kNeedMoreMedicine:
+      return kMedicineSceneAnimationMs;
+    case echopet::Notice::kTrain:
+    case echopet::Notice::kPraise:
+      return kDisciplineSceneAnimationMs;
+    case echopet::Notice::kLightsOn:
+    case echopet::Notice::kLightsOff:
+      return kLightsSceneAnimationMs;
+    default:
+      break;
+  }
   switch (ui.mode) {
+    case UiMode::kFoodMenu:
     case UiMode::kMeal:
     case UiMode::kSnack:
       return kFoodSceneAnimationMs;
@@ -691,6 +708,7 @@ static uint32_t animationIntervalMs() {
       return kToiletSceneAnimationMs;
     case UiMode::kMedicine:
       return kMedicineSceneAnimationMs;
+    case UiMode::kDisciplineMenu:
     case UiMode::kDiscipline:
       return kDisciplineSceneAnimationMs;
     case UiMode::kLights:
