@@ -398,6 +398,33 @@ void drawMenuIcon(EchoPetDisplayDevice& display, const ScreenResources& r,
   }
 }
 
+const char* compactMenuAbbrevAt(uint8_t menuIndex) {
+  switch (menuIndex) {
+    case 0:
+      return "STAT";
+    case 1:
+      return "FOOD";
+    case 2:
+      return "TOIL";
+    case 3:
+      return "GAME";
+    case 4:
+      return "CONN";
+    case 5:
+      return "CARE";
+    case 6:
+      return "DISC";
+    case 7:
+      return "MEDS";
+    case 8:
+      return "LITE";
+    case 9:
+      return "FRND";
+    default:
+      return "----";
+  }
+}
+
 void drawMenuColumn(EchoPetDisplayDevice& display, const ScreenResources& r,
                     uint8_t selectedMenuIndex, bool right,
                     const Snapshot& pet, uint8_t animationPhase) {
@@ -406,8 +433,8 @@ void drawMenuColumn(EchoPetDisplayDevice& display, const ScreenResources& r,
       return;
     }
     const uint8_t menuCount = menuActionCount();
-    const uint8_t visible = 2;
-    const uint8_t rowH = static_cast<uint8_t>(r.leftH / visible);
+    const uint8_t visible = 5;
+    const uint8_t rowH = static_cast<uint8_t>((r.leftH - 2) / visible);
     display.drawRect(r.leftX, r.leftY, 32, r.leftH, EPD_BLACK);
     uint8_t start = 0;
     if (selectedMenuIndex >= visible) {
@@ -422,25 +449,25 @@ void drawMenuColumn(EchoPetDisplayDevice& display, const ScreenResources& r,
       if (menuIndex >= menuCount) {
         break;
       }
-      const int16_t rowY = r.leftY + static_cast<int16_t>(i) * rowH;
-      const uint8_t iconIndex = menuIconAt(menuIndex);
+      const int16_t rowY = r.leftY + 1 + static_cast<int16_t>(i) * rowH;
       const bool selected = menuIndex == selectedMenuIndex;
       const bool attentionPulse =
-          iconIndex == 4 && pet.attention && ((animationPhase & 0x01) == 0);
+          menuIndex == 5 && pet.attention && ((animationPhase & 0x01) == 0);
       if (selected) {
         const int16_t cy = rowY + rowH / 2;
-        display.fillTriangle(r.leftX + 3, cy - 5, r.leftX + 3, cy + 5,
-                             r.leftX + 8, cy, EPD_BLACK);
+        display.fillTriangle(r.leftX + 2, cy - 3, r.leftX + 2, cy + 3,
+                             r.leftX + 5, cy, EPD_BLACK);
       }
-      const int16_t iconX = r.leftX + 9;
-      const int16_t iconY =
-          rowY + static_cast<int16_t>((rowH - kEchoPetMenuIconCompactSide) / 2);
-      drawMenuIcon(display, r, iconIndex, iconX, iconY, EPD_BLACK);
+      display.setTextColor(EPD_BLACK);
+      drawText(display, r.leftX + (selected ? 7 : 4), rowY + 2,
+               compactMenuAbbrevAt(menuIndex),
+               1);
       if (attentionPulse) {
-        display.drawRect(iconX - 1, iconY - 1, kEchoPetMenuIconCompactSide + 2,
-                         kEchoPetMenuIconCompactSide + 2, EPD_BLACK);
+        display.drawRect(r.leftX + 2, rowY + 1, 28, rowH - 2,
+                         EPD_BLACK);
       }
     }
+    display.setTextColor(EPD_BLACK);
     return;
   }
 
@@ -2546,8 +2573,8 @@ void drawToiletCleanupDottedWall(EchoPetDisplayDevice& display,
 }
 
 void drawToiletCleanupWall(EchoPetDisplayDevice& display,
-                           const ScreenResources& r, int16_t x,
-                           int16_t width, uint8_t phase) {
+                            const ScreenResources& r, int16_t x,
+                            int16_t width, uint8_t phase) {
   const V3Canvas canvas = v3CanvasFor(r);
   const int16_t cell = r.compactText ? canvas.scale : 4;
   const int16_t top = r.compactText ? canvas.y : r.mainY + 1;
@@ -2565,6 +2592,65 @@ void drawToiletCleanupWall(EchoPetDisplayDevice& display,
   }
 }
 
+void drawCompactToiletCleanupWall(EchoPetDisplayDevice& display,
+                                  const V3Canvas& canvas, int16_t wallNativeX,
+                                  uint8_t phase) {
+  constexpr int16_t kWallNativeW = 4;
+  for (int16_t wx = 0; wx < kWallNativeW; ++wx) {
+    const int16_t nativeX = wallNativeX + wx;
+    if (nativeX < 0 || nativeX >= static_cast<int16_t>(canvas.nativeW)) {
+      continue;
+    }
+    for (int16_t nativeY = 0; nativeY < static_cast<int16_t>(canvas.nativeH);
+         ++nativeY) {
+      const bool edge = wx == 0 || wx == kWallNativeW - 1;
+      const bool checker = ((wx + nativeY + phase) & 0x01) == 0;
+      if (edge || checker) {
+        display.fillRect(canvas.x + nativeX * canvas.scale,
+                         canvas.y + nativeY * canvas.scale, canvas.scale,
+                         canvas.scale, EPD_BLACK);
+      }
+    }
+  }
+}
+
+void drawCompactToiletScene(EchoPetDisplayDevice& display,
+                            const ScreenResources& r, const Snapshot& pet,
+                            uint8_t cleanupMessCount, uint8_t phase) {
+  const V3Canvas canvas = v3CanvasFor(r);
+  const uint8_t stage =
+      phase < kToiletCleanupFrames ? phase : kToiletCleanupFrames - 1;
+  const int16_t canvasRight = canvas.x + static_cast<int16_t>(canvas.screenW);
+  if (stage == 0) {
+    drawToiletCleanupObjects(display, r, pet, cleanupMessCount, canvasRight,
+                             phase);
+    return;
+  }
+  if (stage == 1) {
+    drawToiletCleanupObjects(display, r, pet, cleanupMessCount, canvasRight,
+                             phase);
+    drawToiletCleanupDottedWall(display, r, canvasRight - canvas.scale, phase);
+    return;
+  }
+
+  constexpr int16_t kWallNativeW = 4;
+  constexpr uint8_t kWallFrames = kToiletCleanupFrames - 3;
+  const uint8_t wallStage = static_cast<uint8_t>(stage - 2);
+  const uint8_t capped =
+      wallStage < kWallFrames ? wallStage : static_cast<uint8_t>(kWallFrames - 1);
+  const int16_t startNativeX = static_cast<int16_t>(canvas.nativeW);
+  const int16_t endNativeX = -kWallNativeW;
+  const int16_t travel = startNativeX - endNativeX;
+  const int16_t wallNativeX =
+      startNativeX -
+      static_cast<int16_t>((static_cast<int32_t>(travel) * capped) /
+                           (kWallFrames - 1));
+  const int16_t clipRightX = canvas.x + wallNativeX * canvas.scale;
+  drawToiletCleanupObjects(display, r, pet, cleanupMessCount, clipRightX,
+                           phase);
+  drawCompactToiletCleanupWall(display, canvas, wallNativeX, phase);
+}
+
 void drawToiletScene(EchoPetDisplayDevice& display, const ScreenResources& r,
                      const Snapshot& pet, const UiState& ui, uint8_t phase) {
   const uint8_t cleanupMessCount = ui.entry[0];
@@ -2575,6 +2661,11 @@ void drawToiletScene(EchoPetDisplayDevice& display, const ScreenResources& r,
   if (!hasMess) {
     drawSceneFrame(display, r, SpriteFrame::kToiletNoMess,
                    r.compactText ? -6 : -8, 0);
+    return;
+  }
+
+  if (r.compactText) {
+    drawCompactToiletScene(display, r, pet, cleanupMessCount, phase);
     return;
   }
 

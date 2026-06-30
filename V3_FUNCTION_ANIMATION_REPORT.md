@@ -2,10 +2,10 @@
 
 Date: 2026-06-30
 
-Scope: GAT562 128x64 compact EchoPet UI. The left fixed-menu rail remains the
-entry selector. The right playfield is treated as a Tamagotchi Connection V3
-LCD-style projection: 32x30 native pixels, rendered at 2x inside the 96x64
-main area.
+Scope: GAT562 128x64 compact EchoPet UI. The left fixed-menu rail is a bordered
+English abbreviation selector with five visible rows and a triangle pointer.
+The right playfield is treated as a Tamagotchi Connection V3 LCD-style
+projection: 32x30 native pixels, rendered at 2x inside the 96x64 main area.
 
 ## Sources
 
@@ -38,6 +38,9 @@ bitmap tables and hand-authored 1-bit replacement scenes.
 - Added compact V3 drawing primitives for the 32x30 native playfield:
   scaled rect/line/text, hearts, pet silhouettes, food, game props, connection
   signal, medicine bag, lamp, open book, and attention/mess indicators.
+- Replaced the compact fixed-menu icon rail with bordered English abbreviations:
+  `STAT`, `FOOD`, `TOIL`, `GAME`, `CONN`, `CARE`, `DISC`, `MEDS`, `LITE`,
+  `FRND`.
 - Updated `analysis/screen_simulator/host_screen_simulator.cpp` so proof
   scenarios carry the actual fixed-menu slot index, including Care/Attention.
 - Generated the 10-page proof contact sheet:
@@ -49,7 +52,7 @@ bitmap tables and hand-authored 1-bit replacement scenes.
 | --- | --- | --- | --- |
 | 01 Health Meter | V3 Health shows care meters such as Hungry/Happy with hearts, and pages through stats. | Compact page reused EchoPet status pages and could show unrelated status text/extra metrics. | Draws V3-style `HUNGRY` and `HAPPY` rows with four hearts each. Attention can blink an exclamation marker. Proof: `compact_health_x4.png`. |
 | 02 Food | V3 Food opens Meal/Snack selection; feeding animation shows food prop, bite/chew, crumbs/result. | Compact menu fell back to `drawChoiceMenu` and page labels, then mixed food label text with oversized props. | Draws a two-option Meal/Snack selection with a left cursor and simple food/snack prop. Meal/Snack action draws pet plus moving food and crumb/result phase. Proof: `compact_food_menu_x4.png`, `compact_meal_x4.png` when generated. |
-| 03 Toilet | V3 cleanup is not instant: mess is visible, then a vertical flush/sweep wall wipes pet and mess across the LCD. | Earlier firmware made mess disappear too abruptly or showed non-V3 cleanup behavior. | Keeps the V3 32x30 cleanup rows and right-to-left checker wall already derived from `img_breed_03.gif`; compact mode clips the scene inside the 32x30 projection. Proof: `compact_toilet_x4.png`. |
+| 03 Toilet | V3 cleanup is not instant: mess is visible, then a vertical flush/sweep wall wipes pet and mess across the LCD. | Earlier firmware either made mess disappear too abruptly or drew a wall too weak/late to read on GAT562, so it looked like the poop vanished. | Compact toilet now has its own 44-frame, 100ms-per-frame wall timeline. The wall enters at the right edge, becomes a 4-native-pixel checker column, sweeps through pet and poop, then exits left. Proof: `compact_toilet_x4.png` and `compact_toilet_cleanup_wall_v2_phases_x4.png`. |
 | 04 Games/Activity | V3 Activity leads to games and activity items; official how-to covers Get, Bump, Flag, Heading, Memory, Sprint, Hoops. | The page showed a text menu and could display unrelated score/selection widgets. | Draws V3-style game props in the projected LCD. The mini-game branch now maps to game-specific LCD props: notes/bucket, bump meter, flags, heading ball, memory blocks, sprint track, or hoops. Proof: `compact_activity_menu_x4.png`. |
 | 05 Connection/Meet | V3 Connection uses infrared/heart semantics, then Stand-by and Visit/Present/Game/Love/results with two characters. | The reported meet screen mixed `SCORE`, `MEAL`, house/status icons, and a large unrelated pet. This was the clearest wrong-object bug. | Draws only connection semantics: two characters, heart/signal, gift/game/love variant, or `STAND BY`/failure text when applicable. It no longer renders `SCORE`, `MEAL`, house, or health widgets in this page. Proof: `compact_connection_menu_x4.png`. |
 | 06 Care/Attention | V3 Attention is a highlighted call icon when the character needs something; it is not a normal content dashboard. | EchoPet mapped this slot back into Health, so it could look like a duplicate status page. | Draws a compact attention-call scene: pet, call bubble/alert mark, and visible mess hint if care is needed. Proof: `compact_care_x4.png`. |
@@ -61,6 +64,7 @@ bitmap tables and hand-authored 1-bit replacement scenes.
 ## Current Proof Artifacts
 
 - `analysis/screen_simulator/out/compact_v3_10_function_report_contact_x4.png`
+- `analysis/screen_simulator/out/compact_toilet_cleanup_wall_v2_phases_x4.png`
 - `analysis/screen_simulator/out/compact_health_x4.png`
 - `analysis/screen_simulator/out/compact_food_menu_x4.png`
 - `analysis/screen_simulator/out/compact_toilet_x4.png`
