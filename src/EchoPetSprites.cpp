@@ -2448,19 +2448,6 @@ SpriteFrame selectSpriteFrame(const Snapshot& pet, uint8_t phase) {
       }
     case Notice::kFull:
       return SpriteFrame::kFoodRefuse;
-    case Notice::kClean:
-      switch (phase & 0x03) {
-        case 1:
-          return SpriteFrame::kToiletCleanupWall0;
-        case 2:
-          return SpriteFrame::kToiletCleanupWall1;
-        case 3:
-          return SpriteFrame::kToiletDone;
-        default:
-          return SpriteFrame::kToiletMess;
-      }
-    case Notice::kNoMess:
-      return SpriteFrame::kToiletNoMess;
     case Notice::kMedicine:
     case Notice::kNeedMoreMedicine:
       if (pet.notice == Notice::kMedicine && !(pet.sickness || pet.toothache)) {

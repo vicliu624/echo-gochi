@@ -18,7 +18,8 @@ namespace echopet {
 namespace {
 
 const ScreenResources& resourcesFor(EchoPetDisplayDevice& display) {
-  if (display.width() == 128 && display.height() == 64) {
+  if ((display.width() == 128 && display.height() == 64) ||
+      (display.width() == 64 && display.height() == 128)) {
     return kEchoPetResources64;
   }
   return kEchoPetResources128;
@@ -574,6 +575,11 @@ uint8_t v3OfficialToiletWallLeft(const uint32_t* rows, uint8_t phase);
 void drawV3OfficialToiletWall(EchoPetDisplayDevice& display,
                               const V3Canvas& canvas, const uint32_t* rows,
                               uint8_t phase);
+void v3Text(EchoPetDisplayDevice& display, const V3Canvas& canvas, int16_t x,
+            int16_t y, const char* text);
+void drawV3CatalogPet(EchoPetDisplayDevice& display, const V3Canvas& canvas,
+                      const Snapshot& pet, int16_t x, int16_t y,
+                      uint8_t phase, uint8_t scale);
 
 void drawCharacterTraitOverlay(EchoPetDisplayDevice& display, int16_t x, int16_t y,
                                int16_t width, int16_t height, uint8_t scale,
@@ -2635,6 +2641,12 @@ void drawToiletScene(EchoPetDisplayDevice& display, const ScreenResources& r,
   drawActionStateLabel(display, r, pet, hasMess ? "CLEAN" : "OK");
 
   if (!hasMess) {
+    if (r.compactText) {
+      const V3Canvas c = v3CanvasFor(r);
+      drawV3CatalogPet(display, c, pet, 8, 14, phase, 1);
+      v3Text(display, c, 24, 11, "OK");
+      return;
+    }
     drawSceneFrame(display, r, SpriteFrame::kToiletNoMess,
                    r.compactText ? -6 : -8, 0);
     return;
@@ -3691,6 +3703,10 @@ bool drawCompactV3NoticeScene(EchoPetDisplayDevice& display,
       if (sceneUi.entry[0] == 0) {
         sceneUi.entry[0] = pet.messCount ? pet.messCount : 1;
       }
+      drawToiletScene(display, r, pet, sceneUi, phase);
+      return true;
+    case Notice::kNoMess:
+      sceneUi.mode = UiMode::kToilet;
       drawToiletScene(display, r, pet, sceneUi, phase);
       return true;
     case Notice::kMeal:
