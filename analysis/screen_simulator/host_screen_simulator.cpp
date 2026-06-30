@@ -78,6 +78,14 @@ void altPetTweak(Snapshot& pet) {
   pet.characterCatalogId = 31;
 }
 
+void mealNoticeTweak(Snapshot& pet) {
+  pet.notice = Notice::kMeal;
+}
+
+void snackNoticeTweak(Snapshot& pet) {
+  pet.notice = Notice::kSnack;
+}
+
 void altDirtyTweak(Snapshot& pet) {
   altPetTweak(pet);
   dirtyTweak(pet);
@@ -266,7 +274,8 @@ int main(int argc, char** argv) {
       phaseExplicit = true;
     } else if (arg == "--list") {
       std::printf("profiles: large compact\n");
-      std::printf("scenarios: home health food_menu meal activity_menu "
+      std::printf("scenarios: home health food_menu meal meal_notice "
+                  "snack_notice activity_menu "
                   "connection_menu care discipline_menu shop item game_get "
                   "game_flag friends family souvenirs toilet medicine lights "
                   "sprite_proof setup catalog_items "
@@ -287,6 +296,10 @@ int main(int argc, char** argv) {
       {"health", UiMode::kHealth, Action::kHealth, 0, 0, 0, noTweak},
       {"food_menu", UiMode::kFoodMenu, Action::kMeal, 1, 1, 0, noTweak},
       {"meal", UiMode::kMeal, Action::kMeal, 1, 2, 0, noTweak},
+      {"meal_notice", UiMode::kMeal, Action::kMeal, 1, 2, 0,
+       mealNoticeTweak},
+      {"snack_notice", UiMode::kSnack, Action::kMeal, 1, 1, 0,
+       snackNoticeTweak},
       {"meal_alt_pet", UiMode::kMeal, Action::kMeal, 1, 2, 0, altPetTweak},
       {"activity_menu", UiMode::kActivityMenu, Action::kGame, 3, 2, 0,
        noTweak},

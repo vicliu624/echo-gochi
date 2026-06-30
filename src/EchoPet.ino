@@ -57,6 +57,7 @@ constexpr uint32_t kLinkSceneAnimationMs = 360;
 constexpr uint32_t kCatalogSceneAnimationMs = 420;
 constexpr uint32_t kDisplaySubmitGuardMs = 50;
 constexpr uint32_t kNoticeMinVisibleMs = 2600;
+constexpr uint32_t kFoodActionNoticeMinVisibleMs = 3600;
 constexpr uint32_t kLinkStandbyTimeoutMs = 30000;
 constexpr uint32_t kShopSecretTapWindowMs = 1200;
 constexpr uint32_t kShopSecretInitialPauseWindowMs = 3000;
@@ -821,13 +822,32 @@ static void pumpDisplayRefresh() {
 }
 
 static uint32_t noticeMinimumVisibleMs(echopet::Notice notice) {
-  return notice == echopet::Notice::kClean ? kToiletCleanNoticeMinVisibleMs
-                                           : kNoticeMinVisibleMs;
+  switch (notice) {
+    case echopet::Notice::kClean:
+      return kToiletCleanNoticeMinVisibleMs;
+    case echopet::Notice::kMeal:
+    case echopet::Notice::kSnack:
+    case echopet::Notice::kFull:
+      return kFoodActionNoticeMinVisibleMs;
+    default:
+      return kNoticeMinVisibleMs;
+  }
 }
 
 static void resetAnimationPhase() {
   animationPhase = 0;
   lastAnimationMs = 0;
+}
+
+static bool isFoodActionNotice(echopet::Notice notice) {
+  return notice == echopet::Notice::kMeal ||
+         notice == echopet::Notice::kSnack ||
+         notice == echopet::Notice::kFull;
+}
+
+static bool isToiletActionNotice(echopet::Notice notice) {
+  return notice == echopet::Notice::kClean ||
+         notice == echopet::Notice::kNoMess;
 }
 
 static void maybeClearRenderedNotice(uint32_t nowMs) {
@@ -840,10 +860,14 @@ static void maybeClearRenderedNotice(uint32_t nowMs) {
   }
   const echopet::Snapshot snapshot = pet.snapshot();
   if (snapshot.notice == noticeClearTarget) {
+    const echopet::Notice clearedNotice = noticeClearTarget;
     pet.clearNotice();
-    if (ui.mode == UiMode::kToilet &&
-        (noticeClearTarget == echopet::Notice::kClean ||
-         noticeClearTarget == echopet::Notice::kNoMess)) {
+    const bool completedToiletAction =
+        ui.mode == UiMode::kToilet && isToiletActionNotice(clearedNotice);
+    const bool completedFoodAction =
+        (ui.mode == UiMode::kMeal || ui.mode == UiMode::kSnack) &&
+        isFoodActionNotice(clearedNotice);
+    if (completedToiletAction || completedFoodAction) {
       echopet::uiExit(ui);
       resetAnimationPhase();
     }
@@ -1092,11 +1116,17 @@ static void activateUiSelection() {
     case UiMode::kMeal:
       changed = pet.feed(static_cast<FoodKind>(
           ui.cursor % echopet::kDefaultMealCount));
+      if (isFoodActionNotice(pet.snapshot().notice)) {
+        resetAnimationPhase();
+      }
       break;
     case UiMode::kSnack:
       changed = pet.snack(static_cast<FoodKind>(
           echopet::kDefaultMealCount +
           (ui.cursor % echopet::kDefaultSnackCount)));
+      if (isFoodActionNotice(pet.snapshot().notice)) {
+        resetAnimationPhase();
+      }
       break;
     case UiMode::kActivityMenu:
       switch (ui.cursor % 6) {

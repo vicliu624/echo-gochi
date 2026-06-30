@@ -3234,6 +3234,11 @@ uint8_t v3OfficialFrameIndex(uint8_t phase, uint8_t frameCount) {
   return frameCount == 0 ? 0 : static_cast<uint8_t>(phase % frameCount);
 }
 
+uint8_t v3OfficialOneShotFrameIndex(uint8_t phase, uint8_t frameCount) {
+  if (frameCount == 0) return 0;
+  return phase < frameCount ? phase : static_cast<uint8_t>(frameCount - 1);
+}
+
 void drawV3OfficialFrameRegion(EchoPetDisplayDevice& display,
                                const V3Canvas& canvas, const uint32_t* rows,
                                uint8_t x0, uint8_t y0, uint8_t x1,
@@ -3418,11 +3423,18 @@ void drawV3FoodScene(EchoPetDisplayDevice& display, const ScreenResources& r,
                      const Snapshot& pet, const UiState& ui, uint8_t phase) {
   (void)ui;
   const V3Canvas c = v3CanvasFor(r);
+  const bool actionPlaying =
+      pet.notice == Notice::kMeal || pet.notice == Notice::kSnack ||
+      pet.notice == Notice::kFull;
   const uint8_t index =
-      v3OfficialFrameIndex(phase, v3official::kBreed02FrameCount);
+      actionPlaying
+          ? v3OfficialOneShotFrameIndex(phase,
+                                        v3official::kBreed02FrameCount)
+          : 0;
   drawV3OfficialFrameRegion(display, c, &v3official::kBreed02Frames[index][0],
                             0, 0, 18, 30);
-  drawV3CatalogPet(display, c, pet, 16, 14, phase, 1);
+  drawV3CatalogPet(display, c, pet, 16, 14,
+                   actionPlaying ? index : phase, 1);
 }
 
 void drawV3EggHomeScene(EchoPetDisplayDevice& display,
